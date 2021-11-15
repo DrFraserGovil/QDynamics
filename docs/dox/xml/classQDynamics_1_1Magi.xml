@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classQDynamics_1_1Magi" kind="class" language="C++" prot="public">
+    <compoundname>QDynamics::Magi</compoundname>
+    <basecompoundref refid="classQDynamics_1_1Integrator" prot="public" virt="non-virtual">QDynamics::Integrator</basecompoundref>
+    <derivedcompoundref refid="classQDynamics_1_1Leapi" prot="public" virt="non-virtual">QDynamics::Leapi</derivedcompoundref>
+    <derivedcompoundref refid="classQDynamics_1_1Symi" prot="public" virt="non-virtual">QDynamics::Symi</derivedcompoundref>
+    <includes refid="Magi_8h" local="no">Magi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classQDynamics_1_1Magi_1a11af2e624714857cf13343f1745f2fa8" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QDynamics::Magi::unlock</definition>
+        <argsstring></argsstring>
+        <name>unlock</name>
+        <initializer>= 2600.07</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" line="10" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQDynamics_1_1Magi_1aba1aa111cd53a194854a2a8ac4b06b32" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool QDynamics::Magi::unlocked</definition>
+        <argsstring></argsstring>
+        <name>unlocked</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" line="11" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classQDynamics_1_1Magi_1ac9ff1c2f4ea0dcc30f1ee52b0894c9e9" prot="protected" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int QDynamics::Magi::Order</definition>
+        <argsstring></argsstring>
+        <name>Order</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" line="25" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQDynamics_1_1Magi_1a629449f541590040a7dfb98ca68cf97b" prot="protected" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int QDynamics::Magi::Resolution</definition>
+        <argsstring></argsstring>
+        <name>Resolution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" line="27" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classQDynamics_1_1Magi_1a5b95b7c32c314e2800f59366964abfc3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>QDynamics::Magi::Magi</definition>
+        <argsstring>(int order, int resolution, double T, double deltaT)</argsstring>
+        <name>Magi</name>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>resolution</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>deltaT</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" line="13" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" bodystart="13" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Magi_1a89efe9c4722cbeb447662ee727af0570" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>QDynamics::Magi::Magi</definition>
+        <argsstring>(int order, int resolution, double T, double deltaT, int skipper)</argsstring>
+        <name>Magi</name>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>resolution</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>deltaT</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>skipper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" line="18" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" bodystart="18" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classQDynamics_1_1Magi_1a500467f899244edfae15f34c84c7684c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void QDynamics::Magi::UpdatePosition</definition>
+        <argsstring>(double t)</argsstring>
+        <name>UpdatePosition</name>
+        <reimplements refid="classQDynamics_1_1Integrator_1a4effa27d56f3205e53653b1fdc5cd08e">UpdatePosition</reimplements>
+        <reimplementedby refid="classQDynamics_1_1SymiL_1a28d23793abeb8f40c9d9ec069d67debb">UpdatePosition</reimplementedby>
+        <reimplementedby refid="classQDynamics_1_1Leapi_1ada2b4935513fa7e0cb4f78ade9f2fd0e">UpdatePosition</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" line="29" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" bodystart="29" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Magi_1a04b85c8aa0e9549c750956c5f781433b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>virtual Quaternion QDynamics::Magi::Magnus</definition>
+        <argsstring>(double duration)</argsstring>
+        <name>Magnus</name>
+        <param>
+          <type>double</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" line="91" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" bodystart="91" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Magi_1aadacdb3581a42babd5e1aa9ada6c77ee" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>virtual Quaternion QDynamics::Magi::Magnus_Compute</definition>
+        <argsstring>(double duration)</argsstring>
+        <name>Magnus_Compute</name>
+        <reimplementedby refid="classQDynamics_1_1Symi_1a4cea691ad899227f92004dd666180415">Magnus_Compute</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" line="113" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" bodystart="113" bodyend="147"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="39">
+        <label>QDynamics::Integrator</label>
+        <link refid="classQDynamics_1_1Integrator"/>
+      </node>
+      <node id="40">
+        <label>QDynamics::Leapi</label>
+        <link refid="classQDynamics_1_1Leapi"/>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>QDynamics::Symi</label>
+        <link refid="classQDynamics_1_1Symi"/>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>QDynamics::Magi</label>
+        <link refid="classQDynamics_1_1Magi"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>QDynamics::SymiL</label>
+        <link refid="classQDynamics_1_1SymiL"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="44">
+        <label>QDynamics::Integrator</label>
+        <link refid="classQDynamics_1_1Integrator"/>
+        <childnode refid="45" relation="usage">
+          <edgelabel>J</edgelabel>
+        </childnode>
+        <childnode refid="46" relation="usage">
+          <edgelabel>w</edgelabel>
+          <edgelabel>L</edgelabel>
+          <edgelabel>p</edgelabel>
+          <edgelabel>q</edgelabel>
+        </childnode>
+      </node>
+      <node id="45">
+        <label>JSL::Vector</label>
+        <link refid="classJSL_1_1Vector"/>
+      </node>
+      <node id="46">
+        <label>QDynamics::Quaternion</label>
+        <link refid="classQDynamics_1_1Quaternion"/>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>QDynamics::Magi</label>
+        <link refid="classQDynamics_1_1Magi"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" line="8" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" bodystart="7" bodyend="148"/>
+    <listofallmembers>
+      <member refid="classQDynamics_1_1Integrator_1a4b921b312775194b77c2c85f93add84e" prot="public" virt="non-virtual"><scope>QDynamics::Magi</scope><name>Evolve</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a19ed0b9864ebe762914cee04cb0ad4b3" prot="protected" virt="non-virtual"><scope>QDynamics::Magi</scope><name>FileName</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a4688fbccd8b0dc5c9a73dddac66b486f" prot="protected" virt="virtual"><scope>QDynamics::Magi</scope><name>GradU</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a677dd555cee316d6d456b7da258c4385" prot="public" virt="non-virtual"><scope>QDynamics::Magi</scope><name>Integrator</name></member>
+      <member refid="classQDynamics_1_1Integrator_1aa469124cb408fadbaa540555dfabee33" prot="public" virt="non-virtual"><scope>QDynamics::Magi</scope><name>Integrator</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a7b99b22475321b34c1624bded3489954" prot="protected" virt="non-virtual"><scope>QDynamics::Magi</scope><name>J</name></member>
+      <member refid="classQDynamics_1_1Integrator_1adb45dae4f4d1d37ab83ca5269f51058d" prot="protected" virt="non-virtual"><scope>QDynamics::Magi</scope><name>L</name></member>
+      <member refid="classQDynamics_1_1Magi_1a5b95b7c32c314e2800f59366964abfc3" prot="public" virt="non-virtual"><scope>QDynamics::Magi</scope><name>Magi</name></member>
+      <member refid="classQDynamics_1_1Magi_1a89efe9c4722cbeb447662ee727af0570" prot="public" virt="non-virtual"><scope>QDynamics::Magi</scope><name>Magi</name></member>
+      <member refid="classQDynamics_1_1Magi_1a04b85c8aa0e9549c750956c5f781433b" prot="protected" virt="virtual"><scope>QDynamics::Magi</scope><name>Magnus</name></member>
+      <member refid="classQDynamics_1_1Magi_1aadacdb3581a42babd5e1aa9ada6c77ee" prot="protected" virt="virtual"><scope>QDynamics::Magi</scope><name>Magnus_Compute</name></member>
+      <member refid="classQDynamics_1_1Integrator_1aa3e27d68428619ab4083b2d42ef8924c" prot="protected" virt="non-virtual"><scope>QDynamics::Magi</scope><name>Name</name></member>
+      <member refid="classQDynamics_1_1Magi_1ac9ff1c2f4ea0dcc30f1ee52b0894c9e9" prot="protected" virt="non-virtual"><scope>QDynamics::Magi</scope><name>Order</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" prot="protected" virt="non-virtual"><scope>QDynamics::Magi</scope><name>p</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" prot="protected" virt="non-virtual"><scope>QDynamics::Magi</scope><name>q</name></member>
+      <member refid="classQDynamics_1_1Magi_1a629449f541590040a7dfb98ca68cf97b" prot="protected" virt="non-virtual"><scope>QDynamics::Magi</scope><name>Resolution</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a9b850dd4b29118e44b0183409db0a983" prot="protected" virt="non-virtual"><scope>QDynamics::Magi</scope><name>TimeStep</name></member>
+      <member refid="classQDynamics_1_1Integrator_1afa838ba8dfb0fbde1f77c6d2a45a9dd0" prot="protected" virt="virtual"><scope>QDynamics::Magi</scope><name>U</name></member>
+      <member refid="classQDynamics_1_1Magi_1a11af2e624714857cf13343f1745f2fa8" prot="public" virt="non-virtual"><scope>QDynamics::Magi</scope><name>unlock</name></member>
+      <member refid="classQDynamics_1_1Magi_1aba1aa111cd53a194854a2a8ac4b06b32" prot="public" virt="non-virtual"><scope>QDynamics::Magi</scope><name>unlocked</name></member>
+      <member refid="classQDynamics_1_1Magi_1a500467f899244edfae15f34c84c7684c" prot="protected" virt="virtual"><scope>QDynamics::Magi</scope><name>UpdatePosition</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a0241b2e2c87418323330999d1f8e12d0" prot="protected" virt="non-virtual"><scope>QDynamics::Magi</scope><name>w</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

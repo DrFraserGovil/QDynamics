@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classJSL_1_1Argument" kind="class"><name>JSL::Argument</name>
+    <member refid="classJSL_1_1Argument_1a83ada5bfa412192f76dd4290f679defd" kind="variable"><name>Value</name></member>
+    <member refid="classJSL_1_1Argument_1ab438509a3c030516de72f3f493295bd5" kind="function"><name>Argument</name></member>
+    <member refid="classJSL_1_1Argument_1ab07e7981db832cce30f534c67f6491f4" kind="function"><name>Argument</name></member>
+    <member refid="classJSL_1_1Argument_1a2511f7c98ee2b0b59650f468341b8747" kind="function"><name>Argument</name></member>
+    <member refid="classJSL_1_1Argument_1a4d187d2fb658021866b173987b920ab4" kind="function"><name>Argument</name></member>
+    <member refid="classJSL_1_1Argument_1a83799e9089f88d7e6cf30990fae42610" kind="function"><name>Argument</name></member>
+    <member refid="classJSL_1_1Argument_1aa626ff37dbebaf0501614dc625a76383" kind="function"><name>Configure</name></member>
+    <member refid="classJSL_1_1Argument_1aa2b18bb35e90f91e224a06d60835053a" kind="function"><name>ListParse</name></member>
+    <member refid="classJSL_1_1Argument_1a8984e7ce23155259d90a3e98170f36e0" kind="function"><name>Parse</name></member>
+    <member refid="classJSL_1_1Argument_1a965bc0dfdce6e03380605af313f8c880" kind="function"><name>operator T</name></member>
+    <member refid="classJSL_1_1Argument_1a8614eb66f807132c4323847e05e666c4" kind="function"><name>CheckForInvalidTriggers</name></member>
+    <member refid="classJSL_1_1Argument_1ac77530598054943c996dbb5fb677b844" kind="function"><name>AssignValue</name></member>
+    <member refid="classJSL_1_1Argument_1a6e8fe8e7cca2aeffe23f6fbadb88d4c8" kind="function"><name>AssignValue</name></member>
+    <member refid="classJSL_1_1Argument_1a059e7c6f1d9232a93cf725510fe2db27" kind="function"><name>AssignValue</name></member>
+    <member refid="classJSL_1_1Argument_1af5ccee16ba3403ef62d4bec9d380c762" kind="function"><name>AssignValue</name></member>
+    <member refid="classJSL_1_1Argument_1a0831822da0a2da47daa07d2e51b87d2a" kind="function"><name>AssignValue</name></member>
+  </compound>
+  <compound refid="classJSL_1_1ArgumentInterface" kind="class"><name>JSL::ArgumentInterface</name>
+    <member refid="classJSL_1_1ArgumentInterface_1afa2d1f96c4971070d3de5824f297312f" kind="variable"><name>TriggerString</name></member>
+    <member refid="classJSL_1_1ArgumentInterface_1a28b487f7a4fa6e721ed6629abe2073f2" kind="function"><name>Parse</name></member>
+    <member refid="classJSL_1_1ArgumentInterface_1a256b5bd88b5f6638353f108c48f3ee65" kind="function"><name>ListParse</name></member>
+    <member refid="classJSL_1_1ArgumentInterface_1aac7c3106f99c407e625b9bc6a6c8c446" kind="function"><name>Configure</name></member>
+  </compound>
+  <compound refid="classJSL__Testing_1_1ArgumentTest" kind="class"><name>JSL_Testing::ArgumentTest</name>
+    <member refid="classJSL__Testing_1_1ArgumentTest_1a3d83658826bd70b33349e53a7326ae5a" kind="function"><name>ArgumentTest</name></member>
+    <member refid="classJSL__Testing_1_1ArgumentTest_1a1c4c626d57e448da86866ef414308e97" kind="function"><name>Run_Test</name></member>
+  </compound>
+  <compound refid="classQDynamics_1_1Brute" kind="class"><name>QDynamics::Brute</name>
+    <member refid="classQDynamics_1_1Brute_1a2ef1df08140810ffbc9a3e8b97561bbb" kind="function"><name>Brute</name></member>
+    <member refid="classQDynamics_1_1Brute_1a5f04abe903e88405c24fb5695db6357f" kind="function"><name>Brute</name></member>
+    <member refid="classQDynamics_1_1Brute_1ac5d4bbe0e34a9f6836f71f40ae8a9eb4" kind="function"><name>UpdatePosition</name></member>
+  </compound>
+  <compound refid="classQDynamics_1_1Integrator" kind="class"><name>QDynamics::Integrator</name>
+    <member refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" kind="variable"><name>q</name></member>
+    <member refid="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" kind="variable"><name>p</name></member>
+    <member refid="classQDynamics_1_1Integrator_1a0241b2e2c87418323330999d1f8e12d0" kind="variable"><name>w</name></member>
+    <member refid="classQDynamics_1_1Integrator_1adb45dae4f4d1d37ab83ca5269f51058d" kind="variable"><name>L</name></member>
+    <member refid="classQDynamics_1_1Integrator_1a7b99b22475321b34c1624bded3489954" kind="variable"><name>J</name></member>
+    <member refid="classQDynamics_1_1Integrator_1a9b850dd4b29118e44b0183409db0a983" kind="variable"><name>TimeStep</name></member>
+    <member refid="classQDynamics_1_1Integrator_1aa3e27d68428619ab4083b2d42ef8924c" kind="variable"><name>Name</name></member>
+    <member refid="classQDynamics_1_1Integrator_1a19ed0b9864ebe762914cee04cb0ad4b3" kind="variable"><name>FileName</name></member>
+    <member refid="classQDynamics_1_1Integrator_1ae62176188110c0dcea7c65ba429d1abe" kind="variable"><name>BufferPos</name></member>
+    <member refid="classQDynamics_1_1Integrator_1acbafc2a1b2b19f230c6dfd8924cb36dd" kind="variable"><name>BufferSize</name></member>
+    <member refid="classQDynamics_1_1Integrator_1a00be60876ae62ef0d1555a6cc0ce52a5" kind="variable"><name>NHashes</name></member>
+    <member refid="classQDynamics_1_1Integrator_1ae893dd6b0d041de777e25a99f42886c3" kind="variable"><name>FinalHash</name></member>
+    <member refid="classQDynamics_1_1Integrator_1abab707f49ba0ae6701db5dbcdf86861f" kind="variable"><name>CurrentHashes</name></member>
+    <member refid="classQDynamics_1_1Integrator_1af8889c2bbe10237a8dd8c46b25b15d29" kind="variable"><name>Buffer</name></member>
+    <member refid="classQDynamics_1_1Integrator_1a95e110d6b14003db39f8a52180b97870" kind="variable"><name>SkipID</name></member>
+    <member refid="classQDynamics_1_1Integrator_1a409e18faeeefa5fb63f7bcce3eb0e381" kind="variable"><name>Skips</name></member>
+    <member refid="classQDynamics_1_1Integrator_1addfb67b6faa62d88bc7234d5496aeaf9" kind="variable"><name>TotalTime</name></member>
+    <member refid="classQDynamics_1_1Integrator_1a677dd555cee316d6d456b7da258c4385" kind="function"><name>Integrator</name></member>
+    <member refid="classQDynamics_1_1Integrator_1aa469124cb408fadbaa540555dfabee33" kind="function"><name>Integrator</name></member>
+    <member refid="classQDynamics_1_1Integrator_1a4b921b312775194b77c2c85f93add84e" kind="function"><name>Evolve</name></member>
+    <member refid="classQDynamics_1_1Integrator_1a4effa27d56f3205e53653b1fdc5cd08e" kind="function"><name>UpdatePosition</name></member>
+    <member refid="classQDynamics_1_1Integrator_1a4688fbccd8b0dc5c9a73dddac66b486f" kind="function"><name>GradU</name></member>
+    <member refid="classQDynamics_1_1Integrator_1afa838ba8dfb0fbde1f77c6d2a45a9dd0" kind="function"><name>U</name></member>
+    <member refid="classQDynamics_1_1Integrator_1af613a42e489de2d041673fd5be0ebb61" kind="function"><name>UpdateBuffer</name></member>
+    <member refid="classQDynamics_1_1Integrator_1a571bd4098f5d245bf46cf7683dcc554a" kind="function"><name>FlushBuffer</name></member>
+    <member refid="classQDynamics_1_1Integrator_1a88dc286b39899bdec60c040427d663cc" kind="function"><name>UpdateProgressBar</name></member>
+    <member refid="classQDynamics_1_1Integrator_1aa1afd442ef37708fcadb45ca8e7958f5" kind="function"><name>Initialise</name></member>
+    <member refid="classQDynamics_1_1Integrator_1ae80ab509b96a9b996934d9ef127f5137" kind="function"><name>CreateFullName</name></member>
+    <member refid="classQDynamics_1_1Integrator_1a816743f6efb41b0b29243ff3bdaa4c9d" kind="function"><name>Hamiltonian</name></member>
+  </compound>
+  <compound refid="classJSL__Testing_1_1IOTest" kind="class"><name>JSL_Testing::IOTest</name>
+    <member refid="classJSL__Testing_1_1IOTest_1a75479573809562118ab4d233c2bc0471" kind="function"><name>IOTest</name></member>
+    <member refid="classJSL__Testing_1_1IOTest_1a85daecacc71354b5dc0dee36840b8704" kind="function"><name>Run_Test</name></member>
+  </compound>
+  <compound refid="classQDynamics_1_1Leapi" kind="class"><name>QDynamics::Leapi</name>
+    <member refid="classQDynamics_1_1Leapi_1aa6feac37d39339e26f89626f7bdbc8f0" kind="function"><name>Leapi</name></member>
+    <member refid="classQDynamics_1_1Leapi_1a008a9a757055debd2e1da2b5ac64a746" kind="function"><name>Leapi</name></member>
+    <member refid="classQDynamics_1_1Leapi_1ada2b4935513fa7e0cb4f78ade9f2fd0e" kind="function"><name>UpdatePosition</name></member>
+  </compound>
+  <compound refid="classQDynamics_1_1Magi" kind="class"><name>QDynamics::Magi</name>
+    <member refid="classQDynamics_1_1Magi_1a11af2e624714857cf13343f1745f2fa8" kind="variable"><name>unlock</name></member>
+    <member refid="classQDynamics_1_1Magi_1aba1aa111cd53a194854a2a8ac4b06b32" kind="variable"><name>unlocked</name></member>
+    <member refid="classQDynamics_1_1Magi_1ac9ff1c2f4ea0dcc30f1ee52b0894c9e9" kind="variable"><name>Order</name></member>
+    <member refid="classQDynamics_1_1Magi_1a629449f541590040a7dfb98ca68cf97b" kind="variable"><name>Resolution</name></member>
+    <member refid="classQDynamics_1_1Magi_1a5b95b7c32c314e2800f59366964abfc3" kind="function"><name>Magi</name></member>
+    <member refid="classQDynamics_1_1Magi_1a89efe9c4722cbeb447662ee727af0570" kind="function"><name>Magi</name></member>
+    <member refid="classQDynamics_1_1Magi_1a500467f899244edfae15f34c84c7684c" kind="function"><name>UpdatePosition</name></member>
+    <member refid="classQDynamics_1_1Magi_1a04b85c8aa0e9549c750956c5f781433b" kind="function"><name>Magnus</name></member>
+    <member refid="classQDynamics_1_1Magi_1aadacdb3581a42babd5e1aa9ada6c77ee" kind="function"><name>Magnus_Compute</name></member>
+  </compound>
+  <compound refid="classJSL_1_1Matrix" kind="class"><name>JSL::Matrix</name>
+    <member refid="classJSL_1_1Matrix_1a446d23ba93238f3e2dfc79a3a4d5eb7e" kind="variable"><name>Data</name></member>
+    <member refid="classJSL_1_1Matrix_1a7b7a081bbf419b613f19142a634b2cfa" kind="variable"><name>nRows</name></member>
+    <member refid="classJSL_1_1Matrix_1aef59f1402d2137e86aebf6b21f97ee6d" kind="variable"><name>nCols</name></member>
+    <member refid="classJSL_1_1Matrix_1a90ddd1113043b8959b0943be24f9ad9f" kind="function"><name>Matrix</name></member>
+    <member refid="classJSL_1_1Matrix_1ab6bc06d3dcc5f25f2083d3a3946378df" kind="function"><name>Matrix</name></member>
+    <member refid="classJSL_1_1Matrix_1ae6198f4beabaff7700265fffeb490ed7" kind="function"><name>Matrix</name></member>
+    <member refid="classJSL_1_1Matrix_1af784cad8dcbb502c06be62e2e328ef6c" kind="function"><name>Rows</name></member>
+    <member refid="classJSL_1_1Matrix_1a8aba7f9803b553df2aeae68aba3445f5" kind="function"><name>Columns</name></member>
+    <member refid="classJSL_1_1Matrix_1a984691eac759ff0e8f98252d07be7e1a" kind="function"><name>Transpose</name></member>
+    <member refid="classJSL_1_1Matrix_1aa8bae8650234f5e5569277563d68f22d" kind="function"><name>GetRow</name></member>
+    <member refid="classJSL_1_1Matrix_1a11ea58ca43e028123f628966eb4834a0" kind="function"><name>GetColumn</name></member>
+    <member refid="classJSL_1_1Matrix_1a23d8192e8a00d213693b82b3caeb0ceb" kind="function"><name>operator()</name></member>
+    <member refid="classJSL_1_1Matrix_1ab5dd212faa491611c31288644db66a60" kind="function"><name>operator()</name></member>
+    <member refid="classJSL_1_1Matrix_1ae317e4316d0d40ce919fb22a9f4824a7" kind="function"><name>operator+=</name></member>
+    <member refid="classJSL_1_1Matrix_1abec89912c20210f6b49c5d09e1c1845b" kind="function"><name>operator-=</name></member>
+    <member refid="classJSL_1_1Matrix_1ae2dfa2fcbc80ee24c02125e5739bc0c1" kind="function"><name>operator+=</name></member>
+    <member refid="classJSL_1_1Matrix_1a894ff64b1350616ddf2a48ec0f58e2c5" kind="function"><name>operator-=</name></member>
+    <member refid="classJSL_1_1Matrix_1a3d9d4857ed227d7c6db87814f15af2ea" kind="function"><name>operator*=</name></member>
+    <member refid="classJSL_1_1Matrix_1a2a9cdd54f835135496bf3e87aea4dfc9" kind="function"><name>operator*=</name></member>
+    <member refid="classJSL_1_1Matrix_1a6caa5725c4dacc9a841147e80e9c43a4" kind="function"><name>operator/=</name></member>
+    <member refid="classJSL_1_1Matrix_1abcf44559767ab6939851f0d3b60c6fa8" kind="function"><name>to_string</name></member>
+    <member refid="classJSL_1_1Matrix_1afd9edd73e5f559eed02b063d4c4e47f8" kind="function"><name>Identity</name></member>
+    <member refid="classJSL_1_1Matrix_1a92eb431da436e1e2922b211a9f158203" kind="function"><name>outOfBoundsError</name></member>
+  </compound>
+  <compound refid="classJSL__Testing_1_1MatrixTest" kind="class"><name>JSL_Testing::MatrixTest</name>
+    <member refid="classJSL__Testing_1_1MatrixTest_1a9cd56fe4c4d7db6cfd53c86252e8d033" kind="function"><name>MatrixTest</name></member>
+    <member refid="classJSL__Testing_1_1MatrixTest_1a8fe2a671faf414dbd13c407ab52b75fb" kind="function"><name>Run_Test</name></member>
+  </compound>
+  <compound refid="classJSL__Testing_1_1MetaTest" kind="class"><name>JSL_Testing::MetaTest</name>
+    <member refid="classJSL__Testing_1_1MetaTest_1a17efe6a92ae4934828a61d9f1120e67d" kind="function"><name>MetaTest</name></member>
+    <member refid="classJSL__Testing_1_1MetaTest_1a176352dcd54f9ec7df8f1548882e6820" kind="function"><name>Run_Test</name></member>
+  </compound>
+  <compound refid="structJSL_1_1mkdirReturn" kind="struct"><name>JSL::mkdirReturn</name>
+    <member refid="structJSL_1_1mkdirReturn_1a76abe5af61a20e13756f833b79782b7f" kind="variable"><name>Successful</name></member>
+    <member refid="structJSL_1_1mkdirReturn_1a64650d2f4b3d2ca29de3a4dcfdadbd0e" kind="variable"><name>Message</name></member>
+  </compound>
+  <compound refid="classQDynamics_1_1Quaternion" kind="class"><name>QDynamics::Quaternion</name>
+    <member refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" kind="function"><name>Scalar</name></member>
+    <member refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kind="function"><name>Vector</name></member>
+    <member refid="classQDynamics_1_1Quaternion_1ac35047116c055b5baeec49b8ebba0ede" kind="function"><name>Vector</name></member>
+    <member refid="classQDynamics_1_1Quaternion_1addca2bd1d2288c6875eab9f7b4c60881" kind="function"><name>Quaternion</name></member>
+    <member refid="classQDynamics_1_1Quaternion_1a206147a6dbe4a9456cd655d654ef0182" kind="function"><name>Quaternion</name></member>
+    <member refid="classQDynamics_1_1Quaternion_1aadf267f7d62df09bf09b04cc47704560" kind="function"><name>Quaternion</name></member>
+    <member refid="classQDynamics_1_1Quaternion_1a0a153753fb53bf466a5b1c6ab20abff6" kind="function"><name>Quaternion</name></member>
+    <member refid="classQDynamics_1_1Quaternion_1ad0da33a229eb9869a4b48c8302f5470e" kind="function"><name>Quaternion</name></member>
+    <member refid="classQDynamics_1_1Quaternion_1a2516e87ebb14ee2d34bc22744057c87b" kind="function"><name>Conjugate</name></member>
+    <member refid="classQDynamics_1_1Quaternion_1a2d0f1e0e8e46d1223f848da4f8b3fc2e" kind="function"><name>LeftMultiplicationMatrix</name></member>
+    <member refid="classQDynamics_1_1Quaternion_1a76da0390b336de90b27e713c34a3732a" kind="function"><name>RightMultiplicationMatrix</name></member>
+    <member refid="classQDynamics_1_1Quaternion_1a1bc0af90c699e7c2eba94833ae7fb105" kind="function"><name>Scalar</name></member>
+    <member refid="classQDynamics_1_1Quaternion_1a061cd74a6e060beeeb781b6cf7b7f16d" kind="function"><name>Vector</name></member>
+    <member refid="classQDynamics_1_1Quaternion_1a06726eb02ffd68ccbd3adaef63c90bb9" kind="function"><name>One</name></member>
+    <member refid="classQDynamics_1_1Quaternion_1a7932eeb535080e6230e98fb4f35867c2" kind="function"><name>Zero</name></member>
+    <member refid="classQDynamics_1_1Quaternion_1a06386710ec4308c04a72f365382472ce" kind="function"><name>Random</name></member>
+  </compound>
+  <compound refid="classJSL_1_1Quaternion" kind="class"><name>JSL::Quaternion</name>
+    <member refid="classJSL_1_1Quaternion_1a3bfe577832b38cdf2dbbb143c9487add" kind="function"><name>Quaternion</name></member>
+    <member refid="classJSL_1_1Quaternion_1ae31be96e94176f1e5278cfaeba39dedc" kind="function"><name>Quaternion</name></member>
+    <member refid="classJSL_1_1Quaternion_1ac0fa428adfcbc3db2eff9b5c86e7a075" kind="function"><name>Quaternion</name></member>
+    <member refid="classJSL_1_1Quaternion_1a6b71605f5fafada8e94bab1bf9af55bd" kind="function"><name>Quaternion</name></member>
+    <member refid="classJSL_1_1Quaternion_1a738b4fb82caf2a0334818ac4e6c494de" kind="function"><name>Quaternion</name></member>
+    <member refid="classJSL_1_1Quaternion_1a67d6b60a4863985f94d23c68953dcd91" kind="function"><name>Scalar</name></member>
+    <member refid="classJSL_1_1Quaternion_1a92b7311aecae986edb373e0b40d5bfdd" kind="function"><name>Vector</name></member>
+    <member refid="classJSL_1_1Quaternion_1aba8a8ac1d2101f8b374387349412035b" kind="function"><name>Scalar</name></member>
+    <member refid="classJSL_1_1Quaternion_1a5243fa5db9d466bf1485a83325a682b0" kind="function"><name>Vector</name></member>
+    <member refid="classJSL_1_1Quaternion_1a0255f2026ec4af9cff42d09d2309af01" kind="function"><name>Vector</name></member>
+    <member refid="classJSL_1_1Quaternion_1a9bea717f4cd1b5d4e3bdb8eedfbaed2c" kind="function"><name>Conjugate</name></member>
+    <member refid="classJSL_1_1Quaternion_1ada6a7067e13b60a65a6103f7508f62f3" kind="function"><name>LeftMultiplicationMatrix</name></member>
+    <member refid="classJSL_1_1Quaternion_1a081b38fc741f2dc9d4f2b955acbed833" kind="function"><name>RightMultiplicationMatrix</name></member>
+    <member refid="classJSL_1_1Quaternion_1adf0c22bf67a2ab873b998b34583de2e0" kind="function"><name>One</name></member>
+    <member refid="classJSL_1_1Quaternion_1a63e84edb5230efc8378d86b5d182221d" kind="function"><name>Zero</name></member>
+    <member refid="classJSL_1_1Quaternion_1a8d47df19d5d74b82a8e348391e8ef8c4" kind="function"><name>Random</name></member>
+  </compound>
+  <compound refid="classJSL__Testing_1_1StringTest" kind="class"><name>JSL_Testing::StringTest</name>
+    <member refid="classJSL__Testing_1_1StringTest_1a5be5ef071697a4e106c1a1e51ded1cf6" kind="function"><name>StringTest</name></member>
+    <member refid="classJSL__Testing_1_1StringTest_1ada0409cd10e3f09788994a9115331ff7" kind="function"><name>Run_Test</name></member>
+  </compound>
+  <compound refid="classQDynamics_1_1Symi" kind="class"><name>QDynamics::Symi</name>
+    <member refid="classQDynamics_1_1Symi_1afc73292268197d37fad6716aa6bb5976" kind="function"><name>Symi</name></member>
+    <member refid="classQDynamics_1_1Symi_1a2e248bf5141814ca1e8285227d26d4bc" kind="function"><name>Symi</name></member>
+    <member refid="classQDynamics_1_1Symi_1a4cea691ad899227f92004dd666180415" kind="function"><name>Magnus_Compute</name></member>
+  </compound>
+  <compound refid="classQDynamics_1_1SymiL" kind="class"><name>QDynamics::SymiL</name>
+    <member refid="classQDynamics_1_1SymiL_1ac220b2a8cccf6c3c8ca0d0f79c094fe7" kind="function"><name>SymiL</name></member>
+    <member refid="classQDynamics_1_1SymiL_1acdb13fb6bc527f687385dbdb05ff6e17" kind="function"><name>SymiL</name></member>
+    <member refid="classQDynamics_1_1SymiL_1a28d23793abeb8f40c9d9ec069d67debb" kind="function"><name>UpdatePosition</name></member>
+  </compound>
+  <compound refid="classJSL_1_1UnitTest" kind="class"><name>JSL::UnitTest</name>
+    <member refid="classJSL_1_1UnitTest_1a53c19424147e72fa6392470627f15049" kind="variable"><name>Name</name></member>
+    <member refid="classJSL_1_1UnitTest_1afac1f363a8406fad39316ee772a837a9" kind="variable"><name>Passed</name></member>
+    <member refid="classJSL_1_1UnitTest_1a54dc4908d757c7f523be12a4275e595c" kind="variable"><name>NonCriticalFailure</name></member>
+    <member refid="classJSL_1_1UnitTest_1a3dcc71e7e8f72f0f07b8fc552b777ad8" kind="variable"><name>MessageBuffer</name></member>
+    <member refid="classJSL_1_1UnitTest_1aa3bc8d5c99696d5bc6e63b8da358a0ed" kind="function"><name>UnitTest</name></member>
+    <member refid="classJSL_1_1UnitTest_1aa8369ab1ce2a537bff2ea7e1c8818490" kind="function"><name>Run_Test</name></member>
+    <member refid="classJSL_1_1UnitTest_1aabec19b081be8a428f12e4b5e3dc2a9c" kind="function"><name>BufferedTest</name></member>
+    <member refid="classJSL_1_1UnitTest_1a39e1076dd985334ce21606ae2a383f70" kind="function"><name>Results</name></member>
+    <member refid="classJSL_1_1UnitTest_1a3629d1bca071da7a2af6b7de29be1430" kind="function"><name>basicConditionCheck</name></member>
+    <member refid="classJSL_1_1UnitTest_1a53ede0c6b420eaf64faf752c0518340e" kind="function"><name>basicConditionCheck</name></member>
+  </compound>
+  <compound refid="classJSL_1_1Vector" kind="class"><name>JSL::Vector</name>
+    <member refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kind="variable"><name>Data</name></member>
+    <member refid="classJSL_1_1Vector_1a84eb32f5917a770c895e106834a6c05d" kind="variable"><name>nElements</name></member>
+    <member refid="classJSL_1_1Vector_1a840fca607f8eae7dea1494b2954d3a3c" kind="function"><name>Vector</name></member>
+    <member refid="classJSL_1_1Vector_1aea8654ed3fb875d43f669a5f2e26fb25" kind="function"><name>Vector</name></member>
+    <member refid="classJSL_1_1Vector_1af5be93b29e1c2aab2882827d5001a2aa" kind="function"><name>Vector</name></member>
+    <member refid="classJSL_1_1Vector_1a53b26ca32061ebf41430fe2322f79c0c" kind="function"><name>Size</name></member>
+    <member refid="classJSL_1_1Vector_1a7ff5112a7be30ca24b8ed953aaadd045" kind="function"><name>operator[]</name></member>
+    <member refid="classJSL_1_1Vector_1ae461792ef0aeb62ac07c939dacedda99" kind="function"><name>operator[]</name></member>
+    <member refid="classJSL_1_1Vector_1a60660b5a26e0ddace46f31699834b671" kind="function"><name>Dot</name></member>
+    <member refid="classJSL_1_1Vector_1a59ff98a99ebcf2b589290b9e57b8e184" kind="function"><name>Cross</name></member>
+    <member refid="classJSL_1_1Vector_1ac1346e26bc981bf45d2c1c4317dac4e6" kind="function"><name>SqNorm</name></member>
+    <member refid="classJSL_1_1Vector_1aa8af717591f5548ff471b6e4b28d7f9c" kind="function"><name>Norm</name></member>
+    <member refid="classJSL_1_1Vector_1a0529640bc02ce994026184d93f43f9c3" kind="function"><name>AngleBetween</name></member>
+    <member refid="classJSL_1_1Vector_1a73579b4a194cc924341806a5d9ea3817" kind="function"><name>to_string</name></member>
+    <member refid="classJSL_1_1Vector_1ad2d0bfdb432809a88a49f4576b0afb5a" kind="function"><name>to_simple_string</name></member>
+    <member refid="classJSL_1_1Vector_1a91d4cf29c2865069520d03292844d84f" kind="function"><name>to_string_precision</name></member>
+    <member refid="classJSL_1_1Vector_1ad46bf395dd6122ce152c33aad2672a9b" kind="function"><name>operator+=</name></member>
+    <member refid="classJSL_1_1Vector_1a71720a9266944049cd3adfbe50e1703f" kind="function"><name>operator-=</name></member>
+    <member refid="classJSL_1_1Vector_1aeca45a175db04725394a1b576507e708" kind="function"><name>operator+=</name></member>
+    <member refid="classJSL_1_1Vector_1a8a395851b8dffbe5b0aea7e051f9aac8" kind="function"><name>operator-=</name></member>
+    <member refid="classJSL_1_1Vector_1ad2fb2b88e3447881c1dac08897c5c8a8" kind="function"><name>operator*=</name></member>
+    <member refid="classJSL_1_1Vector_1a0ce3dc2b4c99dbe6acdec350e2f46ab6" kind="function"><name>operator/=</name></member>
+    <member refid="classJSL_1_1Vector_1ad7dc3af5e90b59e3ba2efc458e192a4c" kind="function"><name>isnan</name></member>
+    <member refid="classJSL_1_1Vector_1ac41d3cb075c2bd871c31b96dedba08fe" kind="function"><name>negativeIntegerError</name></member>
+    <member refid="classJSL_1_1Vector_1ab081a68e1fc526f4bf866de0ba61a09b" kind="function"><name>outOfBoundsError</name></member>
+  </compound>
+  <compound refid="classJSL__Testing_1_1VectorTest" kind="class"><name>JSL_Testing::VectorTest</name>
+    <member refid="classJSL__Testing_1_1VectorTest_1a4750f287bc10a0df1f4f28cb84598bc2" kind="function"><name>VectorTest</name></member>
+    <member refid="classJSL__Testing_1_1VectorTest_1ad79bb4654e6f7b59d31d7239ee0c2b82" kind="function"><name>Run_Test</name></member>
+  </compound>
+  <compound refid="namespaceJSL" kind="namespace"><name>JSL</name>
+    <member refid="namespaceJSL_1a47d8cb112d513ee5a3ae38ca6a89743d" kind="function"><name>initialiseFile</name></member>
+    <member refid="namespaceJSL_1a838b3a913896993bc008408d164ec19d" kind="function"><name>writeStringToFile</name></member>
+    <member refid="namespaceJSL_1a1d611217d83275af846cbc091ff98f53" kind="function"><name>writeVectorToFile</name></member>
+    <member refid="namespaceJSL_1a8c08233b0cb834d4dcde1153b4b8c8c7" kind="function"><name>writeMatrixToFile</name></member>
+    <member refid="namespaceJSL_1a1752cd7c6e1134da51e9307527e0d788" kind="function"><name>locationExists</name></member>
+    <member refid="namespaceJSL_1abf525d02b8c49f21ef7faa68b7571f93" kind="function"><name>mkdir</name></member>
+    <member refid="namespaceJSL_1ae48b92e64fb9d321121df976b770efa6" kind="function"><name>rm</name></member>
+    <member refid="namespaceJSL_1a682c8bb3fff54370f38dcb16794fc7c5" kind="function"><name>operator==</name></member>
+    <member refid="namespaceJSL_1a8b19814a4b6cb667d1e27133acc38513" kind="function"><name>operator!=</name></member>
+    <member refid="namespaceJSL_1a38d1bbf23dc57ec028ea8d91a9688957" kind="function"><name>MatrixSizesEqual</name></member>
+    <member refid="namespaceJSL_1ad1bcc74167579ecff71209bf8c9c47a3" kind="function"><name>operator+</name></member>
+    <member refid="namespaceJSL_1a4f1a2a224c7f6a8c57627b03594cd89f" kind="function"><name>operator-</name></member>
+    <member refid="namespaceJSL_1ad779a68a2d565490f76dd16adfc3091e" kind="function"><name>operator+</name></member>
+    <member refid="namespaceJSL_1a95d670e99aed43f857d8ba5e6f3d7897" kind="function"><name>operator*</name></member>
+    <member refid="namespaceJSL_1a823f5e48d384320644698917c0a1c85c" kind="function"><name>operator*</name></member>
+    <member refid="namespaceJSL_1a5f6c1988cf84b088617e0f12fc1e98da" kind="function"><name>operator+</name></member>
+    <member refid="namespaceJSL_1a6d5304adbdadcb062246266f4ece24a1" kind="function"><name>operator-</name></member>
+    <member refid="namespaceJSL_1a80fcd230a03dd81f1c37fec030619bf9" kind="function"><name>operator*</name></member>
+    <member refid="namespaceJSL_1a69548e09ba5835ee87ac4d28907b5435" kind="function"><name>operator*</name></member>
+    <member refid="namespaceJSL_1ab1f3153179f59c59a0c2a5e553889eb1" kind="function"><name>operator/</name></member>
+    <member refid="namespaceJSL_1aebaffa5dc8073b816908a9708a36b7bf" kind="function"><name>operator-</name></member>
+    <member refid="namespaceJSL_1a91df7f3a77ef2e000058e0f58efb99e6" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="namespaceJSL_1aff956bc38fdc0a19f41e202699560dff" kind="function"><name>operator*</name></member>
+    <member refid="namespaceJSL_1a87842870ba7998a0ec521782b2d2f621" kind="function"><name>operator*</name></member>
+    <member refid="namespaceJSL_1a68fed2d9fae3ec9612dd8e8282cf1336" kind="function"><name>operator/</name></member>
+    <member refid="namespaceJSL_1a943a21cab5e9abe4331b20d37cd3f8a1" kind="function"><name>exp</name></member>
+    <member refid="namespaceJSL_1aeae64b7e0cfdc1ab5f35cca90c32d9f6" kind="function"><name>VectorDotProduct</name></member>
+    <member refid="namespaceJSL_1aa7816eb0cd81b74241ce460237990e70" kind="function"><name>VectorCrossProduct</name></member>
+    <member refid="namespaceJSL_1a09355c91f84fd99d4634bf9189fef51d" kind="function"><name>AngleBetweenVectors</name></member>
+    <member refid="namespaceJSL_1a7fad54be308ccb76f68933d91c3c542f" kind="function"><name>operator==</name></member>
+    <member refid="namespaceJSL_1a394a4f9cee0747c76d1190b0365c7b5a" kind="function"><name>operator!=</name></member>
+    <member refid="namespaceJSL_1ae6530b77174d0dfae8e0d6e2a810f672" kind="function"><name>operator+</name></member>
+    <member refid="namespaceJSL_1a1d8393f2865dc23e7975ad041e341ba5" kind="function"><name>operator-</name></member>
+    <member refid="namespaceJSL_1a4b293e2ac3df51113e80022cb3c2ac99" kind="function"><name>operator+</name></member>
+    <member refid="namespaceJSL_1ac5ceabb8b9e657c5e2d0faf9b20a36e8" kind="function"><name>operator+</name></member>
+    <member refid="namespaceJSL_1ac6bd9311dd73aa6227d826bdb94e748d" kind="function"><name>operator-</name></member>
+    <member refid="namespaceJSL_1ab3d17c5cc03a2048e8637d2054fbc138" kind="function"><name>operator-</name></member>
+    <member refid="namespaceJSL_1ab4eefbed468f275164855895335b8a29" kind="function"><name>operator*</name></member>
+    <member refid="namespaceJSL_1afc5e092de4a9bdc5795d40ee0f51c7b9" kind="function"><name>operator*</name></member>
+    <member refid="namespaceJSL_1a1427fd44260592b7d65d27946969fba1" kind="function"><name>operator/</name></member>
+    <member refid="namespaceJSL_1a6fd4487b0a8ac5713df4a37079287913" kind="function"><name>Hadamard</name></member>
+    <member refid="namespaceJSL_1ad9900d0292867da361ddb3f1200a1f99" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="namespaceJSL_1a34a7ba28084b304e97a707c653dce887" kind="function"><name>split</name></member>
+    <member refid="namespaceJSL_1ae58b7096986a16b70a27e1609eff3014" kind="function"><name>CurrentTime</name></member>
+    <member refid="namespaceJSL_1ad7ff2220bbab0294b95b9aa85332a222" kind="function"><name>FormatDuration</name></member>
+    <member refid="namespaceJSL_1ae7af96a0311784e019209221335f76d9" kind="function"><name>FormatClock</name></member>
+  </compound>
+  <compound refid="namespaceJSL__Testing" kind="namespace"><name>JSL_Testing</name>
+    <member refid="namespaceJSL__Testing_1a509a70d20fdc2e9975d9b0b8ae424ef1" kind="function"><name>RunAllTests</name></member>
+  </compound>
+  <compound refid="namespaceQDynamics" kind="namespace"><name>QDynamics</name>
+    <member refid="namespaceQDynamics_1a06e91eeb11c659d8845569a642500675" kind="variable"><name>buffersize</name></member>
+    <member refid="namespaceQDynamics_1ac3ad3b89bbd65796d1f4f5e4809a12ed" kind="variable"><name>hash</name></member>
+    <member refid="namespaceQDynamics_1a0b043bd2021eaeb8b6580cef4fcc667c" kind="function"><name>Mult</name></member>
+    <member refid="namespaceQDynamics_1a78137919461ac257fe032f870771b0ed" kind="function"><name>InvMult</name></member>
+    <member refid="namespaceQDynamics_1a003e8d43977a4b818a6e90993d00201a" kind="function"><name>verticalAngle</name></member>
+    <member refid="namespaceQDynamics_1a4eabde69f542fcca92f97b1ef2e28b33" kind="function"><name>LabAngularMomentum</name></member>
+    <member refid="namespaceQDynamics_1ac40010112506831ced816640def9bc85" kind="function"><name>operator*</name></member>
+    <member refid="namespaceQDynamics_1a3382c10ce708c163d79c9fdb5c79b452" kind="function"><name>operator*</name></member>
+    <member refid="namespaceQDynamics_1a48d51b6fed1449d7e9a62dac20a169af" kind="function"><name>operator/</name></member>
+    <member refid="namespaceQDynamics_1aa458e456eca06783fd8c41b7ac2b1400" kind="function"><name>exp</name></member>
+  </compound>
+  <compound refid="Argument_8h" kind="file"><name>Argument.h</name>
+  </compound>
+  <compound refid="CommandArgs_8h" kind="file"><name>CommandArgs.h</name>
+  </compound>
+  <compound refid="FileIO_8h" kind="file"><name>FileIO.h</name>
+  </compound>
+  <compound refid="fileWriter_8h" kind="file"><name>fileWriter.h</name>
+  </compound>
+  <compound refid="LineReader_8h" kind="file"><name>LineReader.h</name>
+    <member refid="LineReader_8h_1a5480fba013891b2f3033cc97d5d8edf4" kind="define"><name>forLineIn</name></member>
+    <member refid="LineReader_8h_1abdfa973ea7dd7efb90a74e8ec636f5ed" kind="define"><name>forLineVectorIn</name></member>
+  </compound>
+  <compound refid="locationExists_8h" kind="file"><name>locationExists.h</name>
+  </compound>
+  <compound refid="mkdir_8h" kind="file"><name>mkdir.h</name>
+  </compound>
+  <compound refid="rm_8h" kind="file"><name>rm.h</name>
+  </compound>
+  <compound refid="JSL_8h" kind="file"><name>JSL.h</name>
+  </compound>
+  <compound refid="Maths_8h" kind="file"><name>Maths.h</name>
+  </compound>
+  <compound refid="matrix_8h" kind="file"><name>matrix.h</name>
+  </compound>
+  <compound refid="Q__temp_8h" kind="file"><name>Q_temp.h</name>
+  </compound>
+  <compound refid="vector_8h" kind="file"><name>vector.h</name>
+  </compound>
+  <compound refid="split_8h" kind="file"><name>split.h</name>
+  </compound>
+  <compound refid="Strings_8h" kind="file"><name>Strings.h</name>
+  </compound>
+  <compound refid="Time_8h" kind="file"><name>Time.h</name>
+  </compound>
+  <compound refid="Testing_8h" kind="file"><name>Testing.h</name>
+  </compound>
+  <compound refid="Testing__UnitTests_8h" kind="file"><name>Testing_UnitTests.h</name>
+  </compound>
+  <compound refid="UnitTest_8h" kind="file"><name>UnitTest.h</name>
+  </compound>
+  <compound refid="QDynamics_8h" kind="file"><name>QDynamics.h</name>
+  </compound>
+  <compound refid="Brute_8h" kind="file"><name>Brute.h</name>
+  </compound>
+  <compound refid="DynamicOperations_8h" kind="file"><name>DynamicOperations.h</name>
+  </compound>
+  <compound refid="Integrator_8h" kind="file"><name>Integrator.h</name>
+  </compound>
+  <compound refid="Magi_8h" kind="file"><name>Magi.h</name>
+  </compound>
+  <compound refid="Quaternion_8h" kind="file"><name>Quaternion.h</name>
+  </compound>
+  <compound refid="Symi_8h" kind="file"><name>Symi.h</name>
+  </compound>
+  <compound refid="dir_d94222213bf3c1c071481a048d868dd6" kind="dir"><name>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/CommandArgs</name>
+  </compound>
+  <compound refid="dir_3058225589347dfeee253751eb317dec" kind="dir"><name>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/FileIO</name>
+  </compound>
+  <compound refid="dir_713b5836fbbf0d063267991159014b22" kind="dir"><name>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>/home/f/fraserj/Documents/Work/QDynamics/lib</name>
+  </compound>
+  <compound refid="dir_cc6ba3f4f08890870ae831aca6083480" kind="dir"><name>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Maths</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>/home/f/fraserj/Documents/Work/QDynamics/src</name>
+  </compound>
+  <compound refid="dir_33696c92936c393acb7a2840ac7705ef" kind="dir"><name>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Strings</name>
+  </compound>
+  <compound refid="dir_c8d092b8b672ec362c568271dadb9b0e" kind="dir"><name>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing</name>
+  </compound>
+</doxygenindex>

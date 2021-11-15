@@ -34,3 +34,7 @@
 ## Custom Stuff
 Examples/Output
 toy
+
+docs/_build
+.docenv
+*.bat

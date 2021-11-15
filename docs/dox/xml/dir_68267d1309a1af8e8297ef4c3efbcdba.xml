@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>/home/f/fraserj/Documents/Work/QDynamics/src</compoundname>
+    <innerfile refid="Brute_8h">Brute.h</innerfile>
+    <innerfile refid="DynamicOperations_8h">DynamicOperations.h</innerfile>
+    <innerfile refid="Integrator_8h">Integrator.h</innerfile>
+    <innerfile refid="Magi_8h">Magi.h</innerfile>
+    <innerfile refid="Quaternion_8h">Quaternion.h</innerfile>
+    <innerfile refid="Symi_8h">Symi.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/f/fraserj/Documents/Work/QDynamics/src/"/>
+  </compounddef>
+</doxygen>

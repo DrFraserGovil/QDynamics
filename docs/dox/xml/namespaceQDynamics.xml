@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespaceQDynamics" kind="namespace" language="C++">
+    <compoundname>QDynamics</compoundname>
+    <innerclass refid="classQDynamics_1_1Brute" prot="public">QDynamics::Brute</innerclass>
+    <innerclass refid="classQDynamics_1_1Integrator" prot="public">QDynamics::Integrator</innerclass>
+    <innerclass refid="classQDynamics_1_1Leapi" prot="public">QDynamics::Leapi</innerclass>
+    <innerclass refid="classQDynamics_1_1Magi" prot="public">QDynamics::Magi</innerclass>
+    <innerclass refid="classQDynamics_1_1Quaternion" prot="public">QDynamics::Quaternion</innerclass>
+    <innerclass refid="classQDynamics_1_1Symi" prot="public">QDynamics::Symi</innerclass>
+    <innerclass refid="classQDynamics_1_1SymiL" prot="public">QDynamics::SymiL</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceQDynamics_1a06e91eeb11c659d8845569a642500675" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int QDynamics::buffersize</definition>
+        <argsstring></argsstring>
+        <name>buffersize</name>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="10" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceQDynamics_1ac3ad3b89bbd65796d1f4f5e4809a12ed" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int QDynamics::hash</definition>
+        <argsstring></argsstring>
+        <name>hash</name>
+        <initializer>= 32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="11" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceQDynamics_1a0b043bd2021eaeb8b6580cef4fcc667c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref></type>
+        <definition>QDynamics::Quaternion QDynamics::Mult</definition>
+        <argsstring>(const JSL::Vector &amp;J, const QDynamics::Quaternion &amp;q)</argsstring>
+        <name>Mult</name>
+        <param>
+          <type>const <ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref> &amp;</type>
+          <declname>J</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref> &amp;</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/DynamicOperations.h" line="9" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/DynamicOperations.h" bodystart="9" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceQDynamics_1a78137919461ac257fe032f870771b0ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref></type>
+        <definition>QDynamics::Quaternion QDynamics::InvMult</definition>
+        <argsstring>(const JSL::Vector &amp;J, const QDynamics::Quaternion &amp;q)</argsstring>
+        <name>InvMult</name>
+        <param>
+          <type>const <ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref> &amp;</type>
+          <declname>J</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref> &amp;</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/DynamicOperations.h" line="19" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/DynamicOperations.h" bodystart="19" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceQDynamics_1a003e8d43977a4b818a6e90993d00201a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double QDynamics::verticalAngle</definition>
+        <argsstring>(const QDynamics::Quaternion &amp;q)</argsstring>
+        <name>verticalAngle</name>
+        <param>
+          <type>const <ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref> &amp;</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/DynamicOperations.h" line="29" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/DynamicOperations.h" bodystart="29" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceQDynamics_1a4eabde69f542fcca92f97b1ef2e28b33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref></type>
+        <definition>JSL::Vector QDynamics::LabAngularMomentum</definition>
+        <argsstring>(const QDynamics::Quaternion &amp;q, const QDynamics::Quaternion &amp;p)</argsstring>
+        <name>LabAngularMomentum</name>
+        <param>
+          <type>const <ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref> &amp;</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/DynamicOperations.h" line="38" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/DynamicOperations.h" bodystart="38" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceQDynamics_1ac40010112506831ced816640def9bc85" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion QDynamics::operator*</definition>
+        <argsstring>(const Quaternion &amp;lhs, const Quaternion &amp;rhs)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>The crucial quaternion multiplication operation, defined such that: </para>        </briefdescription>
+        <detaileddescription>
+<para><verbatim>embed:rst:inline :math:`\mathsf{a} \otimes \mathsf{b} = \begin{pmatrix} a_0 b_0 - \vec{a} \cdot \vec{b} \\ a_0 \vec{b} + b_0 \vec{a} + \vec{a} \times \vec{b}\end{pmatrix}` </verbatim>. Note that this product is highly non-commutative in general. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first argument of the operation (<verbatim>embed:rst:inline :math:`\mathsf{a}` </verbatim>) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second argument (<verbatim>embed:rst:inline :math:`\mathsf{b}` </verbatim>) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The quaternion product (<verbatim>embed:rst:inline :math:`\mathsf{a}\otimes\mathsf{b}` </verbatim>) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" line="189" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" bodystart="189" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceQDynamics_1a3382c10ce708c163d79c9fdb5c79b452" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion QDynamics::operator*</definition>
+        <argsstring>(const JSL::Matrix &amp;lhs, const Quaternion &amp;rhs)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="classJSL_1_1Matrix" kindref="compound">JSL::Matrix</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>The (slightly dodgy) matrix-quaternion product. In reality, casts the quaternion to R^4, multiplies, then casts back. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A <ref refid="classJSL_1_1Matrix" kindref="compound">JSL::Matrix</ref> object to be multiplied </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A <ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref> object to be multiplied </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref> object of the resulting product </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" line="197" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" bodystart="197" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceQDynamics_1a48d51b6fed1449d7e9a62dac20a169af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion QDynamics::operator/</definition>
+        <argsstring>(const Quaternion &amp;lhs, const Quaternion &amp;rhs)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const <ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref> division operation, such that: </para>        </briefdescription>
+        <detaileddescription>
+<para><verbatim>embed:rst:inline :math:`\mathsf{a} \oslash \mathsf{b}  = \frac{1}{|\mathsf{b}|^2} \mathsf{a} \otimes \overline{\mathsf{b}}` </verbatim>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first argument of the operation (<verbatim>embed:rst:inline :math:`\mathsf{a}` </verbatim>) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second argument (<verbatim>embed:rst:inline :math:`\mathsf{b}` </verbatim>) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The quaternion division (<verbatim>embed:rst:inline :math:`\mathsf{a}\oslash\mathsf{b}` </verbatim>) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" line="206" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" bodystart="206" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceQDynamics_1aa458e456eca06783fd8c41b7ac2b1400" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion QDynamics::exp</definition>
+        <argsstring>(const Quaternion &amp;a)</argsstring>
+        <name>exp</name>
+        <param>
+          <type>const <ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>The quaternion exponential, defined such that: </para>        </briefdescription>
+        <detaileddescription>
+<para><verbatim>embed:rst:inline :math:`\exp(\mathsf{a}) = \sum_{n = 0}^\infty \frac{\mathsf{a}^n}{n!}` </verbatim> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The argument of the operation (<verbatim>embed:rst:inline :math:`\mathsf{a}` </verbatim>) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The (analytically computed) quaternion exponential </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" line="218" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" bodystart="218" bodyend="229"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Brute.h" line="5" column="1"/>
+  </compounddef>
+</doxygen>

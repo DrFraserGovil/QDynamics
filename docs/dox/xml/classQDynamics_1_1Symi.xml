@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classQDynamics_1_1Symi" kind="class" language="C++" prot="public">
+    <compoundname>QDynamics::Symi</compoundname>
+    <basecompoundref refid="classQDynamics_1_1Magi" prot="public" virt="non-virtual">QDynamics::Magi</basecompoundref>
+    <derivedcompoundref refid="classQDynamics_1_1SymiL" prot="public" virt="non-virtual">QDynamics::SymiL</derivedcompoundref>
+    <includes refid="Symi_8h" local="no">Symi.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classQDynamics_1_1Symi_1afc73292268197d37fad6716aa6bb5976" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>QDynamics::Symi::Symi</definition>
+        <argsstring>(int order, double T, double deltaT)</argsstring>
+        <name>Symi</name>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>deltaT</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Symi.h" line="10" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Symi.h" bodystart="10" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Symi_1a2e248bf5141814ca1e8285227d26d4bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>QDynamics::Symi::Symi</definition>
+        <argsstring>(int order, double T, double deltaT, int skipper)</argsstring>
+        <name>Symi</name>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>deltaT</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>skipper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Symi.h" line="15" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Symi.h" bodystart="15" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classQDynamics_1_1Symi_1a4cea691ad899227f92004dd666180415" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>virtual Quaternion QDynamics::Symi::Magnus_Compute</definition>
+        <argsstring>(double duration)</argsstring>
+        <name>Magnus_Compute</name>
+        <reimplements refid="classQDynamics_1_1Magi_1aadacdb3581a42babd5e1aa9ada6c77ee">Magnus_Compute</reimplements>
+        <param>
+          <type>double</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Symi.h" line="24" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Symi.h" bodystart="24" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="73">
+        <label>QDynamics::Integrator</label>
+        <link refid="classQDynamics_1_1Integrator"/>
+      </node>
+      <node id="71">
+        <label>QDynamics::Symi</label>
+        <link refid="classQDynamics_1_1Symi"/>
+        <childnode refid="72" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>QDynamics::Magi</label>
+        <link refid="classQDynamics_1_1Magi"/>
+        <childnode refid="73" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>QDynamics::SymiL</label>
+        <link refid="classQDynamics_1_1SymiL"/>
+        <childnode refid="71" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="77">
+        <label>QDynamics::Integrator</label>
+        <link refid="classQDynamics_1_1Integrator"/>
+        <childnode refid="78" relation="usage">
+          <edgelabel>J</edgelabel>
+        </childnode>
+        <childnode refid="79" relation="usage">
+          <edgelabel>w</edgelabel>
+          <edgelabel>L</edgelabel>
+          <edgelabel>p</edgelabel>
+          <edgelabel>q</edgelabel>
+        </childnode>
+      </node>
+      <node id="75">
+        <label>QDynamics::Symi</label>
+        <link refid="classQDynamics_1_1Symi"/>
+        <childnode refid="76" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>JSL::Vector</label>
+        <link refid="classJSL_1_1Vector"/>
+      </node>
+      <node id="79">
+        <label>QDynamics::Quaternion</label>
+        <link refid="classQDynamics_1_1Quaternion"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>QDynamics::Magi</label>
+        <link refid="classQDynamics_1_1Magi"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Symi.h" line="8" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Symi.h" bodystart="7" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classQDynamics_1_1Integrator_1a4b921b312775194b77c2c85f93add84e" prot="public" virt="non-virtual"><scope>QDynamics::Symi</scope><name>Evolve</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a19ed0b9864ebe762914cee04cb0ad4b3" prot="protected" virt="non-virtual"><scope>QDynamics::Symi</scope><name>FileName</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a4688fbccd8b0dc5c9a73dddac66b486f" prot="protected" virt="virtual"><scope>QDynamics::Symi</scope><name>GradU</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a677dd555cee316d6d456b7da258c4385" prot="public" virt="non-virtual"><scope>QDynamics::Symi</scope><name>Integrator</name></member>
+      <member refid="classQDynamics_1_1Integrator_1aa469124cb408fadbaa540555dfabee33" prot="public" virt="non-virtual"><scope>QDynamics::Symi</scope><name>Integrator</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a7b99b22475321b34c1624bded3489954" prot="protected" virt="non-virtual"><scope>QDynamics::Symi</scope><name>J</name></member>
+      <member refid="classQDynamics_1_1Integrator_1adb45dae4f4d1d37ab83ca5269f51058d" prot="protected" virt="non-virtual"><scope>QDynamics::Symi</scope><name>L</name></member>
+      <member refid="classQDynamics_1_1Magi_1a5b95b7c32c314e2800f59366964abfc3" prot="public" virt="non-virtual"><scope>QDynamics::Symi</scope><name>Magi</name></member>
+      <member refid="classQDynamics_1_1Magi_1a89efe9c4722cbeb447662ee727af0570" prot="public" virt="non-virtual"><scope>QDynamics::Symi</scope><name>Magi</name></member>
+      <member refid="classQDynamics_1_1Magi_1a04b85c8aa0e9549c750956c5f781433b" prot="protected" virt="virtual"><scope>QDynamics::Symi</scope><name>Magnus</name></member>
+      <member refid="classQDynamics_1_1Symi_1a4cea691ad899227f92004dd666180415" prot="protected" virt="virtual"><scope>QDynamics::Symi</scope><name>Magnus_Compute</name></member>
+      <member refid="classQDynamics_1_1Integrator_1aa3e27d68428619ab4083b2d42ef8924c" prot="protected" virt="non-virtual"><scope>QDynamics::Symi</scope><name>Name</name></member>
+      <member refid="classQDynamics_1_1Magi_1ac9ff1c2f4ea0dcc30f1ee52b0894c9e9" prot="protected" virt="non-virtual"><scope>QDynamics::Symi</scope><name>Order</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" prot="protected" virt="non-virtual"><scope>QDynamics::Symi</scope><name>p</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" prot="protected" virt="non-virtual"><scope>QDynamics::Symi</scope><name>q</name></member>
+      <member refid="classQDynamics_1_1Magi_1a629449f541590040a7dfb98ca68cf97b" prot="protected" virt="non-virtual"><scope>QDynamics::Symi</scope><name>Resolution</name></member>
+      <member refid="classQDynamics_1_1Symi_1afc73292268197d37fad6716aa6bb5976" prot="public" virt="non-virtual"><scope>QDynamics::Symi</scope><name>Symi</name></member>
+      <member refid="classQDynamics_1_1Symi_1a2e248bf5141814ca1e8285227d26d4bc" prot="public" virt="non-virtual"><scope>QDynamics::Symi</scope><name>Symi</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a9b850dd4b29118e44b0183409db0a983" prot="protected" virt="non-virtual"><scope>QDynamics::Symi</scope><name>TimeStep</name></member>
+      <member refid="classQDynamics_1_1Integrator_1afa838ba8dfb0fbde1f77c6d2a45a9dd0" prot="protected" virt="virtual"><scope>QDynamics::Symi</scope><name>U</name></member>
+      <member refid="classQDynamics_1_1Magi_1a11af2e624714857cf13343f1745f2fa8" prot="public" virt="non-virtual"><scope>QDynamics::Symi</scope><name>unlock</name></member>
+      <member refid="classQDynamics_1_1Magi_1aba1aa111cd53a194854a2a8ac4b06b32" prot="public" virt="non-virtual"><scope>QDynamics::Symi</scope><name>unlocked</name></member>
+      <member refid="classQDynamics_1_1Magi_1a500467f899244edfae15f34c84c7684c" prot="protected" virt="virtual"><scope>QDynamics::Symi</scope><name>UpdatePosition</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a0241b2e2c87418323330999d1f8e12d0" prot="protected" virt="non-virtual"><scope>QDynamics::Symi</scope><name>w</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="DynamicOperations_8h" kind="file" language="C++">
+    <compoundname>DynamicOperations.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">vector</includes>
+    <includes refid="JSL_8h" local="yes">JSL.h</includes>
+    <includedby refid="Integrator_8h" local="yes">/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h</includedby>
+    <incdepgraph>
+      <node id="524">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="525">
+        <label>rm.h</label>
+        <link refid="rm_8h"/>
+        <childnode refid="522" relation="include">
+        </childnode>
+        <childnode refid="518" relation="include">
+        </childnode>
+        <childnode refid="523" relation="include">
+        </childnode>
+        <childnode refid="526" relation="include">
+        </childnode>
+      </node>
+      <node id="519">
+        <label>../Strings/split.h</label>
+        <link refid="split_8h"/>
+        <childnode refid="518" relation="include">
+        </childnode>
+        <childnode refid="513" relation="include">
+        </childnode>
+        <childnode refid="520" relation="include">
+        </childnode>
+      </node>
+      <node id="541">
+        <label>cmath</label>
+      </node>
+      <node id="526">
+        <label>stdexcept</label>
+      </node>
+      <node id="518">
+        <label>string</label>
+      </node>
+      <node id="530">
+        <label>Time.h</label>
+        <link refid="Time_8h"/>
+        <childnode refid="531" relation="include">
+        </childnode>
+        <childnode refid="518" relation="include">
+        </childnode>
+        <childnode refid="520" relation="include">
+        </childnode>
+        <childnode refid="513" relation="include">
+        </childnode>
+        <childnode refid="512" relation="include">
+        </childnode>
+      </node>
+      <node id="515">
+        <label>FileIO/FileIO.h</label>
+        <link refid="FileIO_8h"/>
+        <childnode refid="516" relation="include">
+        </childnode>
+        <childnode refid="521" relation="include">
+        </childnode>
+        <childnode refid="525" relation="include">
+        </childnode>
+        <childnode refid="523" relation="include">
+        </childnode>
+        <childnode refid="527" relation="include">
+        </childnode>
+      </node>
+      <node id="529">
+        <label>Strings/Strings.h</label>
+        <link refid="Strings_8h"/>
+        <childnode refid="519" relation="include">
+        </childnode>
+        <childnode refid="530" relation="include">
+        </childnode>
+      </node>
+      <node id="517">
+        <label>fstream</label>
+      </node>
+      <node id="516">
+        <label>LineReader.h</label>
+        <link refid="LineReader_8h"/>
+        <childnode refid="517" relation="include">
+        </childnode>
+        <childnode refid="518" relation="include">
+        </childnode>
+        <childnode refid="513" relation="include">
+        </childnode>
+        <childnode refid="519" relation="include">
+        </childnode>
+      </node>
+      <node id="540">
+        <label>Testing_UnitTests.h</label>
+        <link refid="Testing__UnitTests_8h"/>
+        <childnode refid="514" relation="include">
+        </childnode>
+        <childnode refid="541" relation="include">
+        </childnode>
+      </node>
+      <node id="532">
+        <label>CommandArgs/CommandArgs.h</label>
+        <link refid="CommandArgs_8h"/>
+        <childnode refid="533" relation="include">
+        </childnode>
+      </node>
+      <node id="535">
+        <label>vector.h</label>
+        <link refid="vector_8h"/>
+        <childnode refid="513" relation="include">
+        </childnode>
+        <childnode refid="526" relation="include">
+        </childnode>
+        <childnode refid="528" relation="include">
+        </childnode>
+        <childnode refid="512" relation="include">
+        </childnode>
+        <childnode refid="536" relation="include">
+        </childnode>
+      </node>
+      <node id="539">
+        <label>UnitTest.h</label>
+        <link refid="UnitTest_8h"/>
+        <childnode refid="528" relation="include">
+        </childnode>
+        <childnode refid="512" relation="include">
+        </childnode>
+      </node>
+      <node id="511">
+        <label>/home/f/fraserj/Documents/Work/QDynamics/src/DynamicOperations.h</label>
+        <link refid="DynamicOperations_8h"/>
+        <childnode refid="512" relation="include">
+        </childnode>
+        <childnode refid="513" relation="include">
+        </childnode>
+        <childnode refid="514" relation="include">
+        </childnode>
+      </node>
+      <node id="534">
+        <label>Maths/Maths.h</label>
+        <link refid="Maths_8h"/>
+        <childnode refid="535" relation="include">
+        </childnode>
+        <childnode refid="537" relation="include">
+        </childnode>
+      </node>
+      <node id="528">
+        <label>string.h</label>
+      </node>
+      <node id="533">
+        <label>Argument.h</label>
+        <link refid="Argument_8h"/>
+        <childnode refid="518" relation="include">
+        </childnode>
+        <childnode refid="526" relation="include">
+        </childnode>
+        <childnode refid="515" relation="include">
+        </childnode>
+      </node>
+      <node id="521">
+        <label>mkdir.h</label>
+        <link refid="mkdir_8h"/>
+        <childnode refid="522" relation="include">
+        </childnode>
+        <childnode refid="518" relation="include">
+        </childnode>
+        <childnode refid="523" relation="include">
+        </childnode>
+      </node>
+      <node id="537">
+        <label>matrix.h</label>
+        <link refid="matrix_8h"/>
+        <childnode refid="513" relation="include">
+        </childnode>
+        <childnode refid="526" relation="include">
+        </childnode>
+        <childnode refid="528" relation="include">
+        </childnode>
+        <childnode refid="512" relation="include">
+        </childnode>
+        <childnode refid="536" relation="include">
+        </childnode>
+        <childnode refid="535" relation="include">
+        </childnode>
+      </node>
+      <node id="513">
+        <label>vector</label>
+      </node>
+      <node id="523">
+        <label>locationExists.h</label>
+        <link refid="locationExists_8h"/>
+        <childnode refid="518" relation="include">
+        </childnode>
+        <childnode refid="524" relation="include">
+        </childnode>
+      </node>
+      <node id="520">
+        <label>sstream</label>
+      </node>
+      <node id="536">
+        <label>math.h</label>
+      </node>
+      <node id="538">
+        <label>Testing/Testing.h</label>
+        <link refid="Testing_8h"/>
+        <childnode refid="539" relation="include">
+        </childnode>
+        <childnode refid="540" relation="include">
+        </childnode>
+      </node>
+      <node id="512">
+        <label>iostream</label>
+      </node>
+      <node id="531">
+        <label>chrono</label>
+      </node>
+      <node id="514">
+        <label>JSL.h</label>
+        <link refid="JSL_8h"/>
+        <childnode refid="515" relation="include">
+        </childnode>
+        <childnode refid="529" relation="include">
+        </childnode>
+        <childnode refid="532" relation="include">
+        </childnode>
+        <childnode refid="534" relation="include">
+        </childnode>
+        <childnode refid="538" relation="include">
+        </childnode>
+      </node>
+      <node id="527">
+        <label>fileWriter.h</label>
+        <link refid="fileWriter_8h"/>
+        <childnode refid="528" relation="include">
+        </childnode>
+        <childnode refid="517" relation="include">
+        </childnode>
+      </node>
+      <node id="522">
+        <label>dirent.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="543">
+        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h</label>
+        <link refid="Integrator_8h"/>
+        <childnode refid="544" relation="include">
+        </childnode>
+        <childnode refid="545" relation="include">
+        </childnode>
+        <childnode refid="546" relation="include">
+        </childnode>
+        <childnode refid="547" relation="include">
+        </childnode>
+      </node>
+      <node id="546">
+        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h</label>
+        <link refid="Magi_8h"/>
+        <childnode refid="544" relation="include">
+        </childnode>
+      </node>
+      <node id="545">
+        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Brute.h</label>
+        <link refid="Brute_8h"/>
+        <childnode refid="544" relation="include">
+        </childnode>
+      </node>
+      <node id="542">
+        <label>/home/f/fraserj/Documents/Work/QDynamics/src/DynamicOperations.h</label>
+        <link refid="DynamicOperations_8h"/>
+        <childnode refid="543" relation="include">
+        </childnode>
+      </node>
+      <node id="547">
+        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Symi.h</label>
+        <link refid="Symi_8h"/>
+        <childnode refid="544" relation="include">
+        </childnode>
+      </node>
+      <node id="544">
+        <label>/home/f/fraserj/Documents/Work/QDynamics/QDynamics.h</label>
+        <link refid="QDynamics_8h"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceQDynamics">QDynamics</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="JSL_8h" kindref="compound">JSL.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceQDynamics" kindref="compound">QDynamics</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="namespaceQDynamics_1a0b043bd2021eaeb8b6580cef4fcc667c" refkind="member"><highlight class="normal"><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref><sp/><ref refid="namespaceQDynamics_1a0b043bd2021eaeb8b6580cef4fcc667c" kindref="member">Mult</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref><sp/>&amp;J,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref><sp/>&amp;<sp/>q)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref><sp/>m<sp/>=<sp/>q;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>m.<ref refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" kindref="member">Scalar</ref>()<sp/>*=<sp/>J[0];</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>3;<sp/>++i)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>(i)<sp/>*=<sp/>J[i+1];</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19" refid="namespaceQDynamics_1a78137919461ac257fe032f870771b0ed" refkind="member"><highlight class="normal"><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref><sp/><ref refid="namespaceQDynamics_1a78137919461ac257fe032f870771b0ed" kindref="member">InvMult</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref><sp/>&amp;<sp/>J,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref><sp/>&amp;<sp/>q)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref><sp/>m<sp/>=<sp/>q;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>m.<ref refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" kindref="member">Scalar</ref>()<sp/>/=<sp/>J[0];</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>3;<sp/>++i)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>(i)<sp/>/=<sp/>J[i+1];</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29" refid="namespaceQDynamics_1a003e8d43977a4b818a6e90993d00201a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespaceQDynamics_1a003e8d43977a4b818a6e90993d00201a" kindref="member">verticalAngle</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref><sp/>&amp;q)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref><sp/>z(0,0,0,1);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref><sp/>zFrame<sp/>=<sp/>q<sp/>*<sp/>z<sp/>*<sp/>q.<ref refid="classQDynamics_1_1Quaternion_1a2516e87ebb14ee2d34bc22744057c87b" kindref="member">Conjugate</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>zFrame.<ref refid="classJSL_1_1Vector_1a60660b5a26e0ddace46f31699834b671" kindref="member">Dot</ref>(z);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="namespaceQDynamics_1a4eabde69f542fcca92f97b1ef2e28b33" refkind="member"><highlight class="normal"><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref><sp/><ref refid="namespaceQDynamics_1a4eabde69f542fcca92f97b1ef2e28b33" kindref="member">LabAngularMomentum</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref><sp/>&amp;q,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref><sp/>&amp;p)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref><sp/>L<sp/>=<sp/>0.5<sp/>*<sp/>q.<ref refid="classQDynamics_1_1Quaternion_1a2516e87ebb14ee2d34bc22744057c87b" kindref="member">Conjugate</ref>()<sp/>*<sp/>p;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref><sp/>LabL<sp/>=<sp/>q<sp/>*<sp/>L<sp/>*<sp/>q.<ref refid="classQDynamics_1_1Quaternion_1a2516e87ebb14ee2d34bc22744057c87b" kindref="member">Conjugate</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LabL.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/f/fraserj/Documents/Work/QDynamics/src/DynamicOperations.h"/>
+  </compounddef>
+</doxygen>

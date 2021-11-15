@@ -1,0 +1,175 @@
+\hypertarget{namespaceQDynamics}{}\section{Q\+Dynamics Namespace Reference}
+\label{namespaceQDynamics}\index{Q\+Dynamics@{Q\+Dynamics}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classQDynamics_1_1Brute}{Brute}
+\item 
+class \hyperlink{classQDynamics_1_1Integrator}{Integrator}
+\item 
+class \hyperlink{classQDynamics_1_1Leapi}{Leapi}
+\item 
+class \hyperlink{classQDynamics_1_1Magi}{Magi}
+\item 
+class \hyperlink{classQDynamics_1_1Quaternion}{Quaternion}
+\item 
+class \hyperlink{classQDynamics_1_1Symi}{Symi}
+\item 
+class \hyperlink{classQDynamics_1_1SymiL}{SymiL}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQDynamics_1_1Quaternion}{Q\+Dynamics\+::\+Quaternion} \hyperlink{namespaceQDynamics_a0b043bd2021eaeb8b6580cef4fcc667c}{Mult} (const \hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector} \&J, const \hyperlink{classQDynamics_1_1Quaternion}{Q\+Dynamics\+::\+Quaternion} \&q)
+\item 
+\hyperlink{classQDynamics_1_1Quaternion}{Q\+Dynamics\+::\+Quaternion} \hyperlink{namespaceQDynamics_a78137919461ac257fe032f870771b0ed}{Inv\+Mult} (const \hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector} \&J, const \hyperlink{classQDynamics_1_1Quaternion}{Q\+Dynamics\+::\+Quaternion} \&q)
+\item 
+double \hyperlink{namespaceQDynamics_a003e8d43977a4b818a6e90993d00201a}{vertical\+Angle} (const \hyperlink{classQDynamics_1_1Quaternion}{Q\+Dynamics\+::\+Quaternion} \&q)
+\item 
+\hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector} \hyperlink{namespaceQDynamics_a4eabde69f542fcca92f97b1ef2e28b33}{Lab\+Angular\+Momentum} (const \hyperlink{classQDynamics_1_1Quaternion}{Q\+Dynamics\+::\+Quaternion} \&q, const \hyperlink{classQDynamics_1_1Quaternion}{Q\+Dynamics\+::\+Quaternion} \&p)
+\item 
+\hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \hyperlink{namespaceQDynamics_ac40010112506831ced816640def9bc85}{operator$\ast$} (const \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \&lhs, const \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \&rhs)
+\begin{DoxyCompactList}\small\item\em The crucial quaternion multiplication operation, defined such that\+: \end{DoxyCompactList}\item 
+\hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \hyperlink{namespaceQDynamics_a3382c10ce708c163d79c9fdb5c79b452}{operator$\ast$} (const \hyperlink{classJSL_1_1Matrix}{J\+S\+L\+::\+Matrix} \&lhs, const \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \&rhs)
+\begin{DoxyCompactList}\small\item\em The (slightly dodgy) matrix-\/quaternion product. In reality, casts the quaternion to R$^\wedge$4, multiplies, then casts back. \end{DoxyCompactList}\item 
+\hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \hyperlink{namespaceQDynamics_a48d51b6fed1449d7e9a62dac20a169af}{operator/} (const \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \&lhs, const \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \&rhs)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} division operation, such that\+: \end{DoxyCompactList}\item 
+\hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \hyperlink{namespaceQDynamics_aa458e456eca06783fd8c41b7ac2b1400}{exp} (const \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \&a)
+\begin{DoxyCompactList}\small\item\em The quaternion exponential, defined such that\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{namespaceQDynamics_a06e91eeb11c659d8845569a642500675}{buffersize} = 100
+\item 
+const int \hyperlink{namespaceQDynamics_ac3ad3b89bbd65796d1f4f5e4809a12ed}{hash} = 32
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceQDynamics_aa458e456eca06783fd8c41b7ac2b1400}\label{namespaceQDynamics_aa458e456eca06783fd8c41b7ac2b1400}} 
+\index{Q\+Dynamics@{Q\+Dynamics}!exp@{exp}}
+\index{exp@{exp}!Q\+Dynamics@{Q\+Dynamics}}
+\subsubsection{\texorpdfstring{exp()}{exp()}}
+{\footnotesize\ttfamily \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} Q\+Dynamics\+::exp (\begin{DoxyParamCaption}\item[{const \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The quaternion exponential, defined such that\+: 
+
+\begin{DoxyVerb}embed:rst:inline :math:`\exp(\mathsf{a}) = \sum_{n = 0}^\infty \frac{\mathsf{a}^n}{n!}` \end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The argument of the operation (\begin{DoxyVerb}embed:rst:inline :math:`\mathsf{a}` \end{DoxyVerb}
+) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The (analytically computed) quaternion exponential 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceQDynamics_a78137919461ac257fe032f870771b0ed}\label{namespaceQDynamics_a78137919461ac257fe032f870771b0ed}} 
+\index{Q\+Dynamics@{Q\+Dynamics}!Inv\+Mult@{Inv\+Mult}}
+\index{Inv\+Mult@{Inv\+Mult}!Q\+Dynamics@{Q\+Dynamics}}
+\subsubsection{\texorpdfstring{Inv\+Mult()}{InvMult()}}
+{\footnotesize\ttfamily \hyperlink{classQDynamics_1_1Quaternion}{Q\+Dynamics\+::\+Quaternion} Q\+Dynamics\+::\+Inv\+Mult (\begin{DoxyParamCaption}\item[{const \hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector} \&}]{J,  }\item[{const \hyperlink{classQDynamics_1_1Quaternion}{Q\+Dynamics\+::\+Quaternion} \&}]{q }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceQDynamics_a4eabde69f542fcca92f97b1ef2e28b33}\label{namespaceQDynamics_a4eabde69f542fcca92f97b1ef2e28b33}} 
+\index{Q\+Dynamics@{Q\+Dynamics}!Lab\+Angular\+Momentum@{Lab\+Angular\+Momentum}}
+\index{Lab\+Angular\+Momentum@{Lab\+Angular\+Momentum}!Q\+Dynamics@{Q\+Dynamics}}
+\subsubsection{\texorpdfstring{Lab\+Angular\+Momentum()}{LabAngularMomentum()}}
+{\footnotesize\ttfamily \hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector} Q\+Dynamics\+::\+Lab\+Angular\+Momentum (\begin{DoxyParamCaption}\item[{const \hyperlink{classQDynamics_1_1Quaternion}{Q\+Dynamics\+::\+Quaternion} \&}]{q,  }\item[{const \hyperlink{classQDynamics_1_1Quaternion}{Q\+Dynamics\+::\+Quaternion} \&}]{p }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceQDynamics_a0b043bd2021eaeb8b6580cef4fcc667c}\label{namespaceQDynamics_a0b043bd2021eaeb8b6580cef4fcc667c}} 
+\index{Q\+Dynamics@{Q\+Dynamics}!Mult@{Mult}}
+\index{Mult@{Mult}!Q\+Dynamics@{Q\+Dynamics}}
+\subsubsection{\texorpdfstring{Mult()}{Mult()}}
+{\footnotesize\ttfamily \hyperlink{classQDynamics_1_1Quaternion}{Q\+Dynamics\+::\+Quaternion} Q\+Dynamics\+::\+Mult (\begin{DoxyParamCaption}\item[{const \hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector} \&}]{J,  }\item[{const \hyperlink{classQDynamics_1_1Quaternion}{Q\+Dynamics\+::\+Quaternion} \&}]{q }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceQDynamics_ac40010112506831ced816640def9bc85}\label{namespaceQDynamics_ac40010112506831ced816640def9bc85}} 
+\index{Q\+Dynamics@{Q\+Dynamics}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Q\+Dynamics@{Q\+Dynamics}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} Q\+Dynamics\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \&}]{lhs,  }\item[{const \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The crucial quaternion multiplication operation, defined such that\+: 
+
+\begin{DoxyVerb}embed:rst:inline :math:`\mathsf{a} \otimes \mathsf{b} = \begin{pmatrix} a_0 b_0 - \vec{a} \cdot \vec{b} \\ a_0 \vec{b} + b_0 \vec{a} + \vec{a} \times \vec{b}\end{pmatrix}` \end{DoxyVerb}
+. Note that this product is highly non-\/commutative in general. 
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The first argument of the operation (\begin{DoxyVerb}embed:rst:inline :math:`\mathsf{a}` \end{DoxyVerb}
+) \\
+\hline
+{\em rhs} & The second argument (\begin{DoxyVerb}embed:rst:inline :math:`\mathsf{b}` \end{DoxyVerb}
+) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The quaternion product (\begin{DoxyVerb}embed:rst:inline :math:`\mathsf{a}\otimes\mathsf{b}` \end{DoxyVerb}
+) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceQDynamics_a3382c10ce708c163d79c9fdb5c79b452}\label{namespaceQDynamics_a3382c10ce708c163d79c9fdb5c79b452}} 
+\index{Q\+Dynamics@{Q\+Dynamics}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Q\+Dynamics@{Q\+Dynamics}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} Q\+Dynamics\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classJSL_1_1Matrix}{J\+S\+L\+::\+Matrix} \&}]{lhs,  }\item[{const \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The (slightly dodgy) matrix-\/quaternion product. In reality, casts the quaternion to R$^\wedge$4, multiplies, then casts back. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & A \hyperlink{classJSL_1_1Matrix}{J\+S\+L\+::\+Matrix} object to be multiplied \\
+\hline
+{\em rhs} & A \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} object to be multiplied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} object of the resulting product 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceQDynamics_a48d51b6fed1449d7e9a62dac20a169af}\label{namespaceQDynamics_a48d51b6fed1449d7e9a62dac20a169af}} 
+\index{Q\+Dynamics@{Q\+Dynamics}!operator/@{operator/}}
+\index{operator/@{operator/}!Q\+Dynamics@{Q\+Dynamics}}
+\subsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} Q\+Dynamics\+::operator/ (\begin{DoxyParamCaption}\item[{const \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \&}]{lhs,  }\item[{const \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\hyperlink{classQDynamics_1_1Quaternion}{Quaternion} division operation, such that\+: 
+
+\begin{DoxyVerb}embed:rst:inline :math:`\mathsf{a} \oslash \mathsf{b}  = \frac{1}{|\mathsf{b}|^2} \mathsf{a} \otimes \overline{\mathsf{b}}` \end{DoxyVerb}
+. 
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The first argument of the operation (\begin{DoxyVerb}embed:rst:inline :math:`\mathsf{a}` \end{DoxyVerb}
+) \\
+\hline
+{\em rhs} & The second argument (\begin{DoxyVerb}embed:rst:inline :math:`\mathsf{b}` \end{DoxyVerb}
+) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The quaternion division (\begin{DoxyVerb}embed:rst:inline :math:`\mathsf{a}\oslash\mathsf{b}` \end{DoxyVerb}
+) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceQDynamics_a003e8d43977a4b818a6e90993d00201a}\label{namespaceQDynamics_a003e8d43977a4b818a6e90993d00201a}} 
+\index{Q\+Dynamics@{Q\+Dynamics}!vertical\+Angle@{vertical\+Angle}}
+\index{vertical\+Angle@{vertical\+Angle}!Q\+Dynamics@{Q\+Dynamics}}
+\subsubsection{\texorpdfstring{vertical\+Angle()}{verticalAngle()}}
+{\footnotesize\ttfamily double Q\+Dynamics\+::vertical\+Angle (\begin{DoxyParamCaption}\item[{const \hyperlink{classQDynamics_1_1Quaternion}{Q\+Dynamics\+::\+Quaternion} \&}]{q }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceQDynamics_a06e91eeb11c659d8845569a642500675}\label{namespaceQDynamics_a06e91eeb11c659d8845569a642500675}} 
+\index{Q\+Dynamics@{Q\+Dynamics}!buffersize@{buffersize}}
+\index{buffersize@{buffersize}!Q\+Dynamics@{Q\+Dynamics}}
+\subsubsection{\texorpdfstring{buffersize}{buffersize}}
+{\footnotesize\ttfamily const int Q\+Dynamics\+::buffersize = 100}
+
+\mbox{\Hypertarget{namespaceQDynamics_ac3ad3b89bbd65796d1f4f5e4809a12ed}\label{namespaceQDynamics_ac3ad3b89bbd65796d1f4f5e4809a12ed}} 
+\index{Q\+Dynamics@{Q\+Dynamics}!hash@{hash}}
+\index{hash@{hash}!Q\+Dynamics@{Q\+Dynamics}}
+\subsubsection{\texorpdfstring{hash}{hash}}
+{\footnotesize\ttfamily const int Q\+Dynamics\+::hash = 32}
+

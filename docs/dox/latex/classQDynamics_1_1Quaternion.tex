@@ -1,0 +1,283 @@
+\hypertarget{classQDynamics_1_1Quaternion}{}\section{Q\+Dynamics\+:\+:Quaternion Class Reference}
+\label{classQDynamics_1_1Quaternion}\index{Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}}
+
+
+{\ttfamily \#include $<$Quaternion.\+h$>$}
+
+Inheritance diagram for Q\+Dynamics\+:\+:Quaternion\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classQDynamics_1_1Quaternion}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \& \hyperlink{classQDynamics_1_1Quaternion_a8121c47a579baffb9e692b8cd2c7dee7}{Scalar} ()
+\begin{DoxyCompactList}\small\item\em The current value of the Scalar component, returned as a {\itshape reference}. This allows it to be assigned to\+: q.\+Scalar() = x stores the value of x in the scalar component. \end{DoxyCompactList}\item 
+double \& \hyperlink{classQDynamics_1_1Quaternion_ad2f24d575d2fb8a50a9d4fd397115b9e}{Vector} (int i)
+\begin{DoxyCompactList}\small\item\em The current value of the ith Vector component, returned as a {\itshape reference}. This allows it to be assigned to\+: q.\+Vector(i) = x stores the value of x in the scalar component. \end{DoxyCompactList}\item 
+\hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector} \hyperlink{classQDynamics_1_1Quaternion_ac35047116c055b5baeec49b8ebba0ede}{Vector} () const
+\begin{DoxyCompactList}\small\item\em The current value of the Vector component. This cannot be modified in-\/place or assigned to as \hyperlink{classQDynamics_1_1Quaternion_ad2f24d575d2fb8a50a9d4fd397115b9e}{Vector(int i)} and \hyperlink{classQDynamics_1_1Quaternion_a8121c47a579baffb9e692b8cd2c7dee7}{Scalar()} can be. \end{DoxyCompactList}\item 
+\hyperlink{classQDynamics_1_1Quaternion_addca2bd1d2288c6875eab9f7b4c60881}{Quaternion} ()
+\begin{DoxyCompactList}\small\item\em Default initialiser. Initialises to. \end{DoxyCompactList}\item 
+\hyperlink{classQDynamics_1_1Quaternion_a206147a6dbe4a9456cd655d654ef0182}{Quaternion} (const double \&q0, const \hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector} \&q\+Vec)
+\begin{DoxyCompactList}\small\item\em Initialises the object to. \end{DoxyCompactList}\item 
+\hyperlink{classQDynamics_1_1Quaternion_aadf267f7d62df09bf09b04cc47704560}{Quaternion} (const double \&a, const double \&b, const double \&c, const double \&d)
+\begin{DoxyCompactList}\small\item\em Initialises the object to the value. \end{DoxyCompactList}\item 
+\hyperlink{classQDynamics_1_1Quaternion_a0a153753fb53bf466a5b1c6ab20abff6}{Quaternion} (const \hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector} \&vec4)
+\begin{DoxyCompactList}\small\item\em Initialises the quaternion as if it were a member of R$^\wedge$4. \end{DoxyCompactList}\item 
+\hyperlink{classQDynamics_1_1Quaternion_ad0da33a229eb9869a4b48c8302f5470e}{Quaternion} (const std\+::vector$<$ double $>$ \&vec4)
+\begin{DoxyCompactList}\small\item\em Initialises the quaternion as if it were a member of R$^\wedge$4. \end{DoxyCompactList}\item 
+\hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \hyperlink{classQDynamics_1_1Quaternion_a2516e87ebb14ee2d34bc22744057c87b}{Conjugate} () const
+\begin{DoxyCompactList}\small\item\em Returns the conjugate of the current quaternion. \end{DoxyCompactList}\item 
+\hyperlink{classJSL_1_1Matrix}{J\+S\+L\+::\+Matrix} \hyperlink{classQDynamics_1_1Quaternion_a2d0f1e0e8e46d1223f848da4f8b3fc2e}{Left\+Multiplication\+Matrix} () const
+\begin{DoxyCompactList}\small\item\em Constructs a matrix L(q) such that L(q) b = q$\ast$b, replacing the usual quaternion multiplication operation \hyperlink{namespaceQDynamics_ac40010112506831ced816640def9bc85}{operator$\ast$(const Quaternion \& lhs, const Quaternion \& rhs)} \end{DoxyCompactList}\item 
+\hyperlink{classJSL_1_1Matrix}{J\+S\+L\+::\+Matrix} \hyperlink{classQDynamics_1_1Quaternion_a76da0390b336de90b27e713c34a3732a}{Right\+Multiplication\+Matrix} () const
+\begin{DoxyCompactList}\small\item\em Constructs a matrix R(q) such that R(q) b = b$\ast$q, replacing the usual quaternion multiplication operation \hyperlink{namespaceQDynamics_ac40010112506831ced816640def9bc85}{operator$\ast$(const Quaternion \& lhs, const Quaternion \& rhs)} \end{DoxyCompactList}\item 
+const double \& \hyperlink{classQDynamics_1_1Quaternion_a1bc0af90c699e7c2eba94833ae7fb105}{Scalar} () const
+\begin{DoxyCompactList}\small\item\em An annoying double-\/definition of \hyperlink{classQDynamics_1_1Quaternion_a8121c47a579baffb9e692b8cd2c7dee7}{Scalar()}, required for when the quaternion object is a const (and hence the references need to be carefully guarded) \end{DoxyCompactList}\item 
+const double \& \hyperlink{classQDynamics_1_1Quaternion_a061cd74a6e060beeeb781b6cf7b7f16d}{Vector} (int id) const
+\begin{DoxyCompactList}\small\item\em An annoying double-\/definition of Scalar(int i), required for when the quaternion object is a const (and hence the references need to be carefully guarded) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \hyperlink{classQDynamics_1_1Quaternion_a06726eb02ffd68ccbd3adaef63c90bb9}{One} ()
+\begin{DoxyCompactList}\small\item\em A static constructor which returns the multiplicative identity. \end{DoxyCompactList}\item 
+static \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \hyperlink{classQDynamics_1_1Quaternion_a7932eeb535080e6230e98fb4f35867c2}{Zero} ()
+\begin{DoxyCompactList}\small\item\em A static constructor which returns the additive identity. \end{DoxyCompactList}\item 
+static \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \hyperlink{classQDynamics_1_1Quaternion_a06386710ec4308c04a72f365382472ce}{Random} ()
+\begin{DoxyCompactList}\small\item\em Generates a quaternion which is randomly populated with values between 0 and 1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A computational replica of the mathematical object {\itshape quaternion}, which replicates the expected behaviour of such objects, including addition and scalar multiplication (which it inherits from\begin{DoxyVerb}embed:rst:inline
+`JSL::Vector() <https://jackstandardlibrary.readthedocs.io/en/latest/vectors.html>`_ \end{DoxyVerb}
+ ), as well as the idiosyncratic multiplication and division native ot this field. We use the notation that\begin{DoxyVerb}embed:rst:inline :math:`\mathsf{q} = (q_0, \vec{q})` \end{DoxyVerb}
+ , and the interface is based on this assumption. It is intentional that treating quaternions as members of\begin{DoxyVerb}embed:rst:inline :math:`\mathbb{R}^4` \end{DoxyVerb}
+ is awkward. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classQDynamics_1_1Quaternion_addca2bd1d2288c6875eab9f7b4c60881}\label{classQDynamics_1_1Quaternion_addca2bd1d2288c6875eab9f7b4c60881}} 
+\index{Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}}
+\subsubsection{\texorpdfstring{Quaternion()}{Quaternion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Q\+Dynamics\+::\+Quaternion\+::\+Quaternion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default initialiser. Initialises to. 
+
+\begin{DoxyVerb}embed:rst:inline :math:`\mathsf{q} = (0, \vec{0})` \end{DoxyVerb}
+ \mbox{\Hypertarget{classQDynamics_1_1Quaternion_a206147a6dbe4a9456cd655d654ef0182}\label{classQDynamics_1_1Quaternion_a206147a6dbe4a9456cd655d654ef0182}} 
+\index{Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}}
+\subsubsection{\texorpdfstring{Quaternion()}{Quaternion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Q\+Dynamics\+::\+Quaternion\+::\+Quaternion (\begin{DoxyParamCaption}\item[{const double \&}]{q0,  }\item[{const \hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector} \&}]{q\+Vec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialises the object to. 
+
+\begin{DoxyVerb}embed:rst:inline :math:`\mathsf{q} = (q_0, \vec{q})` \end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em q0} & The value\begin{DoxyVerb}embed:rst:inline :math:`q_0` \end{DoxyVerb}
+ \\
+\hline
+{\em q\+Vec} & The value\begin{DoxyVerb}embed:rst:inline :math:`\vec{q}` \end{DoxyVerb}
+. This must be a vector of length 3, or an error is thrown. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classQDynamics_1_1Quaternion_aadf267f7d62df09bf09b04cc47704560}\label{classQDynamics_1_1Quaternion_aadf267f7d62df09bf09b04cc47704560}} 
+\index{Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}}
+\subsubsection{\texorpdfstring{Quaternion()}{Quaternion()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Q\+Dynamics\+::\+Quaternion\+::\+Quaternion (\begin{DoxyParamCaption}\item[{const double \&}]{a,  }\item[{const double \&}]{b,  }\item[{const double \&}]{c,  }\item[{const double \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialises the object to the value. 
+
+\begin{DoxyVerb}embed:rst:inline :math:`\mathsf{q} = \left(a, \begin{pmatrix} b \\ c \\ d \end{pmatrix}\right)` \end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em a} & The scalar value of the quaternion \\
+\hline
+{\em b} & The x-\/component of the vector \\
+\hline
+{\em c} & The y-\/component of the vector \\
+\hline
+{\em d} & The z-\/component of the vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classQDynamics_1_1Quaternion_a0a153753fb53bf466a5b1c6ab20abff6}\label{classQDynamics_1_1Quaternion_a0a153753fb53bf466a5b1c6ab20abff6}} 
+\index{Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}}
+\subsubsection{\texorpdfstring{Quaternion()}{Quaternion()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Q\+Dynamics\+::\+Quaternion\+::\+Quaternion (\begin{DoxyParamCaption}\item[{const \hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector} \&}]{vec4 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialises the quaternion as if it were a member of R$^\wedge$4. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec4} & A \hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector} object of length 4 (else an error is thrown) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classQDynamics_1_1Quaternion_ad0da33a229eb9869a4b48c8302f5470e}\label{classQDynamics_1_1Quaternion_ad0da33a229eb9869a4b48c8302f5470e}} 
+\index{Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}}
+\subsubsection{\texorpdfstring{Quaternion()}{Quaternion()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Q\+Dynamics\+::\+Quaternion\+::\+Quaternion (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{vec4 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialises the quaternion as if it were a member of R$^\wedge$4. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec4} & A std\+::vector$<$double$>$ object of length 4 (else an error is thrown) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classQDynamics_1_1Quaternion_a2516e87ebb14ee2d34bc22744057c87b}\label{classQDynamics_1_1Quaternion_a2516e87ebb14ee2d34bc22744057c87b}} 
+\index{Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}!Conjugate@{Conjugate}}
+\index{Conjugate@{Conjugate}!Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}}
+\subsubsection{\texorpdfstring{Conjugate()}{Conjugate()}}
+{\footnotesize\ttfamily \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} Q\+Dynamics\+::\+Quaternion\+::\+Conjugate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the conjugate of the current quaternion. 
+
+\begin{DoxyReturn}{Returns}
+The value\begin{DoxyVerb}embed:rst:inline :math:`\overline{\mathsf{q}} = (q_0, -\vec{q})` \end{DoxyVerb}
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classQDynamics_1_1Quaternion_a2d0f1e0e8e46d1223f848da4f8b3fc2e}\label{classQDynamics_1_1Quaternion_a2d0f1e0e8e46d1223f848da4f8b3fc2e}} 
+\index{Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}!Left\+Multiplication\+Matrix@{Left\+Multiplication\+Matrix}}
+\index{Left\+Multiplication\+Matrix@{Left\+Multiplication\+Matrix}!Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}}
+\subsubsection{\texorpdfstring{Left\+Multiplication\+Matrix()}{LeftMultiplicationMatrix()}}
+{\footnotesize\ttfamily \hyperlink{classJSL_1_1Matrix}{J\+S\+L\+::\+Matrix} Q\+Dynamics\+::\+Quaternion\+::\+Left\+Multiplication\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a matrix L(q) such that L(q) b = q$\ast$b, replacing the usual quaternion multiplication operation \hyperlink{namespaceQDynamics_ac40010112506831ced816640def9bc85}{operator$\ast$(const Quaternion \& lhs, const Quaternion \& rhs)} 
+
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classJSL_1_1Matrix}{J\+S\+L\+::\+Matrix} object which performs the multiplication 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classQDynamics_1_1Quaternion_a06726eb02ffd68ccbd3adaef63c90bb9}\label{classQDynamics_1_1Quaternion_a06726eb02ffd68ccbd3adaef63c90bb9}} 
+\index{Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}!One@{One}}
+\index{One@{One}!Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}}
+\subsubsection{\texorpdfstring{One()}{One()}}
+{\footnotesize\ttfamily static \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} Q\+Dynamics\+::\+Quaternion\+::\+One (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+A static constructor which returns the multiplicative identity. 
+
+\begin{DoxyVerb}embed:rst:inline :math:`\mathsf{q} = \left(1, \vec{0}\right)` \end{DoxyVerb}
+ \mbox{\Hypertarget{classQDynamics_1_1Quaternion_a06386710ec4308c04a72f365382472ce}\label{classQDynamics_1_1Quaternion_a06386710ec4308c04a72f365382472ce}} 
+\index{Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}!Random@{Random}}
+\index{Random@{Random}!Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}}
+\subsubsection{\texorpdfstring{Random()}{Random()}}
+{\footnotesize\ttfamily static \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} Q\+Dynamics\+::\+Quaternion\+::\+Random (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Generates a quaternion which is randomly populated with values between 0 and 1. 
+
+\mbox{\Hypertarget{classQDynamics_1_1Quaternion_a76da0390b336de90b27e713c34a3732a}\label{classQDynamics_1_1Quaternion_a76da0390b336de90b27e713c34a3732a}} 
+\index{Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}!Right\+Multiplication\+Matrix@{Right\+Multiplication\+Matrix}}
+\index{Right\+Multiplication\+Matrix@{Right\+Multiplication\+Matrix}!Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}}
+\subsubsection{\texorpdfstring{Right\+Multiplication\+Matrix()}{RightMultiplicationMatrix()}}
+{\footnotesize\ttfamily \hyperlink{classJSL_1_1Matrix}{J\+S\+L\+::\+Matrix} Q\+Dynamics\+::\+Quaternion\+::\+Right\+Multiplication\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a matrix R(q) such that R(q) b = b$\ast$q, replacing the usual quaternion multiplication operation \hyperlink{namespaceQDynamics_ac40010112506831ced816640def9bc85}{operator$\ast$(const Quaternion \& lhs, const Quaternion \& rhs)} 
+
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classJSL_1_1Matrix}{J\+S\+L\+::\+Matrix} object which performs the multiplication 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classQDynamics_1_1Quaternion_a8121c47a579baffb9e692b8cd2c7dee7}\label{classQDynamics_1_1Quaternion_a8121c47a579baffb9e692b8cd2c7dee7}} 
+\index{Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}!Scalar@{Scalar}}
+\index{Scalar@{Scalar}!Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}}
+\subsubsection{\texorpdfstring{Scalar()}{Scalar()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double\& Q\+Dynamics\+::\+Quaternion\+::\+Scalar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The current value of the Scalar component, returned as a {\itshape reference}. This allows it to be assigned to\+: q.\+Scalar() = x stores the value of x in the scalar component. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the scalar component of the quaternion 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classQDynamics_1_1Quaternion_a1bc0af90c699e7c2eba94833ae7fb105}\label{classQDynamics_1_1Quaternion_a1bc0af90c699e7c2eba94833ae7fb105}} 
+\index{Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}!Scalar@{Scalar}}
+\index{Scalar@{Scalar}!Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}}
+\subsubsection{\texorpdfstring{Scalar()}{Scalar()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const double\& Q\+Dynamics\+::\+Quaternion\+::\+Scalar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+An annoying double-\/definition of \hyperlink{classQDynamics_1_1Quaternion_a8121c47a579baffb9e692b8cd2c7dee7}{Scalar()}, required for when the quaternion object is a const (and hence the references need to be carefully guarded) 
+
+\mbox{\Hypertarget{classQDynamics_1_1Quaternion_ad2f24d575d2fb8a50a9d4fd397115b9e}\label{classQDynamics_1_1Quaternion_ad2f24d575d2fb8a50a9d4fd397115b9e}} 
+\index{Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}!Vector@{Vector}}
+\index{Vector@{Vector}!Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily double\& Q\+Dynamics\+::\+Quaternion\+::\+Vector (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The current value of the ith Vector component, returned as a {\itshape reference}. This allows it to be assigned to\+: q.\+Vector(i) = x stores the value of x in the scalar component. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the ith vector component of the quaternion 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classQDynamics_1_1Quaternion_ac35047116c055b5baeec49b8ebba0ede}\label{classQDynamics_1_1Quaternion_ac35047116c055b5baeec49b8ebba0ede}} 
+\index{Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}!Vector@{Vector}}
+\index{Vector@{Vector}!Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector} Q\+Dynamics\+::\+Quaternion\+::\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The current value of the Vector component. This cannot be modified in-\/place or assigned to as \hyperlink{classQDynamics_1_1Quaternion_ad2f24d575d2fb8a50a9d4fd397115b9e}{Vector(int i)} and \hyperlink{classQDynamics_1_1Quaternion_a8121c47a579baffb9e692b8cd2c7dee7}{Scalar()} can be. 
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector} object containing the Vector portion of the quaternion. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classQDynamics_1_1Quaternion_a061cd74a6e060beeeb781b6cf7b7f16d}\label{classQDynamics_1_1Quaternion_a061cd74a6e060beeeb781b6cf7b7f16d}} 
+\index{Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}!Vector@{Vector}}
+\index{Vector@{Vector}!Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily const double\& Q\+Dynamics\+::\+Quaternion\+::\+Vector (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+An annoying double-\/definition of Scalar(int i), required for when the quaternion object is a const (and hence the references need to be carefully guarded) 
+
+\mbox{\Hypertarget{classQDynamics_1_1Quaternion_a7932eeb535080e6230e98fb4f35867c2}\label{classQDynamics_1_1Quaternion_a7932eeb535080e6230e98fb4f35867c2}} 
+\index{Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}!Zero@{Zero}}
+\index{Zero@{Zero}!Q\+Dynamics\+::\+Quaternion@{Q\+Dynamics\+::\+Quaternion}}
+\subsubsection{\texorpdfstring{Zero()}{Zero()}}
+{\footnotesize\ttfamily static \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} Q\+Dynamics\+::\+Quaternion\+::\+Zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+A static constructor which returns the additive identity. 
+
+\begin{DoxyVerb}embed:rst:inline :math:`\mathsf{q} = \left(0, \vec{0}\right)` \end{DoxyVerb}
+. Nominally unneeded, as the default constructor also returns 0, but this is itself based on the default constructor of the \hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector} object. To avoid potential future errors, the \hyperlink{classQDynamics_1_1Quaternion_a7932eeb535080e6230e98fb4f35867c2}{Zero()} function is safer! 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/f/fraserj/\+Documents/\+Work/\+Q\+Dynamics/src/\hyperlink{Quaternion_8h}{Quaternion.\+h}\end{DoxyCompactItemize}

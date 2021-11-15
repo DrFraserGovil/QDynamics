@@ -1,0 +1,398 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classQDynamics_1_1Quaternion" kind="class" language="C++" prot="public">
+    <compoundname>QDynamics::Quaternion</compoundname>
+    <basecompoundref refid="classJSL_1_1Vector" prot="public" virt="non-virtual">JSL::Vector</basecompoundref>
+    <includes refid="Quaternion_8h" local="no">Quaternion.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double &amp;</type>
+        <definition>double&amp; QDynamics::Quaternion::Scalar</definition>
+        <argsstring>()</argsstring>
+        <name>Scalar</name>
+        <briefdescription>
+<para>The current value of the Scalar component, returned as a <emphasis>reference</emphasis>. This allows it to be assigned to: q.Scalar() = x stores the value of x in the scalar component. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A reference to the scalar component of the quaternion </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" line="27" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double &amp;</type>
+        <definition>double&amp; QDynamics::Quaternion::Vector</definition>
+        <argsstring>(int i)</argsstring>
+        <name>Vector</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>The current value of the ith Vector component, returned as a <emphasis>reference</emphasis>. This allows it to be assigned to: q.Vector(i) = x stores the value of x in the scalar component. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A reference to the ith vector component of the quaternion </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" line="33" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Quaternion_1ac35047116c055b5baeec49b8ebba0ede" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref></type>
+        <definition>JSL::Vector QDynamics::Quaternion::Vector</definition>
+        <argsstring>() const</argsstring>
+        <name>Vector</name>
+        <briefdescription>
+<para>The current value of the Vector component. This cannot be modified in-place or assigned to as <ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector(int i)</ref> and <ref refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" kindref="member">Scalar()</ref> can be. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A <ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref> object containing the Vector portion of the quaternion. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" line="39" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Quaternion_1addca2bd1d2288c6875eab9f7b4c60881" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>QDynamics::Quaternion::Quaternion</definition>
+        <argsstring>()</argsstring>
+        <name>Quaternion</name>
+        <briefdescription>
+<para>Default initialiser. Initialises to. </para>        </briefdescription>
+        <detaileddescription>
+<para><verbatim>embed:rst:inline :math:`\mathsf{q} = (0, \vec{0})` </verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" line="45" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Quaternion_1a206147a6dbe4a9456cd655d654ef0182" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>QDynamics::Quaternion::Quaternion</definition>
+        <argsstring>(const double &amp;q0, const JSL::Vector &amp;qVec)</argsstring>
+        <name>Quaternion</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>q0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref> &amp;</type>
+          <declname>qVec</declname>
+        </param>
+        <briefdescription>
+<para>Initialises the object to. </para>        </briefdescription>
+        <detaileddescription>
+<para><verbatim>embed:rst:inline :math:`\mathsf{q} = (q_0, \vec{q})` </verbatim> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value<verbatim>embed:rst:inline :math:`q_0` </verbatim> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>qVec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value<verbatim>embed:rst:inline :math:`\vec{q}` </verbatim>. This must be a vector of length 3, or an error is thrown. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" line="48" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" bodystart="48" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Quaternion_1aadf267f7d62df09bf09b04cc47704560" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>QDynamics::Quaternion::Quaternion</definition>
+        <argsstring>(const double &amp;a, const double &amp;b, const double &amp;c, const double &amp;d)</argsstring>
+        <name>Quaternion</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Initialises the object to the value. </para>        </briefdescription>
+        <detaileddescription>
+<para><verbatim>embed:rst:inline :math:`\mathsf{q} = \left(a, \begin{pmatrix} b \\ c \\ d \end{pmatrix}\right)` </verbatim> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scalar value of the quaternion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x-component of the vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y-component of the vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The z-component of the vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" line="62" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" bodystart="62" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Quaternion_1a0a153753fb53bf466a5b1c6ab20abff6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>QDynamics::Quaternion::Quaternion</definition>
+        <argsstring>(const JSL::Vector &amp;vec4)</argsstring>
+        <name>Quaternion</name>
+        <param>
+          <type>const <ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref> &amp;</type>
+          <declname>vec4</declname>
+        </param>
+        <briefdescription>
+<para>Initialises the quaternion as if it were a member of R^4. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec4</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A <ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref> object of length 4 (else an error is thrown) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" line="70" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" bodystart="70" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Quaternion_1ad0da33a229eb9869a4b48c8302f5470e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>QDynamics::Quaternion::Quaternion</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;vec4)</argsstring>
+        <name>Quaternion</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>vec4</declname>
+        </param>
+        <briefdescription>
+<para>Initialises the quaternion as if it were a member of R^4. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec4</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A std::vector&lt;double&gt; object of length 4 (else an error is thrown) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" line="79" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" bodystart="79" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Quaternion_1a2516e87ebb14ee2d34bc22744057c87b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion QDynamics::Quaternion::Conjugate</definition>
+        <argsstring>() const</argsstring>
+        <name>Conjugate</name>
+        <briefdescription>
+<para>Returns the conjugate of the current quaternion. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The value<verbatim>embed:rst:inline :math:`\overline{\mathsf{q}} = (q_0, -\vec{q})` </verbatim> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" line="118" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" bodystart="118" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Quaternion_1a2d0f1e0e8e46d1223f848da4f8b3fc2e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classJSL_1_1Matrix" kindref="compound">JSL::Matrix</ref></type>
+        <definition>JSL::Matrix QDynamics::Quaternion::LeftMultiplicationMatrix</definition>
+        <argsstring>() const</argsstring>
+        <name>LeftMultiplicationMatrix</name>
+        <briefdescription>
+<para>Constructs a matrix L(q) such that L(q) b = q*b, replacing the usual quaternion multiplication operation <ref refid="namespaceQDynamics_1ac40010112506831ced816640def9bc85" kindref="member">operator*(const Quaternion &amp; lhs, const Quaternion &amp; rhs)</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The <ref refid="classJSL_1_1Matrix" kindref="compound">JSL::Matrix</ref> object which performs the multiplication </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" line="124" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" bodystart="124" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Quaternion_1a76da0390b336de90b27e713c34a3732a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classJSL_1_1Matrix" kindref="compound">JSL::Matrix</ref></type>
+        <definition>JSL::Matrix QDynamics::Quaternion::RightMultiplicationMatrix</definition>
+        <argsstring>() const</argsstring>
+        <name>RightMultiplicationMatrix</name>
+        <briefdescription>
+<para>Constructs a matrix R(q) such that R(q) b = b*q, replacing the usual quaternion multiplication operation <ref refid="namespaceQDynamics_1ac40010112506831ced816640def9bc85" kindref="member">operator*(const Quaternion &amp; lhs, const Quaternion &amp; rhs)</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The <ref refid="classJSL_1_1Matrix" kindref="compound">JSL::Matrix</ref> object which performs the multiplication </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" line="148" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" bodystart="148" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Quaternion_1a1bc0af90c699e7c2eba94833ae7fb105" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const double &amp;</type>
+        <definition>const double&amp; QDynamics::Quaternion::Scalar</definition>
+        <argsstring>() const</argsstring>
+        <name>Scalar</name>
+        <briefdescription>
+<para>An annoying double-definition of <ref refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" kindref="member">Scalar()</ref>, required for when the quaternion object is a const (and hence the references need to be carefully guarded) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" line="172" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" bodystart="172" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Quaternion_1a061cd74a6e060beeeb781b6cf7b7f16d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const double &amp;</type>
+        <definition>const double&amp; QDynamics::Quaternion::Vector</definition>
+        <argsstring>(int id) const</argsstring>
+        <name>Vector</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>An annoying double-definition of Scalar(int i), required for when the quaternion object is a const (and hence the references need to be carefully guarded) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" line="177" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" bodystart="177" bodyend="180"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classQDynamics_1_1Quaternion_1a06726eb02ffd68ccbd3adaef63c90bb9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>static Quaternion QDynamics::Quaternion::One</definition>
+        <argsstring>()</argsstring>
+        <name>One</name>
+        <briefdescription>
+<para>A static constructor which returns the multiplicative identity. </para>        </briefdescription>
+        <detaileddescription>
+<para><verbatim>embed:rst:inline :math:`\mathsf{q} = \left(1, \vec{0}\right)` </verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" line="88" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" bodystart="88" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Quaternion_1a7932eeb535080e6230e98fb4f35867c2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>static Quaternion QDynamics::Quaternion::Zero</definition>
+        <argsstring>()</argsstring>
+        <name>Zero</name>
+        <briefdescription>
+<para>A static constructor which returns the additive identity. </para>        </briefdescription>
+        <detaileddescription>
+<para><verbatim>embed:rst:inline :math:`\mathsf{q} = \left(0, \vec{0}\right)` </verbatim>. Nominally unneeded, as the default constructor also returns 0, but this is itself based on the default constructor of the <ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref> object. To avoid potential future errors, the <ref refid="classQDynamics_1_1Quaternion_1a7932eeb535080e6230e98fb4f35867c2" kindref="member">Zero()</ref> function is safer! </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" line="96" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" bodystart="96" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Quaternion_1a06386710ec4308c04a72f365382472ce" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>static Quaternion QDynamics::Quaternion::Random</definition>
+        <argsstring>()</argsstring>
+        <name>Random</name>
+        <briefdescription>
+<para>Generates a quaternion which is randomly populated with values between 0 and 1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" line="103" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" bodystart="103" bodyend="113"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A computational replica of the mathematical object <emphasis>quaternion</emphasis>, which replicates the expected behaviour of such objects, including addition and scalar multiplication (which it inherits from<verbatim>embed:rst:inline
+`JSL::Vector() &lt;https://jackstandardlibrary.readthedocs.io/en/latest/vectors.html&gt;`_ </verbatim> ), as well as the idiosyncratic multiplication and division native ot this field. We use the notation that<verbatim>embed:rst:inline :math:`\mathsf{q} = (q_0, \vec{q})` </verbatim> , and the interface is based on this assumption. It is intentional that treating quaternions as members of<verbatim>embed:rst:inline :math:`\mathbb{R}^4` </verbatim> is awkward. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="60">
+        <label>JSL::Vector</label>
+        <link refid="classJSL_1_1Vector"/>
+      </node>
+      <node id="59">
+        <label>QDynamics::Quaternion</label>
+        <link refid="classQDynamics_1_1Quaternion"/>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="62">
+        <label>JSL::Vector</label>
+        <link refid="classJSL_1_1Vector"/>
+      </node>
+      <node id="61">
+        <label>QDynamics::Quaternion</label>
+        <link refid="classQDynamics_1_1Quaternion"/>
+        <childnode refid="62" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" line="23" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h" bodystart="22" bodyend="186"/>
+    <listofallmembers>
+      <member refid="classJSL_1_1Vector_1a0529640bc02ce994026184d93f43f9c3" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>AngleBetween</name></member>
+      <member refid="classQDynamics_1_1Quaternion_1a2516e87ebb14ee2d34bc22744057c87b" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>Conjugate</name></member>
+      <member refid="classJSL_1_1Vector_1a59ff98a99ebcf2b589290b9e57b8e184" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>Cross</name></member>
+      <member refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" prot="protected" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>Data</name></member>
+      <member refid="classJSL_1_1Vector_1a60660b5a26e0ddace46f31699834b671" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>Dot</name></member>
+      <member refid="classJSL_1_1Vector_1ad7dc3af5e90b59e3ba2efc458e192a4c" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>isnan</name></member>
+      <member refid="classQDynamics_1_1Quaternion_1a2d0f1e0e8e46d1223f848da4f8b3fc2e" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>LeftMultiplicationMatrix</name></member>
+      <member refid="classJSL_1_1Vector_1ac41d3cb075c2bd871c31b96dedba08fe" prot="protected" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>negativeIntegerError</name></member>
+      <member refid="classJSL_1_1Vector_1a84eb32f5917a770c895e106834a6c05d" prot="protected" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>nElements</name></member>
+      <member refid="classJSL_1_1Vector_1aa8af717591f5548ff471b6e4b28d7f9c" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>Norm</name></member>
+      <member refid="classQDynamics_1_1Quaternion_1a06726eb02ffd68ccbd3adaef63c90bb9" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>One</name></member>
+      <member refid="classJSL_1_1Vector_1ad2fb2b88e3447881c1dac08897c5c8a8" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>operator*=</name></member>
+      <member refid="classJSL_1_1Vector_1ad46bf395dd6122ce152c33aad2672a9b" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>operator+=</name></member>
+      <member refid="classJSL_1_1Vector_1aeca45a175db04725394a1b576507e708" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>operator+=</name></member>
+      <member refid="classJSL_1_1Vector_1a71720a9266944049cd3adfbe50e1703f" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>operator-=</name></member>
+      <member refid="classJSL_1_1Vector_1a8a395851b8dffbe5b0aea7e051f9aac8" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>operator-=</name></member>
+      <member refid="classJSL_1_1Vector_1a0ce3dc2b4c99dbe6acdec350e2f46ab6" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>operator/=</name></member>
+      <member refid="classJSL_1_1Vector_1a7ff5112a7be30ca24b8ed953aaadd045" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>operator[]</name></member>
+      <member refid="classJSL_1_1Vector_1ae461792ef0aeb62ac07c939dacedda99" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>operator[]</name></member>
+      <member refid="classJSL_1_1Vector_1ab081a68e1fc526f4bf866de0ba61a09b" prot="protected" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>outOfBoundsError</name></member>
+      <member refid="classQDynamics_1_1Quaternion_1addca2bd1d2288c6875eab9f7b4c60881" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>Quaternion</name></member>
+      <member refid="classQDynamics_1_1Quaternion_1a206147a6dbe4a9456cd655d654ef0182" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>Quaternion</name></member>
+      <member refid="classQDynamics_1_1Quaternion_1aadf267f7d62df09bf09b04cc47704560" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>Quaternion</name></member>
+      <member refid="classQDynamics_1_1Quaternion_1a0a153753fb53bf466a5b1c6ab20abff6" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>Quaternion</name></member>
+      <member refid="classQDynamics_1_1Quaternion_1ad0da33a229eb9869a4b48c8302f5470e" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>Quaternion</name></member>
+      <member refid="classQDynamics_1_1Quaternion_1a06386710ec4308c04a72f365382472ce" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>Random</name></member>
+      <member refid="classQDynamics_1_1Quaternion_1a76da0390b336de90b27e713c34a3732a" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>RightMultiplicationMatrix</name></member>
+      <member refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>Scalar</name></member>
+      <member refid="classQDynamics_1_1Quaternion_1a1bc0af90c699e7c2eba94833ae7fb105" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>Scalar</name></member>
+      <member refid="classJSL_1_1Vector_1a53b26ca32061ebf41430fe2322f79c0c" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>Size</name></member>
+      <member refid="classJSL_1_1Vector_1ac1346e26bc981bf45d2c1c4317dac4e6" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>SqNorm</name></member>
+      <member refid="classJSL_1_1Vector_1ad2d0bfdb432809a88a49f4576b0afb5a" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>to_simple_string</name></member>
+      <member refid="classJSL_1_1Vector_1a73579b4a194cc924341806a5d9ea3817" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>to_string</name></member>
+      <member refid="classJSL_1_1Vector_1a91d4cf29c2865069520d03292844d84f" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>to_string_precision</name></member>
+      <member refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>Vector</name></member>
+      <member refid="classQDynamics_1_1Quaternion_1ac35047116c055b5baeec49b8ebba0ede" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>Vector</name></member>
+      <member refid="classQDynamics_1_1Quaternion_1a061cd74a6e060beeeb781b6cf7b7f16d" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>Vector</name></member>
+      <member refid="classJSL_1_1Vector_1a840fca607f8eae7dea1494b2954d3a3c" prot="public" virt="non-virtual" ambiguityscope="JSL::Vector::"><scope>QDynamics::Quaternion</scope><name>Vector</name></member>
+      <member refid="classJSL_1_1Vector_1af5be93b29e1c2aab2882827d5001a2aa" prot="public" virt="non-virtual" ambiguityscope="JSL::Vector::"><scope>QDynamics::Quaternion</scope><name>Vector</name></member>
+      <member refid="classQDynamics_1_1Quaternion_1a7932eeb535080e6230e98fb4f35867c2" prot="public" virt="non-virtual"><scope>QDynamics::Quaternion</scope><name>Zero</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

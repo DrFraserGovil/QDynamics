@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_d94222213bf3c1c071481a048d868dd6" kind="dir">
+    <compoundname>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/CommandArgs</compoundname>
+    <innerfile refid="Argument_8h">Argument.h</innerfile>
+    <innerfile refid="CommandArgs_8h">CommandArgs.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/CommandArgs/"/>
+  </compounddef>
+</doxygen>

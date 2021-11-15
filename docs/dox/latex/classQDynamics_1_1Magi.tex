@@ -1,0 +1,122 @@
+\hypertarget{classQDynamics_1_1Magi}{}\section{Q\+Dynamics\+:\+:Magi Class Reference}
+\label{classQDynamics_1_1Magi}\index{Q\+Dynamics\+::\+Magi@{Q\+Dynamics\+::\+Magi}}
+
+
+{\ttfamily \#include $<$Magi.\+h$>$}
+
+Inheritance diagram for Q\+Dynamics\+:\+:Magi\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classQDynamics_1_1Magi}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQDynamics_1_1Magi_a5b95b7c32c314e2800f59366964abfc3}{Magi} (int order, int resolution, double T, double deltaT)
+\item 
+\hyperlink{classQDynamics_1_1Magi_a89efe9c4722cbeb447662ee727af0570}{Magi} (int order, int resolution, double T, double deltaT, int skipper)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classQDynamics_1_1Magi_a11af2e624714857cf13343f1745f2fa8}{unlock} = 2600.\+07
+\item 
+bool \hyperlink{classQDynamics_1_1Magi_aba1aa111cd53a194854a2a8ac4b06b32}{unlocked} = false
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classQDynamics_1_1Magi_a500467f899244edfae15f34c84c7684c}{Update\+Position} (double t)
+\item 
+virtual \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \hyperlink{classQDynamics_1_1Magi_a04b85c8aa0e9549c750956c5f781433b}{Magnus} (double duration)
+\item 
+virtual \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \hyperlink{classQDynamics_1_1Magi_aadacdb3581a42babd5e1aa9ada6c77ee}{Magnus\+\_\+\+Compute} (double duration)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{classQDynamics_1_1Magi_ac9ff1c2f4ea0dcc30f1ee52b0894c9e9}{Order}
+\item 
+const int \hyperlink{classQDynamics_1_1Magi_a629449f541590040a7dfb98ca68cf97b}{Resolution}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classQDynamics_1_1Magi_a5b95b7c32c314e2800f59366964abfc3}\label{classQDynamics_1_1Magi_a5b95b7c32c314e2800f59366964abfc3}} 
+\index{Q\+Dynamics\+::\+Magi@{Q\+Dynamics\+::\+Magi}!Magi@{Magi}}
+\index{Magi@{Magi}!Q\+Dynamics\+::\+Magi@{Q\+Dynamics\+::\+Magi}}
+\subsubsection{\texorpdfstring{Magi()}{Magi()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Q\+Dynamics\+::\+Magi\+::\+Magi (\begin{DoxyParamCaption}\item[{int}]{order,  }\item[{int}]{resolution,  }\item[{double}]{T,  }\item[{double}]{deltaT }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classQDynamics_1_1Magi_a89efe9c4722cbeb447662ee727af0570}\label{classQDynamics_1_1Magi_a89efe9c4722cbeb447662ee727af0570}} 
+\index{Q\+Dynamics\+::\+Magi@{Q\+Dynamics\+::\+Magi}!Magi@{Magi}}
+\index{Magi@{Magi}!Q\+Dynamics\+::\+Magi@{Q\+Dynamics\+::\+Magi}}
+\subsubsection{\texorpdfstring{Magi()}{Magi()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Q\+Dynamics\+::\+Magi\+::\+Magi (\begin{DoxyParamCaption}\item[{int}]{order,  }\item[{int}]{resolution,  }\item[{double}]{T,  }\item[{double}]{deltaT,  }\item[{int}]{skipper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classQDynamics_1_1Magi_a04b85c8aa0e9549c750956c5f781433b}\label{classQDynamics_1_1Magi_a04b85c8aa0e9549c750956c5f781433b}} 
+\index{Q\+Dynamics\+::\+Magi@{Q\+Dynamics\+::\+Magi}!Magnus@{Magnus}}
+\index{Magnus@{Magnus}!Q\+Dynamics\+::\+Magi@{Q\+Dynamics\+::\+Magi}}
+\subsubsection{\texorpdfstring{Magnus()}{Magnus()}}
+{\footnotesize\ttfamily virtual \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} Q\+Dynamics\+::\+Magi\+::\+Magnus (\begin{DoxyParamCaption}\item[{double}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classQDynamics_1_1Magi_aadacdb3581a42babd5e1aa9ada6c77ee}\label{classQDynamics_1_1Magi_aadacdb3581a42babd5e1aa9ada6c77ee}} 
+\index{Q\+Dynamics\+::\+Magi@{Q\+Dynamics\+::\+Magi}!Magnus\+\_\+\+Compute@{Magnus\+\_\+\+Compute}}
+\index{Magnus\+\_\+\+Compute@{Magnus\+\_\+\+Compute}!Q\+Dynamics\+::\+Magi@{Q\+Dynamics\+::\+Magi}}
+\subsubsection{\texorpdfstring{Magnus\+\_\+\+Compute()}{Magnus\_Compute()}}
+{\footnotesize\ttfamily virtual \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} Q\+Dynamics\+::\+Magi\+::\+Magnus\+\_\+\+Compute (\begin{DoxyParamCaption}\item[{double}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{classQDynamics_1_1Symi_a4cea691ad899227f92004dd666180415}{Q\+Dynamics\+::\+Symi}.
+
+\mbox{\Hypertarget{classQDynamics_1_1Magi_a500467f899244edfae15f34c84c7684c}\label{classQDynamics_1_1Magi_a500467f899244edfae15f34c84c7684c}} 
+\index{Q\+Dynamics\+::\+Magi@{Q\+Dynamics\+::\+Magi}!Update\+Position@{Update\+Position}}
+\index{Update\+Position@{Update\+Position}!Q\+Dynamics\+::\+Magi@{Q\+Dynamics\+::\+Magi}}
+\subsubsection{\texorpdfstring{Update\+Position()}{UpdatePosition()}}
+{\footnotesize\ttfamily virtual void Q\+Dynamics\+::\+Magi\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classQDynamics_1_1Integrator_a4effa27d56f3205e53653b1fdc5cd08e}{Q\+Dynamics\+::\+Integrator}.
+
+
+
+Reimplemented in \hyperlink{classQDynamics_1_1Leapi_ada2b4935513fa7e0cb4f78ade9f2fd0e}{Q\+Dynamics\+::\+Leapi}, and \hyperlink{classQDynamics_1_1SymiL_a28d23793abeb8f40c9d9ec069d67debb}{Q\+Dynamics\+::\+SymiL}.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classQDynamics_1_1Magi_ac9ff1c2f4ea0dcc30f1ee52b0894c9e9}\label{classQDynamics_1_1Magi_ac9ff1c2f4ea0dcc30f1ee52b0894c9e9}} 
+\index{Q\+Dynamics\+::\+Magi@{Q\+Dynamics\+::\+Magi}!Order@{Order}}
+\index{Order@{Order}!Q\+Dynamics\+::\+Magi@{Q\+Dynamics\+::\+Magi}}
+\subsubsection{\texorpdfstring{Order}{Order}}
+{\footnotesize\ttfamily const int Q\+Dynamics\+::\+Magi\+::\+Order\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classQDynamics_1_1Magi_a629449f541590040a7dfb98ca68cf97b}\label{classQDynamics_1_1Magi_a629449f541590040a7dfb98ca68cf97b}} 
+\index{Q\+Dynamics\+::\+Magi@{Q\+Dynamics\+::\+Magi}!Resolution@{Resolution}}
+\index{Resolution@{Resolution}!Q\+Dynamics\+::\+Magi@{Q\+Dynamics\+::\+Magi}}
+\subsubsection{\texorpdfstring{Resolution}{Resolution}}
+{\footnotesize\ttfamily const int Q\+Dynamics\+::\+Magi\+::\+Resolution\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classQDynamics_1_1Magi_a11af2e624714857cf13343f1745f2fa8}\label{classQDynamics_1_1Magi_a11af2e624714857cf13343f1745f2fa8}} 
+\index{Q\+Dynamics\+::\+Magi@{Q\+Dynamics\+::\+Magi}!unlock@{unlock}}
+\index{unlock@{unlock}!Q\+Dynamics\+::\+Magi@{Q\+Dynamics\+::\+Magi}}
+\subsubsection{\texorpdfstring{unlock}{unlock}}
+{\footnotesize\ttfamily double Q\+Dynamics\+::\+Magi\+::unlock = 2600.\+07}
+
+\mbox{\Hypertarget{classQDynamics_1_1Magi_aba1aa111cd53a194854a2a8ac4b06b32}\label{classQDynamics_1_1Magi_aba1aa111cd53a194854a2a8ac4b06b32}} 
+\index{Q\+Dynamics\+::\+Magi@{Q\+Dynamics\+::\+Magi}!unlocked@{unlocked}}
+\index{unlocked@{unlocked}!Q\+Dynamics\+::\+Magi@{Q\+Dynamics\+::\+Magi}}
+\subsubsection{\texorpdfstring{unlocked}{unlocked}}
+{\footnotesize\ttfamily bool Q\+Dynamics\+::\+Magi\+::unlocked = false}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/f/fraserj/\+Documents/\+Work/\+Q\+Dynamics/src/\hyperlink{Magi_8h}{Magi.\+h}\end{DoxyCompactItemize}

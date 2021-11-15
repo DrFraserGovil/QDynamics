@@ -1,0 +1,170 @@
+\hypertarget{classJSL_1_1UnitTest}{}\section{J\+SL\+:\+:Unit\+Test Class Reference}
+\label{classJSL_1_1UnitTest}\index{J\+S\+L\+::\+Unit\+Test@{J\+S\+L\+::\+Unit\+Test}}
+
+
+{\ttfamily \#include $<$Unit\+Test.\+h$>$}
+
+Inheritance diagram for J\+SL\+:\+:Unit\+Test\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.085271cm]{classJSL_1_1UnitTest}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classJSL_1_1UnitTest_aa3bc8d5c99696d5bc6e63b8da358a0ed}{Unit\+Test} ()
+\begin{DoxyCompactList}\small\item\em Constructor class. Initialises the system to a failing state. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classJSL_1_1UnitTest_aa8369ab1ce2a537bff2ea7e1c8818490}{Run\+\_\+\+Test} ()
+\begin{DoxyCompactList}\small\item\em All children which want to take advantage of the \hyperlink{classJSL_1_1UnitTest_aabec19b081be8a428f12e4b5e3dc2a9c}{Buffered\+Test()} command should have the bulk of their testing within this command. \end{DoxyCompactList}\item 
+void \hyperlink{classJSL_1_1UnitTest_aabec19b081be8a428f12e4b5e3dc2a9c}{Buffered\+Test} ()
+\begin{DoxyCompactList}\small\item\em Calls the overridden function \hyperlink{classJSL_1_1UnitTest_aa8369ab1ce2a537bff2ea7e1c8818490}{Run\+\_\+\+Test()} within a try-\/catch loop. Provides an extra level of safety and diagnostics for any unhandled exceptions. \end{DoxyCompactList}\item 
+bool \hyperlink{classJSL_1_1UnitTest_a39e1076dd985334ce21606ae2a383f70}{Results} ()
+\begin{DoxyCompactList}\small\item\em Prints the results of the testing to the terminal and prints the contents of Message\+Buffer line-\/by-\/line. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classJSL_1_1UnitTest_a53c19424147e72fa6392470627f15049}{Name}
+\begin{DoxyCompactList}\small\item\em The name by which the \hyperlink{classJSL_1_1UnitTest}{Unit\+Test} refers to itself. This should be fairly descriptive, to help locating the failing unit test (don\textquotesingle{}t give them all the same name!) \end{DoxyCompactList}\item 
+bool \hyperlink{classJSL_1_1UnitTest_afac1f363a8406fad39316ee772a837a9}{Passed}
+\begin{DoxyCompactList}\small\item\em If true, the \hyperlink{classJSL_1_1UnitTest}{Unit\+Test} is considered successful, and no errors are thrown. \end{DoxyCompactList}\item 
+bool \hyperlink{classJSL_1_1UnitTest_a54dc4908d757c7f523be12a4275e595c}{Non\+Critical\+Failure}
+\begin{DoxyCompactList}\small\item\em If true, the \hyperlink{classJSL_1_1UnitTest}{Unit\+Test} will only throw warnings, rather than exist, when an error is encountered. Default is false. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classJSL_1_1UnitTest_a3dcc71e7e8f72f0f07b8fc552b777ad8}{Message\+Buffer}
+\begin{DoxyCompactList}\small\item\em A message buffer which is output when \hyperlink{classJSL_1_1UnitTest_a39e1076dd985334ce21606ae2a383f70}{Results()} is called, giving updates on the progress of the test. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classJSL_1_1UnitTest_a3629d1bca071da7a2af6b7de29be1430}{basic\+Condition\+Check} (bool condition, std\+::string successmessage, std\+::string failuremessage)
+\item 
+void \hyperlink{classJSL_1_1UnitTest_a53ede0c6b420eaf64faf752c0518340e}{basic\+Condition\+Check} (bool condition, std\+::string message\+Framework)
+\begin{DoxyCompactList}\small\item\em An override of the other function, preventing dual-\/typing of basic output messages. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A parent class for various unit testing frameworks. Provides a consistent A\+PI for interacting with the unit tests. The class is essentially meaningless on its own, but when coupled to a decently written subclass (i.\+e. \hyperlink{classJSL__Testing_1_1StringTest}{J\+S\+L\+\_\+\+Testing\+::\+String\+Test}), it becomes very useful. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classJSL_1_1UnitTest_aa3bc8d5c99696d5bc6e63b8da358a0ed}\label{classJSL_1_1UnitTest_aa3bc8d5c99696d5bc6e63b8da358a0ed}} 
+\index{J\+S\+L\+::\+Unit\+Test@{J\+S\+L\+::\+Unit\+Test}!Unit\+Test@{Unit\+Test}}
+\index{Unit\+Test@{Unit\+Test}!J\+S\+L\+::\+Unit\+Test@{J\+S\+L\+::\+Unit\+Test}}
+\subsubsection{\texorpdfstring{Unit\+Test()}{UnitTest()}}
+{\footnotesize\ttfamily J\+S\+L\+::\+Unit\+Test\+::\+Unit\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor class. Initialises the system to a failing state. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classJSL_1_1UnitTest_a3629d1bca071da7a2af6b7de29be1430}\label{classJSL_1_1UnitTest_a3629d1bca071da7a2af6b7de29be1430}} 
+\index{J\+S\+L\+::\+Unit\+Test@{J\+S\+L\+::\+Unit\+Test}!basic\+Condition\+Check@{basic\+Condition\+Check}}
+\index{basic\+Condition\+Check@{basic\+Condition\+Check}!J\+S\+L\+::\+Unit\+Test@{J\+S\+L\+::\+Unit\+Test}}
+\subsubsection{\texorpdfstring{basic\+Condition\+Check()}{basicConditionCheck()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void J\+S\+L\+::\+Unit\+Test\+::basic\+Condition\+Check (\begin{DoxyParamCaption}\item[{bool}]{condition,  }\item[{std\+::string}]{successmessage,  }\item[{std\+::string}]{failuremessage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+A structure to help basic logic flow within unit tests. If the condition is false, the unit test considers itself failed, and updates the messages and Passed status accordingly 
+\begin{DoxyParams}{Parameters}
+{\em condition} & If true, the sub-\/test is successful \\
+\hline
+{\em successmessage} & If condition == true, this is the message appended to the Message\+Buffer \\
+\hline
+{\em failuremessage} & If condition == false, this message is used instead. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJSL_1_1UnitTest_a53ede0c6b420eaf64faf752c0518340e}\label{classJSL_1_1UnitTest_a53ede0c6b420eaf64faf752c0518340e}} 
+\index{J\+S\+L\+::\+Unit\+Test@{J\+S\+L\+::\+Unit\+Test}!basic\+Condition\+Check@{basic\+Condition\+Check}}
+\index{basic\+Condition\+Check@{basic\+Condition\+Check}!J\+S\+L\+::\+Unit\+Test@{J\+S\+L\+::\+Unit\+Test}}
+\subsubsection{\texorpdfstring{basic\+Condition\+Check()}{basicConditionCheck()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void J\+S\+L\+::\+Unit\+Test\+::basic\+Condition\+Check (\begin{DoxyParamCaption}\item[{bool}]{condition,  }\item[{std\+::string}]{message\+Framework }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+An override of the other function, preventing dual-\/typing of basic output messages. 
+
+\mbox{\Hypertarget{classJSL_1_1UnitTest_aabec19b081be8a428f12e4b5e3dc2a9c}\label{classJSL_1_1UnitTest_aabec19b081be8a428f12e4b5e3dc2a9c}} 
+\index{J\+S\+L\+::\+Unit\+Test@{J\+S\+L\+::\+Unit\+Test}!Buffered\+Test@{Buffered\+Test}}
+\index{Buffered\+Test@{Buffered\+Test}!J\+S\+L\+::\+Unit\+Test@{J\+S\+L\+::\+Unit\+Test}}
+\subsubsection{\texorpdfstring{Buffered\+Test()}{BufferedTest()}}
+{\footnotesize\ttfamily void J\+S\+L\+::\+Unit\+Test\+::\+Buffered\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calls the overridden function \hyperlink{classJSL_1_1UnitTest_aa8369ab1ce2a537bff2ea7e1c8818490}{Run\+\_\+\+Test()} within a try-\/catch loop. Provides an extra level of safety and diagnostics for any unhandled exceptions. 
+
+\mbox{\Hypertarget{classJSL_1_1UnitTest_a39e1076dd985334ce21606ae2a383f70}\label{classJSL_1_1UnitTest_a39e1076dd985334ce21606ae2a383f70}} 
+\index{J\+S\+L\+::\+Unit\+Test@{J\+S\+L\+::\+Unit\+Test}!Results@{Results}}
+\index{Results@{Results}!J\+S\+L\+::\+Unit\+Test@{J\+S\+L\+::\+Unit\+Test}}
+\subsubsection{\texorpdfstring{Results()}{Results()}}
+{\footnotesize\ttfamily bool J\+S\+L\+::\+Unit\+Test\+::\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Prints the results of the testing to the terminal and prints the contents of Message\+Buffer line-\/by-\/line. 
+
+\begin{DoxyReturn}{Returns}
+The value of Passed (true if test succeeded) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classJSL_1_1UnitTest_aa8369ab1ce2a537bff2ea7e1c8818490}\label{classJSL_1_1UnitTest_aa8369ab1ce2a537bff2ea7e1c8818490}} 
+\index{J\+S\+L\+::\+Unit\+Test@{J\+S\+L\+::\+Unit\+Test}!Run\+\_\+\+Test@{Run\+\_\+\+Test}}
+\index{Run\+\_\+\+Test@{Run\+\_\+\+Test}!J\+S\+L\+::\+Unit\+Test@{J\+S\+L\+::\+Unit\+Test}}
+\subsubsection{\texorpdfstring{Run\+\_\+\+Test()}{Run\_Test()}}
+{\footnotesize\ttfamily virtual void J\+S\+L\+::\+Unit\+Test\+::\+Run\+\_\+\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+All children which want to take advantage of the \hyperlink{classJSL_1_1UnitTest_aabec19b081be8a428f12e4b5e3dc2a9c}{Buffered\+Test()} command should have the bulk of their testing within this command. 
+
+
+
+Reimplemented in \hyperlink{classJSL__Testing_1_1MatrixTest_a8fe2a671faf414dbd13c407ab52b75fb}{J\+S\+L\+\_\+\+Testing\+::\+Matrix\+Test}, \hyperlink{classJSL__Testing_1_1VectorTest_ad79bb4654e6f7b59d31d7239ee0c2b82}{J\+S\+L\+\_\+\+Testing\+::\+Vector\+Test}, \hyperlink{classJSL__Testing_1_1ArgumentTest_a1c4c626d57e448da86866ef414308e97}{J\+S\+L\+\_\+\+Testing\+::\+Argument\+Test}, \hyperlink{classJSL__Testing_1_1IOTest_a85daecacc71354b5dc0dee36840b8704}{J\+S\+L\+\_\+\+Testing\+::\+I\+O\+Test}, \hyperlink{classJSL__Testing_1_1StringTest_ada0409cd10e3f09788994a9115331ff7}{J\+S\+L\+\_\+\+Testing\+::\+String\+Test}, and \hyperlink{classJSL__Testing_1_1MetaTest_a176352dcd54f9ec7df8f1548882e6820}{J\+S\+L\+\_\+\+Testing\+::\+Meta\+Test}.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classJSL_1_1UnitTest_a3dcc71e7e8f72f0f07b8fc552b777ad8}\label{classJSL_1_1UnitTest_a3dcc71e7e8f72f0f07b8fc552b777ad8}} 
+\index{J\+S\+L\+::\+Unit\+Test@{J\+S\+L\+::\+Unit\+Test}!Message\+Buffer@{Message\+Buffer}}
+\index{Message\+Buffer@{Message\+Buffer}!J\+S\+L\+::\+Unit\+Test@{J\+S\+L\+::\+Unit\+Test}}
+\subsubsection{\texorpdfstring{Message\+Buffer}{MessageBuffer}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ J\+S\+L\+::\+Unit\+Test\+::\+Message\+Buffer}
+
+
+
+A message buffer which is output when \hyperlink{classJSL_1_1UnitTest_a39e1076dd985334ce21606ae2a383f70}{Results()} is called, giving updates on the progress of the test. 
+
+\mbox{\Hypertarget{classJSL_1_1UnitTest_a53c19424147e72fa6392470627f15049}\label{classJSL_1_1UnitTest_a53c19424147e72fa6392470627f15049}} 
+\index{J\+S\+L\+::\+Unit\+Test@{J\+S\+L\+::\+Unit\+Test}!Name@{Name}}
+\index{Name@{Name}!J\+S\+L\+::\+Unit\+Test@{J\+S\+L\+::\+Unit\+Test}}
+\subsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily std\+::string J\+S\+L\+::\+Unit\+Test\+::\+Name}
+
+
+
+The name by which the \hyperlink{classJSL_1_1UnitTest}{Unit\+Test} refers to itself. This should be fairly descriptive, to help locating the failing unit test (don\textquotesingle{}t give them all the same name!) 
+
+\mbox{\Hypertarget{classJSL_1_1UnitTest_a54dc4908d757c7f523be12a4275e595c}\label{classJSL_1_1UnitTest_a54dc4908d757c7f523be12a4275e595c}} 
+\index{J\+S\+L\+::\+Unit\+Test@{J\+S\+L\+::\+Unit\+Test}!Non\+Critical\+Failure@{Non\+Critical\+Failure}}
+\index{Non\+Critical\+Failure@{Non\+Critical\+Failure}!J\+S\+L\+::\+Unit\+Test@{J\+S\+L\+::\+Unit\+Test}}
+\subsubsection{\texorpdfstring{Non\+Critical\+Failure}{NonCriticalFailure}}
+{\footnotesize\ttfamily bool J\+S\+L\+::\+Unit\+Test\+::\+Non\+Critical\+Failure}
+
+
+
+If true, the \hyperlink{classJSL_1_1UnitTest}{Unit\+Test} will only throw warnings, rather than exist, when an error is encountered. Default is false. 
+
+\mbox{\Hypertarget{classJSL_1_1UnitTest_afac1f363a8406fad39316ee772a837a9}\label{classJSL_1_1UnitTest_afac1f363a8406fad39316ee772a837a9}} 
+\index{J\+S\+L\+::\+Unit\+Test@{J\+S\+L\+::\+Unit\+Test}!Passed@{Passed}}
+\index{Passed@{Passed}!J\+S\+L\+::\+Unit\+Test@{J\+S\+L\+::\+Unit\+Test}}
+\subsubsection{\texorpdfstring{Passed}{Passed}}
+{\footnotesize\ttfamily bool J\+S\+L\+::\+Unit\+Test\+::\+Passed}
+
+
+
+If true, the \hyperlink{classJSL_1_1UnitTest}{Unit\+Test} is considered successful, and no errors are thrown. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/f/fraserj/\+Documents/\+Work/\+Q\+Dynamics/lib/\+J\+S\+L/\+Testing/\hyperlink{UnitTest_8h}{Unit\+Test.\+h}\end{DoxyCompactItemize}

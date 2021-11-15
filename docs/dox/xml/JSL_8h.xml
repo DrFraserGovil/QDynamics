@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="JSL_8h" kind="file" language="C++">
+    <compoundname>JSL.h</compoundname>
+    <includes refid="FileIO_8h" local="yes">FileIO/FileIO.h</includes>
+    <includes refid="Strings_8h" local="yes">Strings/Strings.h</includes>
+    <includes refid="CommandArgs_8h" local="yes">CommandArgs/CommandArgs.h</includes>
+    <includes refid="Maths_8h" local="yes">Maths/Maths.h</includes>
+    <includes refid="Testing_8h" local="yes">Testing/Testing.h</includes>
+    <includedby refid="Testing__UnitTests_8h" local="yes">/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/Testing_UnitTests.h</includedby>
+    <includedby refid="QDynamics_8h" local="yes">/home/f/fraserj/Documents/Work/QDynamics/QDynamics.h</includedby>
+    <includedby refid="Quaternion_8h" local="yes">/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h</includedby>
+    <includedby refid="Integrator_8h" local="yes">/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h</includedby>
+    <includedby refid="DynamicOperations_8h" local="yes">/home/f/fraserj/Documents/Work/QDynamics/src/DynamicOperations.h</includedby>
+    <incdepgraph>
+      <node id="190">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="191">
+        <label>rm.h</label>
+        <link refid="rm_8h"/>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+      </node>
+      <node id="185">
+        <label>../Strings/split.h</label>
+        <link refid="split_8h"/>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+      </node>
+      <node id="208">
+        <label>cmath</label>
+      </node>
+      <node id="192">
+        <label>stdexcept</label>
+      </node>
+      <node id="183">
+        <label>string</label>
+      </node>
+      <node id="196">
+        <label>Time.h</label>
+        <link refid="Time_8h"/>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+      </node>
+      <node id="180">
+        <label>FileIO/FileIO.h</label>
+        <link refid="FileIO_8h"/>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+      </node>
+      <node id="195">
+        <label>Strings/Strings.h</label>
+        <link refid="Strings_8h"/>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="182">
+        <label>fstream</label>
+      </node>
+      <node id="181">
+        <label>LineReader.h</label>
+        <link refid="LineReader_8h"/>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+      </node>
+      <node id="207">
+        <label>Testing_UnitTests.h</label>
+        <link refid="Testing__UnitTests_8h"/>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+      </node>
+      <node id="199">
+        <label>CommandArgs/CommandArgs.h</label>
+        <link refid="CommandArgs_8h"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>vector.h</label>
+        <link refid="vector_8h"/>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="206">
+        <label>UnitTest.h</label>
+        <link refid="UnitTest_8h"/>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+      </node>
+      <node id="201">
+        <label>Maths/Maths.h</label>
+        <link refid="Maths_8h"/>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>string.h</label>
+      </node>
+      <node id="200">
+        <label>Argument.h</label>
+        <link refid="Argument_8h"/>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+      </node>
+      <node id="187">
+        <label>mkdir.h</label>
+        <link refid="mkdir_8h"/>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+      </node>
+      <node id="204">
+        <label>matrix.h</label>
+        <link refid="matrix_8h"/>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+      </node>
+      <node id="184">
+        <label>vector</label>
+      </node>
+      <node id="189">
+        <label>locationExists.h</label>
+        <link refid="locationExists_8h"/>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+      </node>
+      <node id="186">
+        <label>sstream</label>
+      </node>
+      <node id="203">
+        <label>math.h</label>
+      </node>
+      <node id="205">
+        <label>Testing/Testing.h</label>
+        <link refid="Testing_8h"/>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+      </node>
+      <node id="198">
+        <label>iostream</label>
+      </node>
+      <node id="197">
+        <label>chrono</label>
+      </node>
+      <node id="179">
+        <label>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/JSL.h</label>
+        <link refid="JSL_8h"/>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+      </node>
+      <node id="193">
+        <label>fileWriter.h</label>
+        <link refid="fileWriter_8h"/>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+      </node>
+      <node id="188">
+        <label>dirent.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="213">
+        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h</label>
+        <link refid="Quaternion_8h"/>
+        <childnode refid="212" relation="include">
+        </childnode>
+      </node>
+      <node id="214">
+        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h</label>
+        <link refid="Integrator_8h"/>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+      </node>
+      <node id="216">
+        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h</label>
+        <link refid="Magi_8h"/>
+        <childnode refid="212" relation="include">
+        </childnode>
+      </node>
+      <node id="215">
+        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Brute.h</label>
+        <link refid="Brute_8h"/>
+        <childnode refid="212" relation="include">
+        </childnode>
+      </node>
+      <node id="210">
+        <label>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/Testing_UnitTests.h</label>
+        <link refid="Testing__UnitTests_8h"/>
+        <childnode refid="211" relation="include">
+        </childnode>
+      </node>
+      <node id="218">
+        <label>/home/f/fraserj/Documents/Work/QDynamics/src/DynamicOperations.h</label>
+        <link refid="DynamicOperations_8h"/>
+        <childnode refid="214" relation="include">
+        </childnode>
+      </node>
+      <node id="211">
+        <label>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/Testing.h</label>
+        <link refid="Testing_8h"/>
+        <childnode refid="209" relation="include">
+        </childnode>
+      </node>
+      <node id="209">
+        <label>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/JSL.h</label>
+        <link refid="JSL_8h"/>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+      </node>
+      <node id="217">
+        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Symi.h</label>
+        <link refid="Symi_8h"/>
+        <childnode refid="212" relation="include">
+        </childnode>
+      </node>
+      <node id="212">
+        <label>/home/f/fraserj/Documents/Work/QDynamics/QDynamics.h</label>
+        <link refid="QDynamics_8h"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">The<sp/>JSL<sp/>(Jack<sp/>Standard<sp/>Library)<sp/>is<sp/>a<sp/>collection<sp/>of<sp/>code<sp/>written<sp/>by<sp/>Jack<sp/>Fraser<sp/>(https://orcid.org/0000-0002-6980-8484)<sp/>during<sp/>the<sp/>course<sp/>of<sp/>his<sp/>PhD<sp/>(2018-2022)</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">This<sp/>code<sp/>is<sp/>intended<sp/>to<sp/>capture<sp/>several<sp/>elements<sp/>of<sp/>boilerplate<sp/>code<sp/>that<sp/>I<sp/>ended<sp/>up<sp/>writing<sp/>again<sp/>and<sp/>again<sp/>across<sp/>several<sp/>projects.<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">It<sp/>shouldn&apos;t<sp/>be<sp/>of<sp/>any<sp/>interest<sp/>to<sp/>anyone<sp/>else,<sp/>but<sp/>just<sp/>in<sp/>case,<sp/>it<sp/>is<sp/>distributed<sp/>under<sp/>a<sp/>GNU<sp/>v3<sp/>public<sp/>license.<sp/>Go<sp/>nuts,<sp/>weirdos.<sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="FileIO_8h" kindref="compound">FileIO/FileIO.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Strings_8h" kindref="compound">Strings/Strings.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="CommandArgs_8h" kindref="compound">CommandArgs/CommandArgs.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Maths_8h" kindref="compound">Maths/Maths.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Testing_8h" kindref="compound">Testing/Testing.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/JSL.h"/>
+  </compounddef>
+</doxygen>

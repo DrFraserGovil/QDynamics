@@ -1,0 +1,577 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classQDynamics_1_1Integrator" kind="class" language="C++" prot="public">
+    <compoundname>QDynamics::Integrator</compoundname>
+    <derivedcompoundref refid="classQDynamics_1_1Brute" prot="public" virt="non-virtual">QDynamics::Brute</derivedcompoundref>
+    <derivedcompoundref refid="classQDynamics_1_1Magi" prot="public" virt="non-virtual">QDynamics::Magi</derivedcompoundref>
+    <includes refid="Integrator_8h" local="no">Integrator.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" prot="protected" static="no" mutable="no">
+        <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion QDynamics::Integrator::q</definition>
+        <argsstring></argsstring>
+        <name>q</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="67" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" prot="protected" static="no" mutable="no">
+        <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion QDynamics::Integrator::p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="68" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQDynamics_1_1Integrator_1a0241b2e2c87418323330999d1f8e12d0" prot="protected" static="no" mutable="no">
+        <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion QDynamics::Integrator::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="69" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQDynamics_1_1Integrator_1adb45dae4f4d1d37ab83ca5269f51058d" prot="protected" static="no" mutable="no">
+        <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion QDynamics::Integrator::L</definition>
+        <argsstring></argsstring>
+        <name>L</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="70" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQDynamics_1_1Integrator_1a7b99b22475321b34c1624bded3489954" prot="protected" static="no" mutable="no">
+        <type><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref></type>
+        <definition>JSL::Vector QDynamics::Integrator::J</definition>
+        <argsstring></argsstring>
+        <name>J</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="71" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQDynamics_1_1Integrator_1a9b850dd4b29118e44b0183409db0a983" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QDynamics::Integrator::TimeStep</definition>
+        <argsstring></argsstring>
+        <name>TimeStep</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="73" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQDynamics_1_1Integrator_1aa3e27d68428619ab4083b2d42ef8924c" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string QDynamics::Integrator::Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="75" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQDynamics_1_1Integrator_1a19ed0b9864ebe762914cee04cb0ad4b3" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string QDynamics::Integrator::FileName</definition>
+        <argsstring></argsstring>
+        <name>FileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="76" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classQDynamics_1_1Integrator_1ae62176188110c0dcea7c65ba429d1abe" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QDynamics::Integrator::BufferPos</definition>
+        <argsstring></argsstring>
+        <name>BufferPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="81" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQDynamics_1_1Integrator_1acbafc2a1b2b19f230c6dfd8924cb36dd" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QDynamics::Integrator::BufferSize</definition>
+        <argsstring></argsstring>
+        <name>BufferSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="82" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQDynamics_1_1Integrator_1a00be60876ae62ef0d1555a6cc0ce52a5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QDynamics::Integrator::NHashes</definition>
+        <argsstring></argsstring>
+        <name>NHashes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="84" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQDynamics_1_1Integrator_1ae893dd6b0d041de777e25a99f42886c3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool QDynamics::Integrator::FinalHash</definition>
+        <argsstring></argsstring>
+        <name>FinalHash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="85" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQDynamics_1_1Integrator_1abab707f49ba0ae6701db5dbcdf86861f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QDynamics::Integrator::CurrentHashes</definition>
+        <argsstring></argsstring>
+        <name>CurrentHashes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="86" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQDynamics_1_1Integrator_1af8889c2bbe10237a8dd8c46b25b15d29" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; QDynamics::Integrator::Buffer</definition>
+        <argsstring></argsstring>
+        <name>Buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="87" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQDynamics_1_1Integrator_1a95e110d6b14003db39f8a52180b97870" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QDynamics::Integrator::SkipID</definition>
+        <argsstring></argsstring>
+        <name>SkipID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="88" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQDynamics_1_1Integrator_1a409e18faeeefa5fb63f7bcce3eb0e381" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QDynamics::Integrator::Skips</definition>
+        <argsstring></argsstring>
+        <name>Skips</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="89" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQDynamics_1_1Integrator_1addfb67b6faa62d88bc7234d5496aeaf9" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QDynamics::Integrator::TotalTime</definition>
+        <argsstring></argsstring>
+        <name>TotalTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="90" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classQDynamics_1_1Integrator_1a677dd555cee316d6d456b7da258c4385" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>QDynamics::Integrator::Integrator</definition>
+        <argsstring>(double T, double deltaT)</argsstring>
+        <name>Integrator</name>
+        <param>
+          <type>double</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>deltaT</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="18" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="18" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Integrator_1aa469124cb408fadbaa540555dfabee33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>QDynamics::Integrator::Integrator</definition>
+        <argsstring>(double T, double deltaT, int skipper)</argsstring>
+        <name>Integrator</name>
+        <param>
+          <type>double</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>deltaT</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>skipper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="28" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="28" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Integrator_1a4b921b312775194b77c2c85f93add84e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void QDynamics::Integrator::Evolve</definition>
+        <argsstring>(Quaternion q0, Quaternion p0, JSL::Vector J, std::string saveFolder)</argsstring>
+        <name>Evolve</name>
+        <param>
+          <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+          <declname>q0</declname>
+        </param>
+        <param>
+          <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+          <declname>p0</declname>
+        </param>
+        <param>
+          <type><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref></type>
+          <declname>J</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>saveFolder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="38" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="38" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Integrator_1a4effa27d56f3205e53653b1fdc5cd08e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void QDynamics::Integrator::UpdatePosition</definition>
+        <argsstring>(double t)</argsstring>
+        <name>UpdatePosition</name>
+        <reimplementedby refid="classQDynamics_1_1Brute_1ac5d4bbe0e34a9f6836f71f40ae8a9eb4">UpdatePosition</reimplementedby>
+        <reimplementedby refid="classQDynamics_1_1Magi_1a500467f899244edfae15f34c84c7684c">UpdatePosition</reimplementedby>
+        <reimplementedby refid="classQDynamics_1_1SymiL_1a28d23793abeb8f40c9d9ec069d67debb">UpdatePosition</reimplementedby>
+        <reimplementedby refid="classQDynamics_1_1Leapi_1ada2b4935513fa7e0cb4f78ade9f2fd0e">UpdatePosition</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="62" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="62" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classQDynamics_1_1Integrator_1a4688fbccd8b0dc5c9a73dddac66b486f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>virtual Quaternion QDynamics::Integrator::GradU</definition>
+        <argsstring>(double t)</argsstring>
+        <name>GradU</name>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Integrator_1afa838ba8dfb0fbde1f77c6d2a45a9dd0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double QDynamics::Integrator::U</definition>
+        <argsstring>(double t)</argsstring>
+        <name>U</name>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="79" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classQDynamics_1_1Integrator_1af613a42e489de2d041673fd5be0ebb61" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void QDynamics::Integrator::UpdateBuffer</definition>
+        <argsstring>(double t)</argsstring>
+        <name>UpdateBuffer</name>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="92" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="92" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Integrator_1a571bd4098f5d245bf46cf7683dcc554a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void QDynamics::Integrator::FlushBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>FlushBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="115" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="115" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Integrator_1a88dc286b39899bdec60c040427d663cc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void QDynamics::Integrator::UpdateProgressBar</definition>
+        <argsstring>(double t)</argsstring>
+        <name>UpdateProgressBar</name>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="122" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="122" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Integrator_1aa1afd442ef37708fcadb45ca8e7958f5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void QDynamics::Integrator::Initialise</definition>
+        <argsstring>(Quaternion q0, Quaternion p0, JSL::Vector Jin, std::string saveFolder)</argsstring>
+        <name>Initialise</name>
+        <param>
+          <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+          <declname>q0</declname>
+        </param>
+        <param>
+          <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+          <declname>p0</declname>
+        </param>
+        <param>
+          <type><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref></type>
+          <declname>Jin</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>saveFolder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="137" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="137" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Integrator_1ae80ab509b96a9b996934d9ef127f5137" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void QDynamics::Integrator::CreateFullName</definition>
+        <argsstring>(std::string saveFolder)</argsstring>
+        <name>CreateFullName</name>
+        <param>
+          <type>std::string</type>
+          <declname>saveFolder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="166" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="166" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Integrator_1a816743f6efb41b0b29243ff3bdaa4c9d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double QDynamics::Integrator::Hamiltonian</definition>
+        <argsstring>(double t)</argsstring>
+        <name>Hamiltonian</name>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="172" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="172" bodyend="178"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="17">
+        <label>QDynamics::Integrator</label>
+        <link refid="classQDynamics_1_1Integrator"/>
+      </node>
+      <node id="20">
+        <label>QDynamics::Leapi</label>
+        <link refid="classQDynamics_1_1Leapi"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>QDynamics::Symi</label>
+        <link refid="classQDynamics_1_1Symi"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>QDynamics::Brute</label>
+        <link refid="classQDynamics_1_1Brute"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>QDynamics::Magi</label>
+        <link refid="classQDynamics_1_1Magi"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>QDynamics::SymiL</label>
+        <link refid="classQDynamics_1_1SymiL"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="23">
+        <label>QDynamics::Integrator</label>
+        <link refid="classQDynamics_1_1Integrator"/>
+        <childnode refid="24" relation="usage">
+          <edgelabel>J</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>w</edgelabel>
+          <edgelabel>L</edgelabel>
+          <edgelabel>p</edgelabel>
+          <edgelabel>q</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>JSL::Vector</label>
+        <link refid="classJSL_1_1Vector"/>
+      </node>
+      <node id="25">
+        <label>QDynamics::Quaternion</label>
+        <link refid="classQDynamics_1_1Quaternion"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="15" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="14" bodyend="180"/>
+    <listofallmembers>
+      <member refid="classQDynamics_1_1Integrator_1af8889c2bbe10237a8dd8c46b25b15d29" prot="private" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>Buffer</name></member>
+      <member refid="classQDynamics_1_1Integrator_1ae62176188110c0dcea7c65ba429d1abe" prot="private" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>BufferPos</name></member>
+      <member refid="classQDynamics_1_1Integrator_1acbafc2a1b2b19f230c6dfd8924cb36dd" prot="private" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>BufferSize</name></member>
+      <member refid="classQDynamics_1_1Integrator_1ae80ab509b96a9b996934d9ef127f5137" prot="private" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>CreateFullName</name></member>
+      <member refid="classQDynamics_1_1Integrator_1abab707f49ba0ae6701db5dbcdf86861f" prot="private" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>CurrentHashes</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a4b921b312775194b77c2c85f93add84e" prot="public" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>Evolve</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a19ed0b9864ebe762914cee04cb0ad4b3" prot="protected" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>FileName</name></member>
+      <member refid="classQDynamics_1_1Integrator_1ae893dd6b0d041de777e25a99f42886c3" prot="private" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>FinalHash</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a571bd4098f5d245bf46cf7683dcc554a" prot="private" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>FlushBuffer</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a4688fbccd8b0dc5c9a73dddac66b486f" prot="protected" virt="virtual"><scope>QDynamics::Integrator</scope><name>GradU</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a816743f6efb41b0b29243ff3bdaa4c9d" prot="private" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>Hamiltonian</name></member>
+      <member refid="classQDynamics_1_1Integrator_1aa1afd442ef37708fcadb45ca8e7958f5" prot="private" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>Initialise</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a677dd555cee316d6d456b7da258c4385" prot="public" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>Integrator</name></member>
+      <member refid="classQDynamics_1_1Integrator_1aa469124cb408fadbaa540555dfabee33" prot="public" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>Integrator</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a7b99b22475321b34c1624bded3489954" prot="protected" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>J</name></member>
+      <member refid="classQDynamics_1_1Integrator_1adb45dae4f4d1d37ab83ca5269f51058d" prot="protected" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>L</name></member>
+      <member refid="classQDynamics_1_1Integrator_1aa3e27d68428619ab4083b2d42ef8924c" prot="protected" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>Name</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a00be60876ae62ef0d1555a6cc0ce52a5" prot="private" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>NHashes</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" prot="protected" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>p</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" prot="protected" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>q</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a95e110d6b14003db39f8a52180b97870" prot="private" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>SkipID</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a409e18faeeefa5fb63f7bcce3eb0e381" prot="private" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>Skips</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a9b850dd4b29118e44b0183409db0a983" prot="protected" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>TimeStep</name></member>
+      <member refid="classQDynamics_1_1Integrator_1addfb67b6faa62d88bc7234d5496aeaf9" prot="private" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>TotalTime</name></member>
+      <member refid="classQDynamics_1_1Integrator_1afa838ba8dfb0fbde1f77c6d2a45a9dd0" prot="protected" virt="virtual"><scope>QDynamics::Integrator</scope><name>U</name></member>
+      <member refid="classQDynamics_1_1Integrator_1af613a42e489de2d041673fd5be0ebb61" prot="private" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>UpdateBuffer</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a4effa27d56f3205e53653b1fdc5cd08e" prot="public" virt="virtual"><scope>QDynamics::Integrator</scope><name>UpdatePosition</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a88dc286b39899bdec60c040427d663cc" prot="private" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>UpdateProgressBar</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a0241b2e2c87418323330999d1f8e12d0" prot="protected" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>w</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

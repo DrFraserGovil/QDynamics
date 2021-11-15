@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classQDynamics_1_1Leapi" kind="class" language="C++" prot="public">
+    <compoundname>QDynamics::Leapi</compoundname>
+    <basecompoundref refid="classQDynamics_1_1Magi" prot="public" virt="non-virtual">QDynamics::Magi</basecompoundref>
+    <includes refid="Magi_8h" local="no">Magi.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classQDynamics_1_1Leapi_1aa6feac37d39339e26f89626f7bdbc8f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>QDynamics::Leapi::Leapi</definition>
+        <argsstring>(int order, int resolution, double T, double deltaT)</argsstring>
+        <name>Leapi</name>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>resolution</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>deltaT</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" line="154" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Leapi_1a008a9a757055debd2e1da2b5ac64a746" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>QDynamics::Leapi::Leapi</definition>
+        <argsstring>(int order, int resolution, double T, double deltaT, int skipper)</argsstring>
+        <name>Leapi</name>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>resolution</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>T</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>deltaT</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>skipper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" line="158" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" bodystart="158" bodyend="161"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classQDynamics_1_1Leapi_1ada2b4935513fa7e0cb4f78ade9f2fd0e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void QDynamics::Leapi::UpdatePosition</definition>
+        <argsstring>(double t)</argsstring>
+        <name>UpdatePosition</name>
+        <reimplements refid="classQDynamics_1_1Magi_1a500467f899244edfae15f34c84c7684c">UpdatePosition</reimplements>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" line="165" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" bodystart="165" bodyend="186"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="32">
+        <label>QDynamics::Integrator</label>
+        <link refid="classQDynamics_1_1Integrator"/>
+      </node>
+      <node id="30">
+        <label>QDynamics::Leapi</label>
+        <link refid="classQDynamics_1_1Leapi"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>QDynamics::Magi</label>
+        <link refid="classQDynamics_1_1Magi"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="35">
+        <label>QDynamics::Integrator</label>
+        <link refid="classQDynamics_1_1Integrator"/>
+        <childnode refid="36" relation="usage">
+          <edgelabel>J</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>w</edgelabel>
+          <edgelabel>L</edgelabel>
+          <edgelabel>p</edgelabel>
+          <edgelabel>q</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>QDynamics::Leapi</label>
+        <link refid="classQDynamics_1_1Leapi"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>JSL::Vector</label>
+        <link refid="classJSL_1_1Vector"/>
+      </node>
+      <node id="37">
+        <label>QDynamics::Quaternion</label>
+        <link refid="classQDynamics_1_1Quaternion"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>QDynamics::Magi</label>
+        <link refid="classQDynamics_1_1Magi"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" line="152" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" bodystart="151" bodyend="187"/>
+    <listofallmembers>
+      <member refid="classQDynamics_1_1Integrator_1a4b921b312775194b77c2c85f93add84e" prot="public" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>Evolve</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a19ed0b9864ebe762914cee04cb0ad4b3" prot="protected" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>FileName</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a4688fbccd8b0dc5c9a73dddac66b486f" prot="protected" virt="virtual"><scope>QDynamics::Leapi</scope><name>GradU</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a677dd555cee316d6d456b7da258c4385" prot="public" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>Integrator</name></member>
+      <member refid="classQDynamics_1_1Integrator_1aa469124cb408fadbaa540555dfabee33" prot="public" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>Integrator</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a7b99b22475321b34c1624bded3489954" prot="protected" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>J</name></member>
+      <member refid="classQDynamics_1_1Integrator_1adb45dae4f4d1d37ab83ca5269f51058d" prot="protected" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>L</name></member>
+      <member refid="classQDynamics_1_1Leapi_1aa6feac37d39339e26f89626f7bdbc8f0" prot="public" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>Leapi</name></member>
+      <member refid="classQDynamics_1_1Leapi_1a008a9a757055debd2e1da2b5ac64a746" prot="public" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>Leapi</name></member>
+      <member refid="classQDynamics_1_1Magi_1a5b95b7c32c314e2800f59366964abfc3" prot="public" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>Magi</name></member>
+      <member refid="classQDynamics_1_1Magi_1a89efe9c4722cbeb447662ee727af0570" prot="public" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>Magi</name></member>
+      <member refid="classQDynamics_1_1Magi_1a04b85c8aa0e9549c750956c5f781433b" prot="protected" virt="virtual"><scope>QDynamics::Leapi</scope><name>Magnus</name></member>
+      <member refid="classQDynamics_1_1Magi_1aadacdb3581a42babd5e1aa9ada6c77ee" prot="protected" virt="virtual"><scope>QDynamics::Leapi</scope><name>Magnus_Compute</name></member>
+      <member refid="classQDynamics_1_1Integrator_1aa3e27d68428619ab4083b2d42ef8924c" prot="protected" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>Name</name></member>
+      <member refid="classQDynamics_1_1Magi_1ac9ff1c2f4ea0dcc30f1ee52b0894c9e9" prot="protected" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>Order</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" prot="protected" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>p</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" prot="protected" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>q</name></member>
+      <member refid="classQDynamics_1_1Magi_1a629449f541590040a7dfb98ca68cf97b" prot="protected" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>Resolution</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a9b850dd4b29118e44b0183409db0a983" prot="protected" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>TimeStep</name></member>
+      <member refid="classQDynamics_1_1Integrator_1afa838ba8dfb0fbde1f77c6d2a45a9dd0" prot="protected" virt="virtual"><scope>QDynamics::Leapi</scope><name>U</name></member>
+      <member refid="classQDynamics_1_1Magi_1a11af2e624714857cf13343f1745f2fa8" prot="public" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>unlock</name></member>
+      <member refid="classQDynamics_1_1Magi_1aba1aa111cd53a194854a2a8ac4b06b32" prot="public" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>unlocked</name></member>
+      <member refid="classQDynamics_1_1Leapi_1ada2b4935513fa7e0cb4f78ade9f2fd0e" prot="private" virt="virtual"><scope>QDynamics::Leapi</scope><name>UpdatePosition</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a0241b2e2c87418323330999d1f8e12d0" prot="protected" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>w</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
