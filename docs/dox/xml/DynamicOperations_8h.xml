@@ -318,24 +318,16 @@
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m;</highlight></codeline>
 <codeline lineno="28"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="29" refid="namespaceQDynamics_1a003e8d43977a4b818a6e90993d00201a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespaceQDynamics_1a003e8d43977a4b818a6e90993d00201a" kindref="member">verticalAngle</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref><sp/>&amp;q)</highlight></codeline>
-<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref><sp/>z(0,0,0,1);</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref><sp/>zFrame<sp/>=<sp/>q<sp/>*<sp/>z<sp/>*<sp/>q.<ref refid="classQDynamics_1_1Quaternion_1a2516e87ebb14ee2d34bc22744057c87b" kindref="member">Conjugate</ref>();</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>zFrame.<ref refid="classJSL_1_1Vector_1a60660b5a26e0ddace46f31699834b671" kindref="member">Dot</ref>(z);</highlight></codeline>
-<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38" refid="namespaceQDynamics_1a4eabde69f542fcca92f97b1ef2e28b33" refkind="member"><highlight class="normal"><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref><sp/><ref refid="namespaceQDynamics_1a4eabde69f542fcca92f97b1ef2e28b33" kindref="member">LabAngularMomentum</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref><sp/>&amp;q,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref><sp/>&amp;p)</highlight></codeline>
-<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref><sp/>L<sp/>=<sp/>0.5<sp/>*<sp/>q.<ref refid="classQDynamics_1_1Quaternion_1a2516e87ebb14ee2d34bc22744057c87b" kindref="member">Conjugate</ref>()<sp/>*<sp/>p;</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref><sp/>LabL<sp/>=<sp/>q<sp/>*<sp/>L<sp/>*<sp/>q.<ref refid="classQDynamics_1_1Quaternion_1a2516e87ebb14ee2d34bc22744057c87b" kindref="member">Conjugate</ref>();</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LabL.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>();</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="namespaceQDynamics_1a4eabde69f542fcca92f97b1ef2e28b33" refkind="member"><highlight class="normal"><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref><sp/><ref refid="namespaceQDynamics_1a4eabde69f542fcca92f97b1ef2e28b33" kindref="member">LabAngularMomentum</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref><sp/>&amp;q,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref><sp/>&amp;p)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref><sp/>L<sp/>=<sp/>0.5<sp/>*<sp/>q.<ref refid="classQDynamics_1_1Quaternion_1a2516e87ebb14ee2d34bc22744057c87b" kindref="member">Conjugate</ref>()<sp/>*<sp/>p;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref><sp/>LabL<sp/>=<sp/>q<sp/>*<sp/>L<sp/>*<sp/>q.<ref refid="classQDynamics_1_1Quaternion_1a2516e87ebb14ee2d34bc22744057c87b" kindref="member">Conjugate</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LabL.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/home/f/fraserj/Documents/Work/QDynamics/src/DynamicOperations.h"/>
   </compounddef>

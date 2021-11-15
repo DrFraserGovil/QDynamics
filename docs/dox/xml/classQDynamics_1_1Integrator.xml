@@ -12,12 +12,12 @@
         <argsstring></argsstring>
         <name>q</name>
         <briefdescription>
-        </briefdescription>
+<para>The current position variable. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="67" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="67" bodyend="-1"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="77" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="77" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" prot="protected" static="no" mutable="no">
         <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
@@ -25,12 +25,12 @@
         <argsstring></argsstring>
         <name>p</name>
         <briefdescription>
-        </briefdescription>
+<para>The current momentum variable. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="68" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="68" bodyend="-1"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="78" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="78" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classQDynamics_1_1Integrator_1a0241b2e2c87418323330999d1f8e12d0" prot="protected" static="no" mutable="no">
         <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
@@ -38,12 +38,12 @@
         <argsstring></argsstring>
         <name>w</name>
         <briefdescription>
-        </briefdescription>
+<para>The current body-fixed angular speed. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="69" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="69" bodyend="-1"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="79" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="79" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classQDynamics_1_1Integrator_1adb45dae4f4d1d37ab83ca5269f51058d" prot="protected" static="no" mutable="no">
         <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
@@ -51,12 +51,12 @@
         <argsstring></argsstring>
         <name>L</name>
         <briefdescription>
-        </briefdescription>
+<para>The current body-fixed Angular momentum. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="70" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="70" bodyend="-1"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="80" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classQDynamics_1_1Integrator_1a7b99b22475321b34c1624bded3489954" prot="protected" static="no" mutable="no">
         <type><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref></type>
@@ -64,12 +64,12 @@
         <argsstring></argsstring>
         <name>J</name>
         <briefdescription>
-        </briefdescription>
+<para>The saved location of the moment of inertia matrix (see <ref refid="classQDynamics_1_1Integrator_1a4b921b312775194b77c2c85f93add84e" kindref="member">Evolve()</ref>) </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="71" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="71" bodyend="-1"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="81" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="81" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classQDynamics_1_1Integrator_1a9b850dd4b29118e44b0183409db0a983" prot="protected" static="no" mutable="no">
         <type>double</type>
@@ -77,12 +77,25 @@
         <argsstring></argsstring>
         <name>TimeStep</name>
         <briefdescription>
-        </briefdescription>
+<para>The timestep taken by the integrator. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="73" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="73" bodyend="-1"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="83" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQDynamics_1_1Integrator_1addfb67b6faa62d88bc7234d5496aeaf9" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QDynamics::Integrator::TotalTime</definition>
+        <argsstring></argsstring>
+        <name>TotalTime</name>
+        <briefdescription>
+<para>The total length of time that the integrator will search for. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="84" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="84" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classQDynamics_1_1Integrator_1aa3e27d68428619ab4083b2d42ef8924c" prot="protected" static="no" mutable="no">
         <type>std::string</type>
@@ -90,12 +103,12 @@
         <argsstring></argsstring>
         <name>Name</name>
         <briefdescription>
-        </briefdescription>
+<para>The assigned name of the integrator. This is set to &quot;Unassigned&quot; by default: child classes should modify this name. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="75" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="75" bodyend="-1"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="86" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="86" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classQDynamics_1_1Integrator_1a19ed0b9864ebe762914cee04cb0ad4b3" prot="protected" static="no" mutable="no">
         <type>std::string</type>
@@ -103,12 +116,12 @@
         <argsstring></argsstring>
         <name>FileName</name>
         <briefdescription>
-        </briefdescription>
+<para>The location written to by <ref refid="classQDynamics_1_1Integrator_1ae80ab509b96a9b996934d9ef127f5137" kindref="member">CreateFullName()</ref>. A file location which will be used to write the output buffer to. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="76" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="76" bodyend="-1"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="87" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="87" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -118,12 +131,12 @@
         <argsstring></argsstring>
         <name>BufferPos</name>
         <briefdescription>
-        </briefdescription>
+<para>The current write-index of <ref refid="classQDynamics_1_1Integrator_1af8889c2bbe10237a8dd8c46b25b15d29" kindref="member">Integrator::Buffer</ref>. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="81" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="81" bodyend="-1"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="95" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="95" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classQDynamics_1_1Integrator_1acbafc2a1b2b19f230c6dfd8924cb36dd" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -131,12 +144,12 @@
         <argsstring></argsstring>
         <name>BufferSize</name>
         <briefdescription>
-        </briefdescription>
+<para>The length of the <ref refid="classQDynamics_1_1Integrator_1af8889c2bbe10237a8dd8c46b25b15d29" kindref="member">Integrator::Buffer</ref>. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="82" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="82" bodyend="-1"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="96" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="96" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classQDynamics_1_1Integrator_1a00be60876ae62ef0d1555a6cc0ce52a5" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -144,12 +157,12 @@
         <argsstring></argsstring>
         <name>NHashes</name>
         <briefdescription>
-        </briefdescription>
+<para>The number of hashes a full progress bar is made up of. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="84" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="84" bodyend="-1"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="98" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="98" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classQDynamics_1_1Integrator_1ae893dd6b0d041de777e25a99f42886c3" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -157,12 +170,12 @@
         <argsstring></argsstring>
         <name>FinalHash</name>
         <briefdescription>
-        </briefdescription>
+<para>A simple lock tracking if the final hash has been written, preventing multiple termination characters being printed. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="85" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="85" bodyend="-1"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="99" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="99" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classQDynamics_1_1Integrator_1abab707f49ba0ae6701db5dbcdf86861f" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -170,12 +183,12 @@
         <argsstring></argsstring>
         <name>CurrentHashes</name>
         <briefdescription>
-        </briefdescription>
+<para>The current number of progress hashes which have been written to the terminal. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="86" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="86" bodyend="-1"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="100" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="100" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classQDynamics_1_1Integrator_1af8889c2bbe10237a8dd8c46b25b15d29" prot="private" static="no" mutable="no">
         <type>std::vector&lt; std::string &gt;</type>
@@ -183,12 +196,12 @@
         <argsstring></argsstring>
         <name>Buffer</name>
         <briefdescription>
-        </briefdescription>
+<para>A string-buffer containing the save-values of several past values of the integrator. Once full, the buffer is written to file. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="87" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="87" bodyend="-1"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="102" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="102" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classQDynamics_1_1Integrator_1a95e110d6b14003db39f8a52180b97870" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -196,12 +209,12 @@
         <argsstring></argsstring>
         <name>SkipID</name>
         <briefdescription>
-        </briefdescription>
+<para>The current number of files that the buffer has skipped (as per the skipper variable in <ref refid="classQDynamics_1_1Integrator_1aa469124cb408fadbaa540555dfabee33" kindref="member">Integrator(double,double,int)</ref>) </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="88" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="88" bodyend="-1"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="103" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="103" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classQDynamics_1_1Integrator_1a409e18faeeefa5fb63f7bcce3eb0e381" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -209,25 +222,12 @@
         <argsstring></argsstring>
         <name>Skips</name>
         <briefdescription>
-        </briefdescription>
+<para>The maximum value of SkipID before the buffer saves a value. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="89" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="89" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classQDynamics_1_1Integrator_1addfb67b6faa62d88bc7234d5496aeaf9" prot="private" static="no" mutable="no">
-        <type>double</type>
-        <definition>double QDynamics::Integrator::TotalTime</definition>
-        <argsstring></argsstring>
-        <name>TotalTime</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="90" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="90" bodyend="-1"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="104" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="104" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -245,12 +245,27 @@
           <declname>deltaT</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Constructor function. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total duration of the integration </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deltaT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width of timesteps used </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="18" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="18" bodyend="26"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="21" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="21" bodyend="29"/>
       </memberdef>
       <memberdef kind="function" id="classQDynamics_1_1Integrator_1aa469124cb408fadbaa540555dfabee33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -270,12 +285,34 @@
           <declname>skipper</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Constructor function. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total duration of the integration </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deltaT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width of timesteps used </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of epochs which pass in between updates to the progess <ref refid="classQDynamics_1_1Integrator_1af8889c2bbe10237a8dd8c46b25b15d29" kindref="member">Integrator::Buffer</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="28" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="28" bodyend="36"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="32" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="32" bodyend="40"/>
       </memberdef>
       <memberdef kind="function" id="classQDynamics_1_1Integrator_1a4b921b312775194b77c2c85f93add84e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -301,10 +338,39 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>The main computation loop. Calls <ref refid="classQDynamics_1_1Integrator_1a4effa27d56f3205e53653b1fdc5cd08e" kindref="member">UpdatePosition()</ref> at each timestep until the TotalTime is reached. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial position <ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial momentum <ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>J</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The diagonals of the moment of inertia vector (we have implicitly assumed the system triaxial is such that J is diagonal) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>saveFolder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The location into which the <ref refid="classQDynamics_1_1Integrator_1af8889c2bbe10237a8dd8c46b25b15d29" kindref="member">Integrator::Buffer</ref> output is saved. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="38" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="38" bodyend="59"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="48" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="48" bodyend="69"/>
       </memberdef>
       <memberdef kind="function" id="classQDynamics_1_1Integrator_1a4effa27d56f3205e53653b1fdc5cd08e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -320,12 +386,20 @@
           <declname>t</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>In the <ref refid="classQDynamics_1_1Integrator" kindref="compound">Integrator</ref> base class, this is an empty function. Child members will mainly focus on overloading this function to their own update formula. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current time of the integrator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="62" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="62" bodyend="65"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="72" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="72" bodyend="75"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -339,12 +413,21 @@
           <declname>t</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Returns the quaternionic derivative of the neo-potential V (equal to the derivative of the rotation potential U), given the current value of <ref refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" kindref="member">Integrator::q</ref> and the current time. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current time </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value of the quaternionic gradient </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="78" column="1"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="90" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classQDynamics_1_1Integrator_1afa838ba8dfb0fbde1f77c6d2a45a9dd0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>double</type>
@@ -356,12 +439,27 @@
           <declname>t</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Returns the current value of the rotation potential U, given the current value of <ref refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" kindref="member">Integrator::q</ref> and the current time. Unlike <ref refid="classQDynamics_1_1Integrator_1a4688fbccd8b0dc5c9a73dddac66b486f" kindref="member">GradU()</ref>, it is not critical that this function be 100% correct, as it is only used by the <ref refid="classQDynamics_1_1Integrator_1a816743f6efb41b0b29243ff3bdaa4c9d" kindref="member">Integrator::Hamiltonian</ref> function as bookkeeping for the current energy. If you do not wish to track the current energy, you may neglect this function. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current time </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current potential energy of the system </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="79" column="1"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="93" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -375,12 +473,20 @@
           <declname>t</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Called during every loop of <ref refid="classQDynamics_1_1Integrator_1a4b921b312775194b77c2c85f93add84e" kindref="member">Evolve()</ref>, saves some values of interest to the <ref refid="classQDynamics_1_1Integrator_1af8889c2bbe10237a8dd8c46b25b15d29" kindref="member">Integrator::Buffer</ref>. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current time, needed as part of the buffer input </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="92" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="92" bodyend="112"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="108" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="108" bodyend="128"/>
       </memberdef>
       <memberdef kind="function" id="classQDynamics_1_1Integrator_1a571bd4098f5d245bf46cf7683dcc554a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -388,12 +494,12 @@
         <argsstring>()</argsstring>
         <name>FlushBuffer</name>
         <briefdescription>
-        </briefdescription>
+<para>Called when the <ref refid="classQDynamics_1_1Integrator_1af8889c2bbe10237a8dd8c46b25b15d29" kindref="member">Integrator::Buffer</ref> is full, writes the contents of the buffer to the file determined by <ref refid="classQDynamics_1_1Integrator_1a19ed0b9864ebe762914cee04cb0ad4b3" kindref="member">Integrator::FileName</ref>, and resets the buffer. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="115" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="115" bodyend="119"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="131" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="131" bodyend="135"/>
       </memberdef>
       <memberdef kind="function" id="classQDynamics_1_1Integrator_1a88dc286b39899bdec60c040427d663cc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -405,12 +511,20 @@
           <declname>t</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Writes a series of # to the screen to act as a progress bar: [##### ]. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current time, so that the current progress can be computed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="122" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="122" bodyend="135"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="138" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="138" bodyend="151"/>
       </memberdef>
       <memberdef kind="function" id="classQDynamics_1_1Integrator_1aa1afd442ef37708fcadb45ca8e7958f5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -436,10 +550,39 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>Prepares the <ref refid="classQDynamics_1_1Integrator" kindref="compound">Integrator</ref> for a new computation loop. Called at the start of an <ref refid="classQDynamics_1_1Integrator_1a4b921b312775194b77c2c85f93add84e" kindref="member">Evolve()</ref> process, it wipes the buffer and prepares the output file. The inputs are simply those passed to <ref refid="classQDynamics_1_1Integrator_1a4b921b312775194b77c2c85f93add84e" kindref="member">Evolve()</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial position <ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial momentum <ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>J</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The diagonals of the moment of inertia vector (we have implicitly assumed the system triaxial is such that J is diagonal) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>saveFolder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The location into which the <ref refid="classQDynamics_1_1Integrator_1af8889c2bbe10237a8dd8c46b25b15d29" kindref="member">Integrator::Buffer</ref> output is saved. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="137" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="137" bodyend="164"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="162" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="162" bodyend="189"/>
       </memberdef>
       <memberdef kind="function" id="classQDynamics_1_1Integrator_1ae80ab509b96a9b996934d9ef127f5137" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -451,12 +594,20 @@
           <declname>saveFolder</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Computes the <ref refid="classQDynamics_1_1Integrator_1a19ed0b9864ebe762914cee04cb0ad4b3" kindref="member">Integrator::FileName</ref> including the filepath from from the <ref refid="classQDynamics_1_1Integrator_1aa3e27d68428619ab4083b2d42ef8924c" kindref="member">Integrator::Name</ref> and the provided directory. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>saveFolder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The corresponding value passed to Intitialise() </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="166" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="166" bodyend="170"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="192" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="192" bodyend="196"/>
       </memberdef>
       <memberdef kind="function" id="classQDynamics_1_1Integrator_1a816743f6efb41b0b29243ff3bdaa4c9d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>double</type>
@@ -468,18 +619,26 @@
           <declname>t</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Computes the current value of the energy of the system given the kinetic energy and the value of <ref refid="classQDynamics_1_1Integrator_1afa838ba8dfb0fbde1f77c6d2a45a9dd0" kindref="member">U()</ref>. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current time, for time-dependent potentials. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="172" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="172" bodyend="178"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="199" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="199" bodyend="205"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-    </detaileddescription>
+<para>A superclass from which all individual integrators will inherit. Handles the mundane stuff such as the progress tracking and saving. Importantly, it provides virtual overload methods for Gradu() and <ref refid="classQDynamics_1_1Integrator_1afa838ba8dfb0fbde1f77c6d2a45a9dd0" kindref="member">U()</ref> which allows external definition of the dynamics, and of <ref refid="classQDynamics_1_1Integrator_1a4effa27d56f3205e53653b1fdc5cd08e" kindref="member">UpdatePosition()</ref> which allows specific subclasses of this object choose how they want to move from q_i -&gt; q_i+1. </para>    </detaileddescription>
     <inheritancegraph>
       <node id="17">
         <label>QDynamics::Integrator</label>
@@ -541,7 +700,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="15" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="14" bodyend="180"/>
+    <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" line="17" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h" bodystart="16" bodyend="207"/>
     <listofallmembers>
       <member refid="classQDynamics_1_1Integrator_1af8889c2bbe10237a8dd8c46b25b15d29" prot="private" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>Buffer</name></member>
       <member refid="classQDynamics_1_1Integrator_1ae62176188110c0dcea7c65ba429d1abe" prot="private" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>BufferPos</name></member>
@@ -566,7 +725,7 @@
       <member refid="classQDynamics_1_1Integrator_1a95e110d6b14003db39f8a52180b97870" prot="private" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>SkipID</name></member>
       <member refid="classQDynamics_1_1Integrator_1a409e18faeeefa5fb63f7bcce3eb0e381" prot="private" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>Skips</name></member>
       <member refid="classQDynamics_1_1Integrator_1a9b850dd4b29118e44b0183409db0a983" prot="protected" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>TimeStep</name></member>
-      <member refid="classQDynamics_1_1Integrator_1addfb67b6faa62d88bc7234d5496aeaf9" prot="private" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>TotalTime</name></member>
+      <member refid="classQDynamics_1_1Integrator_1addfb67b6faa62d88bc7234d5496aeaf9" prot="protected" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>TotalTime</name></member>
       <member refid="classQDynamics_1_1Integrator_1afa838ba8dfb0fbde1f77c6d2a45a9dd0" prot="protected" virt="virtual"><scope>QDynamics::Integrator</scope><name>U</name></member>
       <member refid="classQDynamics_1_1Integrator_1af613a42e489de2d041673fd5be0ebb61" prot="private" virt="non-virtual"><scope>QDynamics::Integrator</scope><name>UpdateBuffer</name></member>
       <member refid="classQDynamics_1_1Integrator_1a4effa27d56f3205e53653b1fdc5cd08e" prot="public" virt="virtual"><scope>QDynamics::Integrator</scope><name>UpdatePosition</name></member>

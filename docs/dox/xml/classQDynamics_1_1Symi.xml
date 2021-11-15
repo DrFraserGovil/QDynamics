@@ -167,6 +167,7 @@
       <member refid="classQDynamics_1_1Symi_1afc73292268197d37fad6716aa6bb5976" prot="public" virt="non-virtual"><scope>QDynamics::Symi</scope><name>Symi</name></member>
       <member refid="classQDynamics_1_1Symi_1a2e248bf5141814ca1e8285227d26d4bc" prot="public" virt="non-virtual"><scope>QDynamics::Symi</scope><name>Symi</name></member>
       <member refid="classQDynamics_1_1Integrator_1a9b850dd4b29118e44b0183409db0a983" prot="protected" virt="non-virtual"><scope>QDynamics::Symi</scope><name>TimeStep</name></member>
+      <member refid="classQDynamics_1_1Integrator_1addfb67b6faa62d88bc7234d5496aeaf9" prot="protected" virt="non-virtual"><scope>QDynamics::Symi</scope><name>TotalTime</name></member>
       <member refid="classQDynamics_1_1Integrator_1afa838ba8dfb0fbde1f77c6d2a45a9dd0" prot="protected" virt="virtual"><scope>QDynamics::Symi</scope><name>U</name></member>
       <member refid="classQDynamics_1_1Magi_1a11af2e624714857cf13343f1745f2fa8" prot="public" virt="non-virtual"><scope>QDynamics::Symi</scope><name>unlock</name></member>
       <member refid="classQDynamics_1_1Magi_1aba1aa111cd53a194854a2a8ac4b06b32" prot="public" virt="non-virtual"><scope>QDynamics::Symi</scope><name>unlocked</name></member>

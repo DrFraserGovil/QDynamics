@@ -82,23 +82,6 @@
         </inbodydescription>
         <location file="/home/f/fraserj/Documents/Work/QDynamics/src/DynamicOperations.h" line="19" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/DynamicOperations.h" bodystart="19" bodyend="28"/>
       </memberdef>
-      <memberdef kind="function" id="namespaceQDynamics_1a003e8d43977a4b818a6e90993d00201a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
-        <definition>double QDynamics::verticalAngle</definition>
-        <argsstring>(const QDynamics::Quaternion &amp;q)</argsstring>
-        <name>verticalAngle</name>
-        <param>
-          <type>const <ref refid="classQDynamics_1_1Quaternion" kindref="compound">QDynamics::Quaternion</ref> &amp;</type>
-          <declname>q</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/DynamicOperations.h" line="29" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/DynamicOperations.h" bodystart="29" bodyend="35"/>
-      </memberdef>
       <memberdef kind="function" id="namespaceQDynamics_1a4eabde69f542fcca92f97b1ef2e28b33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref></type>
         <definition>JSL::Vector QDynamics::LabAngularMomentum</definition>
@@ -118,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/DynamicOperations.h" line="38" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/DynamicOperations.h" bodystart="38" bodyend="45"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/DynamicOperations.h" line="30" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/DynamicOperations.h" bodystart="30" bodyend="37"/>
       </memberdef>
       <memberdef kind="function" id="namespaceQDynamics_1ac40010112506831ced816640def9bc85" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>

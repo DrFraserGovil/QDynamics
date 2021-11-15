@@ -24,7 +24,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Brute.h" line="9" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Brute.h" bodystart="9" bodyend="12"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Brute.h" line="13" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Brute.h" bodystart="13" bodyend="16"/>
       </memberdef>
       <memberdef kind="function" id="classQDynamics_1_1Brute_1a5f04abe903e88405c24fb5695db6357f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Brute.h" line="13" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Brute.h" bodystart="13" bodyend="16"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Brute.h" line="17" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Brute.h" bodystart="17" bodyend="20"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -64,12 +64,20 @@
           <declname>t</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>In the <ref refid="classQDynamics_1_1Integrator" kindref="compound">Integrator</ref> base class, this is an empty function. Child members will mainly focus on overloading this function to their own update formula. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current time of the integrator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Brute.h" line="20" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Brute.h" bodystart="20" bodyend="33"/>
+        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Brute.h" line="24" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Brute.h" bodystart="24" bodyend="37"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -119,7 +127,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Brute.h" line="7" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Brute.h" bodystart="6" bodyend="34"/>
+    <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Brute.h" line="11" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Brute.h" bodystart="10" bodyend="38"/>
     <listofallmembers>
       <member refid="classQDynamics_1_1Brute_1a2ef1df08140810ffbc9a3e8b97561bbb" prot="public" virt="non-virtual"><scope>QDynamics::Brute</scope><name>Brute</name></member>
       <member refid="classQDynamics_1_1Brute_1a5f04abe903e88405c24fb5695db6357f" prot="public" virt="non-virtual"><scope>QDynamics::Brute</scope><name>Brute</name></member>
@@ -134,6 +142,7 @@
       <member refid="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" prot="protected" virt="non-virtual"><scope>QDynamics::Brute</scope><name>p</name></member>
       <member refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" prot="protected" virt="non-virtual"><scope>QDynamics::Brute</scope><name>q</name></member>
       <member refid="classQDynamics_1_1Integrator_1a9b850dd4b29118e44b0183409db0a983" prot="protected" virt="non-virtual"><scope>QDynamics::Brute</scope><name>TimeStep</name></member>
+      <member refid="classQDynamics_1_1Integrator_1addfb67b6faa62d88bc7234d5496aeaf9" prot="protected" virt="non-virtual"><scope>QDynamics::Brute</scope><name>TotalTime</name></member>
       <member refid="classQDynamics_1_1Integrator_1afa838ba8dfb0fbde1f77c6d2a45a9dd0" prot="protected" virt="virtual"><scope>QDynamics::Brute</scope><name>U</name></member>
       <member refid="classQDynamics_1_1Brute_1ac5d4bbe0e34a9f6836f71f40ae8a9eb4" prot="private" virt="virtual"><scope>QDynamics::Brute</scope><name>UpdatePosition</name></member>
       <member refid="classQDynamics_1_1Integrator_1a0241b2e2c87418323330999d1f8e12d0" prot="protected" virt="non-virtual"><scope>QDynamics::Brute</scope><name>w</name></member>

@@ -12,6 +12,7 @@ We provide here a basic Quaternion class as well as a generalised integrator fra
 
 .. toctree::
    quaternion
+   integrators
    :maxdepth: 2
    :caption: Contents:
 	

@@ -3,6 +3,10 @@
 
 namespace QDynamics
 {
+	
+	/*
+	  The dumbest possible way to integrate 
+	*/
 	class Brute : public Integrator
 	{
 		public:

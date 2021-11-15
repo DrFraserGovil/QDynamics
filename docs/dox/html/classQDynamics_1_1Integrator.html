@@ -97,77 +97,106 @@ Inheritance diagram for QDynamics::Integrator:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a677dd555cee316d6d456b7da258c4385"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#a677dd555cee316d6d456b7da258c4385">Integrator</a> (double T, double deltaT)</td></tr>
+<tr class="memdesc:a677dd555cee316d6d456b7da258c4385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor function.  <a href="#a677dd555cee316d6d456b7da258c4385">More...</a><br /></td></tr>
 <tr class="separator:a677dd555cee316d6d456b7da258c4385"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa469124cb408fadbaa540555dfabee33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#aa469124cb408fadbaa540555dfabee33">Integrator</a> (double T, double deltaT, int skipper)</td></tr>
+<tr class="memdesc:aa469124cb408fadbaa540555dfabee33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor function.  <a href="#aa469124cb408fadbaa540555dfabee33">More...</a><br /></td></tr>
 <tr class="separator:aa469124cb408fadbaa540555dfabee33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b921b312775194b77c2c85f93add84e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#a4b921b312775194b77c2c85f93add84e">Evolve</a> (<a class="el" href="classQDynamics_1_1Quaternion.html">Quaternion</a> q0, <a class="el" href="classQDynamics_1_1Quaternion.html">Quaternion</a> p0, <a class="el" href="classJSL_1_1Vector.html">JSL::Vector</a> <a class="el" href="classQDynamics_1_1Integrator.html#a7b99b22475321b34c1624bded3489954">J</a>, std::string saveFolder)</td></tr>
 <tr class="separator:a4b921b312775194b77c2c85f93add84e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4effa27d56f3205e53653b1fdc5cd08e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#a4effa27d56f3205e53653b1fdc5cd08e">UpdatePosition</a> (double t)</td></tr>
+<tr class="memdesc:a4effa27d56f3205e53653b1fdc5cd08e"><td class="mdescLeft">&#160;</td><td class="mdescRight">In the <a class="el" href="classQDynamics_1_1Integrator.html">Integrator</a> base class, this is an empty function. Child members will mainly focus on overloading this function to their own update formula.  <a href="#a4effa27d56f3205e53653b1fdc5cd08e">More...</a><br /></td></tr>
 <tr class="separator:a4effa27d56f3205e53653b1fdc5cd08e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a4688fbccd8b0dc5c9a73dddac66b486f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classQDynamics_1_1Quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#a4688fbccd8b0dc5c9a73dddac66b486f">GradU</a> (double t)</td></tr>
+<tr class="memdesc:a4688fbccd8b0dc5c9a73dddac66b486f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the quaternionic derivative of the neo-potential V (equal to the derivative of the rotation potential U), given the current value of <a class="el" href="classQDynamics_1_1Integrator.html#a5929511da076c7f31749a6da713fcff6" title="The current position variable. ">Integrator::q</a> and the current time.  <a href="#a4688fbccd8b0dc5c9a73dddac66b486f">More...</a><br /></td></tr>
 <tr class="separator:a4688fbccd8b0dc5c9a73dddac66b486f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa838ba8dfb0fbde1f77c6d2a45a9dd0"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#afa838ba8dfb0fbde1f77c6d2a45a9dd0">U</a> (double t)</td></tr>
+<tr class="memdesc:afa838ba8dfb0fbde1f77c6d2a45a9dd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current value of the rotation potential U, given the current value of <a class="el" href="classQDynamics_1_1Integrator.html#a5929511da076c7f31749a6da713fcff6" title="The current position variable. ">Integrator::q</a> and the current time. Unlike <a class="el" href="classQDynamics_1_1Integrator.html#a4688fbccd8b0dc5c9a73dddac66b486f" title="Returns the quaternionic derivative of the neo-potential V (equal to the derivative of the rotation p...">GradU()</a>, it is not critical that this function be 100% correct, as it is only used by the <a class="el" href="classQDynamics_1_1Integrator.html#a816743f6efb41b0b29243ff3bdaa4c9d" title="Computes the current value of the energy of the system given the kinetic energy and the value of U()...">Integrator::Hamiltonian</a> function as bookkeeping for the current energy. If you do not wish to track the current energy, you may neglect this function.  <a href="#afa838ba8dfb0fbde1f77c6d2a45a9dd0">More...</a><br /></td></tr>
 <tr class="separator:afa838ba8dfb0fbde1f77c6d2a45a9dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a5929511da076c7f31749a6da713fcff6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQDynamics_1_1Quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#a5929511da076c7f31749a6da713fcff6">q</a></td></tr>
+<tr class="memdesc:a5929511da076c7f31749a6da713fcff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current position variable.  <a href="#a5929511da076c7f31749a6da713fcff6">More...</a><br /></td></tr>
 <tr class="separator:a5929511da076c7f31749a6da713fcff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fb07254408f6ad620eb9dbfa0f8da95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQDynamics_1_1Quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#a1fb07254408f6ad620eb9dbfa0f8da95">p</a></td></tr>
+<tr class="memdesc:a1fb07254408f6ad620eb9dbfa0f8da95"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current momentum variable.  <a href="#a1fb07254408f6ad620eb9dbfa0f8da95">More...</a><br /></td></tr>
 <tr class="separator:a1fb07254408f6ad620eb9dbfa0f8da95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0241b2e2c87418323330999d1f8e12d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQDynamics_1_1Quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#a0241b2e2c87418323330999d1f8e12d0">w</a></td></tr>
+<tr class="memdesc:a0241b2e2c87418323330999d1f8e12d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current body-fixed angular speed.  <a href="#a0241b2e2c87418323330999d1f8e12d0">More...</a><br /></td></tr>
 <tr class="separator:a0241b2e2c87418323330999d1f8e12d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb45dae4f4d1d37ab83ca5269f51058d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQDynamics_1_1Quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#adb45dae4f4d1d37ab83ca5269f51058d">L</a></td></tr>
+<tr class="memdesc:adb45dae4f4d1d37ab83ca5269f51058d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current body-fixed Angular momentum.  <a href="#adb45dae4f4d1d37ab83ca5269f51058d">More...</a><br /></td></tr>
 <tr class="separator:adb45dae4f4d1d37ab83ca5269f51058d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b99b22475321b34c1624bded3489954"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classJSL_1_1Vector.html">JSL::Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#a7b99b22475321b34c1624bded3489954">J</a></td></tr>
+<tr class="memdesc:a7b99b22475321b34c1624bded3489954"><td class="mdescLeft">&#160;</td><td class="mdescRight">The saved location of the moment of inertia matrix (see <a class="el" href="classQDynamics_1_1Integrator.html#a4b921b312775194b77c2c85f93add84e">Evolve()</a>)  <a href="#a7b99b22475321b34c1624bded3489954">More...</a><br /></td></tr>
 <tr class="separator:a7b99b22475321b34c1624bded3489954"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b850dd4b29118e44b0183409db0a983"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#a9b850dd4b29118e44b0183409db0a983">TimeStep</a></td></tr>
+<tr class="memdesc:a9b850dd4b29118e44b0183409db0a983"><td class="mdescLeft">&#160;</td><td class="mdescRight">The timestep taken by the integrator.  <a href="#a9b850dd4b29118e44b0183409db0a983">More...</a><br /></td></tr>
 <tr class="separator:a9b850dd4b29118e44b0183409db0a983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addfb67b6faa62d88bc7234d5496aeaf9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#addfb67b6faa62d88bc7234d5496aeaf9">TotalTime</a></td></tr>
+<tr class="memdesc:addfb67b6faa62d88bc7234d5496aeaf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The total length of time that the integrator will search for.  <a href="#addfb67b6faa62d88bc7234d5496aeaf9">More...</a><br /></td></tr>
+<tr class="separator:addfb67b6faa62d88bc7234d5496aeaf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3e27d68428619ab4083b2d42ef8924c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#aa3e27d68428619ab4083b2d42ef8924c">Name</a></td></tr>
+<tr class="memdesc:aa3e27d68428619ab4083b2d42ef8924c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The assigned name of the integrator. This is set to "Unassigned" by default: child classes should modify this name.  <a href="#aa3e27d68428619ab4083b2d42ef8924c">More...</a><br /></td></tr>
 <tr class="separator:aa3e27d68428619ab4083b2d42ef8924c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19ed0b9864ebe762914cee04cb0ad4b3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#a19ed0b9864ebe762914cee04cb0ad4b3">FileName</a></td></tr>
+<tr class="memdesc:a19ed0b9864ebe762914cee04cb0ad4b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The location written to by <a class="el" href="classQDynamics_1_1Integrator.html#ae80ab509b96a9b996934d9ef127f5137" title="Computes the Integrator::FileName including the filepath from from the Integrator::Name and the provi...">CreateFullName()</a>. A file location which will be used to write the output buffer to.  <a href="#a19ed0b9864ebe762914cee04cb0ad4b3">More...</a><br /></td></tr>
 <tr class="separator:a19ed0b9864ebe762914cee04cb0ad4b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:af613a42e489de2d041673fd5be0ebb61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#af613a42e489de2d041673fd5be0ebb61">UpdateBuffer</a> (double t)</td></tr>
+<tr class="memdesc:af613a42e489de2d041673fd5be0ebb61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called during every loop of <a class="el" href="classQDynamics_1_1Integrator.html#a4b921b312775194b77c2c85f93add84e">Evolve()</a>, saves some values of interest to the <a class="el" href="classQDynamics_1_1Integrator.html#af8889c2bbe10237a8dd8c46b25b15d29" title="A string-buffer containing the save-values of several past values of the integrator. Once full, the buffer is written to file. ">Integrator::Buffer</a>.  <a href="#af613a42e489de2d041673fd5be0ebb61">More...</a><br /></td></tr>
 <tr class="separator:af613a42e489de2d041673fd5be0ebb61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a571bd4098f5d245bf46cf7683dcc554a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#a571bd4098f5d245bf46cf7683dcc554a">FlushBuffer</a> ()</td></tr>
+<tr class="memdesc:a571bd4098f5d245bf46cf7683dcc554a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the <a class="el" href="classQDynamics_1_1Integrator.html#af8889c2bbe10237a8dd8c46b25b15d29" title="A string-buffer containing the save-values of several past values of the integrator. Once full, the buffer is written to file. ">Integrator::Buffer</a> is full, writes the contents of the buffer to the file determined by <a class="el" href="classQDynamics_1_1Integrator.html#a19ed0b9864ebe762914cee04cb0ad4b3" title="The location written to by CreateFullName(). A file location which will be used to write the output b...">Integrator::FileName</a>, and resets the buffer.  <a href="#a571bd4098f5d245bf46cf7683dcc554a">More...</a><br /></td></tr>
 <tr class="separator:a571bd4098f5d245bf46cf7683dcc554a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88dc286b39899bdec60c040427d663cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#a88dc286b39899bdec60c040427d663cc">UpdateProgressBar</a> (double t)</td></tr>
+<tr class="memdesc:a88dc286b39899bdec60c040427d663cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a series of # to the screen to act as a progress bar: [##### ].  <a href="#a88dc286b39899bdec60c040427d663cc">More...</a><br /></td></tr>
 <tr class="separator:a88dc286b39899bdec60c040427d663cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1afd442ef37708fcadb45ca8e7958f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#aa1afd442ef37708fcadb45ca8e7958f5">Initialise</a> (<a class="el" href="classQDynamics_1_1Quaternion.html">Quaternion</a> q0, <a class="el" href="classQDynamics_1_1Quaternion.html">Quaternion</a> p0, <a class="el" href="classJSL_1_1Vector.html">JSL::Vector</a> Jin, std::string saveFolder)</td></tr>
 <tr class="separator:aa1afd442ef37708fcadb45ca8e7958f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae80ab509b96a9b996934d9ef127f5137"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#ae80ab509b96a9b996934d9ef127f5137">CreateFullName</a> (std::string saveFolder)</td></tr>
+<tr class="memdesc:ae80ab509b96a9b996934d9ef127f5137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the <a class="el" href="classQDynamics_1_1Integrator.html#a19ed0b9864ebe762914cee04cb0ad4b3" title="The location written to by CreateFullName(). A file location which will be used to write the output b...">Integrator::FileName</a> including the filepath from from the <a class="el" href="classQDynamics_1_1Integrator.html#aa3e27d68428619ab4083b2d42ef8924c" title="The assigned name of the integrator. This is set to &quot;Unassigned&quot; by default: child classes should mod...">Integrator::Name</a> and the provided directory.  <a href="#ae80ab509b96a9b996934d9ef127f5137">More...</a><br /></td></tr>
 <tr class="separator:ae80ab509b96a9b996934d9ef127f5137"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a816743f6efb41b0b29243ff3bdaa4c9d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#a816743f6efb41b0b29243ff3bdaa4c9d">Hamiltonian</a> (double t)</td></tr>
+<tr class="memdesc:a816743f6efb41b0b29243ff3bdaa4c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the current value of the energy of the system given the kinetic energy and the value of <a class="el" href="classQDynamics_1_1Integrator.html#afa838ba8dfb0fbde1f77c6d2a45a9dd0" title="Returns the current value of the rotation potential U, given the current value of Integrator::q and t...">U()</a>.  <a href="#a816743f6efb41b0b29243ff3bdaa4c9d">More...</a><br /></td></tr>
 <tr class="separator:a816743f6efb41b0b29243ff3bdaa4c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ae62176188110c0dcea7c65ba429d1abe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#ae62176188110c0dcea7c65ba429d1abe">BufferPos</a></td></tr>
+<tr class="memdesc:ae62176188110c0dcea7c65ba429d1abe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current write-index of <a class="el" href="classQDynamics_1_1Integrator.html#af8889c2bbe10237a8dd8c46b25b15d29" title="A string-buffer containing the save-values of several past values of the integrator. Once full, the buffer is written to file. ">Integrator::Buffer</a>.  <a href="#ae62176188110c0dcea7c65ba429d1abe">More...</a><br /></td></tr>
 <tr class="separator:ae62176188110c0dcea7c65ba429d1abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbafc2a1b2b19f230c6dfd8924cb36dd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#acbafc2a1b2b19f230c6dfd8924cb36dd">BufferSize</a></td></tr>
+<tr class="memdesc:acbafc2a1b2b19f230c6dfd8924cb36dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length of the <a class="el" href="classQDynamics_1_1Integrator.html#af8889c2bbe10237a8dd8c46b25b15d29" title="A string-buffer containing the save-values of several past values of the integrator. Once full, the buffer is written to file. ">Integrator::Buffer</a>.  <a href="#acbafc2a1b2b19f230c6dfd8924cb36dd">More...</a><br /></td></tr>
 <tr class="separator:acbafc2a1b2b19f230c6dfd8924cb36dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00be60876ae62ef0d1555a6cc0ce52a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#a00be60876ae62ef0d1555a6cc0ce52a5">NHashes</a></td></tr>
+<tr class="memdesc:a00be60876ae62ef0d1555a6cc0ce52a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of hashes a full progress bar is made up of.  <a href="#a00be60876ae62ef0d1555a6cc0ce52a5">More...</a><br /></td></tr>
 <tr class="separator:a00be60876ae62ef0d1555a6cc0ce52a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae893dd6b0d041de777e25a99f42886c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#ae893dd6b0d041de777e25a99f42886c3">FinalHash</a></td></tr>
+<tr class="memdesc:ae893dd6b0d041de777e25a99f42886c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple lock tracking if the final hash has been written, preventing multiple termination characters being printed.  <a href="#ae893dd6b0d041de777e25a99f42886c3">More...</a><br /></td></tr>
 <tr class="separator:ae893dd6b0d041de777e25a99f42886c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abab707f49ba0ae6701db5dbcdf86861f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#abab707f49ba0ae6701db5dbcdf86861f">CurrentHashes</a></td></tr>
+<tr class="memdesc:abab707f49ba0ae6701db5dbcdf86861f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current number of progress hashes which have been written to the terminal.  <a href="#abab707f49ba0ae6701db5dbcdf86861f">More...</a><br /></td></tr>
 <tr class="separator:abab707f49ba0ae6701db5dbcdf86861f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8889c2bbe10237a8dd8c46b25b15d29"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#af8889c2bbe10237a8dd8c46b25b15d29">Buffer</a></td></tr>
+<tr class="memdesc:af8889c2bbe10237a8dd8c46b25b15d29"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string-buffer containing the save-values of several past values of the integrator. Once full, the buffer is written to file.  <a href="#af8889c2bbe10237a8dd8c46b25b15d29">More...</a><br /></td></tr>
 <tr class="separator:af8889c2bbe10237a8dd8c46b25b15d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95e110d6b14003db39f8a52180b97870"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#a95e110d6b14003db39f8a52180b97870">SkipID</a></td></tr>
+<tr class="memdesc:a95e110d6b14003db39f8a52180b97870"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current number of files that the buffer has skipped (as per the skipper variable in <a class="el" href="classQDynamics_1_1Integrator.html#aa469124cb408fadbaa540555dfabee33" title="Constructor function. ">Integrator(double,double,int)</a>)  <a href="#a95e110d6b14003db39f8a52180b97870">More...</a><br /></td></tr>
 <tr class="separator:a95e110d6b14003db39f8a52180b97870"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a409e18faeeefa5fb63f7bcce3eb0e381"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#a409e18faeeefa5fb63f7bcce3eb0e381">Skips</a></td></tr>
+<tr class="memdesc:a409e18faeeefa5fb63f7bcce3eb0e381"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum value of SkipID before the buffer saves a value.  <a href="#a409e18faeeefa5fb63f7bcce3eb0e381">More...</a><br /></td></tr>
 <tr class="separator:a409e18faeeefa5fb63f7bcce3eb0e381"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addfb67b6faa62d88bc7234d5496aeaf9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#addfb67b6faa62d88bc7234d5496aeaf9">TotalTime</a></td></tr>
-<tr class="separator:addfb67b6faa62d88bc7234d5496aeaf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A superclass from which all individual integrators will inherit. Handles the mundane stuff such as the progress tracking and saving. Importantly, it provides virtual overload methods for Gradu() and <a class="el" href="classQDynamics_1_1Integrator.html#afa838ba8dfb0fbde1f77c6d2a45a9dd0" title="Returns the current value of the rotation potential U, given the current value of Integrator::q and t...">U()</a> which allows external definition of the dynamics, and of <a class="el" href="classQDynamics_1_1Integrator.html#a4effa27d56f3205e53653b1fdc5cd08e" title="In the Integrator base class, this is an empty function. Child members will mainly focus on overloadi...">UpdatePosition()</a> which allows specific subclasses of this object choose how they want to move from q_i -&gt; q_i+1. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a677dd555cee316d6d456b7da258c4385"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a677dd555cee316d6d456b7da258c4385">&#9670;&nbsp;</a></span>Integrator() <span class="overload">[1/2]</span></h2>
 
@@ -201,6 +230,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Constructor function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">T</td><td>The total duration of the integration </td></tr>
+    <tr><td class="paramname">deltaT</td><td>the width of timesteps used </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -244,6 +282,16 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Constructor function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">T</td><td>The total duration of the integration </td></tr>
+    <tr><td class="paramname">deltaT</td><td>the width of timesteps used </td></tr>
+    <tr><td class="paramname">skipper</td><td>The number of epochs which pass in between updates to the progess <a class="el" href="classQDynamics_1_1Integrator.html#af8889c2bbe10237a8dd8c46b25b15d29" title="A string-buffer containing the save-values of several past values of the integrator. Once full, the buffer is written to file. ">Integrator::Buffer</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -270,6 +318,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Computes the <a class="el" href="classQDynamics_1_1Integrator.html#a19ed0b9864ebe762914cee04cb0ad4b3" title="The location written to by CreateFullName(). A file location which will be used to write the output b...">Integrator::FileName</a> including the filepath from from the <a class="el" href="classQDynamics_1_1Integrator.html#aa3e27d68428619ab4083b2d42ef8924c" title="The assigned name of the integrator. This is set to &quot;Unassigned&quot; by default: child classes should mod...">Integrator::Name</a> and the provided directory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">saveFolder</td><td>The corresponding value passed to Intitialise() </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -318,6 +374,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The main computation loop. Calls <a class="el" href="classQDynamics_1_1Integrator.html#a4effa27d56f3205e53653b1fdc5cd08e" title="In the Integrator base class, this is an empty function. Child members will mainly focus on overloadi...">UpdatePosition()</a> at each timestep until the TotalTime is reached. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">q0</td><td>The initial position <a class="el" href="classQDynamics_1_1Quaternion.html">Quaternion</a> </td></tr>
+    <tr><td class="paramname">p0</td><td>The initial momentum <a class="el" href="classQDynamics_1_1Quaternion.html">Quaternion</a> </td></tr>
+    <tr><td class="paramname">J</td><td>The diagonals of the moment of inertia vector (we have implicitly assumed the system triaxial is such that J is diagonal) </td></tr>
+    <tr><td class="paramname">saveFolder</td><td>The location into which the <a class="el" href="classQDynamics_1_1Integrator.html#af8889c2bbe10237a8dd8c46b25b15d29" title="A string-buffer containing the save-values of several past values of the integrator. Once full, the buffer is written to file. ">Integrator::Buffer</a> output is saved. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -343,6 +408,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Called when the <a class="el" href="classQDynamics_1_1Integrator.html#af8889c2bbe10237a8dd8c46b25b15d29" title="A string-buffer containing the save-values of several past values of the integrator. Once full, the buffer is written to file. ">Integrator::Buffer</a> is full, writes the contents of the buffer to the file determined by <a class="el" href="classQDynamics_1_1Integrator.html#a19ed0b9864ebe762914cee04cb0ad4b3" title="The location written to by CreateFullName(). A file location which will be used to write the output b...">Integrator::FileName</a>, and resets the buffer. </p>
 
 </div>
 </div>
@@ -370,6 +437,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Returns the quaternionic derivative of the neo-potential V (equal to the derivative of the rotation potential U), given the current value of <a class="el" href="classQDynamics_1_1Integrator.html#a5929511da076c7f31749a6da713fcff6" title="The current position variable. ">Integrator::q</a> and the current time. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>The current time </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The value of the quaternionic gradient </dd></dl>
+
 </div>
 </div>
 <a id="a816743f6efb41b0b29243ff3bdaa4c9d"></a>
@@ -395,6 +471,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Computes the current value of the energy of the system given the kinetic energy and the value of <a class="el" href="classQDynamics_1_1Integrator.html#afa838ba8dfb0fbde1f77c6d2a45a9dd0" title="Returns the current value of the rotation potential U, given the current value of Integrator::q and t...">U()</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>The current time, for time-dependent potentials. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -443,6 +527,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Prepares the <a class="el" href="classQDynamics_1_1Integrator.html">Integrator</a> for a new computation loop. Called at the start of an <a class="el" href="classQDynamics_1_1Integrator.html#a4b921b312775194b77c2c85f93add84e">Evolve()</a> process, it wipes the buffer and prepares the output file. The inputs are simply those passed to <a class="el" href="classQDynamics_1_1Integrator.html#a4b921b312775194b77c2c85f93add84e">Evolve()</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">q0</td><td>The initial position <a class="el" href="classQDynamics_1_1Quaternion.html">Quaternion</a> </td></tr>
+    <tr><td class="paramname">p0</td><td>The initial momentum <a class="el" href="classQDynamics_1_1Quaternion.html">Quaternion</a> </td></tr>
+    <tr><td class="paramname">J</td><td>The diagonals of the moment of inertia vector (we have implicitly assumed the system triaxial is such that J is diagonal) </td></tr>
+    <tr><td class="paramname">saveFolder</td><td>The location into which the <a class="el" href="classQDynamics_1_1Integrator.html#af8889c2bbe10237a8dd8c46b25b15d29" title="A string-buffer containing the save-values of several past values of the integrator. Once full, the buffer is written to file. ">Integrator::Buffer</a> output is saved. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -470,6 +563,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Returns the current value of the rotation potential U, given the current value of <a class="el" href="classQDynamics_1_1Integrator.html#a5929511da076c7f31749a6da713fcff6" title="The current position variable. ">Integrator::q</a> and the current time. Unlike <a class="el" href="classQDynamics_1_1Integrator.html#a4688fbccd8b0dc5c9a73dddac66b486f" title="Returns the quaternionic derivative of the neo-potential V (equal to the derivative of the rotation p...">GradU()</a>, it is not critical that this function be 100% correct, as it is only used by the <a class="el" href="classQDynamics_1_1Integrator.html#a816743f6efb41b0b29243ff3bdaa4c9d" title="Computes the current value of the energy of the system given the kinetic energy and the value of U()...">Integrator::Hamiltonian</a> function as bookkeeping for the current energy. If you do not wish to track the current energy, you may neglect this function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>The current time </td></tr>
+    <tr><td class="paramname">The</td><td>current potential energy of the system </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="af613a42e489de2d041673fd5be0ebb61"></a>
@@ -496,6 +598,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Called during every loop of <a class="el" href="classQDynamics_1_1Integrator.html#a4b921b312775194b77c2c85f93add84e">Evolve()</a>, saves some values of interest to the <a class="el" href="classQDynamics_1_1Integrator.html#af8889c2bbe10237a8dd8c46b25b15d29" title="A string-buffer containing the save-values of several past values of the integrator. Once full, the buffer is written to file. ">Integrator::Buffer</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>The current time, needed as part of the buffer input </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a4effa27d56f3205e53653b1fdc5cd08e"></a>
@@ -521,6 +631,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>In the <a class="el" href="classQDynamics_1_1Integrator.html">Integrator</a> base class, this is an empty function. Child members will mainly focus on overloading this function to their own update formula. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>The current time of the integrator </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Reimplemented in <a class="el" href="classQDynamics_1_1Leapi.html#ada2b4935513fa7e0cb4f78ade9f2fd0e">QDynamics::Leapi</a>, <a class="el" href="classQDynamics_1_1SymiL.html#a28d23793abeb8f40c9d9ec069d67debb">QDynamics::SymiL</a>, <a class="el" href="classQDynamics_1_1Magi.html#a500467f899244edfae15f34c84c7684c">QDynamics::Magi</a>, and <a class="el" href="classQDynamics_1_1Brute.html#ac5d4bbe0e34a9f6836f71f40ae8a9eb4">QDynamics::Brute</a>.</p>
 
@@ -550,6 +668,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Writes a series of # to the screen to act as a progress bar: [##### ]. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>The current time, so that the current progress can be computed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Field Documentation</h2>
@@ -573,6 +699,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>A string-buffer containing the save-values of several past values of the integrator. Once full, the buffer is written to file. </p>
+
 </div>
 </div>
 <a id="ae62176188110c0dcea7c65ba429d1abe"></a>
@@ -594,6 +722,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The current write-index of <a class="el" href="classQDynamics_1_1Integrator.html#af8889c2bbe10237a8dd8c46b25b15d29" title="A string-buffer containing the save-values of several past values of the integrator. Once full, the buffer is written to file. ">Integrator::Buffer</a>. </p>
 
 </div>
 </div>
@@ -617,6 +747,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The length of the <a class="el" href="classQDynamics_1_1Integrator.html#af8889c2bbe10237a8dd8c46b25b15d29" title="A string-buffer containing the save-values of several past values of the integrator. Once full, the buffer is written to file. ">Integrator::Buffer</a>. </p>
+
 </div>
 </div>
 <a id="abab707f49ba0ae6701db5dbcdf86861f"></a>
@@ -638,6 +770,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The current number of progress hashes which have been written to the terminal. </p>
 
 </div>
 </div>
@@ -661,6 +795,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The location written to by <a class="el" href="classQDynamics_1_1Integrator.html#ae80ab509b96a9b996934d9ef127f5137" title="Computes the Integrator::FileName including the filepath from from the Integrator::Name and the provi...">CreateFullName()</a>. A file location which will be used to write the output buffer to. </p>
+
 </div>
 </div>
 <a id="ae893dd6b0d041de777e25a99f42886c3"></a>
@@ -682,6 +818,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>A simple lock tracking if the final hash has been written, preventing multiple termination characters being printed. </p>
 
 </div>
 </div>
@@ -705,6 +843,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The saved location of the moment of inertia matrix (see <a class="el" href="classQDynamics_1_1Integrator.html#a4b921b312775194b77c2c85f93add84e">Evolve()</a>) </p>
+
 </div>
 </div>
 <a id="adb45dae4f4d1d37ab83ca5269f51058d"></a>
@@ -726,6 +866,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The current body-fixed Angular momentum. </p>
 
 </div>
 </div>
@@ -749,6 +891,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The assigned name of the integrator. This is set to "Unassigned" by default: child classes should modify this name. </p>
+
 </div>
 </div>
 <a id="a00be60876ae62ef0d1555a6cc0ce52a5"></a>
@@ -770,6 +914,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The number of hashes a full progress bar is made up of. </p>
 
 </div>
 </div>
@@ -793,6 +939,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The current momentum variable. </p>
+
 </div>
 </div>
 <a id="a5929511da076c7f31749a6da713fcff6"></a>
@@ -814,6 +962,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The current position variable. </p>
 
 </div>
 </div>
@@ -837,6 +987,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The current number of files that the buffer has skipped (as per the skipper variable in <a class="el" href="classQDynamics_1_1Integrator.html#aa469124cb408fadbaa540555dfabee33" title="Constructor function. ">Integrator(double,double,int)</a>) </p>
+
 </div>
 </div>
 <a id="a409e18faeeefa5fb63f7bcce3eb0e381"></a>
@@ -858,6 +1010,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The maximum value of SkipID before the buffer saves a value. </p>
 
 </div>
 </div>
@@ -881,6 +1035,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The timestep taken by the integrator. </p>
+
 </div>
 </div>
 <a id="addfb67b6faa62d88bc7234d5496aeaf9"></a>
@@ -898,10 +1054,12 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The total length of time that the integrator will search for. </p>
 
 </div>
 </div>
@@ -924,6 +1082,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The current body-fixed angular speed. </p>
 
 </div>
 </div>

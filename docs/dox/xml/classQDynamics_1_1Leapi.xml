@@ -80,9 +80,17 @@
           <declname>t</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>In the <ref refid="classQDynamics_1_1Integrator" kindref="compound">Integrator</ref> base class, this is an empty function. Child members will mainly focus on overloading this function to their own update formula. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current time of the integrator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" line="165" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h" bodystart="165" bodyend="186"/>
@@ -168,6 +176,7 @@
       <member refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" prot="protected" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>q</name></member>
       <member refid="classQDynamics_1_1Magi_1a629449f541590040a7dfb98ca68cf97b" prot="protected" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>Resolution</name></member>
       <member refid="classQDynamics_1_1Integrator_1a9b850dd4b29118e44b0183409db0a983" prot="protected" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>TimeStep</name></member>
+      <member refid="classQDynamics_1_1Integrator_1addfb67b6faa62d88bc7234d5496aeaf9" prot="protected" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>TotalTime</name></member>
       <member refid="classQDynamics_1_1Integrator_1afa838ba8dfb0fbde1f77c6d2a45a9dd0" prot="protected" virt="virtual"><scope>QDynamics::Leapi</scope><name>U</name></member>
       <member refid="classQDynamics_1_1Magi_1a11af2e624714857cf13343f1745f2fa8" prot="public" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>unlock</name></member>
       <member refid="classQDynamics_1_1Magi_1aba1aa111cd53a194854a2a8ac4b06b32" prot="public" virt="non-virtual"><scope>QDynamics::Leapi</scope><name>unlocked</name></member>

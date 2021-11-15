@@ -40,6 +40,7 @@
     <member refid="classQDynamics_1_1Integrator_1adb45dae4f4d1d37ab83ca5269f51058d" kind="variable"><name>L</name></member>
     <member refid="classQDynamics_1_1Integrator_1a7b99b22475321b34c1624bded3489954" kind="variable"><name>J</name></member>
     <member refid="classQDynamics_1_1Integrator_1a9b850dd4b29118e44b0183409db0a983" kind="variable"><name>TimeStep</name></member>
+    <member refid="classQDynamics_1_1Integrator_1addfb67b6faa62d88bc7234d5496aeaf9" kind="variable"><name>TotalTime</name></member>
     <member refid="classQDynamics_1_1Integrator_1aa3e27d68428619ab4083b2d42ef8924c" kind="variable"><name>Name</name></member>
     <member refid="classQDynamics_1_1Integrator_1a19ed0b9864ebe762914cee04cb0ad4b3" kind="variable"><name>FileName</name></member>
     <member refid="classQDynamics_1_1Integrator_1ae62176188110c0dcea7c65ba429d1abe" kind="variable"><name>BufferPos</name></member>
@@ -50,7 +51,6 @@
     <member refid="classQDynamics_1_1Integrator_1af8889c2bbe10237a8dd8c46b25b15d29" kind="variable"><name>Buffer</name></member>
     <member refid="classQDynamics_1_1Integrator_1a95e110d6b14003db39f8a52180b97870" kind="variable"><name>SkipID</name></member>
     <member refid="classQDynamics_1_1Integrator_1a409e18faeeefa5fb63f7bcce3eb0e381" kind="variable"><name>Skips</name></member>
-    <member refid="classQDynamics_1_1Integrator_1addfb67b6faa62d88bc7234d5496aeaf9" kind="variable"><name>TotalTime</name></member>
     <member refid="classQDynamics_1_1Integrator_1a677dd555cee316d6d456b7da258c4385" kind="function"><name>Integrator</name></member>
     <member refid="classQDynamics_1_1Integrator_1aa469124cb408fadbaa540555dfabee33" kind="function"><name>Integrator</name></member>
     <member refid="classQDynamics_1_1Integrator_1a4b921b312775194b77c2c85f93add84e" kind="function"><name>Evolve</name></member>
@@ -270,7 +270,6 @@
     <member refid="namespaceQDynamics_1ac3ad3b89bbd65796d1f4f5e4809a12ed" kind="variable"><name>hash</name></member>
     <member refid="namespaceQDynamics_1a0b043bd2021eaeb8b6580cef4fcc667c" kind="function"><name>Mult</name></member>
     <member refid="namespaceQDynamics_1a78137919461ac257fe032f870771b0ed" kind="function"><name>InvMult</name></member>
-    <member refid="namespaceQDynamics_1a003e8d43977a4b818a6e90993d00201a" kind="function"><name>verticalAngle</name></member>
     <member refid="namespaceQDynamics_1a4eabde69f542fcca92f97b1ef2e28b33" kind="function"><name>LabAngularMomentum</name></member>
     <member refid="namespaceQDynamics_1ac40010112506831ced816640def9bc85" kind="function"><name>operator*</name></member>
     <member refid="namespaceQDynamics_1a3382c10ce708c163d79c9fdb5c79b452" kind="function"><name>operator*</name></member>

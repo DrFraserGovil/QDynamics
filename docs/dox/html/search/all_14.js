@@ -5,6 +5,5 @@ var searchData=
   ['vector_2eh',['vector.h',['../vector_8h.html',1,'']]],
   ['vectorcrossproduct',['VectorCrossProduct',['../namespaceJSL.html#aa7816eb0cd81b74241ce460237990e70',1,'JSL']]],
   ['vectordotproduct',['VectorDotProduct',['../namespaceJSL.html#aeae64b7e0cfdc1ab5f35cca90c32d9f6',1,'JSL']]],
-  ['vectortest',['VectorTest',['../classJSL__Testing_1_1VectorTest.html',1,'JSL_Testing::VectorTest'],['../classJSL__Testing_1_1VectorTest.html#a4750f287bc10a0df1f4f28cb84598bc2',1,'JSL_Testing::VectorTest::VectorTest()']]],
-  ['verticalangle',['verticalAngle',['../namespaceQDynamics.html#a003e8d43977a4b818a6e90993d00201a',1,'QDynamics']]]
+  ['vectortest',['VectorTest',['../classJSL__Testing_1_1VectorTest.html',1,'JSL_Testing::VectorTest'],['../classJSL__Testing_1_1VectorTest.html#a4750f287bc10a0df1f4f28cb84598bc2',1,'JSL_Testing::VectorTest::VectorTest()']]]
 ];
