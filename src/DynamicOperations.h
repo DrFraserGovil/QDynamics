@@ -26,14 +26,6 @@ QDynamics::Quaternion InvMult(const JSL::Vector & J, const QDynamics::Quaternion
 	}
 	return m;
 }
-double verticalAngle(const QDynamics::Quaternion &q)
-{
-	const QDynamics::Quaternion z(0,0,0,1);
-	QDynamics::Quaternion zFrame = q * z * q.Conjugate();
-	
-	return zFrame.Dot(z);
-}
-
 
 JSL::Vector LabAngularMomentum(const QDynamics::Quaternion &q, const QDynamics::Quaternion &p)
 {

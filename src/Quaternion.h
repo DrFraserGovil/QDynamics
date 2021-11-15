@@ -47,7 +47,7 @@ namespace QDynamics
 			//!  Initialises the object to \verbatim embed:rst:inline :math:`\mathsf{q} = (q_0, \vec{q})` \endverbatim  \param q0 The value \verbatim embed:rst:inline :math:`q_0` \endverbatim \param qVec The value \verbatim embed:rst:inline :math:`\vec{q}` \endverbatim. This must be a vector of length 3, or an error is thrown.
 			Quaternion(const double & q0, const JSL::Vector & qVec) : JSL::Vector(4)
 			{
-				if (vqVec.Size() != 3)
+				if (qVec.Size() != 3)
 				{
 					throw std::runtime_error("ERROR in Quaternion: Quaternions(scalar,vector) initialisation only works if the vector has dimension 3");
 				}
