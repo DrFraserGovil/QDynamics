@@ -14,36 +14,36 @@ Inheritance diagram for Q\+Dynamics\+::Magi$<$ order, step $>$\+:\begin{figure}[
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classQDynamics_1_1Magi_aa832ebdc8d1072c61024154e16702c51}{Magi}} (double T, double deltaT, int resolution)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructor, as per \mbox{\hyperlink{classQDynamics_1_1Integrator_a677dd555cee316d6d456b7da258c4385}{Integrator\+::\+Integrator(double,double)}}. All arguments except {\itshape resolution} are used to build the parent class. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classQDynamics_1_1Magi_a8125608182e49038386d67516ab18d39}{Magi}} (double T, double deltaT, int resolution, int skipper)
-\end{DoxyCompactItemize}
-\doxysubsection*{Data Fields}
-\begin{DoxyCompactItemize}
-\item 
-const unsigned int \mbox{\hyperlink{classQDynamics_1_1Magi_abd42c2649279399c3f7599c41397fdad}{Order}} = order
-\item 
-const \mbox{\hyperlink{namespaceQDynamics_a68884510ffea34b2025b1558ef299d42}{Step\+Type}} \mbox{\hyperlink{classQDynamics_1_1Magi_a1b7aae9a9dc768f78758c30c13d54298}{Step\+Mode}} = step
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Constructor, as per \mbox{\hyperlink{classQDynamics_1_1Integrator_aa469124cb408fadbaa540555dfabee33}{Integrator\+::\+Integrator(double,double,int)}} \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{classQDynamics_1_1Magi_acd1d417b0e03a41ae83422c5b67f77bf}{Update\+Position}} (double t)
-\begin{DoxyCompactList}\small\item\em In the \mbox{\hyperlink{classQDynamics_1_1Integrator}{Integrator}} base class, this is an empty function. Child members will mainly focus on overloading this function to their own update formula. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em An override of the generic \mbox{\hyperlink{classQDynamics_1_1Integrator_a4effa27d56f3205e53653b1fdc5cd08e}{Integrator\+::\+Update\+Position()}}. Depending on the value of \mbox{\hyperlink{classQDynamics_1_1Magi_a26d4324667e4cc919807eceb654fad7b}{Magi\+::\+Step\+Mode}}, calls an appropriate function. The intent is that as \mbox{\hyperlink{classQDynamics_1_1Magi_a26d4324667e4cc919807eceb654fad7b}{Magi\+::\+Step\+Mode}} is a template value, logic of which function is called is determined at compile time, without additional overhead. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classQDynamics_1_1Magi_aa12d85b9d76687ccf7ab84de4c4963fd}{Brute\+\_\+\+Update}} (double t)
-\item 
+\begin{DoxyCompactList}\small\item\em The function called by \mbox{\hyperlink{classQDynamics_1_1Magi_acd1d417b0e03a41ae83422c5b67f77bf}{Update\+Position()}} if {\ttfamily Step\+Mode == Brute}. See \mbox{\hyperlink{namespaceQDynamics_a9cecbf03e73fb0909d96ec39d14285c9}{Q\+Dynamics\+::\+Update\+Type}} for more information. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classQDynamics_1_1Magi_add78aa1f80486641fb4288ca3e886af7}{Euler\+\_\+\+Update}} (double t)
-\item 
+\begin{DoxyCompactList}\small\item\em The function called by \mbox{\hyperlink{classQDynamics_1_1Magi_acd1d417b0e03a41ae83422c5b67f77bf}{Update\+Position()}} if {\ttfamily Step\+Mode == Euler}. See \mbox{\hyperlink{namespaceQDynamics_a9cecbf03e73fb0909d96ec39d14285c9}{Q\+Dynamics\+::\+Update\+Type}} for more information. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classQDynamics_1_1Magi_a7887aa1074337176f9a43c65eb076683}{Leapfrog\+\_\+\+Update}} (double t)
-\item 
+\begin{DoxyCompactList}\small\item\em The function called by \mbox{\hyperlink{classQDynamics_1_1Magi_acd1d417b0e03a41ae83422c5b67f77bf}{Update\+Position()}} if {\ttfamily Step\+Mode == Leapfrog}. See \mbox{\hyperlink{namespaceQDynamics_a9cecbf03e73fb0909d96ec39d14285c9}{Q\+Dynamics\+::\+Update\+Type}} for more information. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}} \mbox{\hyperlink{classQDynamics_1_1Magi_a0d7ef81b9e5ffea255022b3715831044}{Magnus}} (double duration)
-\item 
-virtual \mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}} \mbox{\hyperlink{classQDynamics_1_1Magi_a51a65517fca2e397bbcc1717f480cd04}{Magnus\+\_\+\+Compute}} (double duration)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Generates an estimate of the Magnus series for torque-\/free drift over the provided duration, given the current value of the angular momentum, \mbox{\hyperlink{classQDynamics_1_1Integrator_adb45dae4f4d1d37ab83ca5269f51058d}{Integrator\+::L}}. The duration of this compuation is determined by \mbox{\hyperlink{classQDynamics_1_1Magi_abd42c2649279399c3f7599c41397fdad}{Magi\+::\+Order}} (which determines how many terms are included) and by \mbox{\hyperlink{classQDynamics_1_1Magi_a1ebc70a53a0292d759800272ff9804c4}{Magi\+::\+Resolution}} (which determines the accuracy with which each term is computed). \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
+const unsigned int \mbox{\hyperlink{classQDynamics_1_1Magi_abd42c2649279399c3f7599c41397fdad}{Order}} = order
+\begin{DoxyCompactList}\small\item\em The first template argument passed to a {\ttfamily \mbox{\hyperlink{classQDynamics_1_1Magi}{Magi}}} object. Determines the order of the computation in the \mbox{\hyperlink{classQDynamics_1_1Magi_a0d7ef81b9e5ffea255022b3715831044}{Magnus()}} calculation. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{namespaceQDynamics_a9cecbf03e73fb0909d96ec39d14285c9}{Update\+Type}} \mbox{\hyperlink{classQDynamics_1_1Magi_a26d4324667e4cc919807eceb654fad7b}{Step\+Mode}} = step
+\begin{DoxyCompactList}\small\item\em The second template argument passed to a {\ttfamily \mbox{\hyperlink{classQDynamics_1_1Magi}{Magi}}} object. Determines the update formula used. \end{DoxyCompactList}\item 
 const int \mbox{\hyperlink{classQDynamics_1_1Magi_a1ebc70a53a0292d759800272ff9804c4}{Resolution}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em As per the assignation in \mbox{\hyperlink{classQDynamics_1_1Magi_aa832ebdc8d1072c61024154e16702c51}{Magi()}}, this is the number of points to used whenever a numerical integral is required. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classQDynamics_1_1Magi_a0604167d4004f3391edb93ad44fd664f}{Make\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Generates a print-\/and-\/filename-\/friendly name depending on the properties of the integrator. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -51,16 +51,44 @@ const int \mbox{\hyperlink{classQDynamics_1_1Magi_a1ebc70a53a0292d759800272ff980
 \index{QDynamics::Magi$<$ order, step $>$@{QDynamics::Magi$<$ order, step $>$}!Magi@{Magi}}
 \index{Magi@{Magi}!QDynamics::Magi$<$ order, step $>$@{QDynamics::Magi$<$ order, step $>$}}
 \doxysubsubsection{\texorpdfstring{Magi()}{Magi()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily template$<$unsigned int order, Step\+Type step$>$ \\
+{\footnotesize\ttfamily template$<$unsigned int order, Update\+Type step$>$ \\
 \mbox{\hyperlink{classQDynamics_1_1Magi}{Q\+Dynamics\+::\+Magi}}$<$ order, step $>$\+::\mbox{\hyperlink{classQDynamics_1_1Magi}{Magi}} (\begin{DoxyParamCaption}\item[{double}]{T,  }\item[{double}]{deltaT,  }\item[{int}]{resolution }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Constructor, as per \mbox{\hyperlink{classQDynamics_1_1Integrator_a677dd555cee316d6d456b7da258c4385}{Integrator\+::\+Integrator(double,double)}}. All arguments except {\itshape resolution} are used to build the parent class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & The total duration of the integration\\
+\hline
+{\em deltaT} & the width of timesteps used\\
+\hline
+{\em resolution} & The number of points to used whenever a numerical integral is required. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classQDynamics_1_1Magi_a8125608182e49038386d67516ab18d39}\label{classQDynamics_1_1Magi_a8125608182e49038386d67516ab18d39}} 
 \index{QDynamics::Magi$<$ order, step $>$@{QDynamics::Magi$<$ order, step $>$}!Magi@{Magi}}
 \index{Magi@{Magi}!QDynamics::Magi$<$ order, step $>$@{QDynamics::Magi$<$ order, step $>$}}
 \doxysubsubsection{\texorpdfstring{Magi()}{Magi()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily template$<$unsigned int order, Step\+Type step$>$ \\
+{\footnotesize\ttfamily template$<$unsigned int order, Update\+Type step$>$ \\
 \mbox{\hyperlink{classQDynamics_1_1Magi}{Q\+Dynamics\+::\+Magi}}$<$ order, step $>$\+::\mbox{\hyperlink{classQDynamics_1_1Magi}{Magi}} (\begin{DoxyParamCaption}\item[{double}]{T,  }\item[{double}]{deltaT,  }\item[{int}]{resolution,  }\item[{int}]{skipper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Constructor, as per \mbox{\hyperlink{classQDynamics_1_1Integrator_aa469124cb408fadbaa540555dfabee33}{Integrator\+::\+Integrator(double,double,int)}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & The total duration of the integration\\
+\hline
+{\em deltaT} & the width of timesteps used\\
+\hline
+{\em resolution} & The number of points to used whenever a numerical integral is required.\\
+\hline
+{\em skipper} & The number of epochs which pass in between updates to the progess \mbox{\hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer}} \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Function Documentation}
@@ -68,51 +96,99 @@ const int \mbox{\hyperlink{classQDynamics_1_1Magi_a1ebc70a53a0292d759800272ff980
 \index{QDynamics::Magi$<$ order, step $>$@{QDynamics::Magi$<$ order, step $>$}!Brute\_Update@{Brute\_Update}}
 \index{Brute\_Update@{Brute\_Update}!QDynamics::Magi$<$ order, step $>$@{QDynamics::Magi$<$ order, step $>$}}
 \doxysubsubsection{\texorpdfstring{Brute\_Update()}{Brute\_Update()}}
-{\footnotesize\ttfamily template$<$unsigned int order, Step\+Type step$>$ \\
+{\footnotesize\ttfamily template$<$unsigned int order, Update\+Type step$>$ \\
 void \mbox{\hyperlink{classQDynamics_1_1Magi}{Q\+Dynamics\+::\+Magi}}$<$ order, step $>$\+::Brute\+\_\+\+Update (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
 
+
+
+The function called by \mbox{\hyperlink{classQDynamics_1_1Magi_acd1d417b0e03a41ae83422c5b67f77bf}{Update\+Position()}} if {\ttfamily Step\+Mode == Brute}. See \mbox{\hyperlink{namespaceQDynamics_a9cecbf03e73fb0909d96ec39d14285c9}{Q\+Dynamics\+::\+Update\+Type}} for more information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The current time \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classQDynamics_1_1Magi_add78aa1f80486641fb4288ca3e886af7}\label{classQDynamics_1_1Magi_add78aa1f80486641fb4288ca3e886af7}} 
 \index{QDynamics::Magi$<$ order, step $>$@{QDynamics::Magi$<$ order, step $>$}!Euler\_Update@{Euler\_Update}}
 \index{Euler\_Update@{Euler\_Update}!QDynamics::Magi$<$ order, step $>$@{QDynamics::Magi$<$ order, step $>$}}
 \doxysubsubsection{\texorpdfstring{Euler\_Update()}{Euler\_Update()}}
-{\footnotesize\ttfamily template$<$unsigned int order, Step\+Type step$>$ \\
+{\footnotesize\ttfamily template$<$unsigned int order, Update\+Type step$>$ \\
 void \mbox{\hyperlink{classQDynamics_1_1Magi}{Q\+Dynamics\+::\+Magi}}$<$ order, step $>$\+::Euler\+\_\+\+Update (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
 
+
+
+The function called by \mbox{\hyperlink{classQDynamics_1_1Magi_acd1d417b0e03a41ae83422c5b67f77bf}{Update\+Position()}} if {\ttfamily Step\+Mode == Euler}. See \mbox{\hyperlink{namespaceQDynamics_a9cecbf03e73fb0909d96ec39d14285c9}{Q\+Dynamics\+::\+Update\+Type}} for more information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The current time \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classQDynamics_1_1Magi_a7887aa1074337176f9a43c65eb076683}\label{classQDynamics_1_1Magi_a7887aa1074337176f9a43c65eb076683}} 
 \index{QDynamics::Magi$<$ order, step $>$@{QDynamics::Magi$<$ order, step $>$}!Leapfrog\_Update@{Leapfrog\_Update}}
 \index{Leapfrog\_Update@{Leapfrog\_Update}!QDynamics::Magi$<$ order, step $>$@{QDynamics::Magi$<$ order, step $>$}}
 \doxysubsubsection{\texorpdfstring{Leapfrog\_Update()}{Leapfrog\_Update()}}
-{\footnotesize\ttfamily template$<$unsigned int order, Step\+Type step$>$ \\
+{\footnotesize\ttfamily template$<$unsigned int order, Update\+Type step$>$ \\
 void \mbox{\hyperlink{classQDynamics_1_1Magi}{Q\+Dynamics\+::\+Magi}}$<$ order, step $>$\+::Leapfrog\+\_\+\+Update (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
 
+
+
+The function called by \mbox{\hyperlink{classQDynamics_1_1Magi_acd1d417b0e03a41ae83422c5b67f77bf}{Update\+Position()}} if {\ttfamily Step\+Mode == Leapfrog}. See \mbox{\hyperlink{namespaceQDynamics_a9cecbf03e73fb0909d96ec39d14285c9}{Q\+Dynamics\+::\+Update\+Type}} for more information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The current time \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classQDynamics_1_1Magi_a0d7ef81b9e5ffea255022b3715831044}\label{classQDynamics_1_1Magi_a0d7ef81b9e5ffea255022b3715831044}} 
 \index{QDynamics::Magi$<$ order, step $>$@{QDynamics::Magi$<$ order, step $>$}!Magnus@{Magnus}}
 \index{Magnus@{Magnus}!QDynamics::Magi$<$ order, step $>$@{QDynamics::Magi$<$ order, step $>$}}
 \doxysubsubsection{\texorpdfstring{Magnus()}{Magnus()}}
-{\footnotesize\ttfamily template$<$unsigned int order, Step\+Type step$>$ \\
+{\footnotesize\ttfamily template$<$unsigned int order, Update\+Type step$>$ \\
 virtual \mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}} \mbox{\hyperlink{classQDynamics_1_1Magi}{Q\+Dynamics\+::\+Magi}}$<$ order, step $>$\+::Magnus (\begin{DoxyParamCaption}\item[{double}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-\mbox{\Hypertarget{classQDynamics_1_1Magi_a51a65517fca2e397bbcc1717f480cd04}\label{classQDynamics_1_1Magi_a51a65517fca2e397bbcc1717f480cd04}} 
-\index{QDynamics::Magi$<$ order, step $>$@{QDynamics::Magi$<$ order, step $>$}!Magnus\_Compute@{Magnus\_Compute}}
-\index{Magnus\_Compute@{Magnus\_Compute}!QDynamics::Magi$<$ order, step $>$@{QDynamics::Magi$<$ order, step $>$}}
-\doxysubsubsection{\texorpdfstring{Magnus\_Compute()}{Magnus\_Compute()}}
-{\footnotesize\ttfamily template$<$unsigned int order, Step\+Type step$>$ \\
-virtual \mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}} \mbox{\hyperlink{classQDynamics_1_1Magi}{Q\+Dynamics\+::\+Magi}}$<$ order, step $>$\+::Magnus\+\_\+\+Compute (\begin{DoxyParamCaption}\item[{double}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+Generates an estimate of the Magnus series for torque-\/free drift over the provided duration, given the current value of the angular momentum, \mbox{\hyperlink{classQDynamics_1_1Integrator_adb45dae4f4d1d37ab83ca5269f51058d}{Integrator\+::L}}. The duration of this compuation is determined by \mbox{\hyperlink{classQDynamics_1_1Magi_abd42c2649279399c3f7599c41397fdad}{Magi\+::\+Order}} (which determines how many terms are included) and by \mbox{\hyperlink{classQDynamics_1_1Magi_a1ebc70a53a0292d759800272ff9804c4}{Magi\+::\+Resolution}} (which determines the accuracy with which each term is computed). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em duration} & The length of the torque-\/free drift to be computed \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classQDynamics_1_1Symi_a2a58bd1bc46f69d0993efa0f37052b2c}{Q\+Dynamics\+::\+Symi$<$ order, step $>$}}.
+
+\mbox{\Hypertarget{classQDynamics_1_1Magi_a0604167d4004f3391edb93ad44fd664f}\label{classQDynamics_1_1Magi_a0604167d4004f3391edb93ad44fd664f}} 
+\index{QDynamics::Magi$<$ order, step $>$@{QDynamics::Magi$<$ order, step $>$}!MakeName@{MakeName}}
+\index{MakeName@{MakeName}!QDynamics::Magi$<$ order, step $>$@{QDynamics::Magi$<$ order, step $>$}}
+\doxysubsubsection{\texorpdfstring{MakeName()}{MakeName()}}
+{\footnotesize\ttfamily template$<$unsigned int order, Update\+Type step$>$ \\
+virtual void \mbox{\hyperlink{classQDynamics_1_1Magi}{Q\+Dynamics\+::\+Magi}}$<$ order, step $>$\+::Make\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Generates a print-\/and-\/filename-\/friendly name depending on the properties of the integrator. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classQDynamics_1_1Symi_a4c06eafd29bf6d87c73ab6c36b342d25}{Q\+Dynamics\+::\+Symi$<$ order, step $>$}}.
 
 \mbox{\Hypertarget{classQDynamics_1_1Magi_acd1d417b0e03a41ae83422c5b67f77bf}\label{classQDynamics_1_1Magi_acd1d417b0e03a41ae83422c5b67f77bf}} 
 \index{QDynamics::Magi$<$ order, step $>$@{QDynamics::Magi$<$ order, step $>$}!UpdatePosition@{UpdatePosition}}
 \index{UpdatePosition@{UpdatePosition}!QDynamics::Magi$<$ order, step $>$@{QDynamics::Magi$<$ order, step $>$}}
 \doxysubsubsection{\texorpdfstring{UpdatePosition()}{UpdatePosition()}}
-{\footnotesize\ttfamily template$<$unsigned int order, Step\+Type step$>$ \\
+{\footnotesize\ttfamily template$<$unsigned int order, Update\+Type step$>$ \\
 virtual void \mbox{\hyperlink{classQDynamics_1_1Magi}{Q\+Dynamics\+::\+Magi}}$<$ order, step $>$\+::Update\+Position (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
 
 
-In the \mbox{\hyperlink{classQDynamics_1_1Integrator}{Integrator}} base class, this is an empty function. Child members will mainly focus on overloading this function to their own update formula. 
+An override of the generic \mbox{\hyperlink{classQDynamics_1_1Integrator_a4effa27d56f3205e53653b1fdc5cd08e}{Integrator\+::\+Update\+Position()}}. Depending on the value of \mbox{\hyperlink{classQDynamics_1_1Magi_a26d4324667e4cc919807eceb654fad7b}{Magi\+::\+Step\+Mode}}, calls an appropriate function. The intent is that as \mbox{\hyperlink{classQDynamics_1_1Magi_a26d4324667e4cc919807eceb654fad7b}{Magi\+::\+Step\+Mode}} is a template value, logic of which function is called is determined at compile time, without additional overhead. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em t} & The current time of the integrator \\
+{\em t} & The current time, used by \mbox{\hyperlink{classQDynamics_1_1Integrator_a4688fbccd8b0dc5c9a73dddac66b486f}{Integrator\+::\+Grad\+U()}} \\
 \hline
 \end{DoxyParams}
 
@@ -126,22 +202,34 @@ Reimplemented from \mbox{\hyperlink{classQDynamics_1_1Integrator_a4effa27d56f320
 \index{QDynamics::Magi$<$ order, step $>$@{QDynamics::Magi$<$ order, step $>$}!Order@{Order}}
 \index{Order@{Order}!QDynamics::Magi$<$ order, step $>$@{QDynamics::Magi$<$ order, step $>$}}
 \doxysubsubsection{\texorpdfstring{Order}{Order}}
-{\footnotesize\ttfamily template$<$unsigned int order, Step\+Type step$>$ \\
-const unsigned int \mbox{\hyperlink{classQDynamics_1_1Magi}{Q\+Dynamics\+::\+Magi}}$<$ order, step $>$\+::Order = order}
+{\footnotesize\ttfamily template$<$unsigned int order, Update\+Type step$>$ \\
+const unsigned int \mbox{\hyperlink{classQDynamics_1_1Magi}{Q\+Dynamics\+::\+Magi}}$<$ order, step $>$\+::Order = order\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The first template argument passed to a {\ttfamily \mbox{\hyperlink{classQDynamics_1_1Magi}{Magi}}} object. Determines the order of the computation in the \mbox{\hyperlink{classQDynamics_1_1Magi_a0d7ef81b9e5ffea255022b3715831044}{Magnus()}} calculation. 
 
 \mbox{\Hypertarget{classQDynamics_1_1Magi_a1ebc70a53a0292d759800272ff9804c4}\label{classQDynamics_1_1Magi_a1ebc70a53a0292d759800272ff9804c4}} 
 \index{QDynamics::Magi$<$ order, step $>$@{QDynamics::Magi$<$ order, step $>$}!Resolution@{Resolution}}
 \index{Resolution@{Resolution}!QDynamics::Magi$<$ order, step $>$@{QDynamics::Magi$<$ order, step $>$}}
 \doxysubsubsection{\texorpdfstring{Resolution}{Resolution}}
-{\footnotesize\ttfamily template$<$unsigned int order, Step\+Type step$>$ \\
+{\footnotesize\ttfamily template$<$unsigned int order, Update\+Type step$>$ \\
 const int \mbox{\hyperlink{classQDynamics_1_1Magi}{Q\+Dynamics\+::\+Magi}}$<$ order, step $>$\+::Resolution\hspace{0.3cm}{\ttfamily [protected]}}
 
-\mbox{\Hypertarget{classQDynamics_1_1Magi_a1b7aae9a9dc768f78758c30c13d54298}\label{classQDynamics_1_1Magi_a1b7aae9a9dc768f78758c30c13d54298}} 
+
+
+As per the assignation in \mbox{\hyperlink{classQDynamics_1_1Magi_aa832ebdc8d1072c61024154e16702c51}{Magi()}}, this is the number of points to used whenever a numerical integral is required. 
+
+\mbox{\Hypertarget{classQDynamics_1_1Magi_a26d4324667e4cc919807eceb654fad7b}\label{classQDynamics_1_1Magi_a26d4324667e4cc919807eceb654fad7b}} 
 \index{QDynamics::Magi$<$ order, step $>$@{QDynamics::Magi$<$ order, step $>$}!StepMode@{StepMode}}
 \index{StepMode@{StepMode}!QDynamics::Magi$<$ order, step $>$@{QDynamics::Magi$<$ order, step $>$}}
 \doxysubsubsection{\texorpdfstring{StepMode}{StepMode}}
-{\footnotesize\ttfamily template$<$unsigned int order, Step\+Type step$>$ \\
-const \mbox{\hyperlink{namespaceQDynamics_a68884510ffea34b2025b1558ef299d42}{Step\+Type}} \mbox{\hyperlink{classQDynamics_1_1Magi}{Q\+Dynamics\+::\+Magi}}$<$ order, step $>$\+::Step\+Mode = step}
+{\footnotesize\ttfamily template$<$unsigned int order, Update\+Type step$>$ \\
+const \mbox{\hyperlink{namespaceQDynamics_a9cecbf03e73fb0909d96ec39d14285c9}{Update\+Type}} \mbox{\hyperlink{classQDynamics_1_1Magi}{Q\+Dynamics\+::\+Magi}}$<$ order, step $>$\+::Step\+Mode = step\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The second template argument passed to a {\ttfamily \mbox{\hyperlink{classQDynamics_1_1Magi}{Magi}}} object. Determines the update formula used. 
 
 
 

@@ -15,6 +15,6 @@ var searchData=
   ['operator_3c_3c_104',['operator&lt;&lt;',['../namespaceJSL.html#a91df7f3a77ef2e000058e0f58efb99e6',1,'JSL::operator&lt;&lt;(std::ostream &amp;os, const Matrix &amp;obj)'],['../namespaceJSL.html#ad9900d0292867da361ddb3f1200a1f99',1,'JSL::operator&lt;&lt;(std::ostream &amp;os, const Vector &amp;obj)']]],
   ['operator_3d_3d_105',['operator==',['../namespaceJSL.html#a682c8bb3fff54370f38dcb16794fc7c5',1,'JSL::operator==(const Matrix &amp;lhs, const Matrix &amp;rhs)'],['../namespaceJSL.html#a7fad54be308ccb76f68933d91c3c542f',1,'JSL::operator==(const Vector &amp;lhs, const Vector &amp;rhs)']]],
   ['operator_5b_5d_106',['operator[]',['../classJSL_1_1Vector.html#a7ff5112a7be30ca24b8ed953aaadd045',1,'JSL::Vector::operator[](int idx)'],['../classJSL_1_1Vector.html#ae461792ef0aeb62ac07c939dacedda99',1,'JSL::Vector::operator[](int idx) const']]],
-  ['order_107',['Order',['../classQDynamics_1_1Magi.html#abd42c2649279399c3f7599c41397fdad',1,'QDynamics::Magi::Order()'],['../classQDynamics_1_1Symi.html#a64ac64472b1b635b8915c6e0575b36a8',1,'QDynamics::Symi::Order()']]],
+  ['order_107',['Order',['../classQDynamics_1_1Magi.html#abd42c2649279399c3f7599c41397fdad',1,'QDynamics::Magi']]],
   ['outofboundserror_108',['outOfBoundsError',['../classJSL_1_1Matrix.html#a92eb431da436e1e2922b211a9f158203',1,'JSL::Matrix::outOfBoundsError()'],['../classJSL_1_1Vector.html#ab081a68e1fc526f4bf866de0ba61a09b',1,'JSL::Vector::outOfBoundsError()']]]
 ];

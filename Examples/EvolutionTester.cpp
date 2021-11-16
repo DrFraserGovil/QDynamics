@@ -149,7 +149,4 @@ int main(int argc, char * argv[])
 		//~ HarmonicTest(T,dT/pow(10,i),bruteOnly,10*pow(10,i));
 	}
 	
-	QDynamics::Symi<3,QDynamics::Brute> B(100,0.1,20);
-	std::cout << B.Order << "  " << B.StepMode << std::endl;
-
 }

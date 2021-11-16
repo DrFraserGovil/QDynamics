@@ -12,54 +12,55 @@
         <defname>order</defname>
       </param>
       <param>
-        <type><ref refid="namespaceQDynamics_1a68884510ffea34b2025b1558ef299d42" kindref="member">StepType</ref></type>
+        <type><ref refid="namespaceQDynamics_1a9cecbf03e73fb0909d96ec39d14285c9" kindref="member">UpdateType</ref></type>
         <declname>step</declname>
         <defname>step</defname>
       </param>
     </templateparamlist>
-      <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classQDynamics_1_1Magi_1abd42c2649279399c3f7599c41397fdad" prot="public" static="no" mutable="no">
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classQDynamics_1_1Magi_1abd42c2649279399c3f7599c41397fdad" prot="protected" static="no" mutable="no">
         <type>const unsigned int</type>
         <definition>const unsigned int QDynamics::Magi&lt; order, step &gt;::Order</definition>
         <argsstring></argsstring>
         <name>Order</name>
         <initializer>= order</initializer>
         <briefdescription>
+<para>The first template argument passed to a <computeroutput><ref refid="classQDynamics_1_1Magi" kindref="compound">Magi</ref></computeroutput> object. Determines the order of the computation in the <ref refid="classQDynamics_1_1Magi_1a0d7ef81b9e5ffea255022b3715831044" kindref="member">Magnus()</ref> calculation. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jack/Documents/Work/QDynamics/src/Magi.h" line="13" column="20" bodyfile="/home/jack/Documents/Work/QDynamics/src/Magi.h" bodystart="13" bodyend="-1"/>
+        <location file="/home/jack/Documents/Work/QDynamics/src/Magi.h" line="38" column="20" bodyfile="/home/jack/Documents/Work/QDynamics/src/Magi.h" bodystart="38" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classQDynamics_1_1Magi_1a1b7aae9a9dc768f78758c30c13d54298" prot="public" static="no" mutable="no">
-        <type>const <ref refid="namespaceQDynamics_1a68884510ffea34b2025b1558ef299d42" kindref="member">StepType</ref></type>
-        <definition>const StepType QDynamics::Magi&lt; order, step &gt;::StepMode</definition>
+      <memberdef kind="variable" id="classQDynamics_1_1Magi_1a26d4324667e4cc919807eceb654fad7b" prot="protected" static="no" mutable="no">
+        <type>const <ref refid="namespaceQDynamics_1a9cecbf03e73fb0909d96ec39d14285c9" kindref="member">UpdateType</ref></type>
+        <definition>const UpdateType QDynamics::Magi&lt; order, step &gt;::StepMode</definition>
         <argsstring></argsstring>
         <name>StepMode</name>
         <initializer>= step</initializer>
         <briefdescription>
+<para>The second template argument passed to a <computeroutput><ref refid="classQDynamics_1_1Magi" kindref="compound">Magi</ref></computeroutput> object. Determines the update formula used. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jack/Documents/Work/QDynamics/src/Magi.h" line="14" column="16" bodyfile="/home/jack/Documents/Work/QDynamics/src/Magi.h" bodystart="14" bodyend="-1"/>
+        <location file="/home/jack/Documents/Work/QDynamics/src/Magi.h" line="39" column="18" bodyfile="/home/jack/Documents/Work/QDynamics/src/Magi.h" bodystart="39" bodyend="-1"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="protected-attrib">
       <memberdef kind="variable" id="classQDynamics_1_1Magi_1a1ebc70a53a0292d759800272ff9804c4" prot="protected" static="no" mutable="no">
         <type>const int</type>
         <definition>const int QDynamics::Magi&lt; order, step &gt;::Resolution</definition>
         <argsstring></argsstring>
         <name>Resolution</name>
         <briefdescription>
+<para>As per the assignation in <ref refid="classQDynamics_1_1Magi_1aa832ebdc8d1072c61024154e16702c51" kindref="member">Magi()</ref>, this is the number of points to used whenever a numerical integral is required. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jack/Documents/Work/QDynamics/src/Magi.h" line="26" column="11" bodyfile="/home/jack/Documents/Work/QDynamics/src/Magi.h" bodystart="26" bodyend="-1"/>
+        <location file="/home/jack/Documents/Work/QDynamics/src/Magi.h" line="40" column="11" bodyfile="/home/jack/Documents/Work/QDynamics/src/Magi.h" bodystart="40" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -81,12 +82,39 @@
           <declname>resolution</declname>
         </param>
         <briefdescription>
+<para>Constructor, as per <ref refid="classQDynamics_1_1Integrator_1a677dd555cee316d6d456b7da258c4385" kindref="member">Integrator::Integrator(double,double)</ref>. All arguments except <emphasis>resolution</emphasis> are used to build the parent class. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total duration of the integration</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deltaT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width of timesteps used</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resolution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of points to used whenever a numerical integral is required. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jack/Documents/Work/QDynamics/src/Magi.h" line="16" column="1" bodyfile="/home/jack/Documents/Work/QDynamics/src/Magi.h" bodystart="16" bodyend="19"/>
+        <location file="/home/jack/Documents/Work/QDynamics/src/Magi.h" line="27" column="1" bodyfile="/home/jack/Documents/Work/QDynamics/src/Magi.h" bodystart="27" bodyend="30"/>
       </memberdef>
       <memberdef kind="function" id="classQDynamics_1_1Magi_1a8125608182e49038386d67516ab18d39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -110,12 +138,47 @@
           <declname>skipper</declname>
         </param>
         <briefdescription>
+<para>Constructor, as per <ref refid="classQDynamics_1_1Integrator_1aa469124cb408fadbaa540555dfabee33" kindref="member">Integrator::Integrator(double,double,int)</ref> </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total duration of the integration</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deltaT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width of timesteps used</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resolution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of points to used whenever a numerical integral is required.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of epochs which pass in between updates to the progess <ref refid="classQDynamics_1_1Integrator_1af8889c2bbe10237a8dd8c46b25b15d29" kindref="member">Integrator::Buffer</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jack/Documents/Work/QDynamics/src/Magi.h" line="20" column="1" bodyfile="/home/jack/Documents/Work/QDynamics/src/Magi.h" bodystart="20" bodyend="23"/>
+        <location file="/home/jack/Documents/Work/QDynamics/src/Magi.h" line="32" column="1" bodyfile="/home/jack/Documents/Work/QDynamics/src/Magi.h" bodystart="32" bodyend="35"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -130,7 +193,7 @@
           <declname>t</declname>
         </param>
         <briefdescription>
-<para>In the <ref refid="classQDynamics_1_1Integrator" kindref="compound">Integrator</ref> base class, this is an empty function. Child members will mainly focus on overloading this function to their own update formula. </para>
+<para>An override of the generic <ref refid="classQDynamics_1_1Integrator_1a4effa27d56f3205e53653b1fdc5cd08e" kindref="member">Integrator::UpdatePosition()</ref>. Depending on the value of <ref refid="classQDynamics_1_1Magi_1a26d4324667e4cc919807eceb654fad7b" kindref="member">Magi::StepMode</ref>, calls an appropriate function. The intent is that as <ref refid="classQDynamics_1_1Magi_1a26d4324667e4cc919807eceb654fad7b" kindref="member">Magi::StepMode</ref> is a template value, logic of which function is called is determined at compile time, without additional overhead. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -138,7 +201,7 @@
 <parametername>t</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The current time of the integrator </para>
+<para>The current time, used by <ref refid="classQDynamics_1_1Integrator_1a4688fbccd8b0dc5c9a73dddac66b486f" kindref="member">Integrator::GradU()</ref> </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -146,7 +209,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jack/Documents/Work/QDynamics/src/Magi.h" line="28" column="14" bodyfile="/home/jack/Documents/Work/QDynamics/src/Magi.h" bodystart="28" bodyend="45"/>
+        <location file="/home/jack/Documents/Work/QDynamics/src/Magi.h" line="43" column="14" bodyfile="/home/jack/Documents/Work/QDynamics/src/Magi.h" bodystart="43" bodyend="57"/>
       </memberdef>
       <memberdef kind="function" id="classQDynamics_1_1Magi_1aa12d85b9d76687ccf7ab84de4c4963fd" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -158,12 +221,23 @@
           <declname>t</declname>
         </param>
         <briefdescription>
+<para>The function called by <ref refid="classQDynamics_1_1Magi_1acd1d417b0e03a41ae83422c5b67f77bf" kindref="member">UpdatePosition()</ref> if <computeroutput>StepMode == Brute</computeroutput>. See <ref refid="namespaceQDynamics_1a9cecbf03e73fb0909d96ec39d14285c9" kindref="member">QDynamics::UpdateType</ref> for more information. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current time </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jack/Documents/Work/QDynamics/src/Magi.h" line="47" column="6" bodyfile="/home/jack/Documents/Work/QDynamics/src/Magi.h" bodystart="47" bodyend="60"/>
+        <location file="/home/jack/Documents/Work/QDynamics/src/Magi.h" line="60" column="6" bodyfile="/home/jack/Documents/Work/QDynamics/src/Magi.h" bodystart="60" bodyend="73"/>
       </memberdef>
       <memberdef kind="function" id="classQDynamics_1_1Magi_1add78aa1f80486641fb4288ca3e886af7" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -175,12 +249,23 @@
           <declname>t</declname>
         </param>
         <briefdescription>
+<para>The function called by <ref refid="classQDynamics_1_1Magi_1acd1d417b0e03a41ae83422c5b67f77bf" kindref="member">UpdatePosition()</ref> if <computeroutput>StepMode == Euler</computeroutput>. See <ref refid="namespaceQDynamics_1a9cecbf03e73fb0909d96ec39d14285c9" kindref="member">QDynamics::UpdateType</ref> for more information. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current time </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jack/Documents/Work/QDynamics/src/Magi.h" line="62" column="6" bodyfile="/home/jack/Documents/Work/QDynamics/src/Magi.h" bodystart="62" bodyend="83"/>
+        <location file="/home/jack/Documents/Work/QDynamics/src/Magi.h" line="76" column="6" bodyfile="/home/jack/Documents/Work/QDynamics/src/Magi.h" bodystart="76" bodyend="97"/>
       </memberdef>
       <memberdef kind="function" id="classQDynamics_1_1Magi_1a7887aa1074337176f9a43c65eb076683" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -192,46 +277,69 @@
           <declname>t</declname>
         </param>
         <briefdescription>
+<para>The function called by <ref refid="classQDynamics_1_1Magi_1acd1d417b0e03a41ae83422c5b67f77bf" kindref="member">UpdatePosition()</ref> if <computeroutput>StepMode == Leapfrog</computeroutput>. See <ref refid="namespaceQDynamics_1a9cecbf03e73fb0909d96ec39d14285c9" kindref="member">QDynamics::UpdateType</ref> for more information. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current time </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jack/Documents/Work/QDynamics/src/Magi.h" line="85" column="6" bodyfile="/home/jack/Documents/Work/QDynamics/src/Magi.h" bodystart="85" bodyend="105"/>
+        <location file="/home/jack/Documents/Work/QDynamics/src/Magi.h" line="100" column="6" bodyfile="/home/jack/Documents/Work/QDynamics/src/Magi.h" bodystart="100" bodyend="120"/>
       </memberdef>
       <memberdef kind="function" id="classQDynamics_1_1Magi_1a0d7ef81b9e5ffea255022b3715831044" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
         <definition>virtual Quaternion QDynamics::Magi&lt; order, step &gt;::Magnus</definition>
         <argsstring>(double duration)</argsstring>
         <name>Magnus</name>
+        <reimplementedby refid="classQDynamics_1_1Symi_1a2a58bd1bc46f69d0993efa0f37052b2c">Magnus</reimplementedby>
         <param>
           <type>double</type>
           <declname>duration</declname>
         </param>
         <briefdescription>
+<para>Generates an estimate of the Magnus series for torque-free drift over the provided duration, given the current value of the angular momentum, <ref refid="classQDynamics_1_1Integrator_1adb45dae4f4d1d37ab83ca5269f51058d" kindref="member">Integrator::L</ref>. The duration of this compuation is determined by <ref refid="classQDynamics_1_1Magi_1abd42c2649279399c3f7599c41397fdad" kindref="member">Magi::Order</ref> (which determines how many terms are included) and by <ref refid="classQDynamics_1_1Magi_1a1ebc70a53a0292d759800272ff9804c4" kindref="member">Magi::Resolution</ref> (which determines the accuracy with which each term is computed). </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the torque-free drift to be computed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jack/Documents/Work/QDynamics/src/Magi.h" line="107" column="20" bodyfile="/home/jack/Documents/Work/QDynamics/src/Magi.h" bodystart="107" bodyend="117"/>
+        <location file="/home/jack/Documents/Work/QDynamics/src/Magi.h" line="123" column="20" bodyfile="/home/jack/Documents/Work/QDynamics/src/Magi.h" bodystart="123" bodyend="158"/>
       </memberdef>
-      <memberdef kind="function" id="classQDynamics_1_1Magi_1a51a65517fca2e397bbcc1717f480cd04" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
-        <definition>virtual Quaternion QDynamics::Magi&lt; order, step &gt;::Magnus_Compute</definition>
-        <argsstring>(double duration)</argsstring>
-        <name>Magnus_Compute</name>
-        <param>
-          <type>double</type>
-          <declname>duration</declname>
-        </param>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classQDynamics_1_1Magi_1a0604167d4004f3391edb93ad44fd664f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void QDynamics::Magi&lt; order, step &gt;::MakeName</definition>
+        <argsstring>()</argsstring>
+        <name>MakeName</name>
+        <reimplementedby refid="classQDynamics_1_1Symi_1a4c06eafd29bf6d87c73ab6c36b342d25">MakeName</reimplementedby>
         <briefdescription>
+<para>Generates a print-and-filename-friendly name depending on the properties of the integrator. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jack/Documents/Work/QDynamics/src/Magi.h" line="119" column="20" bodyfile="/home/jack/Documents/Work/QDynamics/src/Magi.h" bodystart="119" bodyend="149"/>
+        <location file="/home/jack/Documents/Work/QDynamics/src/Magi.h" line="162" column="14" bodyfile="/home/jack/Documents/Work/QDynamics/src/Magi.h" bodystart="162" bodyend="178"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -287,7 +395,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/jack/Documents/Work/QDynamics/src/Magi.h" line="11" column="1" bodyfile="/home/jack/Documents/Work/QDynamics/src/Magi.h" bodystart="10" bodyend="150"/>
+    <location file="/home/jack/Documents/Work/QDynamics/src/Magi.h" line="22" column="1" bodyfile="/home/jack/Documents/Work/QDynamics/src/Magi.h" bodystart="21" bodyend="179"/>
     <listofallmembers>
       <member refid="classQDynamics_1_1Magi_1aa12d85b9d76687ccf7ab84de4c4963fd" prot="protected" virt="non-virtual"><scope>QDynamics::Magi</scope><name>Brute_Update</name></member>
       <member refid="classQDynamics_1_1Integrator_1af8889c2bbe10237a8dd8c46b25b15d29" prot="private" virt="non-virtual"><scope>QDynamics::Magi</scope><name>Buffer</name></member>
@@ -311,16 +419,16 @@
       <member refid="classQDynamics_1_1Magi_1aa832ebdc8d1072c61024154e16702c51" prot="public" virt="non-virtual"><scope>QDynamics::Magi</scope><name>Magi</name></member>
       <member refid="classQDynamics_1_1Magi_1a8125608182e49038386d67516ab18d39" prot="public" virt="non-virtual"><scope>QDynamics::Magi</scope><name>Magi</name></member>
       <member refid="classQDynamics_1_1Magi_1a0d7ef81b9e5ffea255022b3715831044" prot="protected" virt="virtual"><scope>QDynamics::Magi</scope><name>Magnus</name></member>
-      <member refid="classQDynamics_1_1Magi_1a51a65517fca2e397bbcc1717f480cd04" prot="protected" virt="virtual"><scope>QDynamics::Magi</scope><name>Magnus_Compute</name></member>
+      <member refid="classQDynamics_1_1Magi_1a0604167d4004f3391edb93ad44fd664f" prot="private" virt="virtual"><scope>QDynamics::Magi</scope><name>MakeName</name></member>
       <member refid="classQDynamics_1_1Integrator_1aa3e27d68428619ab4083b2d42ef8924c" prot="protected" virt="non-virtual"><scope>QDynamics::Magi</scope><name>Name</name></member>
       <member refid="classQDynamics_1_1Integrator_1a00be60876ae62ef0d1555a6cc0ce52a5" prot="private" virt="non-virtual"><scope>QDynamics::Magi</scope><name>NHashes</name></member>
-      <member refid="classQDynamics_1_1Magi_1abd42c2649279399c3f7599c41397fdad" prot="public" virt="non-virtual"><scope>QDynamics::Magi</scope><name>Order</name></member>
+      <member refid="classQDynamics_1_1Magi_1abd42c2649279399c3f7599c41397fdad" prot="protected" virt="non-virtual"><scope>QDynamics::Magi</scope><name>Order</name></member>
       <member refid="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" prot="protected" virt="non-virtual"><scope>QDynamics::Magi</scope><name>p</name></member>
       <member refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" prot="protected" virt="non-virtual"><scope>QDynamics::Magi</scope><name>q</name></member>
       <member refid="classQDynamics_1_1Magi_1a1ebc70a53a0292d759800272ff9804c4" prot="protected" virt="non-virtual"><scope>QDynamics::Magi</scope><name>Resolution</name></member>
       <member refid="classQDynamics_1_1Integrator_1a95e110d6b14003db39f8a52180b97870" prot="private" virt="non-virtual"><scope>QDynamics::Magi</scope><name>SkipID</name></member>
       <member refid="classQDynamics_1_1Integrator_1a409e18faeeefa5fb63f7bcce3eb0e381" prot="private" virt="non-virtual"><scope>QDynamics::Magi</scope><name>Skips</name></member>
-      <member refid="classQDynamics_1_1Magi_1a1b7aae9a9dc768f78758c30c13d54298" prot="public" virt="non-virtual"><scope>QDynamics::Magi</scope><name>StepMode</name></member>
+      <member refid="classQDynamics_1_1Magi_1a26d4324667e4cc919807eceb654fad7b" prot="protected" virt="non-virtual"><scope>QDynamics::Magi</scope><name>StepMode</name></member>
       <member refid="classQDynamics_1_1Integrator_1a9b850dd4b29118e44b0183409db0a983" prot="protected" virt="non-virtual"><scope>QDynamics::Magi</scope><name>TimeStep</name></member>
       <member refid="classQDynamics_1_1Integrator_1addfb67b6faa62d88bc7234d5496aeaf9" prot="protected" virt="non-virtual"><scope>QDynamics::Magi</scope><name>TotalTime</name></member>
       <member refid="classQDynamics_1_1Integrator_1afa838ba8dfb0fbde1f77c6d2a45a9dd0" prot="protected" virt="virtual"><scope>QDynamics::Magi</scope><name>U</name></member>

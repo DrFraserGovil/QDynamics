@@ -2,8 +2,8 @@ var searchData=
 [
   ['magi_68',['Magi',['../classQDynamics_1_1Magi.html',1,'QDynamics::Magi&lt; order, step &gt;'],['../classQDynamics_1_1Magi.html#aa832ebdc8d1072c61024154e16702c51',1,'QDynamics::Magi::Magi(double T, double deltaT, int resolution)'],['../classQDynamics_1_1Magi.html#a8125608182e49038386d67516ab18d39',1,'QDynamics::Magi::Magi(double T, double deltaT, int resolution, int skipper)']]],
   ['magi_2eh_69',['Magi.h',['../Magi_8h.html',1,'']]],
-  ['magnus_70',['Magnus',['../classQDynamics_1_1Magi.html#a0d7ef81b9e5ffea255022b3715831044',1,'QDynamics::Magi']]],
-  ['magnus_5fcompute_71',['Magnus_Compute',['../classQDynamics_1_1Magi.html#a51a65517fca2e397bbcc1717f480cd04',1,'QDynamics::Magi']]],
+  ['magnus_70',['Magnus',['../classQDynamics_1_1Magi.html#a0d7ef81b9e5ffea255022b3715831044',1,'QDynamics::Magi::Magnus()'],['../classQDynamics_1_1Symi.html#a2a58bd1bc46f69d0993efa0f37052b2c',1,'QDynamics::Symi::Magnus()']]],
+  ['makename_71',['MakeName',['../classQDynamics_1_1Magi.html#a0604167d4004f3391edb93ad44fd664f',1,'QDynamics::Magi::MakeName()'],['../classQDynamics_1_1Symi.html#a4c06eafd29bf6d87c73ab6c36b342d25',1,'QDynamics::Symi::MakeName()']]],
   ['maths_2eh_72',['Maths.h',['../Maths_8h.html',1,'']]],
   ['matrix_73',['Matrix',['../classJSL_1_1Matrix.html',1,'JSL::Matrix'],['../classJSL_1_1Matrix.html#a90ddd1113043b8959b0943be24f9ad9f',1,'JSL::Matrix::Matrix(const int n, const int m)'],['../classJSL_1_1Matrix.html#ab6bc06d3dcc5f25f2083d3a3946378df',1,'JSL::Matrix::Matrix(std::vector&lt; std::vector&lt; double &gt;&gt; input)'],['../classJSL_1_1Matrix.html#ae6198f4beabaff7700265fffeb490ed7',1,'JSL::Matrix::Matrix(const Matrix &amp;input)']]],
   ['matrix_2eh_74',['matrix.h',['../matrix_8h.html',1,'']]],

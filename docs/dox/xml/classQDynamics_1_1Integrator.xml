@@ -408,8 +408,8 @@
         <definition>virtual void QDynamics::Integrator::UpdatePosition</definition>
         <argsstring>(double t)</argsstring>
         <name>UpdatePosition</name>
-        <reimplementedby refid="classQDynamics_1_1Magi_1acd1d417b0e03a41ae83422c5b67f77bf">UpdatePosition</reimplementedby>
         <reimplementedby refid="classQDynamics_1_1BruteInt_1a0f3d901d692a8f30365d1692c678ce61">UpdatePosition</reimplementedby>
+        <reimplementedby refid="classQDynamics_1_1Magi_1acd1d417b0e03a41ae83422c5b67f77bf">UpdatePosition</reimplementedby>
         <param>
           <type>double</type>
           <declname>t</declname>

@@ -11,41 +11,11 @@
         <defname>order</defname>
       </param>
       <param>
-        <type><ref refid="namespaceQDynamics_1a68884510ffea34b2025b1558ef299d42" kindref="member">StepType</ref></type>
+        <type><ref refid="namespaceQDynamics_1a9cecbf03e73fb0909d96ec39d14285c9" kindref="member">UpdateType</ref></type>
         <declname>step</declname>
         <defname>step</defname>
       </param>
     </templateparamlist>
-      <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classQDynamics_1_1Symi_1a64ac64472b1b635b8915c6e0575b36a8" prot="public" static="no" mutable="no">
-        <type>const unsigned int</type>
-        <definition>const unsigned int QDynamics::Symi&lt; order, step &gt;::Order</definition>
-        <argsstring></argsstring>
-        <name>Order</name>
-        <initializer>= order</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jack/Documents/Work/QDynamics/src/Symi.h" line="11" column="20" bodyfile="/home/jack/Documents/Work/QDynamics/src/Symi.h" bodystart="11" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classQDynamics_1_1Symi_1a1d00d45dfa9de22d45865df8cfd637e5" prot="public" static="no" mutable="no">
-        <type>const <ref refid="namespaceQDynamics_1a68884510ffea34b2025b1558ef299d42" kindref="member">StepType</ref></type>
-        <definition>const StepType QDynamics::Symi&lt; order, step &gt;::StepMode</definition>
-        <argsstring></argsstring>
-        <name>StepMode</name>
-        <initializer>= step</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jack/Documents/Work/QDynamics/src/Symi.h" line="12" column="16" bodyfile="/home/jack/Documents/Work/QDynamics/src/Symi.h" bodystart="12" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classQDynamics_1_1Symi_1a99f05fe237066759d24001672d484cec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -61,12 +31,31 @@
           <declname>deltaT</declname>
         </param>
         <briefdescription>
+<para>Constructor, as per <ref refid="classQDynamics_1_1Integrator_1a677dd555cee316d6d456b7da258c4385" kindref="member">Integrator::Integrator(double,double)</ref>. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total duration of the integration</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deltaT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width of timesteps used </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jack/Documents/Work/QDynamics/src/Symi.h" line="13" column="1" bodyfile="/home/jack/Documents/Work/QDynamics/src/Symi.h" bodystart="13" bodyend="17"/>
+        <location file="/home/jack/Documents/Work/QDynamics/src/Symi.h" line="19" column="1" bodyfile="/home/jack/Documents/Work/QDynamics/src/Symi.h" bodystart="19" bodyend="22"/>
       </memberdef>
       <memberdef kind="function" id="classQDynamics_1_1Symi_1aa88a0244de9e8b80c1532f6429cf64d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -86,17 +75,92 @@
           <declname>skipper</declname>
         </param>
         <briefdescription>
+<para>Constructor, as per <ref refid="classQDynamics_1_1Integrator_1aa469124cb408fadbaa540555dfabee33" kindref="member">Integrator::Integrator(double,double,int)</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total duration of the integration</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deltaT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width of timesteps used</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of epochs which pass in between updates to the progess <ref refid="classQDynamics_1_1Integrator_1af8889c2bbe10237a8dd8c46b25b15d29" kindref="member">Integrator::Buffer</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jack/Documents/Work/QDynamics/src/Symi.h" line="24" column="1" bodyfile="/home/jack/Documents/Work/QDynamics/src/Symi.h" bodystart="24" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classQDynamics_1_1Symi_1a2a58bd1bc46f69d0993efa0f37052b2c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>virtual Quaternion QDynamics::Symi&lt; order, step &gt;::Magnus</definition>
+        <argsstring>(double duration)</argsstring>
+        <name>Magnus</name>
+        <reimplements refid="classQDynamics_1_1Magi_1a0d7ef81b9e5ffea255022b3715831044">Magnus</reimplements>
+        <param>
+          <type>double</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+<para>The primary purpose of this subclass. This heavily mathematical function computes exactly the terms of the Magnus expansion exactly (up to numerical precision), in the case where the moment of inertia matrix is aligned such that J = (I,I,J_z). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The duration of the torque-free precession </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jack/Documents/Work/QDynamics/src/Symi.h" line="32" column="20" bodyfile="/home/jack/Documents/Work/QDynamics/src/Symi.h" bodystart="32" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classQDynamics_1_1Symi_1a4c06eafd29bf6d87c73ab6c36b342d25" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void QDynamics::Symi&lt; order, step &gt;::MakeName</definition>
+        <argsstring>()</argsstring>
+        <name>MakeName</name>
+        <reimplements refid="classQDynamics_1_1Magi_1a0604167d4004f3391edb93ad44fd664f">MakeName</reimplements>
+        <briefdescription>
+<para>Generates a print-and-filename-friendly name depending on the properties of the integrator. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jack/Documents/Work/QDynamics/src/Symi.h" line="18" column="1" bodyfile="/home/jack/Documents/Work/QDynamics/src/Symi.h" bodystart="18" bodyend="22"/>
+        <location file="/home/jack/Documents/Work/QDynamics/src/Symi.h" line="77" column="14" bodyfile="/home/jack/Documents/Work/QDynamics/src/Symi.h" bodystart="77" bodyend="93"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
+<para>A simple subclass of <ref refid="classQDynamics_1_1Magi" kindref="compound">QDynamics::Magi</ref> which overloads the <ref refid="classQDynamics_1_1Magi_1a0d7ef81b9e5ffea255022b3715831044" kindref="member">Magi::Magnus()</ref> function with an exact analytical expressions, removing the need for numerical estimation of the terms. We therefore set <ref refid="classQDynamics_1_1Magi_1a1ebc70a53a0292d759800272ff9804c4" kindref="member">Magi::Resolution</ref> to 0, as this is no longer needed.</para>
+<para>When working with <ref refid="classQDynamics_1_1Symi" kindref="compound">Symi</ref>, note that you have to be explicit about member variables because of template based inheritance: Dependent names vs Independent names. It&apos;s inbuilt into the specification for reasons I don&apos;t quite know. Therefore, you must refer to member variables as <computeroutput>Symi::x</computeroutput>, rather than just <computeroutput>x</computeroutput>. </para>
     </detaileddescription>
     <inheritancegraph>
       <node id="3">
@@ -153,7 +217,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/jack/Documents/Work/QDynamics/src/Symi.h" line="9" column="1" bodyfile="/home/jack/Documents/Work/QDynamics/src/Symi.h" bodystart="8" bodyend="65"/>
+    <location file="/home/jack/Documents/Work/QDynamics/src/Symi.h" line="15" column="1" bodyfile="/home/jack/Documents/Work/QDynamics/src/Symi.h" bodystart="14" bodyend="94"/>
     <listofallmembers>
       <member refid="classQDynamics_1_1Magi_1aa12d85b9d76687ccf7ab84de4c4963fd" prot="protected" virt="non-virtual"><scope>QDynamics::Symi</scope><name>Brute_Update</name></member>
       <member refid="classQDynamics_1_1Integrator_1af8889c2bbe10237a8dd8c46b25b15d29" prot="private" virt="non-virtual"><scope>QDynamics::Symi</scope><name>Buffer</name></member>
@@ -176,17 +240,17 @@
       <member refid="classQDynamics_1_1Magi_1a7887aa1074337176f9a43c65eb076683" prot="protected" virt="non-virtual"><scope>QDynamics::Symi</scope><name>Leapfrog_Update</name></member>
       <member refid="classQDynamics_1_1Magi_1aa832ebdc8d1072c61024154e16702c51" prot="public" virt="non-virtual"><scope>QDynamics::Symi</scope><name>Magi</name></member>
       <member refid="classQDynamics_1_1Magi_1a8125608182e49038386d67516ab18d39" prot="public" virt="non-virtual"><scope>QDynamics::Symi</scope><name>Magi</name></member>
-      <member refid="classQDynamics_1_1Magi_1a0d7ef81b9e5ffea255022b3715831044" prot="protected" virt="virtual"><scope>QDynamics::Symi</scope><name>Magnus</name></member>
-      <member refid="classQDynamics_1_1Magi_1a51a65517fca2e397bbcc1717f480cd04" prot="protected" virt="virtual"><scope>QDynamics::Symi</scope><name>Magnus_Compute</name></member>
+      <member refid="classQDynamics_1_1Symi_1a2a58bd1bc46f69d0993efa0f37052b2c" prot="protected" virt="virtual"><scope>QDynamics::Symi</scope><name>Magnus</name></member>
+      <member refid="classQDynamics_1_1Symi_1a4c06eafd29bf6d87c73ab6c36b342d25" prot="protected" virt="virtual"><scope>QDynamics::Symi</scope><name>MakeName</name></member>
       <member refid="classQDynamics_1_1Integrator_1aa3e27d68428619ab4083b2d42ef8924c" prot="protected" virt="non-virtual"><scope>QDynamics::Symi</scope><name>Name</name></member>
       <member refid="classQDynamics_1_1Integrator_1a00be60876ae62ef0d1555a6cc0ce52a5" prot="private" virt="non-virtual"><scope>QDynamics::Symi</scope><name>NHashes</name></member>
-      <member refid="classQDynamics_1_1Symi_1a64ac64472b1b635b8915c6e0575b36a8" prot="public" virt="non-virtual"><scope>QDynamics::Symi</scope><name>Order</name></member>
+      <member refid="classQDynamics_1_1Magi_1abd42c2649279399c3f7599c41397fdad" prot="protected" virt="non-virtual"><scope>QDynamics::Symi</scope><name>Order</name></member>
       <member refid="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" prot="protected" virt="non-virtual"><scope>QDynamics::Symi</scope><name>p</name></member>
       <member refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" prot="protected" virt="non-virtual"><scope>QDynamics::Symi</scope><name>q</name></member>
       <member refid="classQDynamics_1_1Magi_1a1ebc70a53a0292d759800272ff9804c4" prot="protected" virt="non-virtual"><scope>QDynamics::Symi</scope><name>Resolution</name></member>
       <member refid="classQDynamics_1_1Integrator_1a95e110d6b14003db39f8a52180b97870" prot="private" virt="non-virtual"><scope>QDynamics::Symi</scope><name>SkipID</name></member>
       <member refid="classQDynamics_1_1Integrator_1a409e18faeeefa5fb63f7bcce3eb0e381" prot="private" virt="non-virtual"><scope>QDynamics::Symi</scope><name>Skips</name></member>
-      <member refid="classQDynamics_1_1Symi_1a1d00d45dfa9de22d45865df8cfd637e5" prot="public" virt="non-virtual"><scope>QDynamics::Symi</scope><name>StepMode</name></member>
+      <member refid="classQDynamics_1_1Magi_1a26d4324667e4cc919807eceb654fad7b" prot="protected" virt="non-virtual"><scope>QDynamics::Symi</scope><name>StepMode</name></member>
       <member refid="classQDynamics_1_1Symi_1a99f05fe237066759d24001672d484cec" prot="public" virt="non-virtual"><scope>QDynamics::Symi</scope><name>Symi</name></member>
       <member refid="classQDynamics_1_1Symi_1aa88a0244de9e8b80c1532f6429cf64d4" prot="public" virt="non-virtual"><scope>QDynamics::Symi</scope><name>Symi</name></member>
       <member refid="classQDynamics_1_1Integrator_1a9b850dd4b29118e44b0183409db0a983" prot="protected" virt="non-virtual"><scope>QDynamics::Symi</scope><name>TimeStep</name></member>

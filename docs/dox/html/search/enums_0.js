@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['steptype_345',['StepType',['../namespaceQDynamics.html#a68884510ffea34b2025b1558ef299d42',1,'QDynamics']]]
+  ['updatetype_345',['UpdateType',['../namespaceQDynamics.html#a9cecbf03e73fb0909d96ec39d14285c9',1,'QDynamics']]]
 ];

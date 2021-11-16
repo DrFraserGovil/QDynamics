@@ -14,50 +14,103 @@ Inheritance diagram for Q\+Dynamics\+::Symi$<$ order, step $>$\+:\begin{figure}[
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classQDynamics_1_1Symi_a99f05fe237066759d24001672d484cec}{Symi}} (double T, double deltaT)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructor, as per \mbox{\hyperlink{classQDynamics_1_1Integrator_a677dd555cee316d6d456b7da258c4385}{Integrator\+::\+Integrator(double,double)}}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classQDynamics_1_1Symi_aa88a0244de9e8b80c1532f6429cf64d4}{Symi}} (double T, double deltaT, int skipper)
-\end{DoxyCompactItemize}
-\doxysubsection*{Data Fields}
+\begin{DoxyCompactList}\small\item\em Constructor, as per \mbox{\hyperlink{classQDynamics_1_1Integrator_aa469124cb408fadbaa540555dfabee33}{Integrator\+::\+Integrator(double,double,int)}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-const unsigned int \mbox{\hyperlink{classQDynamics_1_1Symi_a64ac64472b1b635b8915c6e0575b36a8}{Order}} = order
-\item 
-const \mbox{\hyperlink{namespaceQDynamics_a68884510ffea34b2025b1558ef299d42}{Step\+Type}} \mbox{\hyperlink{classQDynamics_1_1Symi_a1d00d45dfa9de22d45865df8cfd637e5}{Step\+Mode}} = step
-\end{DoxyCompactItemize}
+virtual \mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}} \mbox{\hyperlink{classQDynamics_1_1Symi_a2a58bd1bc46f69d0993efa0f37052b2c}{Magnus}} (double duration)
+\begin{DoxyCompactList}\small\item\em The primary purpose of this subclass. This heavily mathematical function computes exactly the terms of the Magnus expansion exactly (up to numerical precision), in the case where the moment of inertia matrix is aligned such that J = (I,I,J\+\_\+z). \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classQDynamics_1_1Symi_a4c06eafd29bf6d87c73ab6c36b342d25}{Make\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Generates a print-\/and-\/filename-\/friendly name depending on the properties of the integrator. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$unsigned int order, Update\+Type step$>$\newline
+class Q\+Dynamics\+::\+Symi$<$ order, step $>$}
+
+A simple subclass of \mbox{\hyperlink{classQDynamics_1_1Magi}{Q\+Dynamics\+::\+Magi}} which overloads the \mbox{\hyperlink{classQDynamics_1_1Magi_a0d7ef81b9e5ffea255022b3715831044}{Magi\+::\+Magnus()}} function with an exact analytical expressions, removing the need for numerical estimation of the terms. We therefore set \mbox{\hyperlink{classQDynamics_1_1Magi_a1ebc70a53a0292d759800272ff9804c4}{Magi\+::\+Resolution}} to 0, as this is no longer needed.
+
+When working with \mbox{\hyperlink{classQDynamics_1_1Symi}{Symi}}, note that you have to be explicit about member variables because of template based inheritance\+: Dependent names vs Independent names. It\textquotesingle{}s inbuilt into the specification for reasons I don\textquotesingle{}t quite know. Therefore, you must refer to member variables as {\ttfamily Symi\+::x}, rather than just {\ttfamily x}. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classQDynamics_1_1Symi_a99f05fe237066759d24001672d484cec}\label{classQDynamics_1_1Symi_a99f05fe237066759d24001672d484cec}} 
 \index{QDynamics::Symi$<$ order, step $>$@{QDynamics::Symi$<$ order, step $>$}!Symi@{Symi}}
 \index{Symi@{Symi}!QDynamics::Symi$<$ order, step $>$@{QDynamics::Symi$<$ order, step $>$}}
 \doxysubsubsection{\texorpdfstring{Symi()}{Symi()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily template$<$unsigned int order, Step\+Type step$>$ \\
+{\footnotesize\ttfamily template$<$unsigned int order, Update\+Type step$>$ \\
 \mbox{\hyperlink{classQDynamics_1_1Symi}{Q\+Dynamics\+::\+Symi}}$<$ order, step $>$\+::\mbox{\hyperlink{classQDynamics_1_1Symi}{Symi}} (\begin{DoxyParamCaption}\item[{double}]{T,  }\item[{double}]{deltaT }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Constructor, as per \mbox{\hyperlink{classQDynamics_1_1Integrator_a677dd555cee316d6d456b7da258c4385}{Integrator\+::\+Integrator(double,double)}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & The total duration of the integration\\
+\hline
+{\em deltaT} & the width of timesteps used \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classQDynamics_1_1Symi_aa88a0244de9e8b80c1532f6429cf64d4}\label{classQDynamics_1_1Symi_aa88a0244de9e8b80c1532f6429cf64d4}} 
 \index{QDynamics::Symi$<$ order, step $>$@{QDynamics::Symi$<$ order, step $>$}!Symi@{Symi}}
 \index{Symi@{Symi}!QDynamics::Symi$<$ order, step $>$@{QDynamics::Symi$<$ order, step $>$}}
 \doxysubsubsection{\texorpdfstring{Symi()}{Symi()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily template$<$unsigned int order, Step\+Type step$>$ \\
+{\footnotesize\ttfamily template$<$unsigned int order, Update\+Type step$>$ \\
 \mbox{\hyperlink{classQDynamics_1_1Symi}{Q\+Dynamics\+::\+Symi}}$<$ order, step $>$\+::\mbox{\hyperlink{classQDynamics_1_1Symi}{Symi}} (\begin{DoxyParamCaption}\item[{double}]{T,  }\item[{double}]{deltaT,  }\item[{int}]{skipper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-\doxysubsection{Field Documentation}
-\mbox{\Hypertarget{classQDynamics_1_1Symi_a64ac64472b1b635b8915c6e0575b36a8}\label{classQDynamics_1_1Symi_a64ac64472b1b635b8915c6e0575b36a8}} 
-\index{QDynamics::Symi$<$ order, step $>$@{QDynamics::Symi$<$ order, step $>$}!Order@{Order}}
-\index{Order@{Order}!QDynamics::Symi$<$ order, step $>$@{QDynamics::Symi$<$ order, step $>$}}
-\doxysubsubsection{\texorpdfstring{Order}{Order}}
-{\footnotesize\ttfamily template$<$unsigned int order, Step\+Type step$>$ \\
-const unsigned int \mbox{\hyperlink{classQDynamics_1_1Symi}{Q\+Dynamics\+::\+Symi}}$<$ order, step $>$\+::Order = order}
+Constructor, as per \mbox{\hyperlink{classQDynamics_1_1Integrator_aa469124cb408fadbaa540555dfabee33}{Integrator\+::\+Integrator(double,double,int)}}. 
 
-\mbox{\Hypertarget{classQDynamics_1_1Symi_a1d00d45dfa9de22d45865df8cfd637e5}\label{classQDynamics_1_1Symi_a1d00d45dfa9de22d45865df8cfd637e5}} 
-\index{QDynamics::Symi$<$ order, step $>$@{QDynamics::Symi$<$ order, step $>$}!StepMode@{StepMode}}
-\index{StepMode@{StepMode}!QDynamics::Symi$<$ order, step $>$@{QDynamics::Symi$<$ order, step $>$}}
-\doxysubsubsection{\texorpdfstring{StepMode}{StepMode}}
-{\footnotesize\ttfamily template$<$unsigned int order, Step\+Type step$>$ \\
-const \mbox{\hyperlink{namespaceQDynamics_a68884510ffea34b2025b1558ef299d42}{Step\+Type}} \mbox{\hyperlink{classQDynamics_1_1Symi}{Q\+Dynamics\+::\+Symi}}$<$ order, step $>$\+::Step\+Mode = step}
+
+\begin{DoxyParams}{Parameters}
+{\em T} & The total duration of the integration\\
+\hline
+{\em deltaT} & the width of timesteps used\\
+\hline
+{\em skipper} & The number of epochs which pass in between updates to the progess \mbox{\hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer}} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classQDynamics_1_1Symi_a2a58bd1bc46f69d0993efa0f37052b2c}\label{classQDynamics_1_1Symi_a2a58bd1bc46f69d0993efa0f37052b2c}} 
+\index{QDynamics::Symi$<$ order, step $>$@{QDynamics::Symi$<$ order, step $>$}!Magnus@{Magnus}}
+\index{Magnus@{Magnus}!QDynamics::Symi$<$ order, step $>$@{QDynamics::Symi$<$ order, step $>$}}
+\doxysubsubsection{\texorpdfstring{Magnus()}{Magnus()}}
+{\footnotesize\ttfamily template$<$unsigned int order, Update\+Type step$>$ \\
+virtual \mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}} \mbox{\hyperlink{classQDynamics_1_1Symi}{Q\+Dynamics\+::\+Symi}}$<$ order, step $>$\+::Magnus (\begin{DoxyParamCaption}\item[{double}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+The primary purpose of this subclass. This heavily mathematical function computes exactly the terms of the Magnus expansion exactly (up to numerical precision), in the case where the moment of inertia matrix is aligned such that J = (I,I,J\+\_\+z). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The duration of the torque-\/free precession \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classQDynamics_1_1Magi_a0d7ef81b9e5ffea255022b3715831044}{Q\+Dynamics\+::\+Magi$<$ order, step $>$}}.
+
+\mbox{\Hypertarget{classQDynamics_1_1Symi_a4c06eafd29bf6d87c73ab6c36b342d25}\label{classQDynamics_1_1Symi_a4c06eafd29bf6d87c73ab6c36b342d25}} 
+\index{QDynamics::Symi$<$ order, step $>$@{QDynamics::Symi$<$ order, step $>$}!MakeName@{MakeName}}
+\index{MakeName@{MakeName}!QDynamics::Symi$<$ order, step $>$@{QDynamics::Symi$<$ order, step $>$}}
+\doxysubsubsection{\texorpdfstring{MakeName()}{MakeName()}}
+{\footnotesize\ttfamily template$<$unsigned int order, Update\+Type step$>$ \\
+virtual void \mbox{\hyperlink{classQDynamics_1_1Symi}{Q\+Dynamics\+::\+Symi}}$<$ order, step $>$\+::Make\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Generates a print-\/and-\/filename-\/friendly name depending on the properties of the integrator. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classQDynamics_1_1Magi_a0604167d4004f3391edb93ad44fd664f}{Q\+Dynamics\+::\+Magi$<$ order, step $>$}}.
 
 
 

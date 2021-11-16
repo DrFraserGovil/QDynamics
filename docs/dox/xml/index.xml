@@ -70,7 +70,7 @@
   </compound>
   <compound refid="classQDynamics_1_1Magi" kind="class"><name>QDynamics::Magi</name>
     <member refid="classQDynamics_1_1Magi_1abd42c2649279399c3f7599c41397fdad" kind="variable"><name>Order</name></member>
-    <member refid="classQDynamics_1_1Magi_1a1b7aae9a9dc768f78758c30c13d54298" kind="variable"><name>StepMode</name></member>
+    <member refid="classQDynamics_1_1Magi_1a26d4324667e4cc919807eceb654fad7b" kind="variable"><name>StepMode</name></member>
     <member refid="classQDynamics_1_1Magi_1a1ebc70a53a0292d759800272ff9804c4" kind="variable"><name>Resolution</name></member>
     <member refid="classQDynamics_1_1Magi_1aa832ebdc8d1072c61024154e16702c51" kind="function"><name>Magi</name></member>
     <member refid="classQDynamics_1_1Magi_1a8125608182e49038386d67516ab18d39" kind="function"><name>Magi</name></member>
@@ -79,7 +79,7 @@
     <member refid="classQDynamics_1_1Magi_1add78aa1f80486641fb4288ca3e886af7" kind="function"><name>Euler_Update</name></member>
     <member refid="classQDynamics_1_1Magi_1a7887aa1074337176f9a43c65eb076683" kind="function"><name>Leapfrog_Update</name></member>
     <member refid="classQDynamics_1_1Magi_1a0d7ef81b9e5ffea255022b3715831044" kind="function"><name>Magnus</name></member>
-    <member refid="classQDynamics_1_1Magi_1a51a65517fca2e397bbcc1717f480cd04" kind="function"><name>Magnus_Compute</name></member>
+    <member refid="classQDynamics_1_1Magi_1a0604167d4004f3391edb93ad44fd664f" kind="function"><name>MakeName</name></member>
   </compound>
   <compound refid="classJSL_1_1Matrix" kind="class"><name>JSL::Matrix</name>
     <member refid="classJSL_1_1Matrix_1a446d23ba93238f3e2dfc79a3a4d5eb7e" kind="variable"><name>Data</name></member>
@@ -159,10 +159,10 @@
     <member refid="classJSL__Testing_1_1StringTest_1ada0409cd10e3f09788994a9115331ff7" kind="function"><name>Run_Test</name></member>
   </compound>
   <compound refid="classQDynamics_1_1Symi" kind="class"><name>QDynamics::Symi</name>
-    <member refid="classQDynamics_1_1Symi_1a64ac64472b1b635b8915c6e0575b36a8" kind="variable"><name>Order</name></member>
-    <member refid="classQDynamics_1_1Symi_1a1d00d45dfa9de22d45865df8cfd637e5" kind="variable"><name>StepMode</name></member>
     <member refid="classQDynamics_1_1Symi_1a99f05fe237066759d24001672d484cec" kind="function"><name>Symi</name></member>
     <member refid="classQDynamics_1_1Symi_1aa88a0244de9e8b80c1532f6429cf64d4" kind="function"><name>Symi</name></member>
+    <member refid="classQDynamics_1_1Symi_1a2a58bd1bc46f69d0993efa0f37052b2c" kind="function"><name>Magnus</name></member>
+    <member refid="classQDynamics_1_1Symi_1a4c06eafd29bf6d87c73ab6c36b342d25" kind="function"><name>MakeName</name></member>
   </compound>
   <compound refid="classJSL_1_1UnitTest" kind="class"><name>JSL::UnitTest</name>
     <member refid="classJSL_1_1UnitTest_1a53c19424147e72fa6392470627f15049" kind="variable"><name>Name</name></member>
@@ -259,10 +259,10 @@
     <member refid="namespaceJSL__Testing_1a509a70d20fdc2e9975d9b0b8ae424ef1" kind="function"><name>RunAllTests</name></member>
   </compound>
   <compound refid="namespaceQDynamics" kind="namespace"><name>QDynamics</name>
-    <member refid="namespaceQDynamics_1a68884510ffea34b2025b1558ef299d42" kind="enum"><name>StepType</name></member>
-    <member refid="namespaceQDynamics_1a68884510ffea34b2025b1558ef299d42a125289977730488f30b88da52aada3c9" kind="enumvalue"><name>Brute</name></member>
-    <member refid="namespaceQDynamics_1a68884510ffea34b2025b1558ef299d42a2c79272464c9de8d12ec1f4e259daf97" kind="enumvalue"><name>Euler</name></member>
-    <member refid="namespaceQDynamics_1a68884510ffea34b2025b1558ef299d42ab5047fb0a7ebf855e7fce414e634326d" kind="enumvalue"><name>Leapfrog</name></member>
+    <member refid="namespaceQDynamics_1a9cecbf03e73fb0909d96ec39d14285c9" kind="enum"><name>UpdateType</name></member>
+    <member refid="namespaceQDynamics_1a9cecbf03e73fb0909d96ec39d14285c9a125289977730488f30b88da52aada3c9" kind="enumvalue"><name>Brute</name></member>
+    <member refid="namespaceQDynamics_1a9cecbf03e73fb0909d96ec39d14285c9a2c79272464c9de8d12ec1f4e259daf97" kind="enumvalue"><name>Euler</name></member>
+    <member refid="namespaceQDynamics_1a9cecbf03e73fb0909d96ec39d14285c9ab5047fb0a7ebf855e7fce414e634326d" kind="enumvalue"><name>Leapfrog</name></member>
     <member refid="namespaceQDynamics_1a06e91eeb11c659d8845569a642500675" kind="variable"><name>buffersize</name></member>
     <member refid="namespaceQDynamics_1ac3ad3b89bbd65796d1f4f5e4809a12ed" kind="variable"><name>hash</name></member>
     <member refid="namespaceQDynamics_1a0b043bd2021eaeb8b6580cef4fcc667c" kind="function"><name>Mult</name></member>

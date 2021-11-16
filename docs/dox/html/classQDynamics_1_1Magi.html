@@ -74,9 +74,9 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Data Fields</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a>  </div>
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">QDynamics::Magi&lt; order, step &gt; Class Template Reference</div>  </div>
 </div><!--header-->
@@ -97,8 +97,10 @@ Inheritance diagram for QDynamics::Magi&lt; order, step &gt;:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa832ebdc8d1072c61024154e16702c51"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Magi.html#aa832ebdc8d1072c61024154e16702c51">Magi</a> (double T, double deltaT, int resolution)</td></tr>
+<tr class="memdesc:aa832ebdc8d1072c61024154e16702c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor, as per <a class="el" href="classQDynamics_1_1Integrator.html#a677dd555cee316d6d456b7da258c4385" title="Constructor function.">Integrator::Integrator(double,double)</a>. All arguments except <em>resolution</em> are used to build the parent class.  <a href="classQDynamics_1_1Magi.html#aa832ebdc8d1072c61024154e16702c51">More...</a><br /></td></tr>
 <tr class="separator:aa832ebdc8d1072c61024154e16702c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8125608182e49038386d67516ab18d39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Magi.html#a8125608182e49038386d67516ab18d39">Magi</a> (double T, double deltaT, int resolution, int skipper)</td></tr>
+<tr class="memdesc:a8125608182e49038386d67516ab18d39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor, as per <a class="el" href="classQDynamics_1_1Integrator.html#aa469124cb408fadbaa540555dfabee33" title="Constructor function.">Integrator::Integrator(double,double,int)</a>  <a href="classQDynamics_1_1Magi.html#a8125608182e49038386d67516ab18d39">More...</a><br /></td></tr>
 <tr class="separator:a8125608182e49038386d67516ab18d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classQDynamics_1_1Integrator"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classQDynamics_1_1Integrator')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classQDynamics_1_1Integrator.html">QDynamics::Integrator</a></td></tr>
 <tr class="memitem:a677dd555cee316d6d456b7da258c4385 inherit pub_methods_classQDynamics_1_1Integrator"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#a677dd555cee316d6d456b7da258c4385">Integrator</a> (double T, double deltaT)</td></tr>
@@ -110,28 +112,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4b921b312775194b77c2c85f93add84e inherit pub_methods_classQDynamics_1_1Integrator"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#a4b921b312775194b77c2c85f93add84e">Evolve</a> (<a class="el" href="classQDynamics_1_1Quaternion.html">Quaternion</a> q0, <a class="el" href="classQDynamics_1_1Quaternion.html">Quaternion</a> p0, <a class="el" href="classJSL_1_1Vector.html">JSL::Vector</a> <a class="el" href="classQDynamics_1_1Integrator.html#a7b99b22475321b34c1624bded3489954">J</a>, std::string saveFolder)</td></tr>
 <tr class="separator:a4b921b312775194b77c2c85f93add84e inherit pub_methods_classQDynamics_1_1Integrator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:abd42c2649279399c3f7599c41397fdad"><td class="memItemLeft" align="right" valign="top">const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Magi.html#abd42c2649279399c3f7599c41397fdad">Order</a> = order</td></tr>
-<tr class="separator:abd42c2649279399c3f7599c41397fdad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b7aae9a9dc768f78758c30c13d54298"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceQDynamics.html#a68884510ffea34b2025b1558ef299d42">StepType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Magi.html#a1b7aae9a9dc768f78758c30c13d54298">StepMode</a> = step</td></tr>
-<tr class="separator:a1b7aae9a9dc768f78758c30c13d54298"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:acd1d417b0e03a41ae83422c5b67f77bf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Magi.html#acd1d417b0e03a41ae83422c5b67f77bf">UpdatePosition</a> (double t)</td></tr>
-<tr class="memdesc:acd1d417b0e03a41ae83422c5b67f77bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">In the <a class="el" href="classQDynamics_1_1Integrator.html">Integrator</a> base class, this is an empty function. Child members will mainly focus on overloading this function to their own update formula.  <a href="classQDynamics_1_1Magi.html#acd1d417b0e03a41ae83422c5b67f77bf">More...</a><br /></td></tr>
+<tr class="memdesc:acd1d417b0e03a41ae83422c5b67f77bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">An override of the generic <a class="el" href="classQDynamics_1_1Integrator.html#a4effa27d56f3205e53653b1fdc5cd08e" title="In the Integrator base class, this is an empty function. Child members will mainly focus on overloadi...">Integrator::UpdatePosition()</a>. Depending on the value of <a class="el" href="classQDynamics_1_1Magi.html#a26d4324667e4cc919807eceb654fad7b" title="The second template argument passed to a Magi object. Determines the update formula used.">Magi::StepMode</a>, calls an appropriate function. The intent is that as <a class="el" href="classQDynamics_1_1Magi.html#a26d4324667e4cc919807eceb654fad7b" title="The second template argument passed to a Magi object. Determines the update formula used.">Magi::StepMode</a> is a template value, logic of which function is called is determined at compile time, without additional overhead.  <a href="classQDynamics_1_1Magi.html#acd1d417b0e03a41ae83422c5b67f77bf">More...</a><br /></td></tr>
 <tr class="separator:acd1d417b0e03a41ae83422c5b67f77bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa12d85b9d76687ccf7ab84de4c4963fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Magi.html#aa12d85b9d76687ccf7ab84de4c4963fd">Brute_Update</a> (double t)</td></tr>
+<tr class="memdesc:aa12d85b9d76687ccf7ab84de4c4963fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function called by <a class="el" href="classQDynamics_1_1Magi.html#acd1d417b0e03a41ae83422c5b67f77bf" title="An override of the generic Integrator::UpdatePosition(). Depending on the value of Magi::StepMode,...">UpdatePosition()</a> if <code>StepMode == Brute</code>. See <a class="el" href="namespaceQDynamics.html#a9cecbf03e73fb0909d96ec39d14285c9">QDynamics::UpdateType</a> for more information.  <a href="classQDynamics_1_1Magi.html#aa12d85b9d76687ccf7ab84de4c4963fd">More...</a><br /></td></tr>
 <tr class="separator:aa12d85b9d76687ccf7ab84de4c4963fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add78aa1f80486641fb4288ca3e886af7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Magi.html#add78aa1f80486641fb4288ca3e886af7">Euler_Update</a> (double t)</td></tr>
+<tr class="memdesc:add78aa1f80486641fb4288ca3e886af7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function called by <a class="el" href="classQDynamics_1_1Magi.html#acd1d417b0e03a41ae83422c5b67f77bf" title="An override of the generic Integrator::UpdatePosition(). Depending on the value of Magi::StepMode,...">UpdatePosition()</a> if <code>StepMode == Euler</code>. See <a class="el" href="namespaceQDynamics.html#a9cecbf03e73fb0909d96ec39d14285c9">QDynamics::UpdateType</a> for more information.  <a href="classQDynamics_1_1Magi.html#add78aa1f80486641fb4288ca3e886af7">More...</a><br /></td></tr>
 <tr class="separator:add78aa1f80486641fb4288ca3e886af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7887aa1074337176f9a43c65eb076683"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Magi.html#a7887aa1074337176f9a43c65eb076683">Leapfrog_Update</a> (double t)</td></tr>
+<tr class="memdesc:a7887aa1074337176f9a43c65eb076683"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function called by <a class="el" href="classQDynamics_1_1Magi.html#acd1d417b0e03a41ae83422c5b67f77bf" title="An override of the generic Integrator::UpdatePosition(). Depending on the value of Magi::StepMode,...">UpdatePosition()</a> if <code>StepMode == Leapfrog</code>. See <a class="el" href="namespaceQDynamics.html#a9cecbf03e73fb0909d96ec39d14285c9">QDynamics::UpdateType</a> for more information.  <a href="classQDynamics_1_1Magi.html#a7887aa1074337176f9a43c65eb076683">More...</a><br /></td></tr>
 <tr class="separator:a7887aa1074337176f9a43c65eb076683"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d7ef81b9e5ffea255022b3715831044"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classQDynamics_1_1Quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Magi.html#a0d7ef81b9e5ffea255022b3715831044">Magnus</a> (double duration)</td></tr>
+<tr class="memdesc:a0d7ef81b9e5ffea255022b3715831044"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates an estimate of the Magnus series for torque-free drift over the provided duration, given the current value of the angular momentum, <a class="el" href="classQDynamics_1_1Integrator.html#adb45dae4f4d1d37ab83ca5269f51058d" title="The current body-fixed Angular momentum.">Integrator::L</a>. The duration of this compuation is determined by <a class="el" href="classQDynamics_1_1Magi.html#abd42c2649279399c3f7599c41397fdad" title="The first template argument passed to a Magi object. Determines the order of the computation in the M...">Magi::Order</a> (which determines how many terms are included) and by <a class="el" href="classQDynamics_1_1Magi.html#a1ebc70a53a0292d759800272ff9804c4" title="As per the assignation in Magi(), this is the number of points to used whenever a numerical integral ...">Magi::Resolution</a> (which determines the accuracy with which each term is computed).  <a href="classQDynamics_1_1Magi.html#a0d7ef81b9e5ffea255022b3715831044">More...</a><br /></td></tr>
 <tr class="separator:a0d7ef81b9e5ffea255022b3715831044"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51a65517fca2e397bbcc1717f480cd04"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classQDynamics_1_1Quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Magi.html#a51a65517fca2e397bbcc1717f480cd04">Magnus_Compute</a> (double duration)</td></tr>
-<tr class="separator:a51a65517fca2e397bbcc1717f480cd04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classQDynamics_1_1Integrator"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classQDynamics_1_1Integrator')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classQDynamics_1_1Integrator.html">QDynamics::Integrator</a></td></tr>
 <tr class="memitem:a4688fbccd8b0dc5c9a73dddac66b486f inherit pro_methods_classQDynamics_1_1Integrator"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classQDynamics_1_1Quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#a4688fbccd8b0dc5c9a73dddac66b486f">GradU</a> (double t)</td></tr>
 <tr class="memdesc:a4688fbccd8b0dc5c9a73dddac66b486f inherit pro_methods_classQDynamics_1_1Integrator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the quaternionic derivative of the neo-potential V (equal to the derivative of the rotation potential U), given the current value of <a class="el" href="classQDynamics_1_1Integrator.html#a5929511da076c7f31749a6da713fcff6" title="The current position variable.">Integrator::q</a> and the current time.  <a href="classQDynamics_1_1Integrator.html#a4688fbccd8b0dc5c9a73dddac66b486f">More...</a><br /></td></tr>
@@ -142,7 +139,14 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:abd42c2649279399c3f7599c41397fdad"><td class="memItemLeft" align="right" valign="top">const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Magi.html#abd42c2649279399c3f7599c41397fdad">Order</a> = order</td></tr>
+<tr class="memdesc:abd42c2649279399c3f7599c41397fdad"><td class="mdescLeft">&#160;</td><td class="mdescRight">The first template argument passed to a <code><a class="el" href="classQDynamics_1_1Magi.html">Magi</a></code> object. Determines the order of the computation in the <a class="el" href="classQDynamics_1_1Magi.html#a0d7ef81b9e5ffea255022b3715831044" title="Generates an estimate of the Magnus series for torque-free drift over the provided duration,...">Magnus()</a> calculation.  <a href="classQDynamics_1_1Magi.html#abd42c2649279399c3f7599c41397fdad">More...</a><br /></td></tr>
+<tr class="separator:abd42c2649279399c3f7599c41397fdad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26d4324667e4cc919807eceb654fad7b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceQDynamics.html#a9cecbf03e73fb0909d96ec39d14285c9">UpdateType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Magi.html#a26d4324667e4cc919807eceb654fad7b">StepMode</a> = step</td></tr>
+<tr class="memdesc:a26d4324667e4cc919807eceb654fad7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The second template argument passed to a <code><a class="el" href="classQDynamics_1_1Magi.html">Magi</a></code> object. Determines the update formula used.  <a href="classQDynamics_1_1Magi.html#a26d4324667e4cc919807eceb654fad7b">More...</a><br /></td></tr>
+<tr class="separator:a26d4324667e4cc919807eceb654fad7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ebc70a53a0292d759800272ff9804c4"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Magi.html#a1ebc70a53a0292d759800272ff9804c4">Resolution</a></td></tr>
+<tr class="memdesc:a1ebc70a53a0292d759800272ff9804c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">As per the assignation in <a class="el" href="classQDynamics_1_1Magi.html#aa832ebdc8d1072c61024154e16702c51" title="Constructor, as per Integrator::Integrator(double,double). All arguments except resolution are used t...">Magi()</a>, this is the number of points to used whenever a numerical integral is required.  <a href="classQDynamics_1_1Magi.html#a1ebc70a53a0292d759800272ff9804c4">More...</a><br /></td></tr>
 <tr class="separator:a1ebc70a53a0292d759800272ff9804c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classQDynamics_1_1Integrator"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classQDynamics_1_1Integrator')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classQDynamics_1_1Integrator.html">QDynamics::Integrator</a></td></tr>
 <tr class="memitem:a5929511da076c7f31749a6da713fcff6 inherit pro_attribs_classQDynamics_1_1Integrator"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQDynamics_1_1Quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#a5929511da076c7f31749a6da713fcff6">q</a></td></tr>
@@ -172,6 +176,12 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a19ed0b9864ebe762914cee04cb0ad4b3 inherit pro_attribs_classQDynamics_1_1Integrator"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Integrator.html#a19ed0b9864ebe762914cee04cb0ad4b3">FileName</a></td></tr>
 <tr class="memdesc:a19ed0b9864ebe762914cee04cb0ad4b3 inherit pro_attribs_classQDynamics_1_1Integrator"><td class="mdescLeft">&#160;</td><td class="mdescRight">The location written to by <a class="el" href="classQDynamics_1_1Integrator.html#ae80ab509b96a9b996934d9ef127f5137" title="Computes the Integrator::FileName including the filepath from from the Integrator::Name and the provi...">CreateFullName()</a>. A file location which will be used to write the output buffer to.  <a href="classQDynamics_1_1Integrator.html#a19ed0b9864ebe762914cee04cb0ad4b3">More...</a><br /></td></tr>
 <tr class="separator:a19ed0b9864ebe762914cee04cb0ad4b3 inherit pro_attribs_classQDynamics_1_1Integrator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a0604167d4004f3391edb93ad44fd664f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQDynamics_1_1Magi.html#a0604167d4004f3391edb93ad44fd664f">MakeName</a> ()</td></tr>
+<tr class="memdesc:a0604167d4004f3391edb93ad44fd664f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a print-and-filename-friendly name depending on the properties of the integrator.  <a href="classQDynamics_1_1Magi.html#a0604167d4004f3391edb93ad44fd664f">More...</a><br /></td></tr>
+<tr class="separator:a0604167d4004f3391edb93ad44fd664f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa832ebdc8d1072c61024154e16702c51"></a>
@@ -180,7 +190,7 @@ Protected Attributes</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;unsigned int order, StepType step&gt; </div>
+template&lt;unsigned int order, UpdateType step&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -216,6 +226,16 @@ template&lt;unsigned int order, StepType step&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Constructor, as per <a class="el" href="classQDynamics_1_1Integrator.html#a677dd555cee316d6d456b7da258c4385" title="Constructor function.">Integrator::Integrator(double,double)</a>. All arguments except <em>resolution</em> are used to build the parent class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">T</td><td>The total duration of the integration</td></tr>
+    <tr><td class="paramname">deltaT</td><td>the width of timesteps used</td></tr>
+    <tr><td class="paramname">resolution</td><td>The number of points to used whenever a numerical integral is required. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a8125608182e49038386d67516ab18d39"></a>
@@ -224,7 +244,7 @@ template&lt;unsigned int order, StepType step&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;unsigned int order, StepType step&gt; </div>
+template&lt;unsigned int order, UpdateType step&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -266,6 +286,17 @@ template&lt;unsigned int order, StepType step&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Constructor, as per <a class="el" href="classQDynamics_1_1Integrator.html#aa469124cb408fadbaa540555dfabee33" title="Constructor function.">Integrator::Integrator(double,double,int)</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">T</td><td>The total duration of the integration</td></tr>
+    <tr><td class="paramname">deltaT</td><td>the width of timesteps used</td></tr>
+    <tr><td class="paramname">resolution</td><td>The number of points to used whenever a numerical integral is required.</td></tr>
+    <tr><td class="paramname">skipper</td><td>The number of epochs which pass in between updates to the progess <a class="el" href="classQDynamics_1_1Integrator.html#af8889c2bbe10237a8dd8c46b25b15d29" title="A string-buffer containing the save-values of several past values of the integrator....">Integrator::Buffer</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -275,7 +306,7 @@ template&lt;unsigned int order, StepType step&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;unsigned int order, StepType step&gt; </div>
+template&lt;unsigned int order, UpdateType step&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -295,6 +326,14 @@ template&lt;unsigned int order, StepType step&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>The function called by <a class="el" href="classQDynamics_1_1Magi.html#acd1d417b0e03a41ae83422c5b67f77bf" title="An override of the generic Integrator::UpdatePosition(). Depending on the value of Magi::StepMode,...">UpdatePosition()</a> if <code>StepMode == Brute</code>. See <a class="el" href="namespaceQDynamics.html#a9cecbf03e73fb0909d96ec39d14285c9">QDynamics::UpdateType</a> for more information. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>The current time </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="add78aa1f80486641fb4288ca3e886af7"></a>
@@ -303,7 +342,7 @@ template&lt;unsigned int order, StepType step&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;unsigned int order, StepType step&gt; </div>
+template&lt;unsigned int order, UpdateType step&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -323,6 +362,14 @@ template&lt;unsigned int order, StepType step&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>The function called by <a class="el" href="classQDynamics_1_1Magi.html#acd1d417b0e03a41ae83422c5b67f77bf" title="An override of the generic Integrator::UpdatePosition(). Depending on the value of Magi::StepMode,...">UpdatePosition()</a> if <code>StepMode == Euler</code>. See <a class="el" href="namespaceQDynamics.html#a9cecbf03e73fb0909d96ec39d14285c9">QDynamics::UpdateType</a> for more information. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>The current time </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a7887aa1074337176f9a43c65eb076683"></a>
@@ -331,7 +378,7 @@ template&lt;unsigned int order, StepType step&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;unsigned int order, StepType step&gt; </div>
+template&lt;unsigned int order, UpdateType step&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -351,6 +398,14 @@ template&lt;unsigned int order, StepType step&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>The function called by <a class="el" href="classQDynamics_1_1Magi.html#acd1d417b0e03a41ae83422c5b67f77bf" title="An override of the generic Integrator::UpdatePosition(). Depending on the value of Magi::StepMode,...">UpdatePosition()</a> if <code>StepMode == Leapfrog</code>. See <a class="el" href="namespaceQDynamics.html#a9cecbf03e73fb0909d96ec39d14285c9">QDynamics::UpdateType</a> for more information. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>The current time </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a0d7ef81b9e5ffea255022b3715831044"></a>
@@ -359,7 +414,7 @@ template&lt;unsigned int order, StepType step&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;unsigned int order, StepType step&gt; </div>
+template&lt;unsigned int order, UpdateType step&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -379,33 +434,46 @@ template&lt;unsigned int order, StepType step&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Generates an estimate of the Magnus series for torque-free drift over the provided duration, given the current value of the angular momentum, <a class="el" href="classQDynamics_1_1Integrator.html#adb45dae4f4d1d37ab83ca5269f51058d" title="The current body-fixed Angular momentum.">Integrator::L</a>. The duration of this compuation is determined by <a class="el" href="classQDynamics_1_1Magi.html#abd42c2649279399c3f7599c41397fdad" title="The first template argument passed to a Magi object. Determines the order of the computation in the M...">Magi::Order</a> (which determines how many terms are included) and by <a class="el" href="classQDynamics_1_1Magi.html#a1ebc70a53a0292d759800272ff9804c4" title="As per the assignation in Magi(), this is the number of points to used whenever a numerical integral ...">Magi::Resolution</a> (which determines the accuracy with which each term is computed). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">duration</td><td>The length of the torque-free drift to be computed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="classQDynamics_1_1Symi.html#a2a58bd1bc46f69d0993efa0f37052b2c">QDynamics::Symi&lt; order, step &gt;</a>.</p>
+
 </div>
 </div>
-<a id="a51a65517fca2e397bbcc1717f480cd04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51a65517fca2e397bbcc1717f480cd04">&#9670;&nbsp;</a></span>Magnus_Compute()</h2>
+<a id="a0604167d4004f3391edb93ad44fd664f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0604167d4004f3391edb93ad44fd664f">&#9670;&nbsp;</a></span>MakeName()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;unsigned int order, StepType step&gt; </div>
+template&lt;unsigned int order, UpdateType step&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classQDynamics_1_1Quaternion.html">Quaternion</a> <a class="el" href="classQDynamics_1_1Magi.html">QDynamics::Magi</a>&lt; order, step &gt;::Magnus_Compute </td>
+          <td class="memname">virtual void <a class="el" href="classQDynamics_1_1Magi.html">QDynamics::Magi</a>&lt; order, step &gt;::MakeName </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>duration</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Generates a print-and-filename-friendly name depending on the properties of the integrator. </p>
+
+<p>Reimplemented in <a class="el" href="classQDynamics_1_1Symi.html#a4c06eafd29bf6d87c73ab6c36b342d25">QDynamics::Symi&lt; order, step &gt;</a>.</p>
 
 </div>
 </div>
@@ -415,7 +483,7 @@ template&lt;unsigned int order, StepType step&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;unsigned int order, StepType step&gt; </div>
+template&lt;unsigned int order, UpdateType step&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -435,10 +503,10 @@ template&lt;unsigned int order, StepType step&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>In the <a class="el" href="classQDynamics_1_1Integrator.html">Integrator</a> base class, this is an empty function. Child members will mainly focus on overloading this function to their own update formula. </p>
+<p>An override of the generic <a class="el" href="classQDynamics_1_1Integrator.html#a4effa27d56f3205e53653b1fdc5cd08e" title="In the Integrator base class, this is an empty function. Child members will mainly focus on overloadi...">Integrator::UpdatePosition()</a>. Depending on the value of <a class="el" href="classQDynamics_1_1Magi.html#a26d4324667e4cc919807eceb654fad7b" title="The second template argument passed to a Magi object. Determines the update formula used.">Magi::StepMode</a>, calls an appropriate function. The intent is that as <a class="el" href="classQDynamics_1_1Magi.html#a26d4324667e4cc919807eceb654fad7b" title="The second template argument passed to a Magi object. Determines the update formula used.">Magi::StepMode</a> is a template value, logic of which function is called is determined at compile time, without additional overhead. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>The current time of the integrator </td></tr>
+    <tr><td class="paramname">t</td><td>The current time, used by <a class="el" href="classQDynamics_1_1Integrator.html#a4688fbccd8b0dc5c9a73dddac66b486f" title="Returns the quaternionic derivative of the neo-potential V (equal to the derivative of the rotation p...">Integrator::GradU()</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -454,13 +522,23 @@ template&lt;unsigned int order, StepType step&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;unsigned int order, StepType step&gt; </div>
+template&lt;unsigned int order, UpdateType step&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const unsigned int <a class="el" href="classQDynamics_1_1Magi.html">QDynamics::Magi</a>&lt; order, step &gt;::Order = order</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>The first template argument passed to a <code><a class="el" href="classQDynamics_1_1Magi.html">Magi</a></code> object. Determines the order of the computation in the <a class="el" href="classQDynamics_1_1Magi.html#a0d7ef81b9e5ffea255022b3715831044" title="Generates an estimate of the Magnus series for torque-free drift over the provided duration,...">Magnus()</a> calculation. </p>
 
 </div>
 </div>
@@ -470,7 +548,7 @@ template&lt;unsigned int order, StepType step&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;unsigned int order, StepType step&gt; </div>
+template&lt;unsigned int order, UpdateType step&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -486,21 +564,33 @@ template&lt;unsigned int order, StepType step&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>As per the assignation in <a class="el" href="classQDynamics_1_1Magi.html#aa832ebdc8d1072c61024154e16702c51" title="Constructor, as per Integrator::Integrator(double,double). All arguments except resolution are used t...">Magi()</a>, this is the number of points to used whenever a numerical integral is required. </p>
+
 </div>
 </div>
-<a id="a1b7aae9a9dc768f78758c30c13d54298"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b7aae9a9dc768f78758c30c13d54298">&#9670;&nbsp;</a></span>StepMode</h2>
+<a id="a26d4324667e4cc919807eceb654fad7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26d4324667e4cc919807eceb654fad7b">&#9670;&nbsp;</a></span>StepMode</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;unsigned int order, StepType step&gt; </div>
+template&lt;unsigned int order, UpdateType step&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="namespaceQDynamics.html#a68884510ffea34b2025b1558ef299d42">StepType</a> <a class="el" href="classQDynamics_1_1Magi.html">QDynamics::Magi</a>&lt; order, step &gt;::StepMode = step</td>
+          <td class="memname">const <a class="el" href="namespaceQDynamics.html#a9cecbf03e73fb0909d96ec39d14285c9">UpdateType</a> <a class="el" href="classQDynamics_1_1Magi.html">QDynamics::Magi</a>&lt; order, step &gt;::StepMode = step</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>The second template argument passed to a <code><a class="el" href="classQDynamics_1_1Magi.html">Magi</a></code> object. Determines the update formula used. </p>
 
 </div>
 </div>

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['basicconditioncheck_7',['basicConditionCheck',['../classJSL_1_1UnitTest.html#a3629d1bca071da7a2af6b7de29be1430',1,'JSL::UnitTest::basicConditionCheck(bool condition, std::string successmessage, std::string failuremessage)'],['../classJSL_1_1UnitTest.html#a53ede0c6b420eaf64faf752c0518340e',1,'JSL::UnitTest::basicConditionCheck(bool condition, std::string messageFramework)']]],
-  ['brute_8',['Brute',['../namespaceQDynamics.html#a68884510ffea34b2025b1558ef299d42a125289977730488f30b88da52aada3c9',1,'QDynamics']]],
+  ['brute_8',['Brute',['../namespaceQDynamics.html#a9cecbf03e73fb0909d96ec39d14285c9a125289977730488f30b88da52aada3c9',1,'QDynamics']]],
   ['brute_2eh_9',['Brute.h',['../Brute_8h.html',1,'']]],
   ['brute_5fupdate_10',['Brute_Update',['../classQDynamics_1_1Magi.html#aa12d85b9d76687ccf7ab84de4c4963fd',1,'QDynamics::Magi']]],
   ['bruteint_11',['BruteInt',['../classQDynamics_1_1BruteInt.html',1,'QDynamics::BruteInt'],['../classQDynamics_1_1BruteInt.html#ac8b08a4df56d6cea7a848418d9f07d27',1,'QDynamics::BruteInt::BruteInt(double T, double deltaT)'],['../classQDynamics_1_1BruteInt.html#ae5c66b9ece61fe160009304212bef9f8',1,'QDynamics::BruteInt::BruteInt(double T, double deltaT, int skipper)']]],
