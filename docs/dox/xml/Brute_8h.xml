@@ -1,276 +1,276 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="Brute_8h" kind="file" language="C++">
     <compoundname>Brute.h</compoundname>
     <includes refid="Integrator_8h" local="yes">Integrator.h</includes>
-    <includedby refid="QDynamics_8h" local="yes">/home/f/fraserj/Documents/Work/QDynamics/QDynamics.h</includedby>
+    <includedby refid="QDynamics_8h" local="yes">/home/jack/Documents/Work/QDynamics/QDynamics.h</includedby>
     <incdepgraph>
-      <node id="490">
+      <node id="15">
         <label>sys/stat.h</label>
       </node>
-      <node id="491">
-        <label>rm.h</label>
-        <link refid="rm_8h"/>
-        <childnode refid="488" relation="include">
-        </childnode>
-        <childnode refid="484" relation="include">
-        </childnode>
-        <childnode refid="489" relation="include">
-        </childnode>
-        <childnode refid="492" relation="include">
-        </childnode>
-      </node>
-      <node id="485">
-        <label>../Strings/split.h</label>
-        <link refid="split_8h"/>
-        <childnode refid="484" relation="include">
-        </childnode>
-        <childnode refid="479" relation="include">
-        </childnode>
-        <childnode refid="486" relation="include">
-        </childnode>
-      </node>
-      <node id="477">
+      <node id="2">
         <label>Integrator.h</label>
         <link refid="Integrator_8h"/>
-        <childnode refid="478" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="479" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="480" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="508" relation="include">
-        </childnode>
-      </node>
-      <node id="507">
-        <label>cmath</label>
-      </node>
-      <node id="492">
-        <label>stdexcept</label>
-      </node>
-      <node id="484">
-        <label>string</label>
-      </node>
-      <node id="496">
-        <label>Time.h</label>
-        <link refid="Time_8h"/>
-        <childnode refid="497" relation="include">
-        </childnode>
-        <childnode refid="484" relation="include">
-        </childnode>
-        <childnode refid="486" relation="include">
-        </childnode>
-        <childnode refid="479" relation="include">
-        </childnode>
-        <childnode refid="478" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
       </node>
-      <node id="476">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Brute.h</label>
-        <link refid="Brute_8h"/>
-        <childnode refid="477" relation="include">
-        </childnode>
-      </node>
-      <node id="481">
-        <label>FileIO/FileIO.h</label>
-        <link refid="FileIO_8h"/>
-        <childnode refid="482" relation="include">
-        </childnode>
-        <childnode refid="487" relation="include">
-        </childnode>
-        <childnode refid="491" relation="include">
-        </childnode>
-        <childnode refid="489" relation="include">
-        </childnode>
-        <childnode refid="493" relation="include">
-        </childnode>
-      </node>
-      <node id="495">
-        <label>Strings/Strings.h</label>
-        <link refid="Strings_8h"/>
-        <childnode refid="485" relation="include">
-        </childnode>
-        <childnode refid="496" relation="include">
-        </childnode>
-      </node>
-      <node id="483">
-        <label>fstream</label>
-      </node>
-      <node id="482">
-        <label>LineReader.h</label>
-        <link refid="LineReader_8h"/>
-        <childnode refid="483" relation="include">
-        </childnode>
-        <childnode refid="484" relation="include">
-        </childnode>
-        <childnode refid="479" relation="include">
-        </childnode>
-        <childnode refid="485" relation="include">
-        </childnode>
-      </node>
-      <node id="506">
-        <label>Testing_UnitTests.h</label>
-        <link refid="Testing__UnitTests_8h"/>
-        <childnode refid="480" relation="include">
-        </childnode>
-        <childnode refid="507" relation="include">
-        </childnode>
-      </node>
-      <node id="498">
+      <node id="23">
         <label>CommandArgs/CommandArgs.h</label>
         <link refid="CommandArgs_8h"/>
-        <childnode refid="499" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
       </node>
-      <node id="501">
-        <label>vector.h</label>
-        <link refid="vector_8h"/>
-        <childnode refid="479" relation="include">
-        </childnode>
-        <childnode refid="492" relation="include">
-        </childnode>
-        <childnode refid="494" relation="include">
-        </childnode>
-        <childnode refid="478" relation="include">
-        </childnode>
-        <childnode refid="502" relation="include">
-        </childnode>
-      </node>
-      <node id="508">
-        <label>DynamicOperations.h</label>
-        <link refid="DynamicOperations_8h"/>
-        <childnode refid="478" relation="include">
-        </childnode>
-        <childnode refid="479" relation="include">
-        </childnode>
-        <childnode refid="480" relation="include">
-        </childnode>
-      </node>
-      <node id="505">
-        <label>UnitTest.h</label>
-        <link refid="UnitTest_8h"/>
-        <childnode refid="494" relation="include">
-        </childnode>
-        <childnode refid="478" relation="include">
-        </childnode>
-      </node>
-      <node id="500">
-        <label>Maths/Maths.h</label>
-        <link refid="Maths_8h"/>
-        <childnode refid="501" relation="include">
-        </childnode>
-        <childnode refid="503" relation="include">
-        </childnode>
-      </node>
-      <node id="494">
-        <label>string.h</label>
-      </node>
-      <node id="499">
-        <label>Argument.h</label>
-        <link refid="Argument_8h"/>
-        <childnode refid="484" relation="include">
-        </childnode>
-        <childnode refid="492" relation="include">
-        </childnode>
-        <childnode refid="481" relation="include">
-        </childnode>
-      </node>
-      <node id="487">
-        <label>mkdir.h</label>
-        <link refid="mkdir_8h"/>
-        <childnode refid="488" relation="include">
-        </childnode>
-        <childnode refid="484" relation="include">
-        </childnode>
-        <childnode refid="489" relation="include">
-        </childnode>
-      </node>
-      <node id="503">
-        <label>matrix.h</label>
-        <link refid="matrix_8h"/>
-        <childnode refid="479" relation="include">
-        </childnode>
-        <childnode refid="492" relation="include">
-        </childnode>
-        <childnode refid="494" relation="include">
-        </childnode>
-        <childnode refid="478" relation="include">
-        </childnode>
-        <childnode refid="502" relation="include">
-        </childnode>
-        <childnode refid="501" relation="include">
-        </childnode>
-      </node>
-      <node id="479">
-        <label>vector</label>
-      </node>
-      <node id="489">
-        <label>locationExists.h</label>
-        <link refid="locationExists_8h"/>
-        <childnode refid="484" relation="include">
-        </childnode>
-        <childnode refid="490" relation="include">
-        </childnode>
-      </node>
-      <node id="486">
-        <label>sstream</label>
-      </node>
-      <node id="502">
-        <label>math.h</label>
-      </node>
-      <node id="504">
-        <label>Testing/Testing.h</label>
-        <link refid="Testing_8h"/>
-        <childnode refid="505" relation="include">
-        </childnode>
-        <childnode refid="506" relation="include">
-        </childnode>
-      </node>
-      <node id="478">
-        <label>iostream</label>
-      </node>
-      <node id="497">
-        <label>chrono</label>
-      </node>
-      <node id="480">
-        <label>JSL.h</label>
-        <link refid="JSL_8h"/>
-        <childnode refid="481" relation="include">
-        </childnode>
-        <childnode refid="495" relation="include">
-        </childnode>
-        <childnode refid="498" relation="include">
-        </childnode>
-        <childnode refid="500" relation="include">
-        </childnode>
-        <childnode refid="504" relation="include">
-        </childnode>
-      </node>
-      <node id="493">
+      <node id="18">
         <label>fileWriter.h</label>
         <link refid="fileWriter_8h"/>
-        <childnode refid="494" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
-        <childnode refid="483" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="488">
+      <node id="32">
+        <label>cmath</label>
+      </node>
+      <node id="24">
+        <label>Argument.h</label>
+        <link refid="Argument_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>stdexcept</label>
+      </node>
+      <node id="29">
+        <label>Testing/Testing.h</label>
+        <link refid="Testing_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="16">
+        <label>rm.h</label>
+        <link refid="rm_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vector.h</label>
+        <link refid="vector_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>fstream</label>
+      </node>
+      <node id="5">
+        <label>JSL.h</label>
+        <link refid="JSL_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Strings/Strings.h</label>
+        <link refid="Strings_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>DynamicOperations.h</label>
+        <link refid="DynamicOperations_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>FileIO/FileIO.h</label>
+        <link refid="FileIO_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>string.h</label>
+      </node>
+      <node id="31">
+        <label>Testing_UnitTests.h</label>
+        <link refid="Testing__UnitTests_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+      <node id="11">
+        <label>sstream</label>
+      </node>
+      <node id="10">
+        <label>../Strings/split.h</label>
+        <link refid="split_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>math.h</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="25">
+        <label>Maths/Maths.h</label>
+        <link refid="Maths_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>matrix.h</label>
+        <link refid="matrix_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>mkdir.h</label>
+        <link refid="mkdir_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>chrono</label>
+      </node>
+      <node id="1">
+        <label>/home/jack/Documents/Work/QDynamics/src/Brute.h</label>
+        <link refid="Brute_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>locationExists.h</label>
+        <link refid="locationExists_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>LineReader.h</label>
+        <link refid="LineReader_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>UnitTest.h</label>
+        <link refid="UnitTest_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Time.h</label>
+        <link refid="Time_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
         <label>dirent.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="509">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Brute.h</label>
+      <node id="1">
+        <label>/home/jack/Documents/Work/QDynamics/src/Brute.h</label>
         <link refid="Brute_8h"/>
-        <childnode refid="510" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="510">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/QDynamics.h</label>
+      <node id="2">
+        <label>/home/jack/Documents/Work/QDynamics/QDynamics.h</label>
         <link refid="QDynamics_8h"/>
       </node>
     </invincdepgraph>
-    <innerclass refid="classQDynamics_1_1Brute" prot="public">QDynamics::Brute</innerclass>
+    <innerclass refid="classQDynamics_1_1BruteInt" prot="public">QDynamics::BruteInt</innerclass>
     <innernamespace refid="namespaceQDynamics">QDynamics</innernamespace>
     <briefdescription>
     </briefdescription>
@@ -283,40 +283,37 @@
 <codeline lineno="4" refid="namespaceQDynamics" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceQDynamics" kindref="compound">QDynamics</ref></highlight></codeline>
 <codeline lineno="5"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>The<sp/>dumbest<sp/>possible<sp/>way<sp/>to<sp/>integrate<sp/></highlight></codeline>
-<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10" refid="classQDynamics_1_1Brute" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classQDynamics_1_1Brute" kindref="compound">Brute</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Integrator" kindref="compound">Integrator</ref></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="13" refid="classQDynamics_1_1Brute_1a2ef1df08140810ffbc9a3e8b97561bbb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Brute_1a2ef1df08140810ffbc9a3e8b97561bbb" kindref="member">Brute</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>T,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>deltaT)<sp/>:<sp/><ref refid="classQDynamics_1_1Integrator" kindref="compound">Integrator</ref>(T,deltaT)</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1aa3e27d68428619ab4083b2d42ef8924c" kindref="member">Name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Brute&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="17" refid="classQDynamics_1_1Brute_1a5f04abe903e88405c24fb5695db6357f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Brute_1a5f04abe903e88405c24fb5695db6357f" kindref="member">Brute</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>deltaT,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>skipper)<sp/>:<sp/><ref refid="classQDynamics_1_1Integrator" kindref="compound">Integrator</ref>(T,deltaT,<sp/>skipper)</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1aa3e27d68428619ab4083b2d42ef8924c" kindref="member">Name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Brute&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="24" refid="classQDynamics_1_1Brute_1ac5d4bbe0e34a9f6836f71f40ae8a9eb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Brute_1ac5d4bbe0e34a9f6836f71f40ae8a9eb4" kindref="member">UpdatePosition</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t)</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1a0241b2e2c87418323330999d1f8e12d0" kindref="member">w</ref><sp/>=<sp/>0.5<sp/>*<sp/><ref refid="namespaceQDynamics_1a78137919461ac257fe032f870771b0ed" kindref="member">InvMult</ref>(<ref refid="classQDynamics_1_1Integrator_1a7b99b22475321b34c1624bded3489954" kindref="member">J</ref>,<ref refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" kindref="member">q</ref>.<ref refid="classQDynamics_1_1Quaternion_1a2516e87ebb14ee2d34bc22744057c87b" kindref="member">Conjugate</ref>()<sp/>*<sp/><ref refid="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" kindref="member">p</ref>);</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1a0241b2e2c87418323330999d1f8e12d0" kindref="member">w</ref>.<ref refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" kindref="member">Scalar</ref>()<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>qDot<sp/>=<sp/>0.5<sp/>*<sp/><ref refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" kindref="member">q</ref><sp/>*<sp/><ref refid="classQDynamics_1_1Integrator_1a0241b2e2c87418323330999d1f8e12d0" kindref="member">w</ref>;</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>pDot<sp/>=<sp/>0.5<sp/>*<sp/><ref refid="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" kindref="member">p</ref><sp/>*<sp/>w<sp/>+<sp/><ref refid="classQDynamics_1_1Integrator_1a4688fbccd8b0dc5c9a73dddac66b486f" kindref="member">GradU</ref>(t);</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" kindref="member">p</ref><sp/>=<sp/><ref refid="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" kindref="member">p</ref><sp/>+<sp/><ref refid="classQDynamics_1_1Integrator_1a9b850dd4b29118e44b0183409db0a983" kindref="member">TimeStep</ref><sp/>*<sp/>pDot;</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" kindref="member">q</ref><sp/>=<sp/><ref refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" kindref="member">q</ref><sp/>+<sp/><ref refid="classQDynamics_1_1Integrator_1a9b850dd4b29118e44b0183409db0a983" kindref="member">TimeStep</ref><sp/>*<sp/>qDot;</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" kindref="member">q</ref>/=<ref refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" kindref="member">q</ref>.<ref refid="classJSL_1_1Vector_1aa8af717591f5548ff471b6e4b28d7f9c" kindref="member">Norm</ref>();</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20" refid="classQDynamics_1_1BruteInt" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classQDynamics_1_1BruteInt" kindref="compound">BruteInt</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Integrator" kindref="compound">Integrator</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24" refid="classQDynamics_1_1BruteInt_1ac8b08a4df56d6cea7a848418d9f07d27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1BruteInt_1ac8b08a4df56d6cea7a848418d9f07d27" kindref="member">BruteInt</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>T,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>deltaT)<sp/>:<sp/><ref refid="classQDynamics_1_1Integrator" kindref="compound">Integrator</ref>(T,deltaT)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1aa3e27d68428619ab4083b2d42ef8924c" kindref="member">Name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Brute&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29" refid="classQDynamics_1_1BruteInt_1ae5c66b9ece61fe160009304212bef9f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1BruteInt_1ae5c66b9ece61fe160009304212bef9f8" kindref="member">BruteInt</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>deltaT,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>skipper)<sp/>:<sp/><ref refid="classQDynamics_1_1Integrator" kindref="compound">Integrator</ref>(T,deltaT,<sp/>skipper)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1aa3e27d68428619ab4083b2d42ef8924c" kindref="member">Name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Brute&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37" refid="classQDynamics_1_1BruteInt_1a0f3d901d692a8f30365d1692c678ce61" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1BruteInt_1a0f3d901d692a8f30365d1692c678ce61" kindref="member">UpdatePosition</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1a0241b2e2c87418323330999d1f8e12d0" kindref="member">w</ref><sp/>=<sp/>0.5<sp/>*<sp/><ref refid="namespaceQDynamics_1a78137919461ac257fe032f870771b0ed" kindref="member">InvMult</ref>(<ref refid="classQDynamics_1_1Integrator_1a7b99b22475321b34c1624bded3489954" kindref="member">J</ref>,<ref refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" kindref="member">q</ref>.<ref refid="classQDynamics_1_1Quaternion_1a2516e87ebb14ee2d34bc22744057c87b" kindref="member">Conjugate</ref>()<sp/>*<sp/><ref refid="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" kindref="member">p</ref>);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1a0241b2e2c87418323330999d1f8e12d0" kindref="member">w</ref>.<ref refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" kindref="member">Scalar</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>qDot<sp/>=<sp/>0.5<sp/>*<sp/><ref refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" kindref="member">q</ref><sp/>*<sp/><ref refid="classQDynamics_1_1Integrator_1a0241b2e2c87418323330999d1f8e12d0" kindref="member">w</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>pDot<sp/>=<sp/>0.5<sp/>*<sp/><ref refid="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" kindref="member">p</ref><sp/>*<sp/><ref refid="classQDynamics_1_1Integrator_1a0241b2e2c87418323330999d1f8e12d0" kindref="member">w</ref><sp/>+<sp/><ref refid="classQDynamics_1_1Integrator_1a4688fbccd8b0dc5c9a73dddac66b486f" kindref="member">GradU</ref>(t);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" kindref="member">p</ref><sp/>=<sp/><ref refid="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" kindref="member">p</ref><sp/>+<sp/><ref refid="classQDynamics_1_1Integrator_1a9b850dd4b29118e44b0183409db0a983" kindref="member">TimeStep</ref><sp/>*<sp/>pDot;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" kindref="member">q</ref><sp/>=<sp/><ref refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" kindref="member">q</ref><sp/>+<sp/><ref refid="classQDynamics_1_1Integrator_1a9b850dd4b29118e44b0183409db0a983" kindref="member">TimeStep</ref><sp/>*<sp/>qDot;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" kindref="member">q</ref>/=<ref refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" kindref="member">q</ref>.<ref refid="classJSL_1_1Vector_1aa8af717591f5548ff471b6e4b28d7f9c" kindref="member">Norm</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Brute.h"/>
+    <location file="/home/jack/Documents/Work/QDynamics/src/Brute.h"/>
   </compounddef>
 </doxygen>

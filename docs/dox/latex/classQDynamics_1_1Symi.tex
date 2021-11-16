@@ -1,58 +1,66 @@
-\hypertarget{classQDynamics_1_1Symi}{}\section{Q\+Dynamics\+:\+:Symi Class Reference}
-\label{classQDynamics_1_1Symi}\index{Q\+Dynamics\+::\+Symi@{Q\+Dynamics\+::\+Symi}}
+\hypertarget{classQDynamics_1_1Symi}{}\doxysection{Q\+Dynamics\+::Symi$<$ order, step $>$ Class Template Reference}
+\label{classQDynamics_1_1Symi}\index{QDynamics::Symi$<$ order, step $>$@{QDynamics::Symi$<$ order, step $>$}}
 
 
 {\ttfamily \#include $<$Symi.\+h$>$}
 
-Inheritance diagram for Q\+Dynamics\+:\+:Symi\+:\begin{figure}[H]
+Inheritance diagram for Q\+Dynamics\+::Symi$<$ order, step $>$\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{classQDynamics_1_1Symi}
+\includegraphics[height=3.000000cm]{classQDynamics_1_1Symi}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classQDynamics_1_1Symi_afc73292268197d37fad6716aa6bb5976}{Symi} (int order, double T, double deltaT)
+\mbox{\hyperlink{classQDynamics_1_1Symi_a99f05fe237066759d24001672d484cec}{Symi}} (double T, double deltaT)
 \item 
-\hyperlink{classQDynamics_1_1Symi_a2e248bf5141814ca1e8285227d26d4bc}{Symi} (int order, double T, double deltaT, int skipper)
+\mbox{\hyperlink{classQDynamics_1_1Symi_aa88a0244de9e8b80c1532f6429cf64d4}{Symi}} (double T, double deltaT, int skipper)
 \end{DoxyCompactItemize}
-\subsection*{Protected Member Functions}
+\doxysubsection*{Data Fields}
 \begin{DoxyCompactItemize}
 \item 
-virtual \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \hyperlink{classQDynamics_1_1Symi_a4cea691ad899227f92004dd666180415}{Magnus\+\_\+\+Compute} (double duration)
+const unsigned int \mbox{\hyperlink{classQDynamics_1_1Symi_a64ac64472b1b635b8915c6e0575b36a8}{Order}} = order
+\item 
+const \mbox{\hyperlink{namespaceQDynamics_a68884510ffea34b2025b1558ef299d42}{Step\+Type}} \mbox{\hyperlink{classQDynamics_1_1Symi_a1d00d45dfa9de22d45865df8cfd637e5}{Step\+Mode}} = step
 \end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
+\doxysubsection*{Additional Inherited Members}
 
 
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classQDynamics_1_1Symi_afc73292268197d37fad6716aa6bb5976}\label{classQDynamics_1_1Symi_afc73292268197d37fad6716aa6bb5976}} 
-\index{Q\+Dynamics\+::\+Symi@{Q\+Dynamics\+::\+Symi}!Symi@{Symi}}
-\index{Symi@{Symi}!Q\+Dynamics\+::\+Symi@{Q\+Dynamics\+::\+Symi}}
-\subsubsection{\texorpdfstring{Symi()}{Symi()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily Q\+Dynamics\+::\+Symi\+::\+Symi (\begin{DoxyParamCaption}\item[{int}]{order,  }\item[{double}]{T,  }\item[{double}]{deltaT }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classQDynamics_1_1Symi_a99f05fe237066759d24001672d484cec}\label{classQDynamics_1_1Symi_a99f05fe237066759d24001672d484cec}} 
+\index{QDynamics::Symi$<$ order, step $>$@{QDynamics::Symi$<$ order, step $>$}!Symi@{Symi}}
+\index{Symi@{Symi}!QDynamics::Symi$<$ order, step $>$@{QDynamics::Symi$<$ order, step $>$}}
+\doxysubsubsection{\texorpdfstring{Symi()}{Symi()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$unsigned int order, Step\+Type step$>$ \\
+\mbox{\hyperlink{classQDynamics_1_1Symi}{Q\+Dynamics\+::\+Symi}}$<$ order, step $>$\+::\mbox{\hyperlink{classQDynamics_1_1Symi}{Symi}} (\begin{DoxyParamCaption}\item[{double}]{T,  }\item[{double}]{deltaT }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{classQDynamics_1_1Symi_a2e248bf5141814ca1e8285227d26d4bc}\label{classQDynamics_1_1Symi_a2e248bf5141814ca1e8285227d26d4bc}} 
-\index{Q\+Dynamics\+::\+Symi@{Q\+Dynamics\+::\+Symi}!Symi@{Symi}}
-\index{Symi@{Symi}!Q\+Dynamics\+::\+Symi@{Q\+Dynamics\+::\+Symi}}
-\subsubsection{\texorpdfstring{Symi()}{Symi()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Q\+Dynamics\+::\+Symi\+::\+Symi (\begin{DoxyParamCaption}\item[{int}]{order,  }\item[{double}]{T,  }\item[{double}]{deltaT,  }\item[{int}]{skipper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-\subsection{Member Function Documentation}
-\mbox{\Hypertarget{classQDynamics_1_1Symi_a4cea691ad899227f92004dd666180415}\label{classQDynamics_1_1Symi_a4cea691ad899227f92004dd666180415}} 
-\index{Q\+Dynamics\+::\+Symi@{Q\+Dynamics\+::\+Symi}!Magnus\+\_\+\+Compute@{Magnus\+\_\+\+Compute}}
-\index{Magnus\+\_\+\+Compute@{Magnus\+\_\+\+Compute}!Q\+Dynamics\+::\+Symi@{Q\+Dynamics\+::\+Symi}}
-\subsubsection{\texorpdfstring{Magnus\+\_\+\+Compute()}{Magnus\_Compute()}}
-{\footnotesize\ttfamily virtual \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} Q\+Dynamics\+::\+Symi\+::\+Magnus\+\_\+\+Compute (\begin{DoxyParamCaption}\item[{double}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+\mbox{\Hypertarget{classQDynamics_1_1Symi_aa88a0244de9e8b80c1532f6429cf64d4}\label{classQDynamics_1_1Symi_aa88a0244de9e8b80c1532f6429cf64d4}} 
+\index{QDynamics::Symi$<$ order, step $>$@{QDynamics::Symi$<$ order, step $>$}!Symi@{Symi}}
+\index{Symi@{Symi}!QDynamics::Symi$<$ order, step $>$@{QDynamics::Symi$<$ order, step $>$}}
+\doxysubsubsection{\texorpdfstring{Symi()}{Symi()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$unsigned int order, Step\+Type step$>$ \\
+\mbox{\hyperlink{classQDynamics_1_1Symi}{Q\+Dynamics\+::\+Symi}}$<$ order, step $>$\+::\mbox{\hyperlink{classQDynamics_1_1Symi}{Symi}} (\begin{DoxyParamCaption}\item[{double}]{T,  }\item[{double}]{deltaT,  }\item[{int}]{skipper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Reimplemented from \hyperlink{classQDynamics_1_1Magi_aadacdb3581a42babd5e1aa9ada6c77ee}{Q\+Dynamics\+::\+Magi}.
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classQDynamics_1_1Symi_a64ac64472b1b635b8915c6e0575b36a8}\label{classQDynamics_1_1Symi_a64ac64472b1b635b8915c6e0575b36a8}} 
+\index{QDynamics::Symi$<$ order, step $>$@{QDynamics::Symi$<$ order, step $>$}!Order@{Order}}
+\index{Order@{Order}!QDynamics::Symi$<$ order, step $>$@{QDynamics::Symi$<$ order, step $>$}}
+\doxysubsubsection{\texorpdfstring{Order}{Order}}
+{\footnotesize\ttfamily template$<$unsigned int order, Step\+Type step$>$ \\
+const unsigned int \mbox{\hyperlink{classQDynamics_1_1Symi}{Q\+Dynamics\+::\+Symi}}$<$ order, step $>$\+::Order = order}
+
+\mbox{\Hypertarget{classQDynamics_1_1Symi_a1d00d45dfa9de22d45865df8cfd637e5}\label{classQDynamics_1_1Symi_a1d00d45dfa9de22d45865df8cfd637e5}} 
+\index{QDynamics::Symi$<$ order, step $>$@{QDynamics::Symi$<$ order, step $>$}!StepMode@{StepMode}}
+\index{StepMode@{StepMode}!QDynamics::Symi$<$ order, step $>$@{QDynamics::Symi$<$ order, step $>$}}
+\doxysubsubsection{\texorpdfstring{StepMode}{StepMode}}
+{\footnotesize\ttfamily template$<$unsigned int order, Step\+Type step$>$ \\
+const \mbox{\hyperlink{namespaceQDynamics_a68884510ffea34b2025b1558ef299d42}{Step\+Type}} \mbox{\hyperlink{classQDynamics_1_1Symi}{Q\+Dynamics\+::\+Symi}}$<$ order, step $>$\+::Step\+Mode = step}
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-/home/f/fraserj/\+Documents/\+Work/\+Q\+Dynamics/src/\hyperlink{Symi_8h}{Symi.\+h}\end{DoxyCompactItemize}
+/home/jack/\+Documents/\+Work/\+Q\+Dynamics/src/\mbox{\hyperlink{Symi_8h}{Symi.\+h}}\end{DoxyCompactItemize}

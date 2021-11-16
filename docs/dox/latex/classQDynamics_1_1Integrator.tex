@@ -1,98 +1,98 @@
-\hypertarget{classQDynamics_1_1Integrator}{}\section{Q\+Dynamics\+:\+:Integrator Class Reference}
-\label{classQDynamics_1_1Integrator}\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
+\hypertarget{classQDynamics_1_1Integrator}{}\doxysection{Q\+Dynamics\+::Integrator Class Reference}
+\label{classQDynamics_1_1Integrator}\index{QDynamics::Integrator@{QDynamics::Integrator}}
 
 
 {\ttfamily \#include $<$Integrator.\+h$>$}
 
-Inheritance diagram for Q\+Dynamics\+:\+:Integrator\+:\begin{figure}[H]
+Inheritance diagram for Q\+Dynamics\+::Integrator\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{classQDynamics_1_1Integrator}
+\includegraphics[height=3.000000cm]{classQDynamics_1_1Integrator}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classQDynamics_1_1Integrator_a677dd555cee316d6d456b7da258c4385}{Integrator} (double T, double deltaT)
+\mbox{\hyperlink{classQDynamics_1_1Integrator_a677dd555cee316d6d456b7da258c4385}{Integrator}} (double T, double deltaT)
 \begin{DoxyCompactList}\small\item\em Constructor function. \end{DoxyCompactList}\item 
-\hyperlink{classQDynamics_1_1Integrator_aa469124cb408fadbaa540555dfabee33}{Integrator} (double T, double deltaT, int skipper)
+\mbox{\hyperlink{classQDynamics_1_1Integrator_aa469124cb408fadbaa540555dfabee33}{Integrator}} (double T, double deltaT, int skipper)
 \begin{DoxyCompactList}\small\item\em Constructor function. \end{DoxyCompactList}\item 
-void \hyperlink{classQDynamics_1_1Integrator_a4b921b312775194b77c2c85f93add84e}{Evolve} (\hyperlink{classQDynamics_1_1Quaternion}{Quaternion} q0, \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} p0, \hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector} \hyperlink{classQDynamics_1_1Integrator_a7b99b22475321b34c1624bded3489954}{J}, std\+::string save\+Folder)
+void \mbox{\hyperlink{classQDynamics_1_1Integrator_a4b921b312775194b77c2c85f93add84e}{Evolve}} (\mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}} q0, \mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}} p0, \mbox{\hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector}} \mbox{\hyperlink{classQDynamics_1_1Integrator_a7b99b22475321b34c1624bded3489954}{J}}, std\+::string save\+Folder)
 \item 
-virtual void \hyperlink{classQDynamics_1_1Integrator_a4effa27d56f3205e53653b1fdc5cd08e}{Update\+Position} (double t)
-\begin{DoxyCompactList}\small\item\em In the \hyperlink{classQDynamics_1_1Integrator}{Integrator} base class, this is an empty function. Child members will mainly focus on overloading this function to their own update formula. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Protected Member Functions}
+virtual void \mbox{\hyperlink{classQDynamics_1_1Integrator_a4effa27d56f3205e53653b1fdc5cd08e}{Update\+Position}} (double t)
+\begin{DoxyCompactList}\small\item\em In the \mbox{\hyperlink{classQDynamics_1_1Integrator}{Integrator}} base class, this is an empty function. Child members will mainly focus on overloading this function to their own update formula. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \hyperlink{classQDynamics_1_1Integrator_a4688fbccd8b0dc5c9a73dddac66b486f}{GradU} (double t)
-\begin{DoxyCompactList}\small\item\em Returns the quaternionic derivative of the neo-\/potential V (equal to the derivative of the rotation potential U), given the current value of \hyperlink{classQDynamics_1_1Integrator_a5929511da076c7f31749a6da713fcff6}{Integrator\+::q} and the current time. \end{DoxyCompactList}\item 
-virtual double \hyperlink{classQDynamics_1_1Integrator_afa838ba8dfb0fbde1f77c6d2a45a9dd0}{U} (double t)
-\begin{DoxyCompactList}\small\item\em Returns the current value of the rotation potential U, given the current value of \hyperlink{classQDynamics_1_1Integrator_a5929511da076c7f31749a6da713fcff6}{Integrator\+::q} and the current time. Unlike \hyperlink{classQDynamics_1_1Integrator_a4688fbccd8b0dc5c9a73dddac66b486f}{Grad\+U()}, it is not critical that this function be 100\% correct, as it is only used by the \hyperlink{classQDynamics_1_1Integrator_a816743f6efb41b0b29243ff3bdaa4c9d}{Integrator\+::\+Hamiltonian} function as bookkeeping for the current energy. If you do not wish to track the current energy, you may neglect this function. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
+virtual \mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}} \mbox{\hyperlink{classQDynamics_1_1Integrator_a4688fbccd8b0dc5c9a73dddac66b486f}{GradU}} (double t)
+\begin{DoxyCompactList}\small\item\em Returns the quaternionic derivative of the neo-\/potential V (equal to the derivative of the rotation potential U), given the current value of \mbox{\hyperlink{classQDynamics_1_1Integrator_a5929511da076c7f31749a6da713fcff6}{Integrator\+::q}} and the current time. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classQDynamics_1_1Integrator_afa838ba8dfb0fbde1f77c6d2a45a9dd0}{U}} (double t)
+\begin{DoxyCompactList}\small\item\em Returns the current value of the rotation potential U, given the current value of \mbox{\hyperlink{classQDynamics_1_1Integrator_a5929511da076c7f31749a6da713fcff6}{Integrator\+::q}} and the current time. Unlike \mbox{\hyperlink{classQDynamics_1_1Integrator_a4688fbccd8b0dc5c9a73dddac66b486f}{Grad\+U()}}, it is not critical that this function be 100\% correct, as it is only used by the \mbox{\hyperlink{classQDynamics_1_1Integrator_a816743f6efb41b0b29243ff3bdaa4c9d}{Integrator\+::\+Hamiltonian}} function as bookkeeping for the current energy. If you do not wish to track the current energy, you may neglect this function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \hyperlink{classQDynamics_1_1Integrator_a5929511da076c7f31749a6da713fcff6}{q}
+\mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}} \mbox{\hyperlink{classQDynamics_1_1Integrator_a5929511da076c7f31749a6da713fcff6}{q}}
 \begin{DoxyCompactList}\small\item\em The current position variable. \end{DoxyCompactList}\item 
-\hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \hyperlink{classQDynamics_1_1Integrator_a1fb07254408f6ad620eb9dbfa0f8da95}{p}
+\mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}} \mbox{\hyperlink{classQDynamics_1_1Integrator_a1fb07254408f6ad620eb9dbfa0f8da95}{p}}
 \begin{DoxyCompactList}\small\item\em The current momentum variable. \end{DoxyCompactList}\item 
-\hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \hyperlink{classQDynamics_1_1Integrator_a0241b2e2c87418323330999d1f8e12d0}{w}
+\mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}} \mbox{\hyperlink{classQDynamics_1_1Integrator_a0241b2e2c87418323330999d1f8e12d0}{w}}
 \begin{DoxyCompactList}\small\item\em The current body-\/fixed angular speed. \end{DoxyCompactList}\item 
-\hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \hyperlink{classQDynamics_1_1Integrator_adb45dae4f4d1d37ab83ca5269f51058d}{L}
+\mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}} \mbox{\hyperlink{classQDynamics_1_1Integrator_adb45dae4f4d1d37ab83ca5269f51058d}{L}}
 \begin{DoxyCompactList}\small\item\em The current body-\/fixed Angular momentum. \end{DoxyCompactList}\item 
-\hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector} \hyperlink{classQDynamics_1_1Integrator_a7b99b22475321b34c1624bded3489954}{J}
-\begin{DoxyCompactList}\small\item\em The saved location of the moment of inertia matrix (see \hyperlink{classQDynamics_1_1Integrator_a4b921b312775194b77c2c85f93add84e}{Evolve()}) \end{DoxyCompactList}\item 
-double \hyperlink{classQDynamics_1_1Integrator_a9b850dd4b29118e44b0183409db0a983}{Time\+Step}
+\mbox{\hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector}} \mbox{\hyperlink{classQDynamics_1_1Integrator_a7b99b22475321b34c1624bded3489954}{J}}
+\begin{DoxyCompactList}\small\item\em The saved location of the moment of inertia matrix (see \mbox{\hyperlink{classQDynamics_1_1Integrator_a4b921b312775194b77c2c85f93add84e}{Evolve()}}) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classQDynamics_1_1Integrator_a9b850dd4b29118e44b0183409db0a983}{Time\+Step}}
 \begin{DoxyCompactList}\small\item\em The timestep taken by the integrator. \end{DoxyCompactList}\item 
-double \hyperlink{classQDynamics_1_1Integrator_addfb67b6faa62d88bc7234d5496aeaf9}{Total\+Time}
+double \mbox{\hyperlink{classQDynamics_1_1Integrator_addfb67b6faa62d88bc7234d5496aeaf9}{Total\+Time}}
 \begin{DoxyCompactList}\small\item\em The total length of time that the integrator will search for. \end{DoxyCompactList}\item 
-std\+::string \hyperlink{classQDynamics_1_1Integrator_aa3e27d68428619ab4083b2d42ef8924c}{Name}
+std\+::string \mbox{\hyperlink{classQDynamics_1_1Integrator_aa3e27d68428619ab4083b2d42ef8924c}{Name}}
 \begin{DoxyCompactList}\small\item\em The assigned name of the integrator. This is set to \char`\"{}\+Unassigned\char`\"{} by default\+: child classes should modify this name. \end{DoxyCompactList}\item 
-std\+::string \hyperlink{classQDynamics_1_1Integrator_a19ed0b9864ebe762914cee04cb0ad4b3}{File\+Name}
-\begin{DoxyCompactList}\small\item\em The location written to by \hyperlink{classQDynamics_1_1Integrator_ae80ab509b96a9b996934d9ef127f5137}{Create\+Full\+Name()}. A file location which will be used to write the output buffer to. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Private Member Functions}
+std\+::string \mbox{\hyperlink{classQDynamics_1_1Integrator_a19ed0b9864ebe762914cee04cb0ad4b3}{File\+Name}}
+\begin{DoxyCompactList}\small\item\em The location written to by \mbox{\hyperlink{classQDynamics_1_1Integrator_ae80ab509b96a9b996934d9ef127f5137}{Create\+Full\+Name()}}. A file location which will be used to write the output buffer to. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classQDynamics_1_1Integrator_af613a42e489de2d041673fd5be0ebb61}{Update\+Buffer} (double t)
-\begin{DoxyCompactList}\small\item\em Called during every loop of \hyperlink{classQDynamics_1_1Integrator_a4b921b312775194b77c2c85f93add84e}{Evolve()}, saves some values of interest to the \hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer}. \end{DoxyCompactList}\item 
-void \hyperlink{classQDynamics_1_1Integrator_a571bd4098f5d245bf46cf7683dcc554a}{Flush\+Buffer} ()
-\begin{DoxyCompactList}\small\item\em Called when the \hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer} is full, writes the contents of the buffer to the file determined by \hyperlink{classQDynamics_1_1Integrator_a19ed0b9864ebe762914cee04cb0ad4b3}{Integrator\+::\+File\+Name}, and resets the buffer. \end{DoxyCompactList}\item 
-void \hyperlink{classQDynamics_1_1Integrator_a88dc286b39899bdec60c040427d663cc}{Update\+Progress\+Bar} (double t)
+void \mbox{\hyperlink{classQDynamics_1_1Integrator_af613a42e489de2d041673fd5be0ebb61}{Update\+Buffer}} (double t)
+\begin{DoxyCompactList}\small\item\em Called during every loop of \mbox{\hyperlink{classQDynamics_1_1Integrator_a4b921b312775194b77c2c85f93add84e}{Evolve()}}, saves some values of interest to the \mbox{\hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classQDynamics_1_1Integrator_a571bd4098f5d245bf46cf7683dcc554a}{Flush\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Called when the \mbox{\hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer}} is full, writes the contents of the buffer to the file determined by \mbox{\hyperlink{classQDynamics_1_1Integrator_a19ed0b9864ebe762914cee04cb0ad4b3}{Integrator\+::\+File\+Name}}, and resets the buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classQDynamics_1_1Integrator_a88dc286b39899bdec60c040427d663cc}{Update\+Progress\+Bar}} (double t)
 \begin{DoxyCompactList}\small\item\em Writes a series of \# to the screen to act as a progress bar\+: \mbox{[}\#\#\#\#\# \mbox{]}. \end{DoxyCompactList}\item 
-void \hyperlink{classQDynamics_1_1Integrator_aa1afd442ef37708fcadb45ca8e7958f5}{Initialise} (\hyperlink{classQDynamics_1_1Quaternion}{Quaternion} q0, \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} p0, \hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector} Jin, std\+::string save\+Folder)
+void \mbox{\hyperlink{classQDynamics_1_1Integrator_aa1afd442ef37708fcadb45ca8e7958f5}{Initialise}} (\mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}} q0, \mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}} p0, \mbox{\hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector}} Jin, std\+::string save\+Folder)
 \item 
-void \hyperlink{classQDynamics_1_1Integrator_ae80ab509b96a9b996934d9ef127f5137}{Create\+Full\+Name} (std\+::string save\+Folder)
-\begin{DoxyCompactList}\small\item\em Computes the \hyperlink{classQDynamics_1_1Integrator_a19ed0b9864ebe762914cee04cb0ad4b3}{Integrator\+::\+File\+Name} including the filepath from from the \hyperlink{classQDynamics_1_1Integrator_aa3e27d68428619ab4083b2d42ef8924c}{Integrator\+::\+Name} and the provided directory. \end{DoxyCompactList}\item 
-double \hyperlink{classQDynamics_1_1Integrator_a816743f6efb41b0b29243ff3bdaa4c9d}{Hamiltonian} (double t)
-\begin{DoxyCompactList}\small\item\em Computes the current value of the energy of the system given the kinetic energy and the value of \hyperlink{classQDynamics_1_1Integrator_afa838ba8dfb0fbde1f77c6d2a45a9dd0}{U()}. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Private Attributes}
+void \mbox{\hyperlink{classQDynamics_1_1Integrator_ae80ab509b96a9b996934d9ef127f5137}{Create\+Full\+Name}} (std\+::string save\+Folder)
+\begin{DoxyCompactList}\small\item\em Computes the \mbox{\hyperlink{classQDynamics_1_1Integrator_a19ed0b9864ebe762914cee04cb0ad4b3}{Integrator\+::\+File\+Name}} including the filepath from from the \mbox{\hyperlink{classQDynamics_1_1Integrator_aa3e27d68428619ab4083b2d42ef8924c}{Integrator\+::\+Name}} and the provided directory. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classQDynamics_1_1Integrator_a816743f6efb41b0b29243ff3bdaa4c9d}{Hamiltonian}} (double t)
+\begin{DoxyCompactList}\small\item\em Computes the current value of the energy of the system given the kinetic energy and the value of \mbox{\hyperlink{classQDynamics_1_1Integrator_afa838ba8dfb0fbde1f77c6d2a45a9dd0}{U()}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-int \hyperlink{classQDynamics_1_1Integrator_ae62176188110c0dcea7c65ba429d1abe}{Buffer\+Pos}
-\begin{DoxyCompactList}\small\item\em The current write-\/index of \hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer}. \end{DoxyCompactList}\item 
-int \hyperlink{classQDynamics_1_1Integrator_acbafc2a1b2b19f230c6dfd8924cb36dd}{Buffer\+Size}
-\begin{DoxyCompactList}\small\item\em The length of the \hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer}. \end{DoxyCompactList}\item 
-int \hyperlink{classQDynamics_1_1Integrator_a00be60876ae62ef0d1555a6cc0ce52a5}{N\+Hashes}
+int \mbox{\hyperlink{classQDynamics_1_1Integrator_ae62176188110c0dcea7c65ba429d1abe}{Buffer\+Pos}}
+\begin{DoxyCompactList}\small\item\em The current write-\/index of \mbox{\hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classQDynamics_1_1Integrator_acbafc2a1b2b19f230c6dfd8924cb36dd}{Buffer\+Size}}
+\begin{DoxyCompactList}\small\item\em The length of the \mbox{\hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classQDynamics_1_1Integrator_a00be60876ae62ef0d1555a6cc0ce52a5}{N\+Hashes}}
 \begin{DoxyCompactList}\small\item\em The number of hashes a full progress bar is made up of. \end{DoxyCompactList}\item 
-bool \hyperlink{classQDynamics_1_1Integrator_ae893dd6b0d041de777e25a99f42886c3}{Final\+Hash}
+bool \mbox{\hyperlink{classQDynamics_1_1Integrator_ae893dd6b0d041de777e25a99f42886c3}{Final\+Hash}}
 \begin{DoxyCompactList}\small\item\em A simple lock tracking if the final hash has been written, preventing multiple termination characters being printed. \end{DoxyCompactList}\item 
-int \hyperlink{classQDynamics_1_1Integrator_abab707f49ba0ae6701db5dbcdf86861f}{Current\+Hashes}
+int \mbox{\hyperlink{classQDynamics_1_1Integrator_abab707f49ba0ae6701db5dbcdf86861f}{Current\+Hashes}}
 \begin{DoxyCompactList}\small\item\em The current number of progress hashes which have been written to the terminal. \end{DoxyCompactList}\item 
-std\+::vector$<$ std\+::string $>$ \hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Buffer}
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Buffer}}
 \begin{DoxyCompactList}\small\item\em A string-\/buffer containing the save-\/values of several past values of the integrator. Once full, the buffer is written to file. \end{DoxyCompactList}\item 
-int \hyperlink{classQDynamics_1_1Integrator_a95e110d6b14003db39f8a52180b97870}{Skip\+ID}
-\begin{DoxyCompactList}\small\item\em The current number of files that the buffer has skipped (as per the skipper variable in \hyperlink{classQDynamics_1_1Integrator_aa469124cb408fadbaa540555dfabee33}{Integrator(double,double,int)}) \end{DoxyCompactList}\item 
-int \hyperlink{classQDynamics_1_1Integrator_a409e18faeeefa5fb63f7bcce3eb0e381}{Skips}
+int \mbox{\hyperlink{classQDynamics_1_1Integrator_a95e110d6b14003db39f8a52180b97870}{Skip\+ID}}
+\begin{DoxyCompactList}\small\item\em The current number of files that the buffer has skipped (as per the skipper variable in \mbox{\hyperlink{classQDynamics_1_1Integrator_aa469124cb408fadbaa540555dfabee33}{Integrator(double,double,int)}}) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classQDynamics_1_1Integrator_a409e18faeeefa5fb63f7bcce3eb0e381}{Skips}}
 \begin{DoxyCompactList}\small\item\em The maximum value of Skip\+ID before the buffer saves a value. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
-A superclass from which all individual integrators will inherit. Handles the mundane stuff such as the progress tracking and saving. Importantly, it provides virtual overload methods for Gradu() and \hyperlink{classQDynamics_1_1Integrator_afa838ba8dfb0fbde1f77c6d2a45a9dd0}{U()} which allows external definition of the dynamics, and of \hyperlink{classQDynamics_1_1Integrator_a4effa27d56f3205e53653b1fdc5cd08e}{Update\+Position()} which allows specific subclasses of this object choose how they want to move from q\+\_\+i -\/$>$ q\+\_\+i+1. 
+\doxysubsection{Detailed Description}
+A superclass from which all individual integrators will inherit. Handles the mundane stuff such as the progress tracking and saving. Importantly, it provides virtual overload methods for Gradu() and \mbox{\hyperlink{classQDynamics_1_1Integrator_afa838ba8dfb0fbde1f77c6d2a45a9dd0}{U()}} which allows external definition of the dynamics, and of \mbox{\hyperlink{classQDynamics_1_1Integrator_a4effa27d56f3205e53653b1fdc5cd08e}{Update\+Position()}} which allows specific subclasses of this object choose how they want to move from q\+\_\+i -\/$>$ q\+\_\+i+1. 
 
-\subsection{Constructor \& Destructor Documentation}
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_a677dd555cee316d6d456b7da258c4385}\label{classQDynamics_1_1Integrator_a677dd555cee316d6d456b7da258c4385}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!Integrator@{Integrator}}
-\index{Integrator@{Integrator}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{Integrator()}{Integrator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!Integrator@{Integrator}}
+\index{Integrator@{Integrator}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{Integrator()}{Integrator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Q\+Dynamics\+::\+Integrator\+::\+Integrator (\begin{DoxyParamCaption}\item[{double}]{T,  }\item[{double}]{deltaT }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -101,15 +101,15 @@ Constructor function.
 
 
 \begin{DoxyParams}{Parameters}
-{\em T} & The total duration of the integration \\
+{\em T} & The total duration of the integration\\
 \hline
 {\em deltaT} & the width of timesteps used \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_aa469124cb408fadbaa540555dfabee33}\label{classQDynamics_1_1Integrator_aa469124cb408fadbaa540555dfabee33}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!Integrator@{Integrator}}
-\index{Integrator@{Integrator}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{Integrator()}{Integrator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!Integrator@{Integrator}}
+\index{Integrator@{Integrator}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{Integrator()}{Integrator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily Q\+Dynamics\+::\+Integrator\+::\+Integrator (\begin{DoxyParamCaption}\item[{double}]{T,  }\item[{double}]{deltaT,  }\item[{int}]{skipper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -118,25 +118,25 @@ Constructor function.
 
 
 \begin{DoxyParams}{Parameters}
-{\em T} & The total duration of the integration \\
+{\em T} & The total duration of the integration\\
 \hline
-{\em deltaT} & the width of timesteps used \\
+{\em deltaT} & the width of timesteps used\\
 \hline
-{\em skipper} & The number of epochs which pass in between updates to the progess \hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer} \\
+{\em skipper} & The number of epochs which pass in between updates to the progess \mbox{\hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer}} \\
 \hline
 \end{DoxyParams}
 
 
-\subsection{Member Function Documentation}
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_ae80ab509b96a9b996934d9ef127f5137}\label{classQDynamics_1_1Integrator_ae80ab509b96a9b996934d9ef127f5137}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!Create\+Full\+Name@{Create\+Full\+Name}}
-\index{Create\+Full\+Name@{Create\+Full\+Name}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{Create\+Full\+Name()}{CreateFullName()}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!CreateFullName@{CreateFullName}}
+\index{CreateFullName@{CreateFullName}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{CreateFullName()}{CreateFullName()}}
 {\footnotesize\ttfamily void Q\+Dynamics\+::\+Integrator\+::\+Create\+Full\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{save\+Folder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
 
 
 
-Computes the \hyperlink{classQDynamics_1_1Integrator_a19ed0b9864ebe762914cee04cb0ad4b3}{Integrator\+::\+File\+Name} including the filepath from from the \hyperlink{classQDynamics_1_1Integrator_aa3e27d68428619ab4083b2d42ef8924c}{Integrator\+::\+Name} and the provided directory. 
+Computes the \mbox{\hyperlink{classQDynamics_1_1Integrator_a19ed0b9864ebe762914cee04cb0ad4b3}{Integrator\+::\+File\+Name}} including the filepath from from the \mbox{\hyperlink{classQDynamics_1_1Integrator_aa3e27d68428619ab4083b2d42ef8924c}{Integrator\+::\+Name}} and the provided directory. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -144,41 +144,41 @@ Computes the \hyperlink{classQDynamics_1_1Integrator_a19ed0b9864ebe762914cee04cb
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_a4b921b312775194b77c2c85f93add84e}\label{classQDynamics_1_1Integrator_a4b921b312775194b77c2c85f93add84e}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!Evolve@{Evolve}}
-\index{Evolve@{Evolve}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{Evolve()}{Evolve()}}
-{\footnotesize\ttfamily void Q\+Dynamics\+::\+Integrator\+::\+Evolve (\begin{DoxyParamCaption}\item[{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}}]{q0,  }\item[{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}}]{p0,  }\item[{\hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector}}]{J,  }\item[{std\+::string}]{save\+Folder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!Evolve@{Evolve}}
+\index{Evolve@{Evolve}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{Evolve()}{Evolve()}}
+{\footnotesize\ttfamily void Q\+Dynamics\+::\+Integrator\+::\+Evolve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}}}]{q0,  }\item[{\mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}}}]{p0,  }\item[{\mbox{\hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector}}}]{J,  }\item[{std\+::string}]{save\+Folder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-The main computation loop. Calls \hyperlink{classQDynamics_1_1Integrator_a4effa27d56f3205e53653b1fdc5cd08e}{Update\+Position()} at each timestep until the Total\+Time is reached. 
+The main computation loop. Calls \mbox{\hyperlink{classQDynamics_1_1Integrator_a4effa27d56f3205e53653b1fdc5cd08e}{Update\+Position()}} at each timestep until the Total\+Time is reached. 
 \begin{DoxyParams}{Parameters}
-{\em q0} & The initial position \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \\
+{\em q0} & The initial position \mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}} \\
 \hline
-{\em p0} & The initial momentum \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \\
+{\em p0} & The initial momentum \mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}} \\
 \hline
 {\em J} & The diagonals of the moment of inertia vector (we have implicitly assumed the system triaxial is such that J is diagonal) \\
 \hline
-{\em save\+Folder} & The location into which the \hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer} output is saved. \\
+{\em save\+Folder} & The location into which the \mbox{\hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer}} output is saved. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_a571bd4098f5d245bf46cf7683dcc554a}\label{classQDynamics_1_1Integrator_a571bd4098f5d245bf46cf7683dcc554a}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!Flush\+Buffer@{Flush\+Buffer}}
-\index{Flush\+Buffer@{Flush\+Buffer}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{Flush\+Buffer()}{FlushBuffer()}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!FlushBuffer@{FlushBuffer}}
+\index{FlushBuffer@{FlushBuffer}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{FlushBuffer()}{FlushBuffer()}}
 {\footnotesize\ttfamily void Q\+Dynamics\+::\+Integrator\+::\+Flush\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
 
 
 
-Called when the \hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer} is full, writes the contents of the buffer to the file determined by \hyperlink{classQDynamics_1_1Integrator_a19ed0b9864ebe762914cee04cb0ad4b3}{Integrator\+::\+File\+Name}, and resets the buffer. 
+Called when the \mbox{\hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer}} is full, writes the contents of the buffer to the file determined by \mbox{\hyperlink{classQDynamics_1_1Integrator_a19ed0b9864ebe762914cee04cb0ad4b3}{Integrator\+::\+File\+Name}}, and resets the buffer. 
 
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_a4688fbccd8b0dc5c9a73dddac66b486f}\label{classQDynamics_1_1Integrator_a4688fbccd8b0dc5c9a73dddac66b486f}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!GradU@{GradU}}
-\index{GradU@{GradU}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{Grad\+U()}{GradU()}}
-{\footnotesize\ttfamily virtual \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} Q\+Dynamics\+::\+Integrator\+::\+GradU (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!GradU@{GradU}}
+\index{GradU@{GradU}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{GradU()}{GradU()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}} Q\+Dynamics\+::\+Integrator\+::\+GradU (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
 
 
 
-Returns the quaternionic derivative of the neo-\/potential V (equal to the derivative of the rotation potential U), given the current value of \hyperlink{classQDynamics_1_1Integrator_a5929511da076c7f31749a6da713fcff6}{Integrator\+::q} and the current time. 
+Returns the quaternionic derivative of the neo-\/potential V (equal to the derivative of the rotation potential U), given the current value of \mbox{\hyperlink{classQDynamics_1_1Integrator_a5929511da076c7f31749a6da713fcff6}{Integrator\+::q}} and the current time. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -189,14 +189,14 @@ Returns the quaternionic derivative of the neo-\/potential V (equal to the deriv
 The value of the quaternionic gradient 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_a816743f6efb41b0b29243ff3bdaa4c9d}\label{classQDynamics_1_1Integrator_a816743f6efb41b0b29243ff3bdaa4c9d}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!Hamiltonian@{Hamiltonian}}
-\index{Hamiltonian@{Hamiltonian}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{Hamiltonian()}{Hamiltonian()}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!Hamiltonian@{Hamiltonian}}
+\index{Hamiltonian@{Hamiltonian}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{Hamiltonian()}{Hamiltonian()}}
 {\footnotesize\ttfamily double Q\+Dynamics\+::\+Integrator\+::\+Hamiltonian (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
 
 
 
-Computes the current value of the energy of the system given the kinetic energy and the value of \hyperlink{classQDynamics_1_1Integrator_afa838ba8dfb0fbde1f77c6d2a45a9dd0}{U()}. 
+Computes the current value of the energy of the system given the kinetic energy and the value of \mbox{\hyperlink{classQDynamics_1_1Integrator_afa838ba8dfb0fbde1f77c6d2a45a9dd0}{U()}}. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -204,48 +204,49 @@ Computes the current value of the energy of the system given the kinetic energy 
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_aa1afd442ef37708fcadb45ca8e7958f5}\label{classQDynamics_1_1Integrator_aa1afd442ef37708fcadb45ca8e7958f5}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!Initialise@{Initialise}}
-\index{Initialise@{Initialise}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{Initialise()}{Initialise()}}
-{\footnotesize\ttfamily void Q\+Dynamics\+::\+Integrator\+::\+Initialise (\begin{DoxyParamCaption}\item[{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}}]{q0,  }\item[{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}}]{p0,  }\item[{\hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector}}]{Jin,  }\item[{std\+::string}]{save\+Folder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!Initialise@{Initialise}}
+\index{Initialise@{Initialise}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{Initialise()}{Initialise()}}
+{\footnotesize\ttfamily void Q\+Dynamics\+::\+Integrator\+::\+Initialise (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}}}]{q0,  }\item[{\mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}}}]{p0,  }\item[{\mbox{\hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector}}}]{Jin,  }\item[{std\+::string}]{save\+Folder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
 
-Prepares the \hyperlink{classQDynamics_1_1Integrator}{Integrator} for a new computation loop. Called at the start of an \hyperlink{classQDynamics_1_1Integrator_a4b921b312775194b77c2c85f93add84e}{Evolve()} process, it wipes the buffer and prepares the output file. The inputs are simply those passed to \hyperlink{classQDynamics_1_1Integrator_a4b921b312775194b77c2c85f93add84e}{Evolve()} 
+Prepares the \mbox{\hyperlink{classQDynamics_1_1Integrator}{Integrator}} for a new computation loop. Called at the start of an \mbox{\hyperlink{classQDynamics_1_1Integrator_a4b921b312775194b77c2c85f93add84e}{Evolve()}} process, it wipes the buffer and prepares the output file. The inputs are simply those passed to \mbox{\hyperlink{classQDynamics_1_1Integrator_a4b921b312775194b77c2c85f93add84e}{Evolve()}} 
 \begin{DoxyParams}{Parameters}
-{\em q0} & The initial position \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \\
+{\em q0} & The initial position \mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}} \\
 \hline
-{\em p0} & The initial momentum \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} \\
+{\em p0} & The initial momentum \mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}} \\
 \hline
-{\em J} & The diagonals of the moment of inertia vector (we have implicitly assumed the system triaxial is such that J is diagonal) \\
+{\em Jin} & The diagonals of the moment of inertia vector (we have implicitly assumed the system triaxial is such that J is diagonal) \\
 \hline
-{\em save\+Folder} & The location into which the \hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer} output is saved. \\
+{\em save\+Folder} & The location into which the \mbox{\hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer}} output is saved. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_afa838ba8dfb0fbde1f77c6d2a45a9dd0}\label{classQDynamics_1_1Integrator_afa838ba8dfb0fbde1f77c6d2a45a9dd0}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!U@{U}}
-\index{U@{U}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{U()}{U()}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!U@{U}}
+\index{U@{U}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{U()}{U()}}
 {\footnotesize\ttfamily virtual double Q\+Dynamics\+::\+Integrator\+::U (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
 
 
 
-Returns the current value of the rotation potential U, given the current value of \hyperlink{classQDynamics_1_1Integrator_a5929511da076c7f31749a6da713fcff6}{Integrator\+::q} and the current time. Unlike \hyperlink{classQDynamics_1_1Integrator_a4688fbccd8b0dc5c9a73dddac66b486f}{Grad\+U()}, it is not critical that this function be 100\% correct, as it is only used by the \hyperlink{classQDynamics_1_1Integrator_a816743f6efb41b0b29243ff3bdaa4c9d}{Integrator\+::\+Hamiltonian} function as bookkeeping for the current energy. If you do not wish to track the current energy, you may neglect this function. 
+Returns the current value of the rotation potential U, given the current value of \mbox{\hyperlink{classQDynamics_1_1Integrator_a5929511da076c7f31749a6da713fcff6}{Integrator\+::q}} and the current time. Unlike \mbox{\hyperlink{classQDynamics_1_1Integrator_a4688fbccd8b0dc5c9a73dddac66b486f}{Grad\+U()}}, it is not critical that this function be 100\% correct, as it is only used by the \mbox{\hyperlink{classQDynamics_1_1Integrator_a816743f6efb41b0b29243ff3bdaa4c9d}{Integrator\+::\+Hamiltonian}} function as bookkeeping for the current energy. If you do not wish to track the current energy, you may neglect this function. 
 
 
 \begin{DoxyParams}{Parameters}
 {\em t} & The current time \\
 \hline
-{\em The} & current potential energy of the system \\
-\hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The current potential energy of the system 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_af613a42e489de2d041673fd5be0ebb61}\label{classQDynamics_1_1Integrator_af613a42e489de2d041673fd5be0ebb61}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!Update\+Buffer@{Update\+Buffer}}
-\index{Update\+Buffer@{Update\+Buffer}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{Update\+Buffer()}{UpdateBuffer()}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!UpdateBuffer@{UpdateBuffer}}
+\index{UpdateBuffer@{UpdateBuffer}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{UpdateBuffer()}{UpdateBuffer()}}
 {\footnotesize\ttfamily void Q\+Dynamics\+::\+Integrator\+::\+Update\+Buffer (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
 
 
 
-Called during every loop of \hyperlink{classQDynamics_1_1Integrator_a4b921b312775194b77c2c85f93add84e}{Evolve()}, saves some values of interest to the \hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer}. 
+Called during every loop of \mbox{\hyperlink{classQDynamics_1_1Integrator_a4b921b312775194b77c2c85f93add84e}{Evolve()}}, saves some values of interest to the \mbox{\hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer}}. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -253,14 +254,14 @@ Called during every loop of \hyperlink{classQDynamics_1_1Integrator_a4b921b31277
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_a4effa27d56f3205e53653b1fdc5cd08e}\label{classQDynamics_1_1Integrator_a4effa27d56f3205e53653b1fdc5cd08e}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!Update\+Position@{Update\+Position}}
-\index{Update\+Position@{Update\+Position}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{Update\+Position()}{UpdatePosition()}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!UpdatePosition@{UpdatePosition}}
+\index{UpdatePosition@{UpdatePosition}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{UpdatePosition()}{UpdatePosition()}}
 {\footnotesize\ttfamily virtual void Q\+Dynamics\+::\+Integrator\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
-In the \hyperlink{classQDynamics_1_1Integrator}{Integrator} base class, this is an empty function. Child members will mainly focus on overloading this function to their own update formula. 
+In the \mbox{\hyperlink{classQDynamics_1_1Integrator}{Integrator}} base class, this is an empty function. Child members will mainly focus on overloading this function to their own update formula. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -269,12 +270,12 @@ In the \hyperlink{classQDynamics_1_1Integrator}{Integrator} base class, this is 
 \end{DoxyParams}
 
 
-Reimplemented in \hyperlink{classQDynamics_1_1Leapi_ada2b4935513fa7e0cb4f78ade9f2fd0e}{Q\+Dynamics\+::\+Leapi}, \hyperlink{classQDynamics_1_1SymiL_a28d23793abeb8f40c9d9ec069d67debb}{Q\+Dynamics\+::\+SymiL}, \hyperlink{classQDynamics_1_1Magi_a500467f899244edfae15f34c84c7684c}{Q\+Dynamics\+::\+Magi}, and \hyperlink{classQDynamics_1_1Brute_ac5d4bbe0e34a9f6836f71f40ae8a9eb4}{Q\+Dynamics\+::\+Brute}.
+Reimplemented in \mbox{\hyperlink{classQDynamics_1_1BruteInt_a0f3d901d692a8f30365d1692c678ce61}{Q\+Dynamics\+::\+Brute\+Int}}, and \mbox{\hyperlink{classQDynamics_1_1Magi_acd1d417b0e03a41ae83422c5b67f77bf}{Q\+Dynamics\+::\+Magi$<$ order, step $>$}}.
 
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_a88dc286b39899bdec60c040427d663cc}\label{classQDynamics_1_1Integrator_a88dc286b39899bdec60c040427d663cc}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!Update\+Progress\+Bar@{Update\+Progress\+Bar}}
-\index{Update\+Progress\+Bar@{Update\+Progress\+Bar}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{Update\+Progress\+Bar()}{UpdateProgressBar()}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!UpdateProgressBar@{UpdateProgressBar}}
+\index{UpdateProgressBar@{UpdateProgressBar}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{UpdateProgressBar()}{UpdateProgressBar()}}
 {\footnotesize\ttfamily void Q\+Dynamics\+::\+Integrator\+::\+Update\+Progress\+Bar (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
 
 
@@ -288,11 +289,11 @@ Writes a series of \# to the screen to act as a progress bar\+: \mbox{[}\#\#\#\#
 \end{DoxyParams}
 
 
-\subsection{Field Documentation}
+\doxysubsection{Field Documentation}
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}\label{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!Buffer@{Buffer}}
-\index{Buffer@{Buffer}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{Buffer}{Buffer}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{Buffer}{Buffer}}
 {\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Q\+Dynamics\+::\+Integrator\+::\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -300,29 +301,29 @@ Writes a series of \# to the screen to act as a progress bar\+: \mbox{[}\#\#\#\#
 A string-\/buffer containing the save-\/values of several past values of the integrator. Once full, the buffer is written to file. 
 
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_ae62176188110c0dcea7c65ba429d1abe}\label{classQDynamics_1_1Integrator_ae62176188110c0dcea7c65ba429d1abe}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!Buffer\+Pos@{Buffer\+Pos}}
-\index{Buffer\+Pos@{Buffer\+Pos}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{Buffer\+Pos}{BufferPos}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!BufferPos@{BufferPos}}
+\index{BufferPos@{BufferPos}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{BufferPos}{BufferPos}}
 {\footnotesize\ttfamily int Q\+Dynamics\+::\+Integrator\+::\+Buffer\+Pos\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-The current write-\/index of \hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer}. 
+The current write-\/index of \mbox{\hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer}}. 
 
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_acbafc2a1b2b19f230c6dfd8924cb36dd}\label{classQDynamics_1_1Integrator_acbafc2a1b2b19f230c6dfd8924cb36dd}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!Buffer\+Size@{Buffer\+Size}}
-\index{Buffer\+Size@{Buffer\+Size}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{Buffer\+Size}{BufferSize}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!BufferSize@{BufferSize}}
+\index{BufferSize@{BufferSize}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{BufferSize}{BufferSize}}
 {\footnotesize\ttfamily int Q\+Dynamics\+::\+Integrator\+::\+Buffer\+Size\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-The length of the \hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer}. 
+The length of the \mbox{\hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer}}. 
 
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_abab707f49ba0ae6701db5dbcdf86861f}\label{classQDynamics_1_1Integrator_abab707f49ba0ae6701db5dbcdf86861f}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!Current\+Hashes@{Current\+Hashes}}
-\index{Current\+Hashes@{Current\+Hashes}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{Current\+Hashes}{CurrentHashes}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!CurrentHashes@{CurrentHashes}}
+\index{CurrentHashes@{CurrentHashes}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{CurrentHashes}{CurrentHashes}}
 {\footnotesize\ttfamily int Q\+Dynamics\+::\+Integrator\+::\+Current\+Hashes\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -330,19 +331,19 @@ The length of the \hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c
 The current number of progress hashes which have been written to the terminal. 
 
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_a19ed0b9864ebe762914cee04cb0ad4b3}\label{classQDynamics_1_1Integrator_a19ed0b9864ebe762914cee04cb0ad4b3}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!File\+Name@{File\+Name}}
-\index{File\+Name@{File\+Name}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{File\+Name}{FileName}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!FileName@{FileName}}
+\index{FileName@{FileName}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{FileName}{FileName}}
 {\footnotesize\ttfamily std\+::string Q\+Dynamics\+::\+Integrator\+::\+File\+Name\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
-The location written to by \hyperlink{classQDynamics_1_1Integrator_ae80ab509b96a9b996934d9ef127f5137}{Create\+Full\+Name()}. A file location which will be used to write the output buffer to. 
+The location written to by \mbox{\hyperlink{classQDynamics_1_1Integrator_ae80ab509b96a9b996934d9ef127f5137}{Create\+Full\+Name()}}. A file location which will be used to write the output buffer to. 
 
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_ae893dd6b0d041de777e25a99f42886c3}\label{classQDynamics_1_1Integrator_ae893dd6b0d041de777e25a99f42886c3}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!Final\+Hash@{Final\+Hash}}
-\index{Final\+Hash@{Final\+Hash}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{Final\+Hash}{FinalHash}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!FinalHash@{FinalHash}}
+\index{FinalHash@{FinalHash}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{FinalHash}{FinalHash}}
 {\footnotesize\ttfamily bool Q\+Dynamics\+::\+Integrator\+::\+Final\+Hash\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -350,29 +351,29 @@ The location written to by \hyperlink{classQDynamics_1_1Integrator_ae80ab509b96a
 A simple lock tracking if the final hash has been written, preventing multiple termination characters being printed. 
 
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_a7b99b22475321b34c1624bded3489954}\label{classQDynamics_1_1Integrator_a7b99b22475321b34c1624bded3489954}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!J@{J}}
-\index{J@{J}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{J}{J}}
-{\footnotesize\ttfamily \hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector} Q\+Dynamics\+::\+Integrator\+::J\hspace{0.3cm}{\ttfamily [protected]}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!J@{J}}
+\index{J@{J}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{J}{J}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classJSL_1_1Vector}{J\+S\+L\+::\+Vector}} Q\+Dynamics\+::\+Integrator\+::J\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
-The saved location of the moment of inertia matrix (see \hyperlink{classQDynamics_1_1Integrator_a4b921b312775194b77c2c85f93add84e}{Evolve()}) 
+The saved location of the moment of inertia matrix (see \mbox{\hyperlink{classQDynamics_1_1Integrator_a4b921b312775194b77c2c85f93add84e}{Evolve()}}) 
 
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_adb45dae4f4d1d37ab83ca5269f51058d}\label{classQDynamics_1_1Integrator_adb45dae4f4d1d37ab83ca5269f51058d}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!L@{L}}
-\index{L@{L}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{L}{L}}
-{\footnotesize\ttfamily \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} Q\+Dynamics\+::\+Integrator\+::L\hspace{0.3cm}{\ttfamily [protected]}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!L@{L}}
+\index{L@{L}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{L}{L}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}} Q\+Dynamics\+::\+Integrator\+::L\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
 The current body-\/fixed Angular momentum. 
 
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_aa3e27d68428619ab4083b2d42ef8924c}\label{classQDynamics_1_1Integrator_aa3e27d68428619ab4083b2d42ef8924c}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!Name@{Name}}
-\index{Name@{Name}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{Name}{Name}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!Name@{Name}}
+\index{Name@{Name}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
 {\footnotesize\ttfamily std\+::string Q\+Dynamics\+::\+Integrator\+::\+Name\hspace{0.3cm}{\ttfamily [protected]}}
 
 
@@ -380,9 +381,9 @@ The current body-\/fixed Angular momentum.
 The assigned name of the integrator. This is set to \char`\"{}\+Unassigned\char`\"{} by default\+: child classes should modify this name. 
 
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_a00be60876ae62ef0d1555a6cc0ce52a5}\label{classQDynamics_1_1Integrator_a00be60876ae62ef0d1555a6cc0ce52a5}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!N\+Hashes@{N\+Hashes}}
-\index{N\+Hashes@{N\+Hashes}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{N\+Hashes}{NHashes}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!NHashes@{NHashes}}
+\index{NHashes@{NHashes}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{NHashes}{NHashes}}
 {\footnotesize\ttfamily int Q\+Dynamics\+::\+Integrator\+::\+N\+Hashes\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -390,39 +391,39 @@ The assigned name of the integrator. This is set to \char`\"{}\+Unassigned\char`
 The number of hashes a full progress bar is made up of. 
 
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_a1fb07254408f6ad620eb9dbfa0f8da95}\label{classQDynamics_1_1Integrator_a1fb07254408f6ad620eb9dbfa0f8da95}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!p@{p}}
-\index{p@{p}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{p}{p}}
-{\footnotesize\ttfamily \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} Q\+Dynamics\+::\+Integrator\+::p\hspace{0.3cm}{\ttfamily [protected]}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!p@{p}}
+\index{p@{p}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}} Q\+Dynamics\+::\+Integrator\+::p\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
 The current momentum variable. 
 
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_a5929511da076c7f31749a6da713fcff6}\label{classQDynamics_1_1Integrator_a5929511da076c7f31749a6da713fcff6}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!q@{q}}
-\index{q@{q}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{q}{q}}
-{\footnotesize\ttfamily \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} Q\+Dynamics\+::\+Integrator\+::q\hspace{0.3cm}{\ttfamily [protected]}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!q@{q}}
+\index{q@{q}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{q}{q}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}} Q\+Dynamics\+::\+Integrator\+::q\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
 The current position variable. 
 
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_a95e110d6b14003db39f8a52180b97870}\label{classQDynamics_1_1Integrator_a95e110d6b14003db39f8a52180b97870}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!Skip\+ID@{Skip\+ID}}
-\index{Skip\+ID@{Skip\+ID}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{Skip\+ID}{SkipID}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!SkipID@{SkipID}}
+\index{SkipID@{SkipID}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{SkipID}{SkipID}}
 {\footnotesize\ttfamily int Q\+Dynamics\+::\+Integrator\+::\+Skip\+ID\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-The current number of files that the buffer has skipped (as per the skipper variable in \hyperlink{classQDynamics_1_1Integrator_aa469124cb408fadbaa540555dfabee33}{Integrator(double,double,int)}) 
+The current number of files that the buffer has skipped (as per the skipper variable in \mbox{\hyperlink{classQDynamics_1_1Integrator_aa469124cb408fadbaa540555dfabee33}{Integrator(double,double,int)}}) 
 
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_a409e18faeeefa5fb63f7bcce3eb0e381}\label{classQDynamics_1_1Integrator_a409e18faeeefa5fb63f7bcce3eb0e381}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!Skips@{Skips}}
-\index{Skips@{Skips}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{Skips}{Skips}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!Skips@{Skips}}
+\index{Skips@{Skips}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{Skips}{Skips}}
 {\footnotesize\ttfamily int Q\+Dynamics\+::\+Integrator\+::\+Skips\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -430,9 +431,9 @@ The current number of files that the buffer has skipped (as per the skipper vari
 The maximum value of Skip\+ID before the buffer saves a value. 
 
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_a9b850dd4b29118e44b0183409db0a983}\label{classQDynamics_1_1Integrator_a9b850dd4b29118e44b0183409db0a983}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!Time\+Step@{Time\+Step}}
-\index{Time\+Step@{Time\+Step}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{Time\+Step}{TimeStep}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!TimeStep@{TimeStep}}
+\index{TimeStep@{TimeStep}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{TimeStep}{TimeStep}}
 {\footnotesize\ttfamily double Q\+Dynamics\+::\+Integrator\+::\+Time\+Step\hspace{0.3cm}{\ttfamily [protected]}}
 
 
@@ -440,9 +441,9 @@ The maximum value of Skip\+ID before the buffer saves a value.
 The timestep taken by the integrator. 
 
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_addfb67b6faa62d88bc7234d5496aeaf9}\label{classQDynamics_1_1Integrator_addfb67b6faa62d88bc7234d5496aeaf9}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!Total\+Time@{Total\+Time}}
-\index{Total\+Time@{Total\+Time}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{Total\+Time}{TotalTime}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!TotalTime@{TotalTime}}
+\index{TotalTime@{TotalTime}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{TotalTime}{TotalTime}}
 {\footnotesize\ttfamily double Q\+Dynamics\+::\+Integrator\+::\+Total\+Time\hspace{0.3cm}{\ttfamily [protected]}}
 
 
@@ -450,10 +451,10 @@ The timestep taken by the integrator.
 The total length of time that the integrator will search for. 
 
 \mbox{\Hypertarget{classQDynamics_1_1Integrator_a0241b2e2c87418323330999d1f8e12d0}\label{classQDynamics_1_1Integrator_a0241b2e2c87418323330999d1f8e12d0}} 
-\index{Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}!w@{w}}
-\index{w@{w}!Q\+Dynamics\+::\+Integrator@{Q\+Dynamics\+::\+Integrator}}
-\subsubsection{\texorpdfstring{w}{w}}
-{\footnotesize\ttfamily \hyperlink{classQDynamics_1_1Quaternion}{Quaternion} Q\+Dynamics\+::\+Integrator\+::w\hspace{0.3cm}{\ttfamily [protected]}}
+\index{QDynamics::Integrator@{QDynamics::Integrator}!w@{w}}
+\index{w@{w}!QDynamics::Integrator@{QDynamics::Integrator}}
+\doxysubsubsection{\texorpdfstring{w}{w}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classQDynamics_1_1Quaternion}{Quaternion}} Q\+Dynamics\+::\+Integrator\+::w\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
@@ -463,4 +464,4 @@ The current body-\/fixed angular speed.
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-/home/f/fraserj/\+Documents/\+Work/\+Q\+Dynamics/src/\hyperlink{Integrator_8h}{Integrator.\+h}\end{DoxyCompactItemize}
+/home/jack/\+Documents/\+Work/\+Q\+Dynamics/src/\mbox{\hyperlink{Integrator_8h}{Integrator.\+h}}\end{DoxyCompactItemize}

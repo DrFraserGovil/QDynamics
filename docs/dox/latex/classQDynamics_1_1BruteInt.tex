@@ -1,0 +1,104 @@
+\hypertarget{classQDynamics_1_1BruteInt}{}\doxysection{Q\+Dynamics\+::Brute\+Int Class Reference}
+\label{classQDynamics_1_1BruteInt}\index{QDynamics::BruteInt@{QDynamics::BruteInt}}
+
+
+{\ttfamily \#include $<$Brute.\+h$>$}
+
+Inheritance diagram for Q\+Dynamics\+::Brute\+Int\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classQDynamics_1_1BruteInt}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classQDynamics_1_1BruteInt_ac8b08a4df56d6cea7a848418d9f07d27}{Brute\+Int}} (double T, double deltaT)
+\begin{DoxyCompactList}\small\item\em Identical to \mbox{\hyperlink{classQDynamics_1_1Integrator_a677dd555cee316d6d456b7da258c4385}{Integrator\+::\+Integrator(double,double)}}, but also assigns \mbox{\hyperlink{classQDynamics_1_1Integrator_aa3e27d68428619ab4083b2d42ef8924c}{Integrator\+::\+Name}} to \char`\"{}\+Brute\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classQDynamics_1_1BruteInt_ae5c66b9ece61fe160009304212bef9f8}{Brute\+Int}} (double T, double deltaT, int skipper)
+\begin{DoxyCompactList}\small\item\em Identical to \mbox{\hyperlink{classQDynamics_1_1Integrator_aa469124cb408fadbaa540555dfabee33}{Integrator\+::\+Integrator(double,double,int)}}, but also assigns \mbox{\hyperlink{classQDynamics_1_1Integrator_aa3e27d68428619ab4083b2d42ef8924c}{Integrator\+::\+Name}} to \char`\"{}\+Brute\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classQDynamics_1_1BruteInt_a0f3d901d692a8f30365d1692c678ce61}{Update\+Position}} (double t)
+\begin{DoxyCompactList}\small\item\em Executes a brute-\/force linear update to the position and momentum terms. A dumb, first order Euler integrator with a normalistion step, nothing more. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The dumbest possible way to integrate. Overrides \mbox{\hyperlink{classQDynamics_1_1Integrator_a4effa27d56f3205e53653b1fdc5cd08e}{Integrator\+::\+Update\+Position()}} with the brute force method\+:\begin{DoxyVerb}embed:rst
+.. math::
+  \mathsf{q}  &\to \mathsf{q} + \delta t \dot{\mathsf{q}} 
+  ~\\
+  \mathsf{p} & \to \mathsf{p} + \delta t \dot{\mathsf{p}} 
+  ~\\
+  \dot{\mathsf{q}} & = \frac{1}{2} \mathsf{q} \otimes J^{-1} \overline{\mathsf{q}} \otimes \mathsf{p}
+  ~\\
+  \dot{\mathsf{p}} & = \frac{1}{2} \mathsf{p} \otimes J^{-1} \overline{\mathsf{p}} \otimes \mathsf{q} + \nabla_\mathsf{q} U(\mathsf{q},t)
+\end{DoxyVerb}
+ There is also a normalisation step on q, to prevent changes in the magnitude. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classQDynamics_1_1BruteInt_ac8b08a4df56d6cea7a848418d9f07d27}\label{classQDynamics_1_1BruteInt_ac8b08a4df56d6cea7a848418d9f07d27}} 
+\index{QDynamics::BruteInt@{QDynamics::BruteInt}!BruteInt@{BruteInt}}
+\index{BruteInt@{BruteInt}!QDynamics::BruteInt@{QDynamics::BruteInt}}
+\doxysubsubsection{\texorpdfstring{BruteInt()}{BruteInt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Q\+Dynamics\+::\+Brute\+Int\+::\+Brute\+Int (\begin{DoxyParamCaption}\item[{double}]{T,  }\item[{double}]{deltaT }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Identical to \mbox{\hyperlink{classQDynamics_1_1Integrator_a677dd555cee316d6d456b7da258c4385}{Integrator\+::\+Integrator(double,double)}}, but also assigns \mbox{\hyperlink{classQDynamics_1_1Integrator_aa3e27d68428619ab4083b2d42ef8924c}{Integrator\+::\+Name}} to \char`\"{}\+Brute\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & The total duration of the integration\\
+\hline
+{\em deltaT} & the width of timesteps used \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classQDynamics_1_1BruteInt_ae5c66b9ece61fe160009304212bef9f8}\label{classQDynamics_1_1BruteInt_ae5c66b9ece61fe160009304212bef9f8}} 
+\index{QDynamics::BruteInt@{QDynamics::BruteInt}!BruteInt@{BruteInt}}
+\index{BruteInt@{BruteInt}!QDynamics::BruteInt@{QDynamics::BruteInt}}
+\doxysubsubsection{\texorpdfstring{BruteInt()}{BruteInt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Q\+Dynamics\+::\+Brute\+Int\+::\+Brute\+Int (\begin{DoxyParamCaption}\item[{double}]{T,  }\item[{double}]{deltaT,  }\item[{int}]{skipper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Identical to \mbox{\hyperlink{classQDynamics_1_1Integrator_aa469124cb408fadbaa540555dfabee33}{Integrator\+::\+Integrator(double,double,int)}}, but also assigns \mbox{\hyperlink{classQDynamics_1_1Integrator_aa3e27d68428619ab4083b2d42ef8924c}{Integrator\+::\+Name}} to \char`\"{}\+Brute\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & The total duration of the integration\\
+\hline
+{\em deltaT} & the width of timesteps used\\
+\hline
+{\em skipper} & The number of epochs which pass in between updates to the progess \mbox{\hyperlink{classQDynamics_1_1Integrator_af8889c2bbe10237a8dd8c46b25b15d29}{Integrator\+::\+Buffer}} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classQDynamics_1_1BruteInt_a0f3d901d692a8f30365d1692c678ce61}\label{classQDynamics_1_1BruteInt_a0f3d901d692a8f30365d1692c678ce61}} 
+\index{QDynamics::BruteInt@{QDynamics::BruteInt}!UpdatePosition@{UpdatePosition}}
+\index{UpdatePosition@{UpdatePosition}!QDynamics::BruteInt@{QDynamics::BruteInt}}
+\doxysubsubsection{\texorpdfstring{UpdatePosition()}{UpdatePosition()}}
+{\footnotesize\ttfamily virtual void Q\+Dynamics\+::\+Brute\+Int\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Executes a brute-\/force linear update to the position and momentum terms. A dumb, first order Euler integrator with a normalistion step, nothing more. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The current time (used for the potential \mbox{\hyperlink{classQDynamics_1_1Integrator_afa838ba8dfb0fbde1f77c6d2a45a9dd0}{U()}}) \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classQDynamics_1_1Integrator_a4effa27d56f3205e53653b1fdc5cd08e}{Q\+Dynamics\+::\+Integrator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jack/\+Documents/\+Work/\+Q\+Dynamics/src/\mbox{\hyperlink{Brute_8h}{Brute.\+h}}\end{DoxyCompactItemize}

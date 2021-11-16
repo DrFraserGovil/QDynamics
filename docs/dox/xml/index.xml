@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
   <compound refid="classJSL_1_1Argument" kind="class"><name>JSL::Argument</name>
     <member refid="classJSL_1_1Argument_1a83ada5bfa412192f76dd4290f679defd" kind="variable"><name>Value</name></member>
     <member refid="classJSL_1_1Argument_1ab438509a3c030516de72f3f493295bd5" kind="function"><name>Argument</name></member>
@@ -13,10 +13,10 @@
     <member refid="classJSL_1_1Argument_1a965bc0dfdce6e03380605af313f8c880" kind="function"><name>operator T</name></member>
     <member refid="classJSL_1_1Argument_1a8614eb66f807132c4323847e05e666c4" kind="function"><name>CheckForInvalidTriggers</name></member>
     <member refid="classJSL_1_1Argument_1ac77530598054943c996dbb5fb677b844" kind="function"><name>AssignValue</name></member>
-    <member refid="classJSL_1_1Argument_1a6e8fe8e7cca2aeffe23f6fbadb88d4c8" kind="function"><name>AssignValue</name></member>
-    <member refid="classJSL_1_1Argument_1a059e7c6f1d9232a93cf725510fe2db27" kind="function"><name>AssignValue</name></member>
-    <member refid="classJSL_1_1Argument_1af5ccee16ba3403ef62d4bec9d380c762" kind="function"><name>AssignValue</name></member>
-    <member refid="classJSL_1_1Argument_1a0831822da0a2da47daa07d2e51b87d2a" kind="function"><name>AssignValue</name></member>
+    <member refid="classJSL_1_1Argument_1ab62b81b196fdc434ab03cd3257ab4aef" kind="function"><name>AssignValue</name></member>
+    <member refid="classJSL_1_1Argument_1ad023ca0ed8f956af79fb060eabd844c9" kind="function"><name>AssignValue</name></member>
+    <member refid="classJSL_1_1Argument_1ad379e95cccb05516525e2634cba93579" kind="function"><name>AssignValue</name></member>
+    <member refid="classJSL_1_1Argument_1a3a1fc796058e3bc1b1a4778688249baf" kind="function"><name>AssignValue</name></member>
   </compound>
   <compound refid="classJSL_1_1ArgumentInterface" kind="class"><name>JSL::ArgumentInterface</name>
     <member refid="classJSL_1_1ArgumentInterface_1afa2d1f96c4971070d3de5824f297312f" kind="variable"><name>TriggerString</name></member>
@@ -28,10 +28,10 @@
     <member refid="classJSL__Testing_1_1ArgumentTest_1a3d83658826bd70b33349e53a7326ae5a" kind="function"><name>ArgumentTest</name></member>
     <member refid="classJSL__Testing_1_1ArgumentTest_1a1c4c626d57e448da86866ef414308e97" kind="function"><name>Run_Test</name></member>
   </compound>
-  <compound refid="classQDynamics_1_1Brute" kind="class"><name>QDynamics::Brute</name>
-    <member refid="classQDynamics_1_1Brute_1a2ef1df08140810ffbc9a3e8b97561bbb" kind="function"><name>Brute</name></member>
-    <member refid="classQDynamics_1_1Brute_1a5f04abe903e88405c24fb5695db6357f" kind="function"><name>Brute</name></member>
-    <member refid="classQDynamics_1_1Brute_1ac5d4bbe0e34a9f6836f71f40ae8a9eb4" kind="function"><name>UpdatePosition</name></member>
+  <compound refid="classQDynamics_1_1BruteInt" kind="class"><name>QDynamics::BruteInt</name>
+    <member refid="classQDynamics_1_1BruteInt_1ac8b08a4df56d6cea7a848418d9f07d27" kind="function"><name>BruteInt</name></member>
+    <member refid="classQDynamics_1_1BruteInt_1ae5c66b9ece61fe160009304212bef9f8" kind="function"><name>BruteInt</name></member>
+    <member refid="classQDynamics_1_1BruteInt_1a0f3d901d692a8f30365d1692c678ce61" kind="function"><name>UpdatePosition</name></member>
   </compound>
   <compound refid="classQDynamics_1_1Integrator" kind="class"><name>QDynamics::Integrator</name>
     <member refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" kind="variable"><name>q</name></member>
@@ -68,21 +68,18 @@
     <member refid="classJSL__Testing_1_1IOTest_1a75479573809562118ab4d233c2bc0471" kind="function"><name>IOTest</name></member>
     <member refid="classJSL__Testing_1_1IOTest_1a85daecacc71354b5dc0dee36840b8704" kind="function"><name>Run_Test</name></member>
   </compound>
-  <compound refid="classQDynamics_1_1Leapi" kind="class"><name>QDynamics::Leapi</name>
-    <member refid="classQDynamics_1_1Leapi_1aa6feac37d39339e26f89626f7bdbc8f0" kind="function"><name>Leapi</name></member>
-    <member refid="classQDynamics_1_1Leapi_1a008a9a757055debd2e1da2b5ac64a746" kind="function"><name>Leapi</name></member>
-    <member refid="classQDynamics_1_1Leapi_1ada2b4935513fa7e0cb4f78ade9f2fd0e" kind="function"><name>UpdatePosition</name></member>
-  </compound>
   <compound refid="classQDynamics_1_1Magi" kind="class"><name>QDynamics::Magi</name>
-    <member refid="classQDynamics_1_1Magi_1a11af2e624714857cf13343f1745f2fa8" kind="variable"><name>unlock</name></member>
-    <member refid="classQDynamics_1_1Magi_1aba1aa111cd53a194854a2a8ac4b06b32" kind="variable"><name>unlocked</name></member>
-    <member refid="classQDynamics_1_1Magi_1ac9ff1c2f4ea0dcc30f1ee52b0894c9e9" kind="variable"><name>Order</name></member>
-    <member refid="classQDynamics_1_1Magi_1a629449f541590040a7dfb98ca68cf97b" kind="variable"><name>Resolution</name></member>
-    <member refid="classQDynamics_1_1Magi_1a5b95b7c32c314e2800f59366964abfc3" kind="function"><name>Magi</name></member>
-    <member refid="classQDynamics_1_1Magi_1a89efe9c4722cbeb447662ee727af0570" kind="function"><name>Magi</name></member>
-    <member refid="classQDynamics_1_1Magi_1a500467f899244edfae15f34c84c7684c" kind="function"><name>UpdatePosition</name></member>
-    <member refid="classQDynamics_1_1Magi_1a04b85c8aa0e9549c750956c5f781433b" kind="function"><name>Magnus</name></member>
-    <member refid="classQDynamics_1_1Magi_1aadacdb3581a42babd5e1aa9ada6c77ee" kind="function"><name>Magnus_Compute</name></member>
+    <member refid="classQDynamics_1_1Magi_1abd42c2649279399c3f7599c41397fdad" kind="variable"><name>Order</name></member>
+    <member refid="classQDynamics_1_1Magi_1a1b7aae9a9dc768f78758c30c13d54298" kind="variable"><name>StepMode</name></member>
+    <member refid="classQDynamics_1_1Magi_1a1ebc70a53a0292d759800272ff9804c4" kind="variable"><name>Resolution</name></member>
+    <member refid="classQDynamics_1_1Magi_1aa832ebdc8d1072c61024154e16702c51" kind="function"><name>Magi</name></member>
+    <member refid="classQDynamics_1_1Magi_1a8125608182e49038386d67516ab18d39" kind="function"><name>Magi</name></member>
+    <member refid="classQDynamics_1_1Magi_1acd1d417b0e03a41ae83422c5b67f77bf" kind="function"><name>UpdatePosition</name></member>
+    <member refid="classQDynamics_1_1Magi_1aa12d85b9d76687ccf7ab84de4c4963fd" kind="function"><name>Brute_Update</name></member>
+    <member refid="classQDynamics_1_1Magi_1add78aa1f80486641fb4288ca3e886af7" kind="function"><name>Euler_Update</name></member>
+    <member refid="classQDynamics_1_1Magi_1a7887aa1074337176f9a43c65eb076683" kind="function"><name>Leapfrog_Update</name></member>
+    <member refid="classQDynamics_1_1Magi_1a0d7ef81b9e5ffea255022b3715831044" kind="function"><name>Magnus</name></member>
+    <member refid="classQDynamics_1_1Magi_1a51a65517fca2e397bbcc1717f480cd04" kind="function"><name>Magnus_Compute</name></member>
   </compound>
   <compound refid="classJSL_1_1Matrix" kind="class"><name>JSL::Matrix</name>
     <member refid="classJSL_1_1Matrix_1a446d23ba93238f3e2dfc79a3a4d5eb7e" kind="variable"><name>Data</name></member>
@@ -162,14 +159,10 @@
     <member refid="classJSL__Testing_1_1StringTest_1ada0409cd10e3f09788994a9115331ff7" kind="function"><name>Run_Test</name></member>
   </compound>
   <compound refid="classQDynamics_1_1Symi" kind="class"><name>QDynamics::Symi</name>
-    <member refid="classQDynamics_1_1Symi_1afc73292268197d37fad6716aa6bb5976" kind="function"><name>Symi</name></member>
-    <member refid="classQDynamics_1_1Symi_1a2e248bf5141814ca1e8285227d26d4bc" kind="function"><name>Symi</name></member>
-    <member refid="classQDynamics_1_1Symi_1a4cea691ad899227f92004dd666180415" kind="function"><name>Magnus_Compute</name></member>
-  </compound>
-  <compound refid="classQDynamics_1_1SymiL" kind="class"><name>QDynamics::SymiL</name>
-    <member refid="classQDynamics_1_1SymiL_1ac220b2a8cccf6c3c8ca0d0f79c094fe7" kind="function"><name>SymiL</name></member>
-    <member refid="classQDynamics_1_1SymiL_1acdb13fb6bc527f687385dbdb05ff6e17" kind="function"><name>SymiL</name></member>
-    <member refid="classQDynamics_1_1SymiL_1a28d23793abeb8f40c9d9ec069d67debb" kind="function"><name>UpdatePosition</name></member>
+    <member refid="classQDynamics_1_1Symi_1a64ac64472b1b635b8915c6e0575b36a8" kind="variable"><name>Order</name></member>
+    <member refid="classQDynamics_1_1Symi_1a1d00d45dfa9de22d45865df8cfd637e5" kind="variable"><name>StepMode</name></member>
+    <member refid="classQDynamics_1_1Symi_1a99f05fe237066759d24001672d484cec" kind="function"><name>Symi</name></member>
+    <member refid="classQDynamics_1_1Symi_1aa88a0244de9e8b80c1532f6429cf64d4" kind="function"><name>Symi</name></member>
   </compound>
   <compound refid="classJSL_1_1UnitTest" kind="class"><name>JSL::UnitTest</name>
     <member refid="classJSL_1_1UnitTest_1a53c19424147e72fa6392470627f15049" kind="variable"><name>Name</name></member>
@@ -266,6 +259,10 @@
     <member refid="namespaceJSL__Testing_1a509a70d20fdc2e9975d9b0b8ae424ef1" kind="function"><name>RunAllTests</name></member>
   </compound>
   <compound refid="namespaceQDynamics" kind="namespace"><name>QDynamics</name>
+    <member refid="namespaceQDynamics_1a68884510ffea34b2025b1558ef299d42" kind="enum"><name>StepType</name></member>
+    <member refid="namespaceQDynamics_1a68884510ffea34b2025b1558ef299d42a125289977730488f30b88da52aada3c9" kind="enumvalue"><name>Brute</name></member>
+    <member refid="namespaceQDynamics_1a68884510ffea34b2025b1558ef299d42a2c79272464c9de8d12ec1f4e259daf97" kind="enumvalue"><name>Euler</name></member>
+    <member refid="namespaceQDynamics_1a68884510ffea34b2025b1558ef299d42ab5047fb0a7ebf855e7fce414e634326d" kind="enumvalue"><name>Leapfrog</name></member>
     <member refid="namespaceQDynamics_1a06e91eeb11c659d8845569a642500675" kind="variable"><name>buffersize</name></member>
     <member refid="namespaceQDynamics_1ac3ad3b89bbd65796d1f4f5e4809a12ed" kind="variable"><name>hash</name></member>
     <member refid="namespaceQDynamics_1a0b043bd2021eaeb8b6580cef4fcc667c" kind="function"><name>Mult</name></member>
@@ -330,20 +327,20 @@
   </compound>
   <compound refid="Symi_8h" kind="file"><name>Symi.h</name>
   </compound>
-  <compound refid="dir_d94222213bf3c1c071481a048d868dd6" kind="dir"><name>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/CommandArgs</name>
+  <compound refid="dir_d94222213bf3c1c071481a048d868dd6" kind="dir"><name>/home/jack/Documents/Work/QDynamics/lib/JSL/CommandArgs</name>
   </compound>
-  <compound refid="dir_3058225589347dfeee253751eb317dec" kind="dir"><name>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/FileIO</name>
+  <compound refid="dir_3058225589347dfeee253751eb317dec" kind="dir"><name>/home/jack/Documents/Work/QDynamics/lib/JSL/FileIO</name>
   </compound>
-  <compound refid="dir_713b5836fbbf0d063267991159014b22" kind="dir"><name>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL</name>
+  <compound refid="dir_713b5836fbbf0d063267991159014b22" kind="dir"><name>/home/jack/Documents/Work/QDynamics/lib/JSL</name>
   </compound>
-  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>/home/f/fraserj/Documents/Work/QDynamics/lib</name>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>/home/jack/Documents/Work/QDynamics/lib</name>
   </compound>
-  <compound refid="dir_cc6ba3f4f08890870ae831aca6083480" kind="dir"><name>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Maths</name>
+  <compound refid="dir_cc6ba3f4f08890870ae831aca6083480" kind="dir"><name>/home/jack/Documents/Work/QDynamics/lib/JSL/Maths</name>
   </compound>
-  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>/home/f/fraserj/Documents/Work/QDynamics/src</name>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>/home/jack/Documents/Work/QDynamics/src</name>
   </compound>
-  <compound refid="dir_33696c92936c393acb7a2840ac7705ef" kind="dir"><name>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Strings</name>
+  <compound refid="dir_33696c92936c393acb7a2840ac7705ef" kind="dir"><name>/home/jack/Documents/Work/QDynamics/lib/JSL/Strings</name>
   </compound>
-  <compound refid="dir_c8d092b8b672ec362c568271dadb9b0e" kind="dir"><name>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing</name>
+  <compound refid="dir_c8d092b8b672ec362c568271dadb9b0e" kind="dir"><name>/home/jack/Documents/Work/QDynamics/lib/JSL/Testing</name>
   </compound>
 </doxygenindex>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="Quaternion_8h" kind="file" language="C++">
     <compoundname>Quaternion.h</compoundname>
     <includes local="no">vector</includes>
@@ -8,259 +8,259 @@
     <includes local="no">iostream</includes>
     <includes local="no">math.h</includes>
     <includes refid="JSL_8h" local="yes">JSL.h</includes>
-    <includedby refid="QDynamics_8h" local="yes">/home/f/fraserj/Documents/Work/QDynamics/QDynamics.h</includedby>
+    <includedby refid="QDynamics_8h" local="yes">/home/jack/Documents/Work/QDynamics/QDynamics.h</includedby>
     <incdepgraph>
-      <node id="636">
+      <node id="17">
         <label>sys/stat.h</label>
       </node>
-      <node id="637">
-        <label>rm.h</label>
-        <link refid="rm_8h"/>
-        <childnode refid="634" relation="include">
-        </childnode>
-        <childnode refid="630" relation="include">
-        </childnode>
-        <childnode refid="635" relation="include">
-        </childnode>
-        <childnode refid="622" relation="include">
-        </childnode>
-      </node>
-      <node id="631">
-        <label>../Strings/split.h</label>
-        <link refid="split_8h"/>
-        <childnode refid="630" relation="include">
-        </childnode>
-        <childnode refid="621" relation="include">
-        </childnode>
-        <childnode refid="632" relation="include">
-        </childnode>
-      </node>
-      <node id="620">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h</label>
-        <link refid="Quaternion_8h"/>
-        <childnode refid="621" relation="include">
-        </childnode>
-        <childnode refid="622" relation="include">
-        </childnode>
-        <childnode refid="623" relation="include">
-        </childnode>
-        <childnode refid="624" relation="include">
-        </childnode>
-        <childnode refid="625" relation="include">
-        </childnode>
-        <childnode refid="626" relation="include">
-        </childnode>
-      </node>
-      <node id="650">
-        <label>cmath</label>
-      </node>
-      <node id="622">
-        <label>stdexcept</label>
-      </node>
-      <node id="630">
-        <label>string</label>
-      </node>
-      <node id="640">
-        <label>Time.h</label>
-        <link refid="Time_8h"/>
-        <childnode refid="641" relation="include">
-        </childnode>
-        <childnode refid="630" relation="include">
-        </childnode>
-        <childnode refid="632" relation="include">
-        </childnode>
-        <childnode refid="621" relation="include">
-        </childnode>
-        <childnode refid="624" relation="include">
-        </childnode>
-      </node>
-      <node id="627">
-        <label>FileIO/FileIO.h</label>
-        <link refid="FileIO_8h"/>
-        <childnode refid="628" relation="include">
-        </childnode>
-        <childnode refid="633" relation="include">
-        </childnode>
-        <childnode refid="637" relation="include">
-        </childnode>
-        <childnode refid="635" relation="include">
-        </childnode>
-        <childnode refid="638" relation="include">
-        </childnode>
-      </node>
-      <node id="639">
-        <label>Strings/Strings.h</label>
-        <link refid="Strings_8h"/>
-        <childnode refid="631" relation="include">
-        </childnode>
-        <childnode refid="640" relation="include">
-        </childnode>
-      </node>
-      <node id="629">
-        <label>fstream</label>
-      </node>
-      <node id="628">
-        <label>LineReader.h</label>
-        <link refid="LineReader_8h"/>
-        <childnode refid="629" relation="include">
-        </childnode>
-        <childnode refid="630" relation="include">
-        </childnode>
-        <childnode refid="621" relation="include">
-        </childnode>
-        <childnode refid="631" relation="include">
-        </childnode>
-      </node>
-      <node id="649">
-        <label>Testing_UnitTests.h</label>
-        <link refid="Testing__UnitTests_8h"/>
-        <childnode refid="626" relation="include">
-        </childnode>
-        <childnode refid="650" relation="include">
-        </childnode>
-      </node>
-      <node id="642">
+      <node id="23">
         <label>CommandArgs/CommandArgs.h</label>
         <link refid="CommandArgs_8h"/>
-        <childnode refid="643" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
       </node>
-      <node id="645">
-        <label>vector.h</label>
-        <link refid="vector_8h"/>
-        <childnode refid="621" relation="include">
-        </childnode>
-        <childnode refid="622" relation="include">
-        </childnode>
-        <childnode refid="623" relation="include">
-        </childnode>
-        <childnode refid="624" relation="include">
-        </childnode>
-        <childnode refid="625" relation="include">
-        </childnode>
-      </node>
-      <node id="648">
-        <label>UnitTest.h</label>
-        <link refid="UnitTest_8h"/>
-        <childnode refid="623" relation="include">
-        </childnode>
-        <childnode refid="624" relation="include">
-        </childnode>
-      </node>
-      <node id="644">
-        <label>Maths/Maths.h</label>
-        <link refid="Maths_8h"/>
-        <childnode refid="645" relation="include">
-        </childnode>
-        <childnode refid="646" relation="include">
-        </childnode>
-      </node>
-      <node id="623">
-        <label>string.h</label>
-      </node>
-      <node id="643">
-        <label>Argument.h</label>
-        <link refid="Argument_8h"/>
-        <childnode refid="630" relation="include">
-        </childnode>
-        <childnode refid="622" relation="include">
-        </childnode>
-        <childnode refid="627" relation="include">
-        </childnode>
-      </node>
-      <node id="633">
-        <label>mkdir.h</label>
-        <link refid="mkdir_8h"/>
-        <childnode refid="634" relation="include">
-        </childnode>
-        <childnode refid="630" relation="include">
-        </childnode>
-        <childnode refid="635" relation="include">
-        </childnode>
-      </node>
-      <node id="646">
-        <label>matrix.h</label>
-        <link refid="matrix_8h"/>
-        <childnode refid="621" relation="include">
-        </childnode>
-        <childnode refid="622" relation="include">
-        </childnode>
-        <childnode refid="623" relation="include">
-        </childnode>
-        <childnode refid="624" relation="include">
-        </childnode>
-        <childnode refid="625" relation="include">
-        </childnode>
-        <childnode refid="645" relation="include">
-        </childnode>
-      </node>
-      <node id="621">
-        <label>vector</label>
-      </node>
-      <node id="635">
-        <label>locationExists.h</label>
-        <link refid="locationExists_8h"/>
-        <childnode refid="630" relation="include">
-        </childnode>
-        <childnode refid="636" relation="include">
-        </childnode>
-      </node>
-      <node id="632">
-        <label>sstream</label>
-      </node>
-      <node id="625">
-        <label>math.h</label>
-      </node>
-      <node id="647">
-        <label>Testing/Testing.h</label>
-        <link refid="Testing_8h"/>
-        <childnode refid="648" relation="include">
-        </childnode>
-        <childnode refid="649" relation="include">
-        </childnode>
-      </node>
-      <node id="624">
-        <label>iostream</label>
-      </node>
-      <node id="641">
-        <label>chrono</label>
-      </node>
-      <node id="626">
-        <label>JSL.h</label>
-        <link refid="JSL_8h"/>
-        <childnode refid="627" relation="include">
-        </childnode>
-        <childnode refid="639" relation="include">
-        </childnode>
-        <childnode refid="642" relation="include">
-        </childnode>
-        <childnode refid="644" relation="include">
-        </childnode>
-        <childnode refid="647" relation="include">
-        </childnode>
-      </node>
-      <node id="638">
+      <node id="19">
         <label>fileWriter.h</label>
         <link refid="fileWriter_8h"/>
-        <childnode refid="623" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="629" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="634">
+      <node id="31">
+        <label>cmath</label>
+      </node>
+      <node id="24">
+        <label>Argument.h</label>
+        <link refid="Argument_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdexcept</label>
+      </node>
+      <node id="28">
+        <label>Testing/Testing.h</label>
+        <link refid="Testing_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>string</label>
+      </node>
+      <node id="18">
+        <label>rm.h</label>
+        <link refid="rm_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vector.h</label>
+        <link refid="vector_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>fstream</label>
+      </node>
+      <node id="7">
+        <label>JSL.h</label>
+        <link refid="JSL_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Strings/Strings.h</label>
+        <link refid="Strings_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>FileIO/FileIO.h</label>
+        <link refid="FileIO_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>string.h</label>
+      </node>
+      <node id="30">
+        <label>Testing_UnitTests.h</label>
+        <link refid="Testing__UnitTests_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vector</label>
+      </node>
+      <node id="13">
+        <label>sstream</label>
+      </node>
+      <node id="12">
+        <label>../Strings/split.h</label>
+        <link refid="split_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>math.h</label>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="25">
+        <label>Maths/Maths.h</label>
+        <link refid="Maths_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>matrix.h</label>
+        <link refid="matrix_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>mkdir.h</label>
+        <link refid="mkdir_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>chrono</label>
+      </node>
+      <node id="16">
+        <label>locationExists.h</label>
+        <link refid="locationExists_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>LineReader.h</label>
+        <link refid="LineReader_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/jack/Documents/Work/QDynamics/src/Quaternion.h</label>
+        <link refid="Quaternion_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>UnitTest.h</label>
+        <link refid="UnitTest_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Time.h</label>
+        <link refid="Time_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
         <label>dirent.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="651">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h</label>
-        <link refid="Quaternion_8h"/>
-        <childnode refid="652" relation="include">
-        </childnode>
-      </node>
-      <node id="652">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/QDynamics.h</label>
+      <node id="2">
+        <label>/home/jack/Documents/Work/QDynamics/QDynamics.h</label>
         <link refid="QDynamics_8h"/>
+      </node>
+      <node id="1">
+        <label>/home/jack/Documents/Work/QDynamics/src/Quaternion.h</label>
+        <link refid="Quaternion_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="classQDynamics_1_1Quaternion" prot="public">QDynamics::Quaternion</innerclass>
@@ -287,196 +287,196 @@
 <codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//forward<sp/>declarations<sp/>for<sp/>circularity</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Quaternion;</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="22" refid="classQDynamics_1_1Quaternion" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="27" refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/><ref refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" kindref="member">Scalar</ref>()</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[0];</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="33" refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/><ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[i+1];</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="39" refid="classQDynamics_1_1Quaternion_1ac35047116c055b5baeec49b8ebba0ede" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref><sp/><ref refid="classQDynamics_1_1Quaternion_1ac35047116c055b5baeec49b8ebba0ede" kindref="member">Vector</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
-<codeline lineno="40"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref>({<ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[1],<ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[2],Data[3]});</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="45" refid="classQDynamics_1_1Quaternion_1addca2bd1d2288c6875eab9f7b4c60881" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion_1addca2bd1d2288c6875eab9f7b4c60881" kindref="member">Quaternion</ref>()<sp/>:<sp/><ref refid="namespaceJSL" kindref="compound">JSL</ref>::<ref refid="classQDynamics_1_1Quaternion_1ac35047116c055b5baeec49b8ebba0ede" kindref="member">Vector</ref>(4)<sp/>{<sp/>};</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="48" refid="classQDynamics_1_1Quaternion_1a206147a6dbe4a9456cd655d654ef0182" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion_1a206147a6dbe4a9456cd655d654ef0182" kindref="member">Quaternion</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>q0,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref><sp/>&amp;<sp/>qVec)<sp/>:<sp/><ref refid="namespaceJSL" kindref="compound">JSL</ref>::<ref refid="classQDynamics_1_1Quaternion_1ac35047116c055b5baeec49b8ebba0ede" kindref="member">Vector</ref>(4)</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(qVec.<ref refid="classJSL_1_1Vector_1a53b26ca32061ebf41430fe2322f79c0c" kindref="member">Size</ref>()<sp/>!=<sp/>3)</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;ERROR<sp/>in<sp/>Quaternion:<sp/>Quaternions(scalar,vector)<sp/>initialisation<sp/>only<sp/>works<sp/>if<sp/>the<sp/>vector<sp/>has<sp/>dimension<sp/>3&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[0]<sp/>=<sp/>q0;</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>3;<sp/>++i)</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[i+1]<sp/>=<sp/>qVec[i];</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="62" refid="classQDynamics_1_1Quaternion_1aadf267f7d62df09bf09b04cc47704560" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion_1aadf267f7d62df09bf09b04cc47704560" kindref="member">Quaternion</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>a,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>b,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>c,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>d)<sp/>:<sp/><ref refid="namespaceJSL" kindref="compound">JSL</ref>::<ref refid="classQDynamics_1_1Quaternion_1ac35047116c055b5baeec49b8ebba0ede" kindref="member">Vector</ref>(4)</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[0]<sp/>=<sp/>a;</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[1]<sp/>=<sp/>b;</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[2]<sp/>=<sp/>c;</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[3]<sp/>=<sp/>d;</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
-<codeline lineno="70" refid="classQDynamics_1_1Quaternion_1a0a153753fb53bf466a5b1c6ab20abff6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion_1a0a153753fb53bf466a5b1c6ab20abff6" kindref="member">Quaternion</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref><sp/>&amp;<sp/>vec4)<sp/>:<sp/><ref refid="namespaceJSL" kindref="compound">JSL</ref>::<ref refid="classQDynamics_1_1Quaternion_1ac35047116c055b5baeec49b8ebba0ede" kindref="member">Vector</ref>(vec4)</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(vec4.<ref refid="classJSL_1_1Vector_1a53b26ca32061ebf41430fe2322f79c0c" kindref="member">Size</ref>()<sp/>!=<sp/>4)</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;ERROR<sp/>in<sp/>Quaternion:<sp/>Quaternions(Vector)<sp/>initialisation<sp/>only<sp/>works<sp/>if<sp/>the<sp/>vector<sp/>has<sp/>dimension<sp/>4&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="79" refid="classQDynamics_1_1Quaternion_1ad0da33a229eb9869a4b48c8302f5470e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion_1ad0da33a229eb9869a4b48c8302f5470e" kindref="member">Quaternion</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/>&amp;<sp/>vec4)<sp/>:<sp/><ref refid="namespaceJSL" kindref="compound">JSL</ref>::<ref refid="classQDynamics_1_1Quaternion_1ac35047116c055b5baeec49b8ebba0ede" kindref="member">Vector</ref>(vec4)</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(vec4.size()<sp/>!=<sp/>4)</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;ERROR<sp/>in<sp/>Quaternion:<sp/>Quaternions(Vector)<sp/>initialisation<sp/>only<sp/>works<sp/>if<sp/>the<sp/>vector<sp/>has<sp/>dimension<sp/>4&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="88" refid="classQDynamics_1_1Quaternion_1a06726eb02ffd68ccbd3adaef63c90bb9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/><ref refid="classQDynamics_1_1Quaternion_1a06726eb02ffd68ccbd3adaef63c90bb9" kindref="member">One</ref>()</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>q;</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>q[0]<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>q;</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="96" refid="classQDynamics_1_1Quaternion_1a7932eeb535080e6230e98fb4f35867c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/><ref refid="classQDynamics_1_1Quaternion_1a7932eeb535080e6230e98fb4f35867c2" kindref="member">Zero</ref>()</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>q;</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>q;</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="103" refid="classQDynamics_1_1Quaternion_1a06386710ec4308c04a72f365382472ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/><ref refid="classQDynamics_1_1Quaternion_1a06386710ec4308c04a72f365382472ce" kindref="member">Random</ref>()</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>q;</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>4;<sp/>++i)</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>q[i]<sp/>=<sp/>(double)random()<sp/>/<sp/>RAND_MAX;</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>q;</highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21" refid="classQDynamics_1_1Quaternion" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26" refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/><ref refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" kindref="member">Scalar</ref>()</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[0];</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32" refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/><ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[i+1];</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38" refid="classQDynamics_1_1Quaternion_1ac35047116c055b5baeec49b8ebba0ede" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref><sp/><ref refid="classQDynamics_1_1Quaternion_1ac35047116c055b5baeec49b8ebba0ede" kindref="member">Vector</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="39"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref>({<ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[1],<ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[2],<ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[3]});</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44" refid="classQDynamics_1_1Quaternion_1addca2bd1d2288c6875eab9f7b4c60881" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion_1addca2bd1d2288c6875eab9f7b4c60881" kindref="member">Quaternion</ref>()<sp/>:<sp/><ref refid="namespaceJSL" kindref="compound">JSL</ref>::<ref refid="classQDynamics_1_1Quaternion_1ac35047116c055b5baeec49b8ebba0ede" kindref="member">Vector</ref>(4)<sp/>{<sp/>};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classQDynamics_1_1Quaternion_1a206147a6dbe4a9456cd655d654ef0182" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion_1a206147a6dbe4a9456cd655d654ef0182" kindref="member">Quaternion</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>q0,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref><sp/>&amp;<sp/>qVec)<sp/>:<sp/><ref refid="namespaceJSL" kindref="compound">JSL</ref>::<ref refid="classQDynamics_1_1Quaternion_1ac35047116c055b5baeec49b8ebba0ede" kindref="member">Vector</ref>(4)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(qVec.<ref refid="classJSL_1_1Vector_1a53b26ca32061ebf41430fe2322f79c0c" kindref="member">Size</ref>()<sp/>!=<sp/>3)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;ERROR<sp/>in<sp/>Quaternion:<sp/>Quaternions(scalar,vector)<sp/>initialisation<sp/>only<sp/>works<sp/>if<sp/>the<sp/>vector<sp/>has<sp/>dimension<sp/>3&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[0]<sp/>=<sp/>q0;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>3;<sp/>++i)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[i+1]<sp/>=<sp/>qVec[i];</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="classQDynamics_1_1Quaternion_1aadf267f7d62df09bf09b04cc47704560" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion_1aadf267f7d62df09bf09b04cc47704560" kindref="member">Quaternion</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>a,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>b,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>c,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>d)<sp/>:<sp/><ref refid="namespaceJSL" kindref="compound">JSL</ref>::<ref refid="classQDynamics_1_1Quaternion_1ac35047116c055b5baeec49b8ebba0ede" kindref="member">Vector</ref>(4)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[0]<sp/>=<sp/>a;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[1]<sp/>=<sp/>b;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[2]<sp/>=<sp/>c;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[3]<sp/>=<sp/>d;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="69" refid="classQDynamics_1_1Quaternion_1a0a153753fb53bf466a5b1c6ab20abff6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion_1a0a153753fb53bf466a5b1c6ab20abff6" kindref="member">Quaternion</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref><sp/>&amp;<sp/>vec4)<sp/>:<sp/><ref refid="namespaceJSL" kindref="compound">JSL</ref>::<ref refid="classQDynamics_1_1Quaternion_1ac35047116c055b5baeec49b8ebba0ede" kindref="member">Vector</ref>(vec4)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(vec4.<ref refid="classJSL_1_1Vector_1a53b26ca32061ebf41430fe2322f79c0c" kindref="member">Size</ref>()<sp/>!=<sp/>4)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;ERROR<sp/>in<sp/>Quaternion:<sp/>Quaternions(Vector)<sp/>initialisation<sp/>only<sp/>works<sp/>if<sp/>the<sp/>vector<sp/>has<sp/>dimension<sp/>4&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78" refid="classQDynamics_1_1Quaternion_1ad0da33a229eb9869a4b48c8302f5470e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion_1ad0da33a229eb9869a4b48c8302f5470e" kindref="member">Quaternion</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/>&amp;<sp/>vec4)<sp/>:<sp/><ref refid="namespaceJSL" kindref="compound">JSL</ref>::<ref refid="classQDynamics_1_1Quaternion_1ac35047116c055b5baeec49b8ebba0ede" kindref="member">Vector</ref>(vec4)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(vec4.size()<sp/>!=<sp/>4)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;ERROR<sp/>in<sp/>Quaternion:<sp/>Quaternions(Vector)<sp/>initialisation<sp/>only<sp/>works<sp/>if<sp/>the<sp/>vector<sp/>has<sp/>dimension<sp/>4&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87" refid="classQDynamics_1_1Quaternion_1a06726eb02ffd68ccbd3adaef63c90bb9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/><ref refid="classQDynamics_1_1Quaternion_1a06726eb02ffd68ccbd3adaef63c90bb9" kindref="member">One</ref>()</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>q;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>q[0]<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>q;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95" refid="classQDynamics_1_1Quaternion_1a7932eeb535080e6230e98fb4f35867c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/><ref refid="classQDynamics_1_1Quaternion_1a7932eeb535080e6230e98fb4f35867c2" kindref="member">Zero</ref>()</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>q;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>q;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102" refid="classQDynamics_1_1Quaternion_1a06386710ec4308c04a72f365382472ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/><ref refid="classQDynamics_1_1Quaternion_1a06386710ec4308c04a72f365382472ce" kindref="member">Random</ref>()</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>q;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>4;<sp/>++i)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>q[i]<sp/>=<sp/>(double)random()<sp/>/<sp/>RAND_MAX;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>q;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight></codeline>
-<codeline lineno="118" refid="classQDynamics_1_1Quaternion_1a2516e87ebb14ee2d34bc22744057c87b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/><ref refid="classQDynamics_1_1Quaternion_1a2516e87ebb14ee2d34bc22744057c87b" kindref="member">Conjugate</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
-<codeline lineno="119"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion_1addca2bd1d2288c6875eab9f7b4c60881" kindref="member">Quaternion</ref>(<ref refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" kindref="member">Scalar</ref>(),<sp/>-1*<ref refid="classQDynamics_1_1Quaternion_1ac35047116c055b5baeec49b8ebba0ede" kindref="member">Vector</ref>());</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"></highlight></codeline>
-<codeline lineno="124" refid="classQDynamics_1_1Quaternion_1a2d0f1e0e8e46d1223f848da4f8b3fc2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Matrix" kindref="compound">JSL::Matrix</ref><sp/><ref refid="classQDynamics_1_1Quaternion_1a2d0f1e0e8e46d1223f848da4f8b3fc2e" kindref="member">LeftMultiplicationMatrix</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
-<codeline lineno="125"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Matrix" kindref="compound">JSL::Matrix</ref><sp/>M(4,4);</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(0,0)<sp/>=<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[0];</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>4;<sp/>++i)</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(0,i)<sp/>=<sp/>-<ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[i];</highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(i,0)<sp/>=<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[i];</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(i,i)<sp/>=<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[0];</highlight></codeline>
-<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(1,2)<sp/>=<sp/>-<ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[3];</highlight></codeline>
-<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(2,1)<sp/>=<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[3];</highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(1,3)<sp/>=<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[2];</highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(3,1)<sp/>=<sp/>-<ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[2];</highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(2,3)<sp/>=<sp/>-<ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[1];</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(3,2)<sp/>=<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[1];</highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>M;</highlight></codeline>
-<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="148" refid="classQDynamics_1_1Quaternion_1a76da0390b336de90b27e713c34a3732a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Matrix" kindref="compound">JSL::Matrix</ref><sp/><ref refid="classQDynamics_1_1Quaternion_1a76da0390b336de90b27e713c34a3732a" kindref="member">RightMultiplicationMatrix</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
-<codeline lineno="149"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Matrix" kindref="compound">JSL::Matrix</ref><sp/>M(4,4);</highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(0,0)<sp/>=<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[0];</highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>4;<sp/>++i)</highlight></codeline>
-<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(0,i)<sp/>=<sp/>-<ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[i];</highlight></codeline>
-<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(i,0)<sp/>=<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[i];</highlight></codeline>
-<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(i,i)<sp/>=<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[0];</highlight></codeline>
-<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(1,2)<sp/>=<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[3];</highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(2,1)<sp/>=<sp/>-<ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[3];</highlight></codeline>
-<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(1,3)<sp/>=<sp/>-<ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[2];</highlight></codeline>
-<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(3,1)<sp/>=<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[2];</highlight></codeline>
-<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(2,3)<sp/>=<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[1];</highlight></codeline>
-<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(3,2)<sp/>=<sp/>-<ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[1];</highlight></codeline>
-<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>M;</highlight></codeline>
-<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="172" refid="classQDynamics_1_1Quaternion_1a1bc0af90c699e7c2eba94833ae7fb105" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/><ref refid="classQDynamics_1_1Quaternion_1a1bc0af90c699e7c2eba94833ae7fb105" kindref="member">Scalar</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
-<codeline lineno="173"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[0];</highlight></codeline>
-<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="177" refid="classQDynamics_1_1Quaternion_1a061cd74a6e060beeeb781b6cf7b7f16d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/><ref refid="classQDynamics_1_1Quaternion_1a061cd74a6e060beeeb781b6cf7b7f16d" kindref="member">Vector</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
-<codeline lineno="178"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">+1];</highlight></codeline>
-<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="183"><highlight class="normal"></highlight></codeline>
-<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>JSL::Vector::operator[];</highlight></codeline>
-<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="189" refid="namespaceQDynamics_1ac40010112506831ced816640def9bc85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/><ref refid="namespaceQDynamics_1ac40010112506831ced816640def9bc85" kindref="member">operator*</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>&amp;<sp/>rhs)</highlight></codeline>
-<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scalar<sp/>=<sp/>lhs.<ref refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" kindref="member">Scalar</ref>()<sp/>*<sp/>rhs.<ref refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" kindref="member">Scalar</ref>()<sp/>-<sp/>lhs.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>().Dot(rhs.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>());</highlight></codeline>
-<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref><sp/>vec<sp/>=<sp/>lhs.<ref refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" kindref="member">Scalar</ref>()<sp/>*<sp/>rhs.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>()<sp/>+<sp/>rhs.<ref refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" kindref="member">Scalar</ref>()<sp/>*<sp/>lhs.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>()<sp/>+<sp/>lhs.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>().Cross(rhs.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>());</highlight></codeline>
-<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion_1addca2bd1d2288c6875eab9f7b4c60881" kindref="member">Quaternion</ref>(scalar,vec);</highlight></codeline>
-<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="197" refid="namespaceQDynamics_1a3382c10ce708c163d79c9fdb5c79b452" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/><ref refid="namespaceQDynamics_1ac40010112506831ced816640def9bc85" kindref="member">operator*</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classJSL_1_1Matrix" kindref="compound">JSL::Matrix</ref><sp/>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>&amp;<sp/>rhs)</highlight></codeline>
-<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>std::vector&lt;double&gt;<sp/>vTemp<sp/>=<sp/>;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref><sp/>v({rhs.<ref refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" kindref="member">Scalar</ref>(),rhs.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>(0),rhs.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>(1),rhs.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>(2)});</highlight></codeline>
-<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion_1addca2bd1d2288c6875eab9f7b4c60881" kindref="member">Quaternion</ref>(lhs<sp/>*<sp/>v);</highlight></codeline>
-<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="206" refid="namespaceQDynamics_1a48d51b6fed1449d7e9a62dac20a169af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/><ref refid="namespaceQDynamics_1a48d51b6fed1449d7e9a62dac20a169af" kindref="member">operator/</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>&amp;<sp/>rhs)</highlight></codeline>
-<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>N<sp/>=<sp/>rhs.<ref refid="classJSL_1_1Vector_1aa8af717591f5548ff471b6e4b28d7f9c" kindref="member">Norm</ref>();</highlight></codeline>
-<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(N<sp/>&lt;=<sp/>0)</highlight></codeline>
-<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;Quaternion<sp/>division<sp/>is<sp/>not<sp/>well<sp/>defined<sp/>when<sp/>the<sp/>norm<sp/>is<sp/>0&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1.0/N<sp/>*<sp/>lhs<sp/>*<sp/>rhs.<ref refid="classQDynamics_1_1Quaternion_1a2516e87ebb14ee2d34bc22744057c87b" kindref="member">Conjugate</ref>();</highlight></codeline>
-<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="218" refid="namespaceQDynamics_1aa458e456eca06783fd8c41b7ac2b1400" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/><ref refid="namespaceQDynamics_1aa458e456eca06783fd8c41b7ac2b1400" kindref="member">exp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>&amp;<sp/>a)</highlight></codeline>
-<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sc<sp/>=<sp/><ref refid="namespaceQDynamics_1aa458e456eca06783fd8c41b7ac2b1400" kindref="member">std::exp</ref>(a.<ref refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" kindref="member">Scalar</ref>());</highlight></codeline>
-<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>theta<sp/>=<sp/>a.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>().Norm();</highlight></codeline>
-<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sinc<sp/>=<sp/>sin(theta)/theta;</highlight></codeline>
-<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(theta<sp/>==<sp/>0)</highlight></codeline>
-<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sinc<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>base(cos(theta),<sp/>sinc<sp/>*<sp/>a.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>());</highlight></codeline>
-<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sc<sp/>*<sp/>base;</highlight></codeline>
-<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="230"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="classQDynamics_1_1Quaternion_1a2516e87ebb14ee2d34bc22744057c87b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/><ref refid="classQDynamics_1_1Quaternion_1a2516e87ebb14ee2d34bc22744057c87b" kindref="member">Conjugate</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="118"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion_1addca2bd1d2288c6875eab9f7b4c60881" kindref="member">Quaternion</ref>(<ref refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" kindref="member">Scalar</ref>(),<sp/>-1*<ref refid="classQDynamics_1_1Quaternion_1ac35047116c055b5baeec49b8ebba0ede" kindref="member">Vector</ref>());</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="classQDynamics_1_1Quaternion_1a2d0f1e0e8e46d1223f848da4f8b3fc2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Matrix" kindref="compound">JSL::Matrix</ref><sp/><ref refid="classQDynamics_1_1Quaternion_1a2d0f1e0e8e46d1223f848da4f8b3fc2e" kindref="member">LeftMultiplicationMatrix</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="124"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Matrix" kindref="compound">JSL::Matrix</ref><sp/>M(4,4);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(0,0)<sp/>=<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[0];</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>4;<sp/>++i)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(0,i)<sp/>=<sp/>-<ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[i];</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(i,0)<sp/>=<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[i];</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(i,i)<sp/>=<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[0];</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(1,2)<sp/>=<sp/>-<ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[3];</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(2,1)<sp/>=<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[3];</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(1,3)<sp/>=<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[2];</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(3,1)<sp/>=<sp/>-<ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[2];</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(2,3)<sp/>=<sp/>-<ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[1];</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(3,2)<sp/>=<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[1];</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>M;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="147" refid="classQDynamics_1_1Quaternion_1a76da0390b336de90b27e713c34a3732a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Matrix" kindref="compound">JSL::Matrix</ref><sp/><ref refid="classQDynamics_1_1Quaternion_1a76da0390b336de90b27e713c34a3732a" kindref="member">RightMultiplicationMatrix</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="148"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Matrix" kindref="compound">JSL::Matrix</ref><sp/>M(4,4);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(0,0)<sp/>=<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[0];</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>4;<sp/>++i)</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(0,i)<sp/>=<sp/>-<ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[i];</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(i,0)<sp/>=<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[i];</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(i,i)<sp/>=<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[0];</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(1,2)<sp/>=<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[3];</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(2,1)<sp/>=<sp/>-<ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[3];</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(1,3)<sp/>=<sp/>-<ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[2];</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(3,1)<sp/>=<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[2];</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(2,3)<sp/>=<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[1];</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M(3,2)<sp/>=<sp/>-<ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[1];</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>M;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="171" refid="classQDynamics_1_1Quaternion_1a1bc0af90c699e7c2eba94833ae7fb105" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/><ref refid="classQDynamics_1_1Quaternion_1a1bc0af90c699e7c2eba94833ae7fb105" kindref="member">Scalar</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="172"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[0];</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176" refid="classQDynamics_1_1Quaternion_1a061cd74a6e060beeeb781b6cf7b7f16d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/><ref refid="classQDynamics_1_1Quaternion_1a061cd74a6e060beeeb781b6cf7b7f16d" kindref="member">Vector</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="177"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">+1];</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>JSL::Vector::operator[];</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="188" refid="namespaceQDynamics_1ac40010112506831ced816640def9bc85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/><ref refid="namespaceQDynamics_1ac40010112506831ced816640def9bc85" kindref="member">operator*</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scalar<sp/>=<sp/>lhs.<ref refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" kindref="member">Scalar</ref>()<sp/>*<sp/>rhs.<ref refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" kindref="member">Scalar</ref>()<sp/>-<sp/>lhs.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>().Dot(rhs.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>());</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref><sp/>vec<sp/>=<sp/>lhs.<ref refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" kindref="member">Scalar</ref>()<sp/>*<sp/>rhs.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>()<sp/>+<sp/>rhs.<ref refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" kindref="member">Scalar</ref>()<sp/>*<sp/>lhs.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>()<sp/>+<sp/>lhs.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>().Cross(rhs.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>());</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref>(scalar,vec);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="196" refid="namespaceQDynamics_1a3382c10ce708c163d79c9fdb5c79b452" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/><ref refid="namespaceQDynamics_1ac40010112506831ced816640def9bc85" kindref="member">operator*</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classJSL_1_1Matrix" kindref="compound">JSL::Matrix</ref><sp/>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>std::vector&lt;double&gt;<sp/>vTemp<sp/>=<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref><sp/>v({rhs.<ref refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" kindref="member">Scalar</ref>(),rhs.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>(0),rhs.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>(1),rhs.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>(2)});</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref>(lhs<sp/>*<sp/>v);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="205" refid="namespaceQDynamics_1a48d51b6fed1449d7e9a62dac20a169af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/><ref refid="namespaceQDynamics_1a48d51b6fed1449d7e9a62dac20a169af" kindref="member">operator/</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>N<sp/>=<sp/>rhs.<ref refid="classJSL_1_1Vector_1aa8af717591f5548ff471b6e4b28d7f9c" kindref="member">Norm</ref>();</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(N<sp/>&lt;=<sp/>0)</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;Quaternion<sp/>division<sp/>is<sp/>not<sp/>well<sp/>defined<sp/>when<sp/>the<sp/>norm<sp/>is<sp/>0&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1.0/N<sp/>*<sp/>lhs<sp/>*<sp/>rhs.<ref refid="classQDynamics_1_1Quaternion_1a2516e87ebb14ee2d34bc22744057c87b" kindref="member">Conjugate</ref>();</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="217" refid="namespaceQDynamics_1aa458e456eca06783fd8c41b7ac2b1400" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/><ref refid="namespaceQDynamics_1aa458e456eca06783fd8c41b7ac2b1400" kindref="member">exp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>&amp;<sp/>a)</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sc<sp/>=<sp/><ref refid="namespaceQDynamics_1aa458e456eca06783fd8c41b7ac2b1400" kindref="member">std::exp</ref>(a.<ref refid="classQDynamics_1_1Quaternion_1a8121c47a579baffb9e692b8cd2c7dee7" kindref="member">Scalar</ref>());</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>theta<sp/>=<sp/>a.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>().Norm();</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sinc<sp/>=<sp/>sin(theta)/theta;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(theta<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sinc<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>base(cos(theta),<sp/>sinc<sp/>*<sp/>a.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>());</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sc<sp/>*<sp/>base;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h"/>
+    <location file="/home/jack/Documents/Work/QDynamics/src/Quaternion.h"/>
   </compounddef>
 </doxygen>

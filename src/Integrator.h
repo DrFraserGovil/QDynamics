@@ -89,7 +89,7 @@ namespace QDynamics
 			//! Returns the quaternionic derivative of the neo-potential V (equal to the derivative of the rotation potential U), given the current value of Integrator::q and the current time \param t The current time \return The value of the quaternionic gradient
 			virtual Quaternion GradU(double t);
 			
-			//! Returns the current value of the rotation potential U, given the current value of Integrator::q and the current time. Unlike GradU(), it is not critical that this function be 100% correct, as it is only used by the Integrator::Hamiltonian function as bookkeeping for the current energy. If you do not wish to track the current energy, you may neglect this function.  \param t The current time \param The current potential energy of the system
+			//! Returns the current value of the rotation potential U, given the current value of Integrator::q and the current time. Unlike GradU(), it is not critical that this function be 100% correct, as it is only used by the Integrator::Hamiltonian function as bookkeeping for the current energy. If you do not wish to track the current energy, you may neglect this function.  \param t The current time \return The current potential energy of the system
 			virtual double U(double t);
 		private:
 			int BufferPos; //!< The current write-index of Integrator::Buffer
@@ -155,7 +155,7 @@ namespace QDynamics
 			 * Prepares the Integrator for a new computation loop. Called at the start of an Evolve() process, it wipes the buffer and prepares the output file. The inputs are simply those passed to Evolve()
 			 * \param q0 The initial position Quaternion
 				\param p0 The initial momentum Quaternion
-				\param J The diagonals of the moment of inertia vector (we have implicitly assumed the system triaxial is such that J is diagonal)
+				\param Jin The diagonals of the moment of inertia vector (we have implicitly assumed the system triaxial is such that J is diagonal)
 				\param saveFolder The location into which the Integrator::Buffer output is saved.
 			 * 
 			*/

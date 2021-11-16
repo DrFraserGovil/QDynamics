@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="vector_8h" kind="file" language="C++">
     <compoundname>vector.h</compoundname>
     <includes local="no">vector</includes>
@@ -7,140 +7,140 @@
     <includes local="no">string.h</includes>
     <includes local="no">iostream</includes>
     <includes local="no">math.h</includes>
-    <includedby refid="Maths_8h" local="yes">/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Maths/Maths.h</includedby>
-    <includedby refid="matrix_8h" local="yes">/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Maths/matrix.h</includedby>
-    <includedby refid="Q__temp_8h" local="yes">/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Maths/Q_temp.h</includedby>
+    <includedby refid="Maths_8h" local="yes">/home/jack/Documents/Work/QDynamics/lib/JSL/Maths/Maths.h</includedby>
+    <includedby refid="matrix_8h" local="yes">/home/jack/Documents/Work/QDynamics/lib/JSL/Maths/matrix.h</includedby>
+    <includedby refid="Q__temp_8h" local="yes">/home/jack/Documents/Work/QDynamics/lib/JSL/Maths/Q_temp.h</includedby>
     <incdepgraph>
-      <node id="269">
+      <node id="3">
         <label>stdexcept</label>
       </node>
-      <node id="267">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Maths/vector.h</label>
+      <node id="1">
+        <label>/home/jack/Documents/Work/QDynamics/lib/JSL/Maths/vector.h</label>
         <link refid="vector_8h"/>
-        <childnode refid="268" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="269" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="270" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="271" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="272" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="270">
+      <node id="4">
         <label>string.h</label>
       </node>
-      <node id="268">
+      <node id="2">
         <label>vector</label>
       </node>
-      <node id="272">
+      <node id="6">
         <label>math.h</label>
       </node>
-      <node id="271">
+      <node id="5">
         <label>iostream</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="279">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h</label>
-        <link refid="Quaternion_8h"/>
-        <childnode refid="278" relation="include">
-        </childnode>
-      </node>
-      <node id="280">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h</label>
+      <node id="8">
+        <label>/home/jack/Documents/Work/QDynamics/src/Integrator.h</label>
         <link refid="Integrator_8h"/>
-        <childnode refid="278" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="281" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="282" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="283" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="286">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Maths/Q_temp.h</label>
+      <node id="10">
+        <label>/home/jack/Documents/Work/QDynamics/src/Magi.h</label>
+        <link refid="Magi_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/Testing.h</label>
+        <link refid="Testing_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/jack/Documents/Work/QDynamics/lib/JSL/Maths/vector.h</label>
+        <link refid="vector_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/home/jack/Documents/Work/QDynamics/lib/JSL/Maths/Q_temp.h</label>
         <link refid="Q__temp_8h"/>
       </node>
-      <node id="282">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h</label>
-        <link refid="Magi_8h"/>
-        <childnode refid="278" relation="include">
-        </childnode>
-      </node>
-      <node id="281">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Brute.h</label>
-        <link refid="Brute_8h"/>
-        <childnode refid="278" relation="include">
-        </childnode>
-      </node>
-      <node id="276">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/Testing_UnitTests.h</label>
-        <link refid="Testing__UnitTests_8h"/>
-        <childnode refid="277" relation="include">
-        </childnode>
-      </node>
-      <node id="273">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Maths/vector.h</label>
-        <link refid="vector_8h"/>
-        <childnode refid="274" relation="include">
-        </childnode>
-        <childnode refid="285" relation="include">
-        </childnode>
-        <childnode refid="286" relation="include">
-        </childnode>
-      </node>
-      <node id="284">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/src/DynamicOperations.h</label>
-        <link refid="DynamicOperations_8h"/>
-        <childnode refid="280" relation="include">
-        </childnode>
-      </node>
-      <node id="274">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Maths/Maths.h</label>
-        <link refid="Maths_8h"/>
-        <childnode refid="275" relation="include">
-        </childnode>
-      </node>
-      <node id="285">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Maths/matrix.h</label>
-        <link refid="matrix_8h"/>
-        <childnode refid="274" relation="include">
-        </childnode>
-        <childnode refid="286" relation="include">
-        </childnode>
-      </node>
-      <node id="277">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/Testing.h</label>
-        <link refid="Testing_8h"/>
-        <childnode refid="275" relation="include">
-        </childnode>
-      </node>
-      <node id="275">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/JSL.h</label>
+      <node id="3">
+        <label>/home/jack/Documents/Work/QDynamics/lib/JSL/JSL.h</label>
         <link refid="JSL_8h"/>
-        <childnode refid="276" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="278" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="279" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="280" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="284" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="283">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Symi.h</label>
+      <node id="12">
+        <label>/home/jack/Documents/Work/QDynamics/src/DynamicOperations.h</label>
+        <link refid="DynamicOperations_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/Testing_UnitTests.h</label>
+        <link refid="Testing__UnitTests_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/home/jack/Documents/Work/QDynamics/src/Symi.h</label>
         <link refid="Symi_8h"/>
-        <childnode refid="278" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="278">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/QDynamics.h</label>
+      <node id="2">
+        <label>/home/jack/Documents/Work/QDynamics/lib/JSL/Maths/Maths.h</label>
+        <link refid="Maths_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/home/jack/Documents/Work/QDynamics/lib/JSL/Maths/matrix.h</label>
+        <link refid="matrix_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/home/jack/Documents/Work/QDynamics/src/Brute.h</label>
+        <link refid="Brute_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/jack/Documents/Work/QDynamics/QDynamics.h</label>
         <link refid="QDynamics_8h"/>
+      </node>
+      <node id="7">
+        <label>/home/jack/Documents/Work/QDynamics/src/Quaternion.h</label>
+        <link refid="Quaternion_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="classJSL_1_1Vector" prot="public">JSL::Vector</innerclass>
@@ -261,7 +261,7 @@
 <codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classJSL_1_1Vector_1a84eb32f5917a770c895e106834a6c05d" kindref="member">nElements</ref>;<sp/>++i)</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outString<sp/>+=<sp/>std::to_string(<ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[i]);</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/>nElements<sp/>-<sp/>1)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/><ref refid="classJSL_1_1Vector_1a84eb32f5917a770c895e106834a6c05d" kindref="member">nElements</ref><sp/>-<sp/>1)</highlight></codeline>
 <codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outString<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -275,7 +275,7 @@
 <codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classJSL_1_1Vector_1a84eb32f5917a770c895e106834a6c05d" kindref="member">nElements</ref>;<sp/>++i)</highlight></codeline>
 <codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>std::fixed<sp/>&lt;&lt;<sp/><ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[i];</highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/>nElements<sp/>-<sp/>1)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/><ref refid="classJSL_1_1Vector_1a84eb32f5917a770c895e106834a6c05d" kindref="member">nElements</ref><sp/>-<sp/>1)</highlight></codeline>
 <codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -349,7 +349,7 @@
 <codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classJSL_1_1Vector_1ad7dc3af5e90b59e3ba2efc458e192a4c" kindref="member">isnan</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classJSL_1_1Vector_1a84eb32f5917a770c895e106834a6c05d" kindref="member">nElements</ref>;<sp/>++i)</highlight></codeline>
 <codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isnan<sp/>=<sp/>isnan<sp/>||<sp/>std::isnan(<ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[i]);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Vector_1ad7dc3af5e90b59e3ba2efc458e192a4c" kindref="member">isnan</ref><sp/>=<sp/><ref refid="classJSL_1_1Vector_1ad7dc3af5e90b59e3ba2efc458e192a4c" kindref="member">isnan</ref><sp/>||<sp/>std::isnan(<ref refid="classJSL_1_1Vector_1aec102ab8391080ddaedeb4605ef40c5c" kindref="member">Data</ref>[i]);</highlight></codeline>
 <codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classJSL_1_1Vector_1ad7dc3af5e90b59e3ba2efc458e192a4c" kindref="member">isnan</ref>;</highlight></codeline>
 <codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -363,7 +363,7 @@
 <codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="232" refid="classJSL_1_1Vector_1ab081a68e1fc526f4bf866de0ba61a09b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classJSL_1_1Vector_1ab081a68e1fc526f4bf866de0ba61a09b" kindref="member">outOfBoundsError</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="233"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;JSL::Vector<sp/>Error:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(idx)<sp/>+</highlight><highlight class="stringliteral">&quot;<sp/>exceeds<sp/>the<sp/>length<sp/>of<sp/>this<sp/>vector<sp/>(&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(nElements)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;).&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;JSL::Vector<sp/>Error:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(idx)<sp/>+</highlight><highlight class="stringliteral">&quot;<sp/>exceeds<sp/>the<sp/>length<sp/>of<sp/>this<sp/>vector<sp/>(&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(<ref refid="classJSL_1_1Vector_1a84eb32f5917a770c895e106834a6c05d" kindref="member">nElements</ref>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;).&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -447,7 +447,7 @@
 <codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//To<sp/>do<sp/>it<sp/>the<sp/>`clever&apos;<sp/>way<sp/>would<sp/>be<sp/>to<sp/>redirect<sp/>this<sp/>to<sp/>return<sp/>scalar<sp/>+<sp/>-1*rhs,<sp/>but<sp/>this<sp/>would<sp/>involve<sp/>two<sp/>separate<sp/>loops<sp/>over<sp/>the<sp/>array.<sp/>Annoyingly,<sp/>turns<sp/>out<sp/>to<sp/>be<sp/>better<sp/>to<sp/>just<sp/>copy<sp/>the<sp/>loop<sp/>code<sp/>and<sp/>do<sp/>it<sp/>only<sp/>once.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classJSL_1_1Vector" kindref="compound">JSL::Vector</ref><sp/>output(rhs.<ref refid="classJSL_1_1Vector_1a53b26ca32061ebf41430fe2322f79c0c" kindref="member">Size</ref>());</highlight></codeline>
-<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>output.Size();<sp/>++i)</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>output.<ref refid="classJSL_1_1Vector_1a53b26ca32061ebf41430fe2322f79c0c" kindref="member">Size</ref>();<sp/>++i)</highlight></codeline>
 <codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>output[i]<sp/>=<sp/>scalar<sp/>-<sp/>rhs[i];</highlight></codeline>
 <codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -547,6 +547,6 @@
 <codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="430"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Maths/vector.h"/>
+    <location file="/home/jack/Documents/Work/QDynamics/lib/JSL/Maths/vector.h"/>
   </compounddef>
 </doxygen>

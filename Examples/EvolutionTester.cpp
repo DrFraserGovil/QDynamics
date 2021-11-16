@@ -56,30 +56,30 @@ void TrivialTest(double T, double dT,int skipResolution,bool bruteOnly)
 	Quaternion pInit= 2 * qInit * Mult(J,wInit);
 	
 	std::string folder = "Output/Trivial/";
-	QDynamics::Brute B(T,dT/10,skipResolution);
+	QDynamics::BruteInt B(T,dT/10,skipResolution);
 	B.Evolve(qInit,pInit,J,folder);
 	
 	if (!bruteOnly)
 	{
 		
 	
-		QDynamics::Magi M1(1,100,T,dT,skipResolution);
-		M1.Evolve(qInit,pInit,J,folder);
+		//~ QDynamics::Magi M1(1,100,T,dT,skipResolution);
+		//~ M1.Evolve(qInit,pInit,J,folder);
 	
-		QDynamics::Magi M2(2,100,T,dT,skipResolution);
-		M2.Evolve(qInit,pInit,J,folder);
+		//~ QDynamics::Magi M2(2,100,T,dT,skipResolution);
+		//~ M2.Evolve(qInit,pInit,J,folder);
 		
-		QDynamics::Leapi L1(1,50,T,dT,skipResolution);
-		L1.Evolve(qInit,pInit,J,folder);
+		//~ QDynamics::Leapi L1(1,50,T,dT,skipResolution);
+		//~ L1.Evolve(qInit,pInit,J,folder);
 		
-		QDynamics::Leapi L2(2,50,T,dT,skipResolution);
-		L2.Evolve(qInit,pInit,J,folder);
+		//~ QDynamics::Leapi L2(2,50,T,dT,skipResolution);
+		//~ L2.Evolve(qInit,pInit,J,folder);
 		
-		QDynamics::Symi S1(1,T,dT,skipResolution);
-		S1.Evolve(qInit,pInit,J,folder);
+		//~ QDynamics::Symi S1(1,T,dT,skipResolution);
+		//~ S1.Evolve(qInit,pInit,J,folder);
 		
-		QDynamics::SymiL SL1(1,T,dT,skipResolution);
-		SL1.Evolve(qInit,pInit,J,folder);
+		//~ QDynamics::SymiL SL1(1,T,dT,skipResolution);
+		//~ SL1.Evolve(qInit,pInit,J,folder);
 	}
 }
 
@@ -100,22 +100,22 @@ void HarmonicTest(double T, double dT,bool bruteOnly,int skipResolution)
 	std::string folder = "Output/Harmonic/";
 	
 	
-	QDynamics::Brute B(T,dT,skipResolution);
+	QDynamics::BruteInt B(T,dT,skipResolution);
 	B.Evolve(qInit,pInit,J,folder);
 	if (!bruteOnly)
 	{
 	
-		QDynamics::Magi M1(1,50,T,dT,skipResolution);
+		QDynamics::Magi<1, QDynamics::Euler> M1(T,dT,50,skipResolution);
 		M1.Evolve(qInit,pInit,J,folder);
 
-		QDynamics::Leapi L1(1,100,T,dT,skipResolution);
-		L1.Evolve(qInit,pInit,J,folder);
+		//~ QDynamics::Leapi L1(1,100,T,dT,skipResolution);
+		//~ L1.Evolve(qInit,pInit,J,folder);
 		
 		//~ Leapi L2(2,50,T,dT,skipResolution);
 		//~ L2.Evolve(qInit,pInit,J,folder);
 		
-		QDynamics::Symi S1(1,T,dT,skipResolution);
-		S1.Evolve(qInit,pInit,J,folder);
+		//~ QDynamics::Symi S1(1,T,dT,skipResolution);
+		//~ S1.Evolve(qInit,pInit,J,folder);
 		
 		//~ Symi S2(2,T,dT,skipResolution);
 		//~ S2.Evolve(qInit,pInit,J,folder);
@@ -146,7 +146,10 @@ int main(int argc, char * argv[])
 		}
 		//~ TrivialTest(T,dT/pow(10,i),1*pow(10,i),bruteOnly);
 
-		HarmonicTest(T,dT/pow(10,i),bruteOnly,10*pow(10,i));
+		//~ HarmonicTest(T,dT/pow(10,i),bruteOnly,10*pow(10,i));
 	}
+	
+	QDynamics::Symi<3,QDynamics::Brute> B(100,0.1,20);
+	std::cout << B.Order << "  " << B.StepMode << std::endl;
 
 }

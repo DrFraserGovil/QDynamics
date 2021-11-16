@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="classQDynamics_1_1SymiL" kind="class" language="C++" prot="public">
     <compoundname>QDynamics::SymiL</compoundname>
     <basecompoundref refid="classQDynamics_1_1Symi" prot="public" virt="non-virtual">QDynamics::Symi</basecompoundref>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Symi.h" line="70" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Symi.h" bodystart="70" bodyend="73"/>
+        <location file="/home/jack/Documents/Work/QDynamics/src/Symi.h" line="70" column="1" bodyfile="/home/jack/Documents/Work/QDynamics/src/Symi.h" bodystart="70" bodyend="73"/>
       </memberdef>
       <memberdef kind="function" id="classQDynamics_1_1SymiL_1acdb13fb6bc527f687385dbdb05ff6e17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Symi.h" line="74" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Symi.h" bodystart="74" bodyend="77"/>
+        <location file="/home/jack/Documents/Work/QDynamics/src/Symi.h" line="74" column="1" bodyfile="/home/jack/Documents/Work/QDynamics/src/Symi.h" bodystart="74" bodyend="77"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -72,20 +72,23 @@
           <declname>t</declname>
         </param>
         <briefdescription>
-<para>In the <ref refid="classQDynamics_1_1Integrator" kindref="compound">Integrator</ref> base class, this is an empty function. Child members will mainly focus on overloading this function to their own update formula. </para>        </briefdescription>
+<para>In the <ref refid="classQDynamics_1_1Integrator" kindref="compound">Integrator</ref> base class, this is an empty function. Child members will mainly focus on overloading this function to their own update formula. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>t</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The current time of the integrator </para></parameterdescription>
+<para>The current time of the integrator </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>        </detaileddescription>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Symi.h" line="81" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Symi.h" bodystart="81" bodyend="102"/>
+        <location file="/home/jack/Documents/Work/QDynamics/src/Symi.h" line="81" column="14" bodyfile="/home/jack/Documents/Work/QDynamics/src/Symi.h" bodystart="81" bodyend="102"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -93,77 +96,86 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="83">
+      <node id="4">
         <label>QDynamics::Integrator</label>
         <link refid="classQDynamics_1_1Integrator"/>
       </node>
-      <node id="81">
+      <node id="2">
         <label>QDynamics::Symi</label>
         <link refid="classQDynamics_1_1Symi"/>
-        <childnode refid="82" relation="public-inheritance">
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="82">
+      <node id="3">
         <label>QDynamics::Magi</label>
         <link refid="classQDynamics_1_1Magi"/>
-        <childnode refid="83" relation="public-inheritance">
+        <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="80">
+      <node id="1">
         <label>QDynamics::SymiL</label>
         <link refid="classQDynamics_1_1SymiL"/>
-        <childnode refid="81" relation="public-inheritance">
+        <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="87">
+      <node id="4">
         <label>QDynamics::Integrator</label>
         <link refid="classQDynamics_1_1Integrator"/>
-        <childnode refid="88" relation="usage">
+        <childnode refid="5" relation="usage">
           <edgelabel>J</edgelabel>
         </childnode>
-        <childnode refid="89" relation="usage">
+        <childnode refid="6" relation="usage">
           <edgelabel>w</edgelabel>
           <edgelabel>L</edgelabel>
           <edgelabel>p</edgelabel>
           <edgelabel>q</edgelabel>
         </childnode>
       </node>
-      <node id="85">
+      <node id="2">
         <label>QDynamics::Symi</label>
         <link refid="classQDynamics_1_1Symi"/>
-        <childnode refid="86" relation="public-inheritance">
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="88">
+      <node id="5">
         <label>JSL::Vector</label>
         <link refid="classJSL_1_1Vector"/>
       </node>
-      <node id="89">
+      <node id="6">
         <label>QDynamics::Quaternion</label>
         <link refid="classQDynamics_1_1Quaternion"/>
-        <childnode refid="88" relation="public-inheritance">
+        <childnode refid="5" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="86">
+      <node id="3">
         <label>QDynamics::Magi</label>
         <link refid="classQDynamics_1_1Magi"/>
-        <childnode refid="87" relation="public-inheritance">
+        <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="84">
+      <node id="1">
         <label>QDynamics::SymiL</label>
         <link refid="classQDynamics_1_1SymiL"/>
-        <childnode refid="85" relation="public-inheritance">
+        <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Symi.h" line="68" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/src/Symi.h" bodystart="67" bodyend="103"/>
+    <location file="/home/jack/Documents/Work/QDynamics/src/Symi.h" line="68" column="1" bodyfile="/home/jack/Documents/Work/QDynamics/src/Symi.h" bodystart="67" bodyend="103"/>
     <listofallmembers>
+      <member refid="classQDynamics_1_1Integrator_1af8889c2bbe10237a8dd8c46b25b15d29" prot="private" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>Buffer</name></member>
+      <member refid="classQDynamics_1_1Integrator_1ae62176188110c0dcea7c65ba429d1abe" prot="private" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>BufferPos</name></member>
+      <member refid="classQDynamics_1_1Integrator_1acbafc2a1b2b19f230c6dfd8924cb36dd" prot="private" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>BufferSize</name></member>
+      <member refid="classQDynamics_1_1Integrator_1ae80ab509b96a9b996934d9ef127f5137" prot="private" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>CreateFullName</name></member>
+      <member refid="classQDynamics_1_1Integrator_1abab707f49ba0ae6701db5dbcdf86861f" prot="private" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>CurrentHashes</name></member>
       <member refid="classQDynamics_1_1Integrator_1a4b921b312775194b77c2c85f93add84e" prot="public" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>Evolve</name></member>
       <member refid="classQDynamics_1_1Integrator_1a19ed0b9864ebe762914cee04cb0ad4b3" prot="protected" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>FileName</name></member>
+      <member refid="classQDynamics_1_1Integrator_1ae893dd6b0d041de777e25a99f42886c3" prot="private" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>FinalHash</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a571bd4098f5d245bf46cf7683dcc554a" prot="private" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>FlushBuffer</name></member>
       <member refid="classQDynamics_1_1Integrator_1a4688fbccd8b0dc5c9a73dddac66b486f" prot="protected" virt="virtual"><scope>QDynamics::SymiL</scope><name>GradU</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a816743f6efb41b0b29243ff3bdaa4c9d" prot="private" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>Hamiltonian</name></member>
+      <member refid="classQDynamics_1_1Integrator_1aa1afd442ef37708fcadb45ca8e7958f5" prot="private" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>Initialise</name></member>
       <member refid="classQDynamics_1_1Integrator_1a677dd555cee316d6d456b7da258c4385" prot="public" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>Integrator</name></member>
       <member refid="classQDynamics_1_1Integrator_1aa469124cb408fadbaa540555dfabee33" prot="public" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>Integrator</name></member>
       <member refid="classQDynamics_1_1Integrator_1a7b99b22475321b34c1624bded3489954" prot="protected" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>J</name></member>
@@ -173,10 +185,13 @@
       <member refid="classQDynamics_1_1Magi_1a04b85c8aa0e9549c750956c5f781433b" prot="protected" virt="virtual"><scope>QDynamics::SymiL</scope><name>Magnus</name></member>
       <member refid="classQDynamics_1_1Symi_1a4cea691ad899227f92004dd666180415" prot="protected" virt="virtual"><scope>QDynamics::SymiL</scope><name>Magnus_Compute</name></member>
       <member refid="classQDynamics_1_1Integrator_1aa3e27d68428619ab4083b2d42ef8924c" prot="protected" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>Name</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a00be60876ae62ef0d1555a6cc0ce52a5" prot="private" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>NHashes</name></member>
       <member refid="classQDynamics_1_1Magi_1ac9ff1c2f4ea0dcc30f1ee52b0894c9e9" prot="protected" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>Order</name></member>
       <member refid="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" prot="protected" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>p</name></member>
       <member refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" prot="protected" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>q</name></member>
       <member refid="classQDynamics_1_1Magi_1a629449f541590040a7dfb98ca68cf97b" prot="protected" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>Resolution</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a95e110d6b14003db39f8a52180b97870" prot="private" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>SkipID</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a409e18faeeefa5fb63f7bcce3eb0e381" prot="private" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>Skips</name></member>
       <member refid="classQDynamics_1_1Symi_1afc73292268197d37fad6716aa6bb5976" prot="public" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>Symi</name></member>
       <member refid="classQDynamics_1_1Symi_1a2e248bf5141814ca1e8285227d26d4bc" prot="public" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>Symi</name></member>
       <member refid="classQDynamics_1_1SymiL_1ac220b2a8cccf6c3c8ca0d0f79c094fe7" prot="public" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>SymiL</name></member>
@@ -186,7 +201,9 @@
       <member refid="classQDynamics_1_1Integrator_1afa838ba8dfb0fbde1f77c6d2a45a9dd0" prot="protected" virt="virtual"><scope>QDynamics::SymiL</scope><name>U</name></member>
       <member refid="classQDynamics_1_1Magi_1a11af2e624714857cf13343f1745f2fa8" prot="public" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>unlock</name></member>
       <member refid="classQDynamics_1_1Magi_1aba1aa111cd53a194854a2a8ac4b06b32" prot="public" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>unlocked</name></member>
+      <member refid="classQDynamics_1_1Integrator_1af613a42e489de2d041673fd5be0ebb61" prot="private" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>UpdateBuffer</name></member>
       <member refid="classQDynamics_1_1SymiL_1a28d23793abeb8f40c9d9ec069d67debb" prot="private" virt="virtual"><scope>QDynamics::SymiL</scope><name>UpdatePosition</name></member>
+      <member refid="classQDynamics_1_1Integrator_1a88dc286b39899bdec60c040427d663cc" prot="private" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>UpdateProgressBar</name></member>
       <member refid="classQDynamics_1_1Integrator_1a0241b2e2c87418323330999d1f8e12d0" prot="protected" virt="non-virtual"><scope>QDynamics::SymiL</scope><name>w</name></member>
     </listofallmembers>
   </compounddef>

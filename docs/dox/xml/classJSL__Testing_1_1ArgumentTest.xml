@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="classJSL__Testing_1_1ArgumentTest" kind="class" language="C++" prot="public">
     <compoundname>JSL_Testing::ArgumentTest</compoundname>
     <basecompoundref refid="classJSL_1_1UnitTest" prot="public" virt="non-virtual">JSL::UnitTest</basecompoundref>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/Testing_UnitTests.h" line="250" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/Testing_UnitTests.h" bodystart="250" bodyend="256"/>
+        <location file="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/Testing_UnitTests.h" line="250" column="1" bodyfile="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/Testing_UnitTests.h" bodystart="250" bodyend="256"/>
       </memberdef>
       <memberdef kind="function" id="classJSL__Testing_1_1ArgumentTest_1a1c4c626d57e448da86866ef414308e97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -25,12 +25,13 @@
         <name>Run_Test</name>
         <reimplements refid="classJSL_1_1UnitTest_1aa8369ab1ce2a537bff2ea7e1c8818490">Run_Test</reimplements>
         <briefdescription>
-<para>All children which want to take advantage of the <ref refid="classJSL_1_1UnitTest_1aabec19b081be8a428f12e4b5e3dc2a9c" kindref="member">BufferedTest()</ref> command should have the bulk of their testing within this command. </para>        </briefdescription>
+<para>All children which want to take advantage of the <ref refid="classJSL_1_1UnitTest_1aabec19b081be8a428f12e4b5e3dc2a9c" kindref="member">BufferedTest()</ref> command should have the bulk of their testing within this command. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/Testing_UnitTests.h" line="257" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/Testing_UnitTests.h" bodystart="257" bodyend="325"/>
+        <location file="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/Testing_UnitTests.h" line="257" column="6" bodyfile="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/Testing_UnitTests.h" bodystart="257" bodyend="325"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -38,30 +39,30 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="8">
+      <node id="2">
         <label>JSL::UnitTest</label>
         <link refid="classJSL_1_1UnitTest"/>
       </node>
-      <node id="7">
+      <node id="1">
         <label>JSL_Testing::ArgumentTest</label>
         <link refid="classJSL__Testing_1_1ArgumentTest"/>
-        <childnode refid="8" relation="public-inheritance">
+        <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="10">
+      <node id="2">
         <label>JSL::UnitTest</label>
         <link refid="classJSL_1_1UnitTest"/>
       </node>
-      <node id="9">
+      <node id="1">
         <label>JSL_Testing::ArgumentTest</label>
         <link refid="classJSL__Testing_1_1ArgumentTest"/>
-        <childnode refid="10" relation="public-inheritance">
+        <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/Testing_UnitTests.h" line="248" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/Testing_UnitTests.h" bodystart="247" bodyend="326"/>
+    <location file="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/Testing_UnitTests.h" line="248" column="1" bodyfile="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/Testing_UnitTests.h" bodystart="247" bodyend="326"/>
     <listofallmembers>
       <member refid="classJSL__Testing_1_1ArgumentTest_1a3d83658826bd70b33349e53a7326ae5a" prot="public" virt="non-virtual"><scope>JSL_Testing::ArgumentTest</scope><name>ArgumentTest</name></member>
       <member refid="classJSL_1_1UnitTest_1a3629d1bca071da7a2af6b7de29be1430" prot="protected" virt="non-virtual"><scope>JSL_Testing::ArgumentTest</scope><name>basicConditionCheck</name></member>

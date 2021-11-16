@@ -9,6 +9,7 @@ An integrator is a section of code which is capable of approximating the evoluti
 
 .. toctree::
    integrator_chassis
+   brute
    :maxdepth: 2
    :caption: Contents:
 	

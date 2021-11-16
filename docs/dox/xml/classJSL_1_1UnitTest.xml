@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="classJSL_1_1UnitTest" kind="class" language="C++" prot="public">
     <compoundname>JSL::UnitTest</compoundname>
     <derivedcompoundref refid="classJSL__Testing_1_1ArgumentTest" prot="public" virt="non-virtual">JSL_Testing::ArgumentTest</derivedcompoundref>
@@ -16,12 +16,13 @@
         <argsstring></argsstring>
         <name>Name</name>
         <briefdescription>
-<para>The name by which the <ref refid="classJSL_1_1UnitTest" kindref="compound">UnitTest</ref> refers to itself. This should be fairly descriptive, to help locating the failing unit test (don&apos;t give them all the same name!) </para>        </briefdescription>
+<para>The name by which the <ref refid="classJSL_1_1UnitTest" kindref="compound">UnitTest</ref> refers to itself. This should be fairly descriptive, to help locating the failing unit test (don&apos;t give them all the same name!) </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" line="15" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" bodystart="15" bodyend="-1"/>
+        <location file="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" line="15" column="13" bodyfile="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classJSL_1_1UnitTest_1afac1f363a8406fad39316ee772a837a9" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -29,12 +30,13 @@
         <argsstring></argsstring>
         <name>Passed</name>
         <briefdescription>
-<para>If true, the <ref refid="classJSL_1_1UnitTest" kindref="compound">UnitTest</ref> is considered successful, and no errors are thrown. </para>        </briefdescription>
+<para>If true, the <ref refid="classJSL_1_1UnitTest" kindref="compound">UnitTest</ref> is considered successful, and no errors are thrown. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" line="18" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" bodystart="18" bodyend="-1"/>
+        <location file="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" line="18" column="6" bodyfile="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classJSL_1_1UnitTest_1a54dc4908d757c7f523be12a4275e595c" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -42,12 +44,13 @@
         <argsstring></argsstring>
         <name>NonCriticalFailure</name>
         <briefdescription>
-<para>If true, the <ref refid="classJSL_1_1UnitTest" kindref="compound">UnitTest</ref> will only throw warnings, rather than exist, when an error is encountered. Default is false. </para>        </briefdescription>
+<para>If true, the <ref refid="classJSL_1_1UnitTest" kindref="compound">UnitTest</ref> will only throw warnings, rather than exist, when an error is encountered. Default is false. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" line="21" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" bodystart="21" bodyend="-1"/>
+        <location file="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" line="21" column="6" bodyfile="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classJSL_1_1UnitTest_1a3dcc71e7e8f72f0f07b8fc552b777ad8" prot="public" static="no" mutable="no">
         <type>std::vector&lt; std::string &gt;</type>
@@ -55,12 +58,13 @@
         <argsstring></argsstring>
         <name>MessageBuffer</name>
         <briefdescription>
-<para>A message buffer which is output when <ref refid="classJSL_1_1UnitTest_1a39e1076dd985334ce21606ae2a383f70" kindref="member">Results()</ref> is called, giving updates on the progress of the test. </para>        </briefdescription>
+<para>A message buffer which is output when <ref refid="classJSL_1_1UnitTest_1a39e1076dd985334ce21606ae2a383f70" kindref="member">Results()</ref> is called, giving updates on the progress of the test. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" line="24" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" bodystart="24" bodyend="-1"/>
+        <location file="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" line="24" column="13" bodyfile="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" bodystart="24" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -70,12 +74,13 @@
         <argsstring>()</argsstring>
         <name>UnitTest</name>
         <briefdescription>
-<para>Constructor class. Initialises the system to a failing state. </para>        </briefdescription>
+<para>Constructor class. Initialises the system to a failing state. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" line="28" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" bodystart="28" bodyend="35"/>
+        <location file="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" line="28" column="1" bodyfile="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" bodystart="28" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="classJSL_1_1UnitTest_1aa8369ab1ce2a537bff2ea7e1c8818490" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -89,12 +94,13 @@
         <reimplementedby refid="classJSL__Testing_1_1VectorTest_1ad79bb4654e6f7b59d31d7239ee0c2b82">Run_Test</reimplementedby>
         <reimplementedby refid="classJSL__Testing_1_1MatrixTest_1a8fe2a671faf414dbd13c407ab52b75fb">Run_Test</reimplementedby>
         <briefdescription>
-<para>All children which want to take advantage of the <ref refid="classJSL_1_1UnitTest_1aabec19b081be8a428f12e4b5e3dc2a9c" kindref="member">BufferedTest()</ref> command should have the bulk of their testing within this command. </para>        </briefdescription>
+<para>All children which want to take advantage of the <ref refid="classJSL_1_1UnitTest_1aabec19b081be8a428f12e4b5e3dc2a9c" kindref="member">BufferedTest()</ref> command should have the bulk of their testing within this command. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" line="38" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" bodystart="38" bodyend="41"/>
+        <location file="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" line="38" column="14" bodyfile="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" bodystart="38" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="classJSL_1_1UnitTest_1aabec19b081be8a428f12e4b5e3dc2a9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -102,12 +108,13 @@
         <argsstring>()</argsstring>
         <name>BufferedTest</name>
         <briefdescription>
-<para>Calls the overridden function <ref refid="classJSL_1_1UnitTest_1aa8369ab1ce2a537bff2ea7e1c8818490" kindref="member">Run_Test()</ref> within a try-catch loop. Provides an extra level of safety and diagnostics for any unhandled exceptions. </para>        </briefdescription>
+<para>Calls the overridden function <ref refid="classJSL_1_1UnitTest_1aa8369ab1ce2a537bff2ea7e1c8818490" kindref="member">Run_Test()</ref> within a try-catch loop. Provides an extra level of safety and diagnostics for any unhandled exceptions. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" line="44" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" bodystart="44" bodyend="55"/>
+        <location file="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" line="44" column="6" bodyfile="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" bodystart="44" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="classJSL_1_1UnitTest_1a39e1076dd985334ce21606ae2a383f70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -115,13 +122,16 @@
         <argsstring>()</argsstring>
         <name>Results</name>
         <briefdescription>
-<para>Prints the results of the testing to the terminal and prints the contents of MessageBuffer line-by-line. </para>        </briefdescription>
+<para>Prints the results of the testing to the terminal and prints the contents of MessageBuffer line-by-line. </para>
+        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>The value of Passed (true if test succeeded) </para></simplesect>
-</para>        </detaileddescription>
+<para><simplesect kind="return"><para>The value of Passed (true if test succeeded) </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" line="58" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" bodystart="58" bodyend="87"/>
+        <location file="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" line="58" column="6" bodyfile="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" bodystart="58" bodyend="87"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -150,27 +160,31 @@
 <parametername>condition</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>If true, the sub-test is successful </para></parameterdescription>
+<para>If true, the sub-test is successful </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>successmessage</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>If condition == true, this is the message appended to the MessageBuffer </para></parameterdescription>
+<para>If condition == true, this is the message appended to the MessageBuffer </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>failuremessage</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>If condition == false, this message is used instead. </para></parameterdescription>
+<para>If condition == false, this message is used instead. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>        </detaileddescription>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" line="95" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" bodystart="95" bodyend="106"/>
+        <location file="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" line="95" column="6" bodyfile="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" bodystart="95" bodyend="106"/>
       </memberdef>
       <memberdef kind="function" id="classJSL_1_1UnitTest_1a53ede0c6b420eaf64faf752c0518340e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -186,61 +200,63 @@
           <declname>messageFramework</declname>
         </param>
         <briefdescription>
-<para>An override of the other function, preventing dual-typing of basic output messages. </para>        </briefdescription>
+<para>An override of the other function, preventing dual-typing of basic output messages. </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" line="109" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" bodystart="109" bodyend="114"/>
+        <location file="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" line="109" column="6" bodyfile="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" bodystart="109" bodyend="114"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>A parent class for various unit testing frameworks. Provides a consistent API for interacting with the unit tests. The class is essentially meaningless on its own, but when coupled to a decently written subclass (i.e. <ref refid="classJSL__Testing_1_1StringTest" kindref="compound">JSL_Testing::StringTest</ref>), it becomes very useful. </para>    </detaileddescription>
+<para>A parent class for various unit testing frameworks. Provides a consistent API for interacting with the unit tests. The class is essentially meaningless on its own, but when coupled to a decently written subclass (i.e. <ref refid="classJSL__Testing_1_1StringTest" kindref="compound">JSL_Testing::StringTest</ref>), it becomes very useful. </para>
+    </detaileddescription>
     <inheritancegraph>
-      <node id="94">
+      <node id="5">
         <label>JSL_Testing::MetaTest</label>
         <link refid="classJSL__Testing_1_1MetaTest"/>
-        <childnode refid="90" relation="public-inheritance">
+        <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="92">
+      <node id="3">
         <label>JSL_Testing::IOTest</label>
         <link refid="classJSL__Testing_1_1IOTest"/>
-        <childnode refid="90" relation="public-inheritance">
+        <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="95">
+      <node id="6">
         <label>JSL_Testing::StringTest</label>
         <link refid="classJSL__Testing_1_1StringTest"/>
-        <childnode refid="90" relation="public-inheritance">
+        <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="93">
+      <node id="4">
         <label>JSL_Testing::MatrixTest</label>
         <link refid="classJSL__Testing_1_1MatrixTest"/>
-        <childnode refid="90" relation="public-inheritance">
+        <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="90">
+      <node id="1">
         <label>JSL::UnitTest</label>
         <link refid="classJSL_1_1UnitTest"/>
       </node>
-      <node id="91">
+      <node id="2">
         <label>JSL_Testing::ArgumentTest</label>
         <link refid="classJSL__Testing_1_1ArgumentTest"/>
-        <childnode refid="90" relation="public-inheritance">
+        <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="96">
+      <node id="7">
         <label>JSL_Testing::VectorTest</label>
         <link refid="classJSL__Testing_1_1VectorTest"/>
-        <childnode refid="90" relation="public-inheritance">
+        <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" line="12" column="1" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" bodystart="11" bodyend="115"/>
+    <location file="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" line="12" column="1" bodyfile="/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/UnitTest.h" bodystart="11" bodyend="115"/>
     <listofallmembers>
       <member refid="classJSL_1_1UnitTest_1a3629d1bca071da7a2af6b7de29be1430" prot="protected" virt="non-virtual"><scope>JSL::UnitTest</scope><name>basicConditionCheck</name></member>
       <member refid="classJSL_1_1UnitTest_1a53ede0c6b420eaf64faf752c0518340e" prot="protected" virt="non-virtual"><scope>JSL::UnitTest</scope><name>basicConditionCheck</name></member>

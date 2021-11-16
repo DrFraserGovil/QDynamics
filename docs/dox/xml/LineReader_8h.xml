@@ -1,146 +1,146 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="LineReader_8h" kind="file" language="C++">
     <compoundname>LineReader.h</compoundname>
     <includes local="no">fstream</includes>
     <includes local="no">string</includes>
     <includes local="no">vector</includes>
     <includes refid="split_8h" local="yes">../Strings/split.h</includes>
-    <includedby refid="FileIO_8h" local="yes">/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/FileIO/FileIO.h</includedby>
+    <includedby refid="FileIO_8h" local="yes">/home/jack/Documents/Work/QDynamics/lib/JSL/FileIO/FileIO.h</includedby>
     <incdepgraph>
-      <node id="105">
-        <label>../Strings/split.h</label>
-        <link refid="split_8h"/>
-        <childnode refid="103" relation="include">
-        </childnode>
-        <childnode refid="104" relation="include">
-        </childnode>
-        <childnode refid="106" relation="include">
-        </childnode>
-      </node>
-      <node id="103">
+      <node id="3">
         <label>string</label>
       </node>
-      <node id="102">
+      <node id="2">
         <label>fstream</label>
       </node>
-      <node id="101">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/FileIO/LineReader.h</label>
-        <link refid="LineReader_8h"/>
-        <childnode refid="102" relation="include">
-        </childnode>
-        <childnode refid="103" relation="include">
-        </childnode>
-        <childnode refid="104" relation="include">
-        </childnode>
-        <childnode refid="105" relation="include">
-        </childnode>
-      </node>
-      <node id="104">
+      <node id="4">
         <label>vector</label>
       </node>
-      <node id="106">
+      <node id="6">
         <label>sstream</label>
+      </node>
+      <node id="5">
+        <label>../Strings/split.h</label>
+        <link refid="split_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/jack/Documents/Work/QDynamics/lib/JSL/FileIO/LineReader.h</label>
+        <link refid="LineReader_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="115">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Quaternion.h</label>
-        <link refid="Quaternion_8h"/>
-        <childnode refid="114" relation="include">
-        </childnode>
-      </node>
-      <node id="116">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Integrator.h</label>
+      <node id="10">
+        <label>/home/jack/Documents/Work/QDynamics/src/Integrator.h</label>
         <link refid="Integrator_8h"/>
-        <childnode refid="114" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="117" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="118" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="119" relation="include">
-        </childnode>
-      </node>
-      <node id="118">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Magi.h</label>
-        <link refid="Magi_8h"/>
-        <childnode refid="114" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
       </node>
-      <node id="117">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Brute.h</label>
-        <link refid="Brute_8h"/>
-        <childnode refid="114" relation="include">
-        </childnode>
-      </node>
-      <node id="108">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/FileIO/FileIO.h</label>
-        <link refid="FileIO_8h"/>
-        <childnode refid="109" relation="include">
-        </childnode>
-        <childnode refid="111" relation="include">
-        </childnode>
-      </node>
-      <node id="107">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/FileIO/LineReader.h</label>
-        <link refid="LineReader_8h"/>
-        <childnode refid="108" relation="include">
-        </childnode>
-      </node>
-      <node id="112">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/Testing_UnitTests.h</label>
-        <link refid="Testing__UnitTests_8h"/>
-        <childnode refid="113" relation="include">
-        </childnode>
-      </node>
-      <node id="110">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/CommandArgs/CommandArgs.h</label>
+      <node id="4">
+        <label>/home/jack/Documents/Work/QDynamics/lib/JSL/CommandArgs/CommandArgs.h</label>
         <link refid="CommandArgs_8h"/>
-        <childnode refid="111" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="120">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/src/DynamicOperations.h</label>
-        <link refid="DynamicOperations_8h"/>
-        <childnode refid="116" relation="include">
-        </childnode>
-      </node>
-      <node id="109">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/CommandArgs/Argument.h</label>
+      <node id="3">
+        <label>/home/jack/Documents/Work/QDynamics/lib/JSL/CommandArgs/Argument.h</label>
         <link refid="Argument_8h"/>
-        <childnode refid="110" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="113">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/Testing/Testing.h</label>
+      <node id="12">
+        <label>/home/jack/Documents/Work/QDynamics/src/Magi.h</label>
+        <link refid="Magi_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/Testing.h</label>
         <link refid="Testing_8h"/>
-        <childnode refid="111" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="111">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/JSL.h</label>
+      <node id="5">
+        <label>/home/jack/Documents/Work/QDynamics/lib/JSL/JSL.h</label>
         <link refid="JSL_8h"/>
-        <childnode refid="112" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="114" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="115" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="116" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="120" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
       </node>
-      <node id="119">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Symi.h</label>
+      <node id="14">
+        <label>/home/jack/Documents/Work/QDynamics/src/DynamicOperations.h</label>
+        <link refid="DynamicOperations_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/jack/Documents/Work/QDynamics/lib/JSL/FileIO/FileIO.h</label>
+        <link refid="FileIO_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/jack/Documents/Work/QDynamics/lib/JSL/Testing/Testing_UnitTests.h</label>
+        <link refid="Testing__UnitTests_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/home/jack/Documents/Work/QDynamics/src/Symi.h</label>
         <link refid="Symi_8h"/>
-        <childnode refid="114" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="114">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/QDynamics.h</label>
+      <node id="11">
+        <label>/home/jack/Documents/Work/QDynamics/src/Brute.h</label>
+        <link refid="Brute_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/home/jack/Documents/Work/QDynamics/QDynamics.h</label>
         <link refid="QDynamics_8h"/>
+      </node>
+      <node id="1">
+        <label>/home/jack/Documents/Work/QDynamics/lib/JSL/FileIO/LineReader.h</label>
+        <link refid="LineReader_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/home/jack/Documents/Work/QDynamics/src/Quaternion.h</label>
+        <link refid="Quaternion_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
       <sectiondef kind="define">
@@ -173,21 +173,25 @@
 <parametername>macroFileName</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The target file to search through </para></parameterdescription>
+<para>The target file to search through </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>...</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A custom block of C++ code which executes on every line of the file. You may use any externally defined variables within this block. </para></parameterdescription>
+<para>A custom block of C++ code which executes on every line of the file. You may use any externally defined variables within this block. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Current line is accessible via the variable <computeroutput>std::string FILE_LINE</computeroutput>. If the file does not exist, throws an <computeroutput>exit(1)</computeroutput> command </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Current line is accessible via the variable <computeroutput>std::string FILE_LINE</computeroutput>. If the file does not exist, throws an <computeroutput>exit(1)</computeroutput> command </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/FileIO/LineReader.h" line="16" column="9" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/FileIO/LineReader.h" bodystart="16" bodyend="-1"/>
+        <location file="/home/jack/Documents/Work/QDynamics/lib/JSL/FileIO/LineReader.h" line="16" column="9" bodyfile="/home/jack/Documents/Work/QDynamics/lib/JSL/FileIO/LineReader.h" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="LineReader_8h_1abdfa973ea7dd7efb90a74e8ec636f5ed" prot="public" static="no">
         <name>forLineVectorIn</name>
@@ -208,28 +212,33 @@
 <parametername>macroFileName</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The target file to search through </para></parameterdescription>
+<para>The target file to search through </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>token</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The delimiter used to break up <computeroutput>FILE_LINE</computeroutput> into <computeroutput>FILE_LINE_VECTOR</computeroutput> </para></parameterdescription>
+<para>The delimiter used to break up <computeroutput>FILE_LINE</computeroutput> into <computeroutput>FILE_LINE_VECTOR</computeroutput> </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>...</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A custom block of C++ code which executes on every line of the file. You may use any externally defined variables within this block. </para></parameterdescription>
+<para>A custom block of C++ code which executes on every line of the file. You may use any externally defined variables within this block. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Current line is accessible via the variable <computeroutput>std::string FILE_LINE</computeroutput> and <computeroutput>std::vector&lt;std::string&gt;&gt; FILE_LINE_VECTOR</computeroutput>. If the file does not exist, throws an <computeroutput>exit(1)</computeroutput> command </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Current line is accessible via the variable <computeroutput>std::string FILE_LINE</computeroutput> and <computeroutput>std::vector&lt;std::string&gt;&gt; FILE_LINE_VECTOR</computeroutput>. If the file does not exist, throws an <computeroutput>exit(1)</computeroutput> command </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/FileIO/LineReader.h" line="43" column="9" bodyfile="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/FileIO/LineReader.h" bodystart="43" bodyend="-1"/>
+        <location file="/home/jack/Documents/Work/QDynamics/lib/JSL/FileIO/LineReader.h" line="43" column="9" bodyfile="/home/jack/Documents/Work/QDynamics/lib/JSL/FileIO/LineReader.h" bodystart="43" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -274,6 +283,6 @@
 <codeline lineno="48"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
 <codeline lineno="49"><highlight class="preprocessor">}<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
     </programlisting>
-    <location file="/home/f/fraserj/Documents/Work/QDynamics/lib/JSL/FileIO/LineReader.h"/>
+    <location file="/home/jack/Documents/Work/QDynamics/lib/JSL/FileIO/LineReader.h"/>
   </compounddef>
 </doxygen>

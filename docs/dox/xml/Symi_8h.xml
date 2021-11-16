@@ -1,277 +1,276 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="Symi_8h" kind="file" language="C++">
     <compoundname>Symi.h</compoundname>
     <includes refid="Integrator_8h" local="yes">Integrator.h</includes>
-    <includedby refid="QDynamics_8h" local="yes">/home/f/fraserj/Documents/Work/QDynamics/QDynamics.h</includedby>
+    <includedby refid="QDynamics_8h" local="yes">/home/jack/Documents/Work/QDynamics/QDynamics.h</includedby>
     <incdepgraph>
-      <node id="667">
+      <node id="15">
         <label>sys/stat.h</label>
       </node>
-      <node id="668">
-        <label>rm.h</label>
-        <link refid="rm_8h"/>
-        <childnode refid="665" relation="include">
-        </childnode>
-        <childnode refid="661" relation="include">
-        </childnode>
-        <childnode refid="666" relation="include">
-        </childnode>
-        <childnode refid="669" relation="include">
-        </childnode>
-      </node>
-      <node id="662">
-        <label>../Strings/split.h</label>
-        <link refid="split_8h"/>
-        <childnode refid="661" relation="include">
-        </childnode>
-        <childnode refid="656" relation="include">
-        </childnode>
-        <childnode refid="663" relation="include">
-        </childnode>
-      </node>
-      <node id="654">
+      <node id="2">
         <label>Integrator.h</label>
         <link refid="Integrator_8h"/>
-        <childnode refid="655" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="656" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="657" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="685" relation="include">
-        </childnode>
-      </node>
-      <node id="684">
-        <label>cmath</label>
-      </node>
-      <node id="669">
-        <label>stdexcept</label>
-      </node>
-      <node id="661">
-        <label>string</label>
-      </node>
-      <node id="673">
-        <label>Time.h</label>
-        <link refid="Time_8h"/>
-        <childnode refid="674" relation="include">
-        </childnode>
-        <childnode refid="661" relation="include">
-        </childnode>
-        <childnode refid="663" relation="include">
-        </childnode>
-        <childnode refid="656" relation="include">
-        </childnode>
-        <childnode refid="655" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
       </node>
-      <node id="658">
-        <label>FileIO/FileIO.h</label>
-        <link refid="FileIO_8h"/>
-        <childnode refid="659" relation="include">
-        </childnode>
-        <childnode refid="664" relation="include">
-        </childnode>
-        <childnode refid="668" relation="include">
-        </childnode>
-        <childnode refid="666" relation="include">
-        </childnode>
-        <childnode refid="670" relation="include">
-        </childnode>
-      </node>
-      <node id="672">
-        <label>Strings/Strings.h</label>
-        <link refid="Strings_8h"/>
-        <childnode refid="662" relation="include">
-        </childnode>
-        <childnode refid="673" relation="include">
-        </childnode>
-      </node>
-      <node id="660">
-        <label>fstream</label>
-      </node>
-      <node id="659">
-        <label>LineReader.h</label>
-        <link refid="LineReader_8h"/>
-        <childnode refid="660" relation="include">
-        </childnode>
-        <childnode refid="661" relation="include">
-        </childnode>
-        <childnode refid="656" relation="include">
-        </childnode>
-        <childnode refid="662" relation="include">
-        </childnode>
-      </node>
-      <node id="683">
-        <label>Testing_UnitTests.h</label>
-        <link refid="Testing__UnitTests_8h"/>
-        <childnode refid="657" relation="include">
-        </childnode>
-        <childnode refid="684" relation="include">
-        </childnode>
-      </node>
-      <node id="675">
+      <node id="23">
         <label>CommandArgs/CommandArgs.h</label>
         <link refid="CommandArgs_8h"/>
-        <childnode refid="676" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
       </node>
-      <node id="678">
-        <label>vector.h</label>
-        <link refid="vector_8h"/>
-        <childnode refid="656" relation="include">
-        </childnode>
-        <childnode refid="669" relation="include">
-        </childnode>
-        <childnode refid="671" relation="include">
-        </childnode>
-        <childnode refid="655" relation="include">
-        </childnode>
-        <childnode refid="679" relation="include">
-        </childnode>
-      </node>
-      <node id="685">
-        <label>DynamicOperations.h</label>
-        <link refid="DynamicOperations_8h"/>
-        <childnode refid="655" relation="include">
-        </childnode>
-        <childnode refid="656" relation="include">
-        </childnode>
-        <childnode refid="657" relation="include">
-        </childnode>
-      </node>
-      <node id="682">
-        <label>UnitTest.h</label>
-        <link refid="UnitTest_8h"/>
-        <childnode refid="671" relation="include">
-        </childnode>
-        <childnode refid="655" relation="include">
-        </childnode>
-      </node>
-      <node id="677">
-        <label>Maths/Maths.h</label>
-        <link refid="Maths_8h"/>
-        <childnode refid="678" relation="include">
-        </childnode>
-        <childnode refid="680" relation="include">
-        </childnode>
-      </node>
-      <node id="671">
-        <label>string.h</label>
-      </node>
-      <node id="676">
-        <label>Argument.h</label>
-        <link refid="Argument_8h"/>
-        <childnode refid="661" relation="include">
-        </childnode>
-        <childnode refid="669" relation="include">
-        </childnode>
-        <childnode refid="658" relation="include">
-        </childnode>
-      </node>
-      <node id="664">
-        <label>mkdir.h</label>
-        <link refid="mkdir_8h"/>
-        <childnode refid="665" relation="include">
-        </childnode>
-        <childnode refid="661" relation="include">
-        </childnode>
-        <childnode refid="666" relation="include">
-        </childnode>
-      </node>
-      <node id="680">
-        <label>matrix.h</label>
-        <link refid="matrix_8h"/>
-        <childnode refid="656" relation="include">
-        </childnode>
-        <childnode refid="669" relation="include">
-        </childnode>
-        <childnode refid="671" relation="include">
-        </childnode>
-        <childnode refid="655" relation="include">
-        </childnode>
-        <childnode refid="679" relation="include">
-        </childnode>
-        <childnode refid="678" relation="include">
-        </childnode>
-      </node>
-      <node id="656">
-        <label>vector</label>
-      </node>
-      <node id="666">
-        <label>locationExists.h</label>
-        <link refid="locationExists_8h"/>
-        <childnode refid="661" relation="include">
-        </childnode>
-        <childnode refid="667" relation="include">
-        </childnode>
-      </node>
-      <node id="663">
-        <label>sstream</label>
-      </node>
-      <node id="679">
-        <label>math.h</label>
-      </node>
-      <node id="681">
-        <label>Testing/Testing.h</label>
-        <link refid="Testing_8h"/>
-        <childnode refid="682" relation="include">
-        </childnode>
-        <childnode refid="683" relation="include">
-        </childnode>
-      </node>
-      <node id="655">
-        <label>iostream</label>
-      </node>
-      <node id="674">
-        <label>chrono</label>
-      </node>
-      <node id="657">
-        <label>JSL.h</label>
-        <link refid="JSL_8h"/>
-        <childnode refid="658" relation="include">
-        </childnode>
-        <childnode refid="672" relation="include">
-        </childnode>
-        <childnode refid="675" relation="include">
-        </childnode>
-        <childnode refid="677" relation="include">
-        </childnode>
-        <childnode refid="681" relation="include">
-        </childnode>
-      </node>
-      <node id="670">
+      <node id="18">
         <label>fileWriter.h</label>
         <link refid="fileWriter_8h"/>
-        <childnode refid="671" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
-        <childnode refid="660" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="653">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Symi.h</label>
+      <node id="32">
+        <label>cmath</label>
+      </node>
+      <node id="24">
+        <label>Argument.h</label>
+        <link refid="Argument_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>stdexcept</label>
+      </node>
+      <node id="29">
+        <label>Testing/Testing.h</label>
+        <link refid="Testing_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="16">
+        <label>rm.h</label>
+        <link refid="rm_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vector.h</label>
+        <link refid="vector_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>fstream</label>
+      </node>
+      <node id="5">
+        <label>JSL.h</label>
+        <link refid="JSL_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Strings/Strings.h</label>
+        <link refid="Strings_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>DynamicOperations.h</label>
+        <link refid="DynamicOperations_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>FileIO/FileIO.h</label>
+        <link refid="FileIO_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>string.h</label>
+      </node>
+      <node id="31">
+        <label>Testing_UnitTests.h</label>
+        <link refid="Testing__UnitTests_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+      <node id="11">
+        <label>sstream</label>
+      </node>
+      <node id="10">
+        <label>../Strings/split.h</label>
+        <link refid="split_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>math.h</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="1">
+        <label>/home/jack/Documents/Work/QDynamics/src/Symi.h</label>
         <link refid="Symi_8h"/>
-        <childnode refid="654" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="665">
+      <node id="25">
+        <label>Maths/Maths.h</label>
+        <link refid="Maths_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>matrix.h</label>
+        <link refid="matrix_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>mkdir.h</label>
+        <link refid="mkdir_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>chrono</label>
+      </node>
+      <node id="14">
+        <label>locationExists.h</label>
+        <link refid="locationExists_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>LineReader.h</label>
+        <link refid="LineReader_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>UnitTest.h</label>
+        <link refid="UnitTest_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Time.h</label>
+        <link refid="Time_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
         <label>dirent.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="686">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/src/Symi.h</label>
+      <node id="1">
+        <label>/home/jack/Documents/Work/QDynamics/src/Symi.h</label>
         <link refid="Symi_8h"/>
-        <childnode refid="687" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="687">
-        <label>/home/f/fraserj/Documents/Work/QDynamics/QDynamics.h</label>
+      <node id="2">
+        <label>/home/jack/Documents/Work/QDynamics/QDynamics.h</label>
         <link refid="QDynamics_8h"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classQDynamics_1_1Symi" prot="public">QDynamics::Symi</innerclass>
-    <innerclass refid="classQDynamics_1_1SymiL" prot="public">QDynamics::SymiL</innerclass>
     <innernamespace refid="namespaceQDynamics">QDynamics</innernamespace>
     <briefdescription>
     </briefdescription>
@@ -284,105 +283,106 @@
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceQDynamics" kindref="compound">QDynamics</ref></highlight></codeline>
 <codeline lineno="6"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="7" refid="classQDynamics_1_1Symi" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classQDynamics_1_1Symi" kindref="compound">Symi</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Magi" kindref="compound">Magi</ref></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="10" refid="classQDynamics_1_1Symi_1afc73292268197d37fad6716aa6bb5976" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Symi_1afc73292268197d37fad6716aa6bb5976" kindref="member">Symi</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>order,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>T,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>deltaT)<sp/>:<sp/><ref refid="classQDynamics_1_1Magi" kindref="compound">Magi</ref>(order,0,T,deltaT)</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1aa3e27d68428619ab4083b2d42ef8924c" kindref="member">Name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Symi&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(order);</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>MagnusBuffers<sp/>=<sp/>std::vector&lt;std::vector&lt;Quaternion&gt;&gt;(order,std::vector&lt;Quaternion&gt;(resolution,Quaternion::Zero()));</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="15" refid="classQDynamics_1_1Symi_1a2e248bf5141814ca1e8285227d26d4bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Symi_1a2e248bf5141814ca1e8285227d26d4bc" kindref="member">Symi</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>order,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>deltaT,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>skipper)<sp/>:<sp/><ref refid="classQDynamics_1_1Magi" kindref="compound">Magi</ref>(order,0,T,deltaT)</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1aa3e27d68428619ab4083b2d42ef8924c" kindref="member">Name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Symi&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(order);</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>MagnusBuffers<sp/>=<sp/>std::vector&lt;std::vector&lt;Quaternion&gt;&gt;(order,std::vector&lt;Quaternion&gt;(resolution,Quaternion::Zero()));</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>order,<sp/>StepType<sp/>step&gt;</highlight></codeline>
+<codeline lineno="8" refid="classQDynamics_1_1Symi" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classQDynamics_1_1Symi" kindref="compound">Symi</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Magi" kindref="compound">Magi</ref>&lt;order,<sp/>step&gt;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11" refid="classQDynamics_1_1Symi_1a64ac64472b1b635b8915c6e0575b36a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Symi_1a64ac64472b1b635b8915c6e0575b36a8" kindref="member">Order</ref><sp/>=<sp/>order;</highlight></codeline>
+<codeline lineno="12" refid="classQDynamics_1_1Symi_1a1d00d45dfa9de22d45865df8cfd637e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceQDynamics_1a68884510ffea34b2025b1558ef299d42" kindref="member">StepType</ref><sp/><ref refid="classQDynamics_1_1Symi_1a1d00d45dfa9de22d45865df8cfd637e5" kindref="member">StepMode</ref><sp/>=<sp/>step;</highlight></codeline>
+<codeline lineno="13" refid="classQDynamics_1_1Symi_1a99f05fe237066759d24001672d484cec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Symi_1a99f05fe237066759d24001672d484cec" kindref="member">Symi</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>T,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>deltaT)<sp/>:<sp/><ref refid="classQDynamics_1_1Magi" kindref="compound">Magi</ref>&lt;<ref refid="classQDynamics_1_1Symi_1a64ac64472b1b635b8915c6e0575b36a8" kindref="member">Order</ref>,<ref refid="classQDynamics_1_1Symi_1a1d00d45dfa9de22d45865df8cfd637e5" kindref="member">StepMode</ref>&gt;(T,deltaT,0)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1aa3e27d68428619ab4083b2d42ef8924c" kindref="member">Name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Symi&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(<ref refid="classQDynamics_1_1Symi_1a64ac64472b1b635b8915c6e0575b36a8" kindref="member">Order</ref>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>MagnusBuffers<sp/>=<sp/>std::vector&lt;std::vector&lt;Quaternion&gt;&gt;(order,std::vector&lt;Quaternion&gt;(resolution,Quaternion::Zero()));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18" refid="classQDynamics_1_1Symi_1aa88a0244de9e8b80c1532f6429cf64d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Symi_1aa88a0244de9e8b80c1532f6429cf64d4" kindref="member">Symi</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>deltaT,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>skipper)<sp/>:<sp/><ref refid="classQDynamics_1_1Magi" kindref="compound">Magi</ref>&lt;<ref refid="classQDynamics_1_1Symi_1a64ac64472b1b635b8915c6e0575b36a8" kindref="member">Order</ref>,<ref refid="classQDynamics_1_1Symi_1a1d00d45dfa9de22d45865df8cfd637e5" kindref="member">StepMode</ref>&gt;(T,deltaT,skipper,0)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1aa3e27d68428619ab4083b2d42ef8924c" kindref="member">Name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Symi&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(<ref refid="classQDynamics_1_1Symi_1a64ac64472b1b635b8915c6e0575b36a8" kindref="member">Order</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>MagnusBuffers<sp/>=<sp/>std::vector&lt;std::vector&lt;Quaternion&gt;&gt;(order,std::vector&lt;Quaternion&gt;(resolution,Quaternion::Zero()));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="24" refid="classQDynamics_1_1Symi_1a4cea691ad899227f92004dd666180415" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Symi_1a4cea691ad899227f92004dd666180415" kindref="member">Magnus_Compute</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>duration)</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lParallel<sp/>=<sp/>sqrt(<ref refid="classQDynamics_1_1Integrator_1adb45dae4f4d1d37ab83ca5269f51058d" kindref="member">L</ref>.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>(0)*<ref refid="classQDynamics_1_1Integrator_1adb45dae4f4d1d37ab83ca5269f51058d" kindref="member">L</ref>.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>(0)<sp/>+<sp/><ref refid="classQDynamics_1_1Integrator_1adb45dae4f4d1d37ab83ca5269f51058d" kindref="member">L</ref>.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>(1)<sp/>*<sp/><ref refid="classQDynamics_1_1Integrator_1adb45dae4f4d1d37ab83ca5269f51058d" kindref="member">L</ref>.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>(1));</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>varphi<sp/>=<sp/>atan2(<ref refid="classQDynamics_1_1Integrator_1adb45dae4f4d1d37ab83ca5269f51058d" kindref="member">L</ref>.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>(1),<ref refid="classQDynamics_1_1Integrator_1adb45dae4f4d1d37ab83ca5269f51058d" kindref="member">L</ref>.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>(0));</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>zeta<sp/>=<sp/><sp/><ref refid="classQDynamics_1_1Integrator_1adb45dae4f4d1d37ab83ca5269f51058d" kindref="member">L</ref>.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>(2)<sp/>*<sp/>(<ref refid="classQDynamics_1_1Integrator_1a7b99b22475321b34c1624bded3489954" kindref="member">J</ref>[1]<sp/>-<sp/><ref refid="classQDynamics_1_1Integrator_1a7b99b22475321b34c1624bded3489954" kindref="member">J</ref>[3])/(<ref refid="classQDynamics_1_1Integrator_1a7b99b22475321b34c1624bded3489954" kindref="member">J</ref>[1]<sp/>*<sp/><ref refid="classQDynamics_1_1Integrator_1a7b99b22475321b34c1624bded3489954" kindref="member">J</ref>[3]);</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>s<sp/>=<sp/>sin(zeta<sp/>*<sp/>duration<sp/>-<sp/>varphi);</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>c<sp/>=<sp/>cos(zeta<sp/>*<sp/>duration<sp/>-<sp/>varphi);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>Quaternion<sp/>virtual<sp/>Magnus_Compute(double<sp/>duration)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>double<sp/>lParallel<sp/>=<sp/>sqrt(L.Vector(0)*L.Vector(0)<sp/>+<sp/>L.Vector(1)<sp/>*<sp/>L.Vector(1));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>double<sp/>varphi<sp/>=<sp/>atan2(L.Vector(1),L.Vector(0));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>double<sp/>zeta<sp/>=<sp/><sp/>L.Vector(2)<sp/>*<sp/>(J[1]<sp/>-<sp/>J[3])/(J[1]<sp/>*<sp/>J[3]);</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Update<sp/>momentum</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1adb45dae4f4d1d37ab83ca5269f51058d" kindref="member">L</ref>.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>(0)<sp/>=<sp/>lParallel<sp/>*<sp/>c;</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1adb45dae4f4d1d37ab83ca5269f51058d" kindref="member">L</ref>.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>(1)<sp/>=<sp/>-lParallel<sp/>*<sp/>s;</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//first<sp/>order</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pre<sp/>=lParallel/(zeta<sp/>*<sp/>J[1]);<sp/></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m1x<sp/>=<sp/>pre<sp/>*<sp/>(s<sp/>+<sp/>sin(varphi));</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m1y=<sp/>pre<sp/>*<sp/>(c<sp/>-<sp/>cos(varphi));</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m1z<sp/>=<sp/><ref refid="classQDynamics_1_1Integrator_1adb45dae4f4d1d37ab83ca5269f51058d" kindref="member">L</ref>.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>(2)/J[3]<sp/>*<sp/>duration;</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>M(0,m1x,m1y,m1z);</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classQDynamics_1_1Magi_1ac9ff1c2f4ea0dcc30f1ee52b0894c9e9" kindref="member">Order</ref><sp/>&gt;<sp/>1)</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sHalf<sp/>=<sp/>sin(zeta<sp/>*<sp/>duration/2);</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cHalf<sp/>=<sp/>cos(zeta<sp/>*<sp/>duration/2);</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>fac<sp/>=<sp/><sp/>(<sp/>zeta*duration*cHalf<sp/>-<sp/>2*sHalf);</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pre2<sp/>=<sp/>2<sp/>*<sp/>lParallel<sp/>*<ref refid="classQDynamics_1_1Integrator_1adb45dae4f4d1d37ab83ca5269f51058d" kindref="member">L</ref>.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>(2)/(zeta*zeta<sp/>*<sp/>J[1]*J[3]);</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m2x<sp/>=<sp/>pre2<sp/>*<sp/>cos(zeta<sp/>*<sp/>duration/2<sp/>-<sp/>varphi)<sp/>*fac;</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m2y<sp/>=<sp/>-<sp/>pre2<sp/>*<sp/>sin(zeta<sp/>*<sp/>duration/2<sp/>-<sp/>varphi)<sp/>*<sp/>fac;</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m2z<sp/>=<sp/>lParallel*lParallel/(zeta*zeta<sp/>*<sp/>J[1]*J[1])<sp/>*<sp/>(zeta<sp/>*<sp/>duration<sp/>-<sp/>sin(zeta*duration));</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>(0)<sp/>+=<sp/>m2x;</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>(1)<sp/>+=<sp/>m2y;</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M.<ref refid="classQDynamics_1_1Quaternion_1ad2f24d575d2fb8a50a9d4fd397115b9e" kindref="member">Vector</ref>(2)<sp/>+=<sp/>m2z;</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>std::cout<sp/>&lt;&lt;<sp/>m2x<sp/>&lt;&lt;<sp/>&quot;<sp/><sp/>&quot;<sp/>&lt;&lt;<sp/>m2y<sp/>&lt;&lt;<sp/>&quot;<sp/><sp/>&quot;<sp/>&lt;&lt;<sp/>m2z<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>std::cout<sp/>&lt;&lt;<sp/>M[0]<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>M;</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>double<sp/>s<sp/>=<sp/>sin(zeta<sp/>*<sp/>duration<sp/>-<sp/>varphi);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>double<sp/>c<sp/>=<sp/>cos(zeta<sp/>*<sp/>duration<sp/>-<sp/>varphi);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>//Update<sp/>momentum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>L.Vector(0)<sp/>=<sp/>lParallel<sp/>*<sp/>c;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>L.Vector(1)<sp/>=<sp/>-lParallel<sp/>*<sp/>s;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>//first<sp/>order</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>double<sp/>pre<sp/>=lParallel/(zeta<sp/>*<sp/>J[1]);<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>double<sp/>m1x<sp/>=<sp/>pre<sp/>*<sp/>(s<sp/>+<sp/>sin(varphi));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>double<sp/>m1y=<sp/>pre<sp/>*<sp/>(c<sp/>-<sp/>cos(varphi));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>double<sp/>m1z<sp/>=<sp/>L.Vector(2)/J[3]<sp/>*<sp/>duration;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>Quaternion<sp/>M(0,m1x,m1y,m1z);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>if<sp/>(Order<sp/>&gt;<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>double<sp/>sHalf<sp/>=<sp/>sin(zeta<sp/>*<sp/>duration/2);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>double<sp/>cHalf<sp/>=<sp/>cos(zeta<sp/>*<sp/>duration/2);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>double<sp/>fac<sp/>=<sp/><sp/>(<sp/>zeta*duration*cHalf<sp/>-<sp/>2*sHalf);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>double<sp/>pre2<sp/>=<sp/>2<sp/>*<sp/>lParallel<sp/>*L.Vector(2)/(zeta*zeta<sp/>*<sp/>J[1]*J[3]);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>double<sp/>m2x<sp/>=<sp/>pre2<sp/>*<sp/>cos(zeta<sp/>*<sp/>duration/2<sp/>-<sp/>varphi)<sp/>*fac;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>double<sp/>m2y<sp/>=<sp/>-<sp/>pre2<sp/>*<sp/>sin(zeta<sp/>*<sp/>duration/2<sp/>-<sp/>varphi)<sp/>*<sp/>fac;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>double<sp/>m2z<sp/>=<sp/>lParallel*lParallel/(zeta*zeta<sp/>*<sp/>J[1]*J[1])<sp/>*<sp/>(zeta<sp/>*<sp/>duration<sp/>-<sp/>sin(zeta*duration));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>M.Vector(0)<sp/>+=<sp/>m2x;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>M.Vector(1)<sp/>+=<sp/>m2y;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>M.Vector(2)<sp/>+=<sp/>m2z;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>return<sp/>M;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="67" refid="classQDynamics_1_1SymiL" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classQDynamics_1_1SymiL" kindref="compound">SymiL</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1Symi" kindref="compound">Symi</ref></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="70" refid="classQDynamics_1_1SymiL_1ac220b2a8cccf6c3c8ca0d0f79c094fe7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1SymiL_1ac220b2a8cccf6c3c8ca0d0f79c094fe7" kindref="member">SymiL</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>order,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>T,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>deltaT)<sp/>:<sp/><ref refid="classQDynamics_1_1Symi" kindref="compound">Symi</ref>(order,T,deltaT)</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1aa3e27d68428619ab4083b2d42ef8924c" kindref="member">Name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;SymiL&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(order);</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="74" refid="classQDynamics_1_1SymiL_1acdb13fb6bc527f687385dbdb05ff6e17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1SymiL_1acdb13fb6bc527f687385dbdb05ff6e17" kindref="member">SymiL</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>order,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>deltaT,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>skipper)<sp/>:<sp/><ref refid="classQDynamics_1_1Symi" kindref="compound">Symi</ref>(order,T,deltaT,skipper)</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1aa3e27d68428619ab4083b2d42ef8924c" kindref="member">Name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;SymiL&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(order);</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="81" refid="classQDynamics_1_1SymiL_1a28d23793abeb8f40c9d9ec069d67debb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classQDynamics_1_1SymiL_1a28d23793abeb8f40c9d9ec069d67debb" kindref="member">UpdatePosition</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t)</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//drift</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1adb45dae4f4d1d37ab83ca5269f51058d" kindref="member">L</ref><sp/>=<sp/>0.5<sp/>*<sp/><ref refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" kindref="member">q</ref>.<ref refid="classQDynamics_1_1Quaternion_1a2516e87ebb14ee2d34bc22744057c87b" kindref="member">Conjugate</ref>()<sp/>*<sp/><ref refid="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" kindref="member">p</ref>;</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>wMean<sp/>=<sp/><ref refid="classQDynamics_1_1Magi_1a04b85c8aa0e9549c750956c5f781433b" kindref="member">Magnus</ref>(<ref refid="classQDynamics_1_1Integrator_1a9b850dd4b29118e44b0183409db0a983" kindref="member">TimeStep</ref>/2);<sp/></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>mod<sp/>=<sp/><ref refid="namespaceQDynamics_1aa458e456eca06783fd8c41b7ac2b1400" kindref="member">exp</ref>(0.5<sp/>*<sp/>wMean);</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" kindref="member">q</ref><sp/>=<sp/><ref refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" kindref="member">q</ref><sp/>*<sp/>mod;</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" kindref="member">p</ref><sp/>=<sp/>2<sp/>*<sp/><ref refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" kindref="member">q</ref><sp/>*<sp/><ref refid="classQDynamics_1_1Integrator_1adb45dae4f4d1d37ab83ca5269f51058d" kindref="member">L</ref>;</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//kick</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Quaternion" kindref="compound">Quaternion</ref><sp/>gU<sp/>=<sp/><ref refid="classQDynamics_1_1Integrator_1a4688fbccd8b0dc5c9a73dddac66b486f" kindref="member">GradU</ref>(t<sp/>+<sp/><ref refid="classQDynamics_1_1Integrator_1a9b850dd4b29118e44b0183409db0a983" kindref="member">TimeStep</ref>/2);</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" kindref="member">p</ref><sp/>=<sp/><ref refid="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" kindref="member">p</ref><sp/>+<sp/><ref refid="classQDynamics_1_1Integrator_1a9b850dd4b29118e44b0183409db0a983" kindref="member">TimeStep</ref><sp/>*<sp/>gU;</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>L<sp/>=<sp/>0.5<sp/>*<sp/><ref refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" kindref="member">q</ref>.<ref refid="classQDynamics_1_1Quaternion_1a2516e87ebb14ee2d34bc22744057c87b" kindref="member">Conjugate</ref>()<sp/>*<sp/><ref refid="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" kindref="member">p</ref>;</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wMean<sp/>=<sp/><ref refid="classQDynamics_1_1Magi_1a04b85c8aa0e9549c750956c5f781433b" kindref="member">Magnus</ref>(<ref refid="classQDynamics_1_1Integrator_1a9b850dd4b29118e44b0183409db0a983" kindref="member">TimeStep</ref>/2);</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mod<sp/>=<sp/><ref refid="namespaceQDynamics_1aa458e456eca06783fd8c41b7ac2b1400" kindref="member">exp</ref>(0.5<sp/>*<sp/>wMean);</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" kindref="member">q</ref><sp/>=<sp/><ref refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" kindref="member">q</ref><sp/>*<sp/>mod;</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQDynamics_1_1Integrator_1a1fb07254408f6ad620eb9dbfa0f8da95" kindref="member">p</ref><sp/>=<sp/>2<sp/>*<sp/><ref refid="classQDynamics_1_1Integrator_1a5929511da076c7f31749a6da713fcff6" kindref="member">q</ref><sp/>*<sp/><ref refid="classQDynamics_1_1Integrator_1adb45dae4f4d1d37ab83ca5269f51058d" kindref="member">L</ref>;</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>class<sp/>SymiL<sp/>:<sp/>public<sp/>Symi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>public:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>SymiL(int<sp/>order,<sp/>double<sp/>T,double<sp/>deltaT)<sp/>:<sp/>Symi(order,T,deltaT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>Name<sp/>=<sp/>&quot;SymiL&quot;<sp/>+<sp/>std::to_string(order);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>SymiL(int<sp/>order,double<sp/>T,<sp/>double<sp/>deltaT,<sp/>int<sp/>skipper)<sp/>:<sp/>Symi(order,T,deltaT,skipper)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>Name<sp/>=<sp/>&quot;SymiL&quot;<sp/>+<sp/>std::to_string(order);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>private:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>void<sp/>virtual<sp/>UpdatePosition(double<sp/>t)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>//drift</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>L<sp/>=<sp/>0.5<sp/>*<sp/>q.Conjugate()<sp/>*<sp/>p;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>Quaternion<sp/>wMean<sp/>=<sp/>Magnus(TimeStep/2);<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>Quaternion<sp/>mod<sp/>=<sp/>exp(0.5<sp/>*<sp/>wMean);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>q<sp/>=<sp/>q<sp/>*<sp/>mod;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>p<sp/>=<sp/>2<sp/>*<sp/>q<sp/>*<sp/>L;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>//kick</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>Quaternion<sp/>gU<sp/>=<sp/>GradU(t<sp/>+<sp/>TimeStep/2);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>p<sp/>=<sp/>p<sp/>+<sp/>TimeStep<sp/>*<sp/>gU;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>L<sp/>=<sp/>0.5<sp/>*<sp/>q.Conjugate()<sp/>*<sp/>p;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>wMean<sp/>=<sp/>Magnus(TimeStep/2);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>mod<sp/>=<sp/>exp(0.5<sp/>*<sp/>wMean);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>q<sp/>=<sp/>q<sp/>*<sp/>mod;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>p<sp/>=<sp/>2<sp/>*<sp/>q<sp/>*<sp/>L;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="/home/f/fraserj/Documents/Work/QDynamics/src/Symi.h"/>
+    <location file="/home/jack/Documents/Work/QDynamics/src/Symi.h"/>
   </compounddef>
 </doxygen>

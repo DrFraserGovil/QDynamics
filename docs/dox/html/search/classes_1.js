@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['brute',['Brute',['../classQDynamics_1_1Brute.html',1,'QDynamics']]]
+  ['bruteint_171',['BruteInt',['../classQDynamics_1_1BruteInt.html',1,'QDynamics']]]
 ];

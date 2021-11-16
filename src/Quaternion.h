@@ -16,8 +16,7 @@ namespace QDynamics
 	class Quaternion;
 	
 	/*!
-		A computational replica of the mathematical object *quaternion*, which replicates the expected behaviour of such objects, including addition and scalar multiplication (which it inherits from  \verbatim embed:rst:inline
-	`JSL::Vector() <https://jackstandardlibrary.readthedocs.io/en/latest/vectors.html>`_ \endverbatim ), as well as the idiosyncratic multiplication and division native ot this field. We use the notation that  \verbatim embed:rst:inline :math:`\mathsf{q} = (q_0, \vec{q})` \endverbatim , and the interface is based on this assumption. It is intentional that treating quaternions as members of  \verbatim embed:rst:inline :math:`\mathbb{R}^4` \endverbatim is awkward.
+		A computational replica of the mathematical object *quaternion*, which replicates the expected behaviour of such objects, including addition and scalar multiplication (which it inherits from  \verbatim embed:rst:inline `JSL::Vector() <https://jackstandardlibrary.readthedocs.io/en/latest/vectors.html>`_ \endverbatim ), as well as the idiosyncratic multiplication and division native ot this field. We use the notation that  \verbatim embed:rst:inline :math:`\mathsf{q} = (q_0, \vec{q})` \endverbatim , and the interface is based on this assumption. It is intentional that treating quaternions as members of  \verbatim embed:rst:inline :math:`\mathbb{R}^4` \endverbatim is awkward.
 	*/
 	class Quaternion : public JSL::Vector
 	{
@@ -214,7 +213,7 @@ namespace QDynamics
 		return 1.0/N * lhs * rhs.Conjugate();
 	}
 	
-	//! The quaternion exponential, defined such that: 	 \verbatim embed:rst:inline :math:`\exp(\mathsf{a}) = \sum_{n = 0}^\infty \frac{\mathsf{a}^n}{n!}` \endverbatim \param lhs The argument of the operation (\verbatim embed:rst:inline :math:`\mathsf{a}` \endverbatim) \return The (analytically computed) quaternion exponential 
+	//! The quaternion exponential, defined such that: 	 \verbatim embed:rst:inline :math:`\exp(\mathsf{a}) = \sum_{n = 0}^\infty \frac{\mathsf{a}^n}{n!}` \endverbatim \param a The argument of the operation (\verbatim embed:rst:inline :math:`\mathsf{a}` \endverbatim) \return The (analytically computed) quaternion exponential 
 	inline Quaternion exp(const Quaternion & a)
 	{
 		double sc = std::exp(a.Scalar());

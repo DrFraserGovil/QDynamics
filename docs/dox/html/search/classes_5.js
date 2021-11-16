@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['quaternion',['Quaternion',['../classQDynamics_1_1Quaternion.html',1,'QDynamics::Quaternion'],['../classJSL_1_1Quaternion.html',1,'JSL::Quaternion']]]
+  ['stringtest_180',['StringTest',['../classJSL__Testing_1_1StringTest.html',1,'JSL_Testing']]],
+  ['symi_181',['Symi',['../classQDynamics_1_1Symi.html',1,'QDynamics']]]
 ];
