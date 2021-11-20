@@ -32,7 +32,7 @@ namespace QDynamics
 			Integrator(double T, double deltaT, int skipper)
 			{
 				Name = "Unassigned";
-				Skips = skipper;
+				Skips = std::max(1,skipper);
 				TotalTime = T;
 				TimeStep = deltaT;
 				NHashes = hash;
@@ -59,6 +59,7 @@ namespace QDynamics
 					
 					if (q.isnan() || p.isnan())
 					{
+						std::cout << "Quitting due to erroneous state" << std::endl;
 						t = TotalTime;
 					}
 				}
@@ -107,15 +108,17 @@ namespace QDynamics
 			//! Called during every loop of Evolve(), saves some values of interest to the Integrator::Buffer. \param t The current time, needed as part of the buffer input
 			void UpdateBuffer(double t)
 			{
-				int prec = 10;
+				
+				int prec = 15;
 				++SkipID;
 				if (t==0 || SkipID == Skips)
 				{
 					std::ostringstream out;
-					out.precision(10);
-					out << std::fixed << t;
+					out.precision(prec);
+					out << std::fixed << t << "," << q.to_string_precision(prec) << "," << p.to_string_precision(prec) << "," << std::fixed <<Hamiltonian(t) << "," << std::fixed  << (0.5 * q.Conjugate() * p).Norm();
 					
-					std::string b = out.str() + "," + q.to_string_precision(prec) + "," + p.to_string_precision(prec) + ", " + std::to_string(Hamiltonian(t)) + ", " + std::to_string(LabAngularMomentum(q,p).Norm());
+					
+					std::string b = out.str();
 					Buffer[BufferPos] = b;
 					
 					++BufferPos;
@@ -184,23 +187,32 @@ namespace QDynamics
 					exit(-1);
 				}
 				
-				std::cout << "New " << Name << " Integrator Initialised" << "\n ["<< std::flush;
+				std::cout << "New " << Name << " Integrator Initialised. Data piping to " << FileName << "The initial energy is " << Hamiltonian(0) << "\n ["<< std::flush;
 				UpdateBuffer(0);
+				
 			}
 			
 			//! Computes the Integrator::FileName including the filepath from from the Integrator::Name and the provided directory. \param saveFolder The corresponding value passed to Intitialise() 
 			void CreateFullName(std::string saveFolder)
 			{
 				JSL::mkdir(saveFolder);
-				FileName = saveFolder + "/" + Name +"_N" + std::to_string((int)log10(TotalTime/TimeStep)) + ".dat";
+				FileName = saveFolder + "/" + Name +"_N" + std::to_string((int)(10*log10(TotalTime/TimeStep))) + ".dat";
 			}
 			
 			//! Computes the current value of the energy of the system given the kinetic energy and the value of U(). \param t The current time, for time-dependent potentials.
 			double Hamiltonian(double t)
 			{	
-				Quaternion Lt = 0.5 * q.Conjugate() * p;
-				double T = 0.5 * Lt.Dot( InvMult(J,Lt));
+				
+				//~ Quaternion Lt = 0.5 * q.Conjugate() * p;
+				//~ L = 2 * L;
+				double T = 0.5 * L.Dot( InvMult(J,L));
+			
 				double E = T + U(t);	
+				//~ std::cout <<t << "   " << T << "  " << U(t) << " " << E << "   " << L << std::endl;
+				//~ if( rand() < RAND_MAX /10)
+				//~ {
+					//~ exit(10);
+				//~ }
 				return E;	
 			}
 				

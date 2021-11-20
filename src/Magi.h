@@ -62,7 +62,7 @@ namespace QDynamics
 				w = 0.5 * InvMult(J,q.Conjugate() * p);
 				w.Scalar() = 0;
 				Quaternion qDot = 0.5 * q * w;
-				Quaternion pDot = 0.5 * p * w + GradU(t);
+				Quaternion pDot = 0.5 * p * w - GradU(t);
 				
 		
 				p = p + TimeStep * pDot;
@@ -75,46 +75,47 @@ namespace QDynamics
 			//! The function called by UpdatePosition() if ``StepMode == Euler``. See QDynamics::UpdateType for more information. \param t The current time
 			void Euler_Update(double t)
 			{
-				Quaternion tau = 0.5 * q.Conjugate() * GradU(t);
-				L = L  + TimeStep * tau ;
-					
+				Quaternion gU = GradU(t);
+				p = p - TimeStep * gU;
+				L = 0.5 * q.Conjugate() * p;
+				
 				Quaternion wMean =  Magnus(TimeStep);
-		
-				Quaternion mod = exp(0.5 * wMean);
+				Quaternion mod = exp(wMean);
+
+				q = q * mod;
+				p = p * mod;	
 				
-				
-				if (Order == 0)
-				{
-					p = (p + 2 * q *tau) * mod;
-					q = q * mod;
-					L = 0.5 * q.Conjugate() * p;
-				}
-				else
-				{
-					q = q * mod;
-					p = 2 * q * L;
-				}
+				//~ if (Order == 0)
+				//~ {
+					//~ p = (p + 2 * TimeStep * q *tau) * mod;
+					//~ q = q * mod;
+					//~ L = 0.5 * q.Conjugate() * p;
+				//~ }
+				//~ else
+				//~ {
+								
+				//~ }
 			}
 			
 			//! The function called by UpdatePosition() if ``StepMode == Leapfrog``. See QDynamics::UpdateType for more information. \param t The current time
 			void Leapfrog_Update(double t)
 			{
 				//drift
-				L = 0.5 * q.Conjugate() * p;
+				//~ L = 0.5 * q.Conjugate() * p;
 				Quaternion wMean = Magnus(TimeStep/2); 
-				Quaternion mod = exp(0.5 * wMean);
+				Quaternion mod = exp(wMean);
 				
 				q = q * mod;
-				p = 2 * q * L;
+				p = p * mod;
 				
 				//kick
 				Quaternion gU = GradU(t + TimeStep/2);
-				p = p + TimeStep * gU;
-				L = 0.5 * q.Conjugate() * p;
+				//~ p = p - TimeStep * gU;
+				L = L - 0.5 * TimeStep * q.Conjugate()* gU;
 				
 				wMean = Magnus(TimeStep/2);
 				
-				mod = exp(0.5 * wMean);
+				mod = exp(wMean);
 				q = q * mod;
 				p = 2 * q * L;
 			}
@@ -124,7 +125,7 @@ namespace QDynamics
 			{
 				if (Order == 0 || abs(L.Vector(2)) < 1e-8)
 				{
-					return duration * InvMult(J,L);
+					return duration * InvMult(J,L) /2;
 				}
 				
 				Quaternion Lt = L;
@@ -142,10 +143,10 @@ namespace QDynamics
 					L = L * exp(0.5 * (wt - LNorm * L.Conjugate() * wt* L)*ddt);	
 					wt = InvMult(J,L);
 					
-					M[0] = M[0] + wt;
+					M[0] = M[0] + 0.5*wt;
 					if (Order > 1)
 					{
-						M[1] = M[1] + Quaternion(0,wt.Vector().Cross(M[0].Vector()));
+						M[1] = M[1] - 0.5*Quaternion(0,wt.Vector().Cross(M[0].Vector()));
 					}
 				}
 				Quaternion output = M[0] * ddt;
