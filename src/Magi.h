@@ -75,33 +75,21 @@ namespace QDynamics
 			//! The function called by UpdatePosition() if ``StepMode == Euler``. See QDynamics::UpdateType for more information. \param t The current time
 			void Euler_Update(double t)
 			{
-				Quaternion gU = GradU(t);
-				p = p - TimeStep * gU;
-				L = 0.5 * q.Conjugate() * p;
-				
+				Quaternion tau = - 0.5 * q.Conjugate() * GradU(t);
+				L = L + TimeStep * tau;
+								
 				Quaternion wMean =  Magnus(TimeStep);
 				Quaternion mod = exp(wMean);
 
 				q = q * mod;
 				p = p * mod;	
 				
-				//~ if (Order == 0)
-				//~ {
-					//~ p = (p + 2 * TimeStep * q *tau) * mod;
-					//~ q = q * mod;
-					//~ L = 0.5 * q.Conjugate() * p;
-				//~ }
-				//~ else
-				//~ {
-								
-				//~ }
 			}
 			
 			//! The function called by UpdatePosition() if ``StepMode == Leapfrog``. See QDynamics::UpdateType for more information. \param t The current time
 			void Leapfrog_Update(double t)
 			{
 				//drift
-				//~ L = 0.5 * q.Conjugate() * p;
 				Quaternion wMean = Magnus(TimeStep/2); 
 				Quaternion mod = exp(wMean);
 				
@@ -109,9 +97,9 @@ namespace QDynamics
 				p = p * mod;
 				
 				//kick
-				Quaternion gU = GradU(t + TimeStep/2);
-				//~ p = p - TimeStep * gU;
-				L = L - 0.5 * TimeStep * q.Conjugate()* gU;
+				Quaternion tau = - 0.5 * q.Conjugate() * GradU(t);
+				L = L + TimeStep * tau;
+				
 				
 				wMean = Magnus(TimeStep/2);
 				

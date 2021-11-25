@@ -87,24 +87,25 @@ void TrivialTest(double T, double dT,int skipResolution,bool bruteOnly)
 
 void HarmonicTest(double T, double dT,bool bruteOnly,int skipResolution)
 {
-	double omega = 0;
+	double omega = 2;
 	double phi = 2.1;
-	U0 = 3;
+	U0 = 2;
 	JSL::Vector J({1100,1,1,2});
 	
-	Quaternion wInit(0,0,0,omega);
+	Quaternion wInit(0,omega,0,omega);
 	Quaternion r = Quaternion::Random();
 	
 	Quaternion qInit(cos(phi/2),sin(phi/2),0,0);
 	Quaternion pInit= 2 * qInit * Mult(J,wInit);
-	std::cout << pInit << std::endl;
-
 
 	std::string folder = "Output/Harmonic/";
 	int intResolution = 150;
 	
 	//~ QDynamics::BruteInt B(T,dT/10,skipResolution);
-	//~ B.Evolve(qInit,pInit,J,folder);
+	//~ B.Evolve(qInit,pInit,J,folder);#
+	QDynamics::Symi<2, QDynamics::Leapfrog> SL2(T,dT,skipResolution);
+	SL2.Evolve(qInit,pInit,J,folder);
+		
 	if (!bruteOnly)
 	{
 		//~ QDynamics::Magi<0, QDynamics::Euler> M0(T,dT,intResolution,skipResolution);
@@ -116,8 +117,8 @@ void HarmonicTest(double T, double dT,bool bruteOnly,int skipResolution)
 		//~ QDynamics::Magi<2, QDynamics::Euler> M2(T,dT,intResolution,skipResolution);
 		//~ M2.Evolve(qInit,pInit,J,folder);
 		
-		//~ QDynamics::Symi<1, QDynamics::Euler> S1(T,dT,skipResolution);
-		//~ S1.Evolve(qInit,pInit,J,folder);
+		QDynamics::Symi<1, QDynamics::Euler> S1(T,dT,skipResolution);
+		S1.Evolve(qInit,pInit,J,folder);
 	
 		QDynamics::Symi<2, QDynamics::Euler> S2(T,dT,skipResolution);
 		S2.Evolve(qInit,pInit,J,folder);
@@ -125,8 +126,8 @@ void HarmonicTest(double T, double dT,bool bruteOnly,int skipResolution)
 		QDynamics::Symi<1, QDynamics::Leapfrog> SL1(T,dT,skipResolution);
 		SL1.Evolve(qInit,pInit,J,folder);
 		
-		//~ QDynamics::Symi<2, QDynamics::Leapfrog> SL2(T,dT,skipResolution);
-		//~ SL2.Evolve(qInit,pInit,J,folder);
+		QDynamics::Symi<2, QDynamics::Leapfrog> SL2(T,dT,skipResolution);
+		SL2.Evolve(qInit,pInit,J,folder);
 		
 		//~ QDynamics::Leapi L1(1,100,T,dT,skipResolution);
 		//~ L1.Evolve(qInit,pInit,J,folder);
@@ -154,15 +155,21 @@ void HarmonicTest(double T, double dT,bool bruteOnly,int skipResolution)
 int main(int argc, char * argv[])
 {
 	double T = 30;
-	double dT = pow(2,-8);
+	double dT = pow(10,-0.3);
 	double logResolution = 4;
 	
-	for (int i = 0; i < 8;++i)
+	int N = 6;
+	
+	for (int i = 0; i < N;++i)
 	{
 		bool bruteOnly = true;
-		if (i  < 5)
+		if (i  < (N-1))
 		{
 			bruteOnly = false;
+		}
+		else
+		{
+			dT = dT / 10;
 		}
 		//~ TrivialTest(T,dT/pow(10,i),1*pow(10,i),bruteOnly);
 		int skipper = 1;
@@ -172,7 +179,7 @@ int main(int argc, char * argv[])
 			skipper = pow(10,nSteps - logResolution);
 		}
 		HarmonicTest(T,dT,bruteOnly,skipper);
-		dT = dT/10;
+		dT = dT/3;
 	}
 	
 }

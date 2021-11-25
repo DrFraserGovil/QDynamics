@@ -187,7 +187,7 @@ namespace QDynamics
 					exit(-1);
 				}
 				
-				std::cout << "New " << Name << " Integrator Initialised. Data piping to " << FileName << "The initial energy is " << Hamiltonian(0) << "\n ["<< std::flush;
+				std::cout << Name << " Integrator: ["<< std::flush;
 				UpdateBuffer(0);
 				
 			}
