@@ -87,8 +87,8 @@ void TrivialTest(double T, double dT,int skipResolution,bool bruteOnly)
 
 void HarmonicTest(double T, double dT,bool bruteOnly,int skipResolution)
 {
-	double omega = 2;
-	double phi = 2.1;
+	double omega = 5;
+	double phi = 2.0943951;
 	U0 = 2;
 	JSL::Vector J({1100,1,1,2});
 	
@@ -101,15 +101,19 @@ void HarmonicTest(double T, double dT,bool bruteOnly,int skipResolution)
 	std::string folder = "Output/Harmonic/";
 	int intResolution = 150;
 	
-	//~ QDynamics::BruteInt B(T,dT/10,skipResolution);
-	//~ B.Evolve(qInit,pInit,J,folder);#
-	QDynamics::Symi<2, QDynamics::Leapfrog> SL2(T,dT,skipResolution);
-	SL2.Evolve(qInit,pInit,J,folder);
-		
+	QDynamics::Symi<2, QDynamics::Euler> S2(T,dT,skipResolution);
+	S2.Evolve(qInit,pInit,J,folder);
+	
+	//~ if (dT < 1e-3)
+	//~ {
+		//~ QDynamics::BruteInt B(T,dT,skipResolution);
+		//~ B.Evolve(qInit,pInit,J,folder);
+	//~ }
 	if (!bruteOnly)
 	{
-		//~ QDynamics::Magi<0, QDynamics::Euler> M0(T,dT,intResolution,skipResolution);
-		//~ M0.Evolve(qInit,pInit,J,folder);
+		
+		QDynamics::Magi<0, QDynamics::Euler> M0(T,dT,intResolution,skipResolution);
+		M0.Evolve(qInit,pInit,J,folder);
 	
 		//~ QDynamics::Magi<1, QDynamics::Euler> M1(T,dT,intResolution,skipResolution);
 		//~ M1.Evolve(qInit,pInit,J,folder);
@@ -120,14 +124,14 @@ void HarmonicTest(double T, double dT,bool bruteOnly,int skipResolution)
 		QDynamics::Symi<1, QDynamics::Euler> S1(T,dT,skipResolution);
 		S1.Evolve(qInit,pInit,J,folder);
 	
-		QDynamics::Symi<2, QDynamics::Euler> S2(T,dT,skipResolution);
-		S2.Evolve(qInit,pInit,J,folder);
+		//~ QDynamics::Symi<2, QDynamics::Euler> S2(T,dT,skipResolution);
+		//~ S2.Evolve(qInit,pInit,J,folder);
 		
-		QDynamics::Symi<1, QDynamics::Leapfrog> SL1(T,dT,skipResolution);
-		SL1.Evolve(qInit,pInit,J,folder);
+		//~ QDynamics::Symi<1, QDynamics::Leapfrog> SL1(T,dT,skipResolution);
+		//~ SL1.Evolve(qInit,pInit,J,folder);
 		
-		QDynamics::Symi<2, QDynamics::Leapfrog> SL2(T,dT,skipResolution);
-		SL2.Evolve(qInit,pInit,J,folder);
+		//~ QDynamics::Symi<2, QDynamics::Leapfrog> SL2(T,dT,skipResolution);
+		//~ SL2.Evolve(qInit,pInit,J,folder);
 		
 		//~ QDynamics::Leapi L1(1,100,T,dT,skipResolution);
 		//~ L1.Evolve(qInit,pInit,J,folder);
@@ -154,24 +158,22 @@ void HarmonicTest(double T, double dT,bool bruteOnly,int skipResolution)
 
 int main(int argc, char * argv[])
 {
-	double T = 30;
-	double dT = pow(10,-0.3);
+	double T = 500;
+	//~ double dT = pow(10,-0.3);
+	double dT = 0.33;
 	double logResolution = 4;
 	
-	int N = 6;
+	int N = 3;
 	
 	for (int i = 0; i < N;++i)
 	{
 		bool bruteOnly = true;
-		if (i  < (N-1))
+		if (i  < N-1)
 		{
 			bruteOnly = false;
 		}
-		else
-		{
-			dT = dT / 10;
-		}
-		//~ TrivialTest(T,dT/pow(10,i),1*pow(10,i),bruteOnly);
+
+
 		int skipper = 1;
 		double nSteps = log10(T/dT);
 		if (nSteps > logResolution)
@@ -179,7 +181,7 @@ int main(int argc, char * argv[])
 			skipper = pow(10,nSteps - logResolution);
 		}
 		HarmonicTest(T,dT,bruteOnly,skipper);
-		dT = dT/3;
+		dT = dT/10;
 	}
 	
 }

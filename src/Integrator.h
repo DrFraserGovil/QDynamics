@@ -196,7 +196,8 @@ namespace QDynamics
 			void CreateFullName(std::string saveFolder)
 			{
 				JSL::mkdir(saveFolder);
-				FileName = saveFolder + "/" + Name +"_N" + std::to_string((int)(10*log10(TotalTime/TimeStep))) + ".dat";
+				std::cout << log10(TotalTime/TimeStep)*10 << std::endl;
+				FileName = saveFolder + "/" + Name +"_N" + std::to_string((int)round(10*log10(TotalTime/TimeStep))) + ".dat";
 			}
 			
 			//! Computes the current value of the energy of the system given the kinetic energy and the value of U(). \param t The current time, for time-dependent potentials.
@@ -213,6 +214,7 @@ namespace QDynamics
 				//~ {
 					//~ exit(10);
 				//~ }
+				//~ std::cout << t << "  " << T << "  " << U(t) << "   " << E << std::endl;
 				return E;	
 			}
 				

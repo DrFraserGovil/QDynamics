@@ -36,17 +36,17 @@ namespace QDynamics
 		//! Executes a brute-force linear update to the position and momentum terms. A dumb, first order Euler integrator with a normalistion step, nothing more. \param t The current time (used for the potential U())
 		void virtual UpdatePosition(double t)
 		{
-			w = 0.5 * InvMult(J,q.Conjugate() * p);
+			w =  InvMult(J,L);
 			w.Scalar() = 0;
 			Quaternion qDot = 0.5 * q * w;
-			Quaternion pDot = 0.5 * p * w + GradU(t);
+			Quaternion pDot = 0.5 * p * w - GradU(t);
 			
 	
 			p = p + TimeStep * pDot;
 			q = q + TimeStep * qDot;
 			
 			q/=q.Norm();
-		
+			L = 0.5 * q.Conjugate() * p;
 		}
 	};
 }

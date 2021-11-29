@@ -1,25 +1,26 @@
 set(0,'defaultTextInterpreter','latex');
 set(groot, 'defaultAxesTickLabelInterpreter','latex'); 
 set(groot, 'defaultLegendInterpreter','latex');
-
+set(0,'defaultAxesFontSize',23)
 
 %% options
 global errFloor legendtile folder width axs mode minT maxT;
-errFloor = -10;
+errFloor = -2;
 axs = 22;
-legendtile = 1;
-width = 2;
+legendtile = 3;
+width = 4;
 minT = 1e-1 ;
 maxT = 30;
 folder = "Output/Harmonic";
-baseLineFile = "Sym_Frog_2_N51.dat";
-triggerList = ["Sym_Euler_1","Sym_Euler_2"];
+baseLineFile = "Sym_Euler_2_N52.dat";
+triggerList = ["Mag_Euler_0","Sym_Euler_1","Sym_Euler_2","Brute"];
 mode = 'log';
 %% some persistent global quantities
-global labelList triggerId cols positionInterp energyInterp momentumInterp
-labelList = ["Baseline Model"];
+global labelList triggerId cols positionInterp energyInterp momentumInterp saveLines
+labelList = ["Analytical Solution"];
 triggerId = zeros(size(triggerList))-1;
 cols = [colororder; rand(14,3)];
+saveLines = {};
 %% file checks
 fileList = organiseFiles(folder,baseLineFile);
 
@@ -28,9 +29,11 @@ preparePlot();
 plotBase(baseLineFile)
 
 for file = fileList
+    disp(file);
     plotFile(file,triggerList)
 end
 
+plotSavedLines;
 finalStyling();
 
 function y =clarifyer(x)
@@ -42,8 +45,8 @@ function y =clarifyer(x)
     y = (x + err)*(1.0+rand/errorMag);
 end
 
-function envelopePlot(x,y,color,width,style,active)
-    global errFloor minT
+function envelopePlot(x,y,color,width,style,active,tile)
+    global errFloor minT saveLines
     y(isnan(y)|isinf(y)) = errFloor -1;
  
     if active
@@ -58,10 +61,15 @@ function envelopePlot(x,y,color,width,style,active)
           subselect = (x >= minT);
           x = x(subselect);
           y = y(subselect);
-           s = smooth(y,length(y)/1000);
-          plot(x,cummax(smooth(y,10)),'Color',color,"LineWidth",width,'LineStyle',style);
-         
-          plot(x,smooth(y,s),'Color',[color,0.1],"LineWidth",width,"HandleVisibility","off",'LineStyle',style);
+%            s = smooth(y,length(y)/100);
+          s = y;
+           plot(x,s,'Color',[color,0.15],"LineWidth",width/2,"HandleVisibility","off",'LineStyle',style);
+%           plot(x,cummax(s),'Color',color,"LineWidth",width,'LineStyle',style);
+           N = 10;
+
+          capsule = {tile,smooth(x,N),smooth(cummax(s),N),color,width,style};
+          saveLines{end+1} = capsule;
+          
     else
         plot(x,y,'Color',color,"LineWidth",width,'LineStyle',style);
     end
@@ -88,34 +96,34 @@ function [r] = organiseFiles(folder,target)
     q = dir(folder);
     r = convertCharsToStrings({q.name});
     r(r == "." | r == "..") = [];
-    
-    if sum(r==target) == 1
-       s = target;
-    else
-        error("Target file, " + target + " could not be found, or there were multiple copies");
-    end
-    r(r == s) = [];
+    r(r == target) = [];
 end
 function preparePlot()  
-    figure(1)
+    f=figure(1);
+    f.Units = 'normalized';
+    size = [0,0,0.23,1.5];
+%     size = [0,0,0.3,1];
+    f.OuterPosition = size;
+    f.Position = size;
+%     f.Position =
     clf;
-    tiledlayout(2,2,"TileSpacing","Compact","Padding","Compact");
+    tiledlayout(3,1,"TileSpacing","Compact","Padding","Compact");
 end
 function plotBase(file)
      global legendtile folder positionInterp energyInterp momentumInterp errFloor;
-     nexttile(1,[1,2]);
+     nexttile(1);
     baseW = 4;
     f = readtable(folder + "/" +file);	
     hold on;
     envelopePlot(f.t,f.q0,'k',baseW,'-',false);
     hold off;
     
-    
-    nexttile(4);
-    hold on;
-    yy = log10(abs(f.H - f.H(1)) + 10^(errFloor - 1));
-    envelopePlot(f.t,yy,[0.1,0.1,0.1],baseW,'-',true);
-    hold off;
+%     
+%     nexttile(4);
+%     hold on;
+%     yy = log10(abs(f.H - f.H(1)) + 10^(errFloor - 1));
+%     envelopePlot(f.t,yy,[0.1,0.1,0.1],baseW,'-',true);
+%     hold off;
     if legendtile ~= 1
         nexttile(legendtile);
         hold on;
@@ -127,8 +135,9 @@ function plotBase(file)
     energyInterp = griddedInterpolant(f.t,f.H);
 %     momentumInterp = griddedInterpolant(f.t,f.L);
 end
+
 function plotFile(fileName,fileList)
-    global triggerId folder cols labelList width positionInterp energyInterp momentumInterp
+    global width triggerId folder cols labelList width positionInterp energyInterp momentumInterp
     typeList = ["-","--",":"];
     trig = -1;
     for i = 1:length(fileList)
@@ -152,85 +161,117 @@ function plotFile(fileName,fileList)
 
         
 		f = readtable(folder + "/" +fileName);	
+        fprintf("\tFile Loaded....");
         if height(f) > 0
      
-            labelList(end+1) = "\verb|" + fileName+ "|";
+            labelList(end+1) = extractName(fileName);
             theta = f.q0;
             theta(isnan(theta)) = 1e-15;
 
-            nexttile(1,[1,2]);
+            nexttile(1);
             hold on;
-    %         plot(f.t,(theta),'Color',cols(line,:),"LineWidth",width);
-
-            envelopePlot(f.t,theta,color,width,style,false);
+            width = width/2;
+            envelopePlot(f.t,theta,color,width,style,false,1);
             hold off;
-    % 		xlabel("Time (s)","FontSize",axs);
-            
+            width = width * 2;
+            fprintf("Plot 1 Complete...");
+
+            nexttile(2);
+            hold on;
+            orig = positionInterp(f.t);
+            diff = abs( (theta - orig));
+            envelopePlot(f.t,diff,color,width,style,true,2);
+            hold off;
+            fprintf("Plot 2 Complete...");
 
             nexttile(3);
             hold on;
-            orig = positionInterp(f.t);
-            diff = log10(abs(theta - orig));
-            envelopePlot(f.t,diff,color,width,style,true);
-            hold off;
-    % 		xlabel("Time (s)","FontSize",axs);
-            
-
-            nexttile(4);
-            hold on;
             orig = f.H(1);%energyInterp(f.t);
-            diff = log10(abs(f.H - orig));
-            envelopePlot(f.t,diff,color,width,style,true);
+            diff = abs((f.H - orig)./(orig + 1e-10));
+            envelopePlot(f.t,diff,color,width,style,true,3);
             hold off;
-%            
-% 
-%             nexttile(4);
-%             hold on;
-%             orig = momentumInterp(f.t);
-%             diff = log10(abs(abs(f.L) - abs(orig)));
-% 
-%             envelopePlot(f.t,diff,color,width,style,true);
-%             hold off;
-            
+            fprintf("Plot 3 Complete\n\n");
+
         end
+    end
+end
+
+function plotSavedLines()
+    global saveLines
+    
+    for i = 1:length(saveLines)
+        nexttile(saveLines{i}{1});
+        x = saveLines{i}{2};
+        y = saveLines{i}{3};
+        color = saveLines{i}{4};
+        width = saveLines{i}{5};
+        style = saveLines{i}{6};
+        hold on;
+        plot(x,y,'Color',color,"LineWidth",width,'LineStyle',style);
+        hold off;
     end
 end
 
 function finalStyling()
     global axs minT maxT mode errFloor legendtile labelList
-    nexttile(1,[1,2]);
+    nexttile(1);
     ylabel("Position Proxy, $\mathrm{q}_0 = \cos(\theta/2)$","FontSize",axs);
-    xlabel("Time (s)","FontSize",axs);
+%     xlabel("Time (s)","FontSize",axs);
     xlim([minT,maxT]);
-    ylim([-1   ,1]);
+    ylim([-1  ,1]);
+    grid on;
+    set(gca,'xscale',mode);
+    
+    nexttile(2);
+    ylabel("Absolute Angle Error,  $\left|\mathrm{q}_0 - \mathrm{q}_0^{true}\right|$","FontSize",axs);
+    xlim([minT,maxT]);
+    set(gca,'yscale','log');
+%     xlabel("Time (s)","FontSize",axs);
+    ylim(10.^[errFloor,0.5]);
     grid on;
     set(gca,'xscale',mode);
     
     nexttile(3);
-    ylabel("Angle Error, $\log_{10}\left(|\mathrm{q}_0 - \mathrm{q}_{0,true}|\right)$","FontSize",axs);
-    xlim([minT,maxT]);
     xlabel("Time (s)","FontSize",axs);
-%     ylim([errFloor,1.2]);
+    ylabel("Relative Energy Error: $\left|\frac{E - E_{true}}{E_{true}}\right|$","FontSize",axs);
+    xlim([minT,maxT]);
+    set(gca,'yscale','log');
+    ylim([10.^errFloor,1]);
     grid on;
     set(gca,'xscale',mode);
-    
-    nexttile(4);
-    xlabel("Time (s)","FontSize",axs);
-    ylabel("Energy Error, $\log_{10}\left(|E - E{true}|\right)$","FontSize",axs);
-    xlim([minT,maxT]);
-% %     ylim([errFloor,1]);
-    grid on;
-    set(gca,'xscale',mode);
-%     
-%     nexttile(4);
-%     xlabel("Time (s)","FontSize",axs);
-%     ylabel("Momentum Error, $\log_{10}\left(|L - L{true}|\right)$","FontSize",axs);
-%     xlim([minT,maxT]);
-% %     ylim([errFloor,1]);
-%     set(gca,'xscale',mode);
- 
+
     nexttile(legendtile);
-    legend(labelList,"FontSize",12,"Location","southwest");
+    legend(labelList,"FontSize",18,"Location","northwest");
 
     
+end
+
+function name = extractName(fileName)
+    types = ["Brute","Mag","Sym"];
+    renameTypes = ["Linear","Mag","Sym"];
+    
+    n = split(fileName,"_");
+    i = contains(types,n(1));
+    name = "\texttt{" + renameTypes(i) + "}";
+    
+    if contains(name,["Mag","Sym"])
+        name = name + n(3) + " $\big($" + n(2) + ", $";
+    else
+        name = name + " $\big(";
+    end
+        
+
+    res = str2num(extractBetween(n(end),2,strlength(n(end)) - 4));
+    
+    pow = floor(res/10);
+    pref = res - 10*pow;
+    s = "";
+    if pref > 0
+        s = s + num2str(round(10.^(pref/10))) + "\times ";
+    end
+    s = s + "10^{" + num2str(pow) + "}\big)$";
+
+    name = name + s;
+    
+
 end
