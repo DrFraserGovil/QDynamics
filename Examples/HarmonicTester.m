@@ -10,9 +10,9 @@ axs = 24;
 legendtile = 1;
 width = 4;
 minT = 1e-1 ;
-maxT = 500;
-folder = "Output/BruteTest";
-triggerList = ["Brute","Mag_Euler_0","Sym_Frog_1"];
+maxT = 1000;
+folder = "Output/Trivial";
+triggerList = ["Brute","Mag_Euler_0","Sym_Euler_1"];
 mode = 'log';
 %% some persistent global quantities
 global labelList triggerId cols positionInterp energyInterp momentumInterp saveLines
@@ -43,11 +43,10 @@ function y =clarifyer(x)
 
     y = (x + err)*(1.0+rand/errorMag);
 end
-
 function envelopePlot(x,y,color,width,style,active,tile)
     global errFloor minT saveLines
     y(isnan(y)|isinf(y)) = errFloor -1;
- 
+
     if active
 %         [~,wp] = findpeaks(y);
 %         [~,wt] = findpeaks(-y);
@@ -57,19 +56,23 @@ function envelopePlot(x,y,color,width,style,active,tile)
 %         yt = y(wt);
 %         plot(xp,yp,'Color',color,"LineWidth",width,'LineStyle',style);
 %         plot(xt,yt,'Color',color,"LineWidth",width,"HandleVisibility","off",'LineStyle',style);
-          subselect = (x >= minT);
-          x = x(subselect);
-          y = y(subselect);
+         
 %            s = smooth(y,length(y)/100);
           s = y;
-           plot(x,s,'Color',[color,0.15],"LineWidth",width/2,"HandleVisibility","off",'LineStyle',style);
+		  N = 3;
+           plot(smooth(x,N),smooth(s,N),'Color',[color,0.05],"LineWidth",width/2,"HandleVisibility","off",'LineStyle',style);
 %           plot(x,cummax(s),'Color',color,"LineWidth",width,'LineStyle',style);
-           N = 10;
-
-          capsule = {tile,smooth(x,N),smooth(cummax(s),N),color,width,style};
+           
+% 		    y(elem) = first;
+			j = cumsum(y)./[1:length(s)]';
+			
+		  
+% 		   [x(1), j(1)]
+          capsule = {tile,x,j,color,width,style};
           saveLines{end+1} = capsule;
           
-    else
+	else
+		x(x < minT) = minT*0.9;
         plot(x,y,'Color',color,"LineWidth",width,'LineStyle',style);
     end
 end
@@ -100,7 +103,8 @@ end
 function preparePlot()  
     f=figure(1);
     f.Units = 'normalized';
-    size = [0,0,0.23,1.5];
+%     size = [0,0,0.23,1.5];
+	size = [0,0,0.4,1.2];
     f.OuterPosition = size;
     f.Position = size;
 %     f.Position =
@@ -194,23 +198,25 @@ function plotFile(fileName,fileList)
         end
     end
 end
-
 function plotSavedLines()
-    global saveLines
+    global saveLines minT
     
     for i = 1:length(saveLines)
         nexttile(saveLines{i}{1});
         x = saveLines{i}{2};
+		elem = x<minT;
+		first = find(x,1);
+		x(elem) = minT*0.9;
         y = saveLines{i}{3};
+		y(elem) = y(first)*10e-2;
         color = saveLines{i}{4};
         width = saveLines{i}{5};
         style = saveLines{i}{6};
         hold on;
-        plot(x,y,'Color',color,"LineWidth",width,'LineStyle',style);
+        plot(x,y,'Color',color*0.9,"LineWidth",width,'LineStyle',style);
         hold off;
     end
 end
-
 function finalStyling()
     global axs minT maxT mode errFloor legendtile labelList
     nexttile(1);
@@ -245,6 +251,7 @@ function finalStyling()
     
 end
 
+
 function name = extractName(fileName)
     types = ["Brute","Mag","Sym"];
     renameTypes = ["Linear","Mag","Sym"];
@@ -261,6 +268,7 @@ function name = extractName(fileName)
         
 
     res = str2num(extractBetween(n(end),2,strlength(n(end)) - 4));
+    
     pow = floor(res/10);
     pref = res - 10*pow;
     s = "";

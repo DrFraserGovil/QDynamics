@@ -82,6 +82,7 @@ namespace QDynamics
 				Quaternion mod = exp(wMean);
 				q = q * mod;
 				p = p * mod;
+				L = 0.5*p.Conjugate()*q;
 			}
 			//! The function called by UpdatePosition() if ``StepMode == Euler``. See QDynamics::UpdateType for more information. \param t The current time
 			void Euler_Update(double t)
@@ -134,36 +135,125 @@ namespace QDynamics
 					return duration * InvMult(J,L) /2;
 				}
 				
+				double lParallel = sqrt(L.Vector(0)*L.Vector(0) + L.Vector(1) * L.Vector(1));
+				double varphi = atan2(L.Vector(1),L.Vector(0));
+				double zeta =  L.Vector(2) * (J[1] - J[3])/(J[1] * J[3]);
+			
+				double s = sin(zeta * duration - varphi);
+				double c = cos(zeta * duration - varphi);
+				
+				//Update momentum
+				Quaternion expect(0,lParallel * c, -lParallel*s, L.Vector(2));
+				//first order
+				double pre =lParallel/(zeta * J[1]); 
+				double m1x = pre * (s + sin(varphi));
+				double m1y= pre * (c - cos(varphi));
+				double m1z = L.Vector(2)/J[3] * duration;
+				
+				Quaternion MM(0,m1x,m1y,m1z);
+				MM = MM/2;
+				
+				
+				
+				
 				Quaternion Lt = L;
 				Quaternion wt = InvMult(J,Lt);
 				
 				
 				Quaternion wdot;
 				
-				double ddt = duration/Resolution;
+				double ddt = duration/(Resolution);
 				
 				std::vector<Quaternion> M = std::vector<Quaternion>(Order,Quaternion::Zero());
 				double LNorm = 1.0/L.SqNorm();
+				M[0] = 0.25 * wt * ddt;
+				if (Order > 1)
+				{
+					M[1] = - 0.25*Quaternion(0,wt.Vector().Cross(M[0].Vector())) * ddt*ddt;
+				}
+				double fac = 1;
 				for (int i = 0; i < Resolution; ++i)
 				{
-					L = L * exp(0.5 * (wt - LNorm * L.Conjugate() * wt* L)*ddt);	
+					
+					Quaternion Ldot = 0.5 * (L * wt - wt * L);
+					L = L + Ldot * ddt;
 					wt = InvMult(J,L);
 					
-					M[0] = M[0] + 0.5*wt;
+					if (i == Resolution)
+					{
+						fac = 0.5;
+					}
+					
+					M[0] = M[0] + fac*0.5*wt*ddt;
+					//~ std::cout << "  "  << M[0] << std::endl;
 					if (Order > 1)
 					{
 						M[1] = M[1] - 0.5*Quaternion(0,wt.Vector().Cross(M[0].Vector()));
 					}
 				}
-				Quaternion output = M[0] * ddt;
-				for (int i = 1; i < Order; ++i)
-				{
-					output = output + M[i] * pow(ddt,i+1);
-				}
+				Quaternion output = M[0];
+				//~ L = expect;
+				//~ for (int i = 1; i < Order; ++i)
+				//~ {
+					//~ output = output + M[i] * pow(ddt,i+1);
+				//~ }
 				//~ std::cout << M[0] << std::endl;
+				
+				//~ std::cout << "\n";
+				//~ std::cout << "\nExpectation: L = " << expect << "   M[0] = " << MM;
+				//~ std::cout << "\nNumerical:   L = " << L << "   M[0] = " << M[0] << "\n";
+				
+				
+				
 				return output;
 			}
-		
+			Quaternion virtual Magnus2(double duration)
+		{
+			
+			if (Order == 0 || abs(L.Vector(2)) < 1e-8)
+				{
+					return duration * InvMult(J,L) /2;
+				}
+				
+				double lParallel = sqrt(L.Vector(0)*L.Vector(0) + L.Vector(1) * L.Vector(1));
+				double varphi = atan2(L.Vector(1),L.Vector(0));
+				double zeta =  L.Vector(2) * (J[1] - J[3])/(J[1] * J[3]);
+			
+			double s = sin(zeta * duration - varphi);
+			double c = cos(zeta * duration - varphi);
+			
+			//Update momentum
+			L.Vector(0) = lParallel * c;
+			L.Vector(1) = -lParallel * s;
+			
+			//first order
+			double pre =lParallel/(zeta * J[1]); 
+			double m1x = pre * (s + sin(varphi));
+			double m1y= pre * (c - cos(varphi));
+			double m1z = L.Vector(2)/J[3] * duration;
+			
+			Quaternion M(0,m1x,m1y,m1z);
+			M = M/2;
+			
+			if (Order > 1)
+			{
+				double sHalf = sin(zeta * duration/2);
+				double cHalf = cos(zeta * duration/2);
+				double fac =  ( 2*sHalf - zeta*duration*cHalf);
+				double pre2 = 2 * lParallel *L.Vector(2)/(zeta*zeta * J[1]*J[3]);
+				double m2x = pre2 * cos(zeta * duration/2 - varphi) *fac;
+				double m2y = - pre2 * sin(zeta * duration/2 - varphi) * fac;
+				double m2z = lParallel*lParallel/(zeta*zeta * J[1]*J[1]) * (sin(zeta*duration) - zeta * duration );
+				
+				Quaternion M1 = M;
+				M.Vector(0) += m2x/4;
+				M.Vector(1) += m2y/4;
+				M.Vector(2) += m2z/4;
+				
+				//~ std::cout << "M1 = " << M1 << "  M2 = " << M << "   Difference = " << (M - M1).to_string_precision(10)  << std::endl;
+			}
+			return M;
+		}
 		private:
 			//! Generates a print-and-filename-friendly name depending on the properties of the integrator. 
 			virtual void MakeName()
@@ -181,7 +271,7 @@ namespace QDynamics
 						Name += "_Frog";
 						break;
 				}
-				Name +=  "_" + std::to_string(Order);
+				Name +=  "_" + std::to_string(Order) + "_" + std::to_string(Resolution);
 			}
 	};
 	

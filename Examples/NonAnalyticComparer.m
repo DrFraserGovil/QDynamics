@@ -5,19 +5,20 @@ set(0,'defaultAxesFontSize',23)
 
 %% options
 global errFloor legendtile folder width axs mode minT maxT;
-errFloor = -2;
+errFloor = -4;
 axs = 22;
-legendtile = 3;
+legendtile = 2;
 width = 4;
 minT = 1e-1 ;
-maxT = 30;
-folder = "Output/Harmonic";
-baseLineFile = "Sym_Euler_2_N52.dat";
-triggerList = ["Mag_Euler_0","Sym_Euler_1","Sym_Euler_2","Brute"];
+maxT = 1e3;
+folder = "Output/Mag";
+baseLineFile = "Sym_Frog_2_N60.dat";
+% triggerList = ["Mag_Euler_0","Sym_Euler_1","Sym_Euler_2","Mag_Euler_1","Mag_Euler_2"];
+triggerList = ["Mag","Sym_Euler"];
 mode = 'log';
 %% some persistent global quantities
 global labelList triggerId cols positionInterp energyInterp momentumInterp saveLines
-labelList = ["Analytical Solution"];
+labelList = ["High-Res Model"];
 triggerId = zeros(size(triggerList))-1;
 cols = [colororder; rand(14,3)];
 saveLines = {};
@@ -48,7 +49,7 @@ end
 function envelopePlot(x,y,color,width,style,active,tile)
     global errFloor minT saveLines
     y(isnan(y)|isinf(y)) = errFloor -1;
- 
+
     if active
 %         [~,wp] = findpeaks(y);
 %         [~,wt] = findpeaks(-y);
@@ -58,19 +59,23 @@ function envelopePlot(x,y,color,width,style,active,tile)
 %         yt = y(wt);
 %         plot(xp,yp,'Color',color,"LineWidth",width,'LineStyle',style);
 %         plot(xt,yt,'Color',color,"LineWidth",width,"HandleVisibility","off",'LineStyle',style);
-          subselect = (x >= minT);
-          x = x(subselect);
-          y = y(subselect);
+         
 %            s = smooth(y,length(y)/100);
           s = y;
-           plot(x,s,'Color',[color,0.15],"LineWidth",width/2,"HandleVisibility","off",'LineStyle',style);
+		  N = 3;
+           plot(smooth(x,N),smooth(s,N),'Color',[color,0.15],"LineWidth",width/2,"HandleVisibility","off",'LineStyle',style);
 %           plot(x,cummax(s),'Color',color,"LineWidth",width,'LineStyle',style);
-           N = 10;
-
-          capsule = {tile,smooth(x,N),smooth(cummax(s),N),color,width,style};
+           
+% 		    y(elem) = first;
+			j = cumsum(y)./[1:length(s)]';
+			
+		  
+% 		   [x(1), j(1)]
+          capsule = {tile,x,j,color,width,style};
           saveLines{end+1} = capsule;
           
-    else
+	else
+		x(x < minT) = minT*0.9;
         plot(x,y,'Color',color,"LineWidth",width,'LineStyle',style);
     end
 end
@@ -101,8 +106,8 @@ end
 function preparePlot()  
     f=figure(1);
     f.Units = 'normalized';
-    size = [0,0,0.23,1.5];
-%     size = [0,0,0.3,1];
+%     size = [0,0,0.23,1.5];
+    size = [0,0,0.4,1.2];
     f.OuterPosition = size;
     f.Position = size;
 %     f.Position =
@@ -112,7 +117,7 @@ end
 function plotBase(file)
      global legendtile folder positionInterp energyInterp momentumInterp errFloor;
      nexttile(1);
-    baseW = 4;
+    baseW = 7;
     f = readtable(folder + "/" +file);	
     hold on;
     envelopePlot(f.t,f.q0,'k',baseW,'-',false);
@@ -197,17 +202,21 @@ function plotFile(fileName,fileList)
 end
 
 function plotSavedLines()
-    global saveLines
+    global saveLines minT
     
     for i = 1:length(saveLines)
         nexttile(saveLines{i}{1});
         x = saveLines{i}{2};
+		elem = x<minT;
+		first = find(x,1);
+		x(elem) = minT*0.9;
         y = saveLines{i}{3};
+		y(elem) = y(first)*10e-2;
         color = saveLines{i}{4};
         width = saveLines{i}{5};
         style = saveLines{i}{6};
         hold on;
-        plot(x,y,'Color',color,"LineWidth",width,'LineStyle',style);
+        plot(x,y,'Color',color*0.9,"LineWidth",width,'LineStyle',style);
         hold off;
     end
 end
@@ -236,12 +245,12 @@ function finalStyling()
     ylabel("Relative Energy Error: $\left|\frac{E - E_{true}}{E_{true}}\right|$","FontSize",axs);
     xlim([minT,maxT]);
     set(gca,'yscale','log');
-    ylim([10.^errFloor,1]);
+    ylim([10.^errFloor,3]);
     grid on;
     set(gca,'xscale',mode);
 
     nexttile(legendtile);
-    legend(labelList,"FontSize",18,"Location","northwest");
+    legend(labelList,"FontSize",18,"Location","southeast");
 
     
 end
@@ -255,11 +264,16 @@ function name = extractName(fileName)
     name = "\texttt{" + renameTypes(i) + "}";
     
     if contains(name,["Mag","Sym"])
-        name = name + n(3) + " $\big($" + n(2) + ", $";
+        name = name + n(3) + "\big(";
+		
+		if contains(name,"Mag") && n(3) ~= "0"
+			name = name + "$R = " + n(4) + "$, ";
+		end
+		name = name  + n(2) + ", $";
     else
         name = name + " $\big(";
     end
-        
+    
 
     res = str2num(extractBetween(n(end),2,strlength(n(end)) - 4));
     

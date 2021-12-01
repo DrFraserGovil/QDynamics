@@ -196,7 +196,6 @@ namespace QDynamics
 			void CreateFullName(std::string saveFolder)
 			{
 				JSL::mkdir(saveFolder);
-				std::cout << log10(TotalTime/TimeStep)*10 << std::endl;
 				FileName = saveFolder + "/" + Name +"_N" + std::to_string((int)round(10*log10(TotalTime/TimeStep))) + ".dat";
 			}
 			

@@ -204,7 +204,7 @@ namespace QDynamics
 	//! Quaternion division operation, such that: \verbatim embed:rst:inline :math:`\mathsf{a} \oslash \mathsf{b}  = \frac{1}{|\mathsf{b}|^2} \mathsf{a} \otimes \overline{\mathsf{b}}` \endverbatim.  \param lhs The first argument of the operation (\verbatim embed:rst:inline :math:`\mathsf{a}` \endverbatim) \param rhs The second argument (\verbatim embed:rst:inline :math:`\mathsf{b}` \endverbatim) \return The quaternion division (\verbatim embed:rst:inline :math:`\mathsf{a}\oslash\mathsf{b}` \endverbatim)
 	inline Quaternion operator/(const Quaternion & lhs, const Quaternion & rhs)
 	{
-		double N = rhs.Norm();
+		double N = rhs.SqNorm();
 		if (N <= 0)
 		{
 			throw std::runtime_error("Quaternion division is not well defined when the norm is 0");
