@@ -214,6 +214,7 @@ namespace QDynamics
 					//~ exit(10);
 				//~ }
 				//~ std::cout << t << "  " << T << "  " << U(t) << "   " << E << std::endl;
+			
 				return E;	
 			}
 				

@@ -101,6 +101,7 @@ namespace QDynamics
 	
 					q = q * mod;
 					p = 2 * q * L;
+
 					
 				}
 			}
@@ -135,76 +136,38 @@ namespace QDynamics
 					return duration * InvMult(J,L) /2;
 				}
 				
-				double lParallel = sqrt(L.Vector(0)*L.Vector(0) + L.Vector(1) * L.Vector(1));
-				double varphi = atan2(L.Vector(1),L.Vector(0));
-				double zeta =  L.Vector(2) * (J[1] - J[3])/(J[1] * J[3]);
-			
-				double s = sin(zeta * duration - varphi);
-				double c = cos(zeta * duration - varphi);
 				
-				//Update momentum
-				Quaternion expect(0,lParallel * c, -lParallel*s, L.Vector(2));
-				//first order
-				double pre =lParallel/(zeta * J[1]); 
-				double m1x = pre * (s + sin(varphi));
-				double m1y= pre * (c - cos(varphi));
-				double m1z = L.Vector(2)/J[3] * duration;
-				
-				Quaternion MM(0,m1x,m1y,m1z);
-				MM = MM/2;
-				
-				
-				
-				
-				Quaternion Lt = L;
-				Quaternion wt = InvMult(J,Lt);
-				
-				
-				Quaternion wdot;
-				
+				Quaternion wt = InvMult(J,L);
+				Quaternion Ldot;
+				Quaternion mod;
 				double ddt = duration/(Resolution);
 				
 				std::vector<Quaternion> M = std::vector<Quaternion>(Order,Quaternion::Zero());
-				double LNorm = 1.0/L.SqNorm();
-				M[0] = 0.25 * wt * ddt;
+
 				if (Order > 1)
 				{
 					M[1] = - 0.25*Quaternion(0,wt.Vector().Cross(M[0].Vector())) * ddt*ddt;
 				}
-				double fac = 1;
+				double fac =1.0/L.SqNorm();
 				for (int i = 0; i < Resolution; ++i)
 				{
-					
-					Quaternion Ldot = 0.5 * (L * wt - wt * L);
-					L = L + Ldot * ddt;
+					Ldot = 0.5*(L * wt - wt * L);
+					L = L + ddt * Ldot;
+					//~ Quaternion modmod = 0.5 * (wt - fac * L.Conjugate() * wt * L);
+					//~ L = L * exp(modmod * ddt);
 					wt = InvMult(J,L);
-					
-					if (i == Resolution)
-					{
-						fac = 0.5;
-					}
-					
-					M[0] = M[0] + fac*0.5*wt*ddt;
-					//~ std::cout << "  "  << M[0] << std::endl;
+							
+					M[0] = M[0] + 0.5*wt*ddt;
+
 					if (Order > 1)
 					{
 						M[1] = M[1] - 0.5*Quaternion(0,wt.Vector().Cross(M[0].Vector()));
 					}
 				}
+				L = 1.0/(sqrt(fac) * L.Norm()) * L;
+
 				Quaternion output = M[0];
-				//~ L = expect;
-				//~ for (int i = 1; i < Order; ++i)
-				//~ {
-					//~ output = output + M[i] * pow(ddt,i+1);
-				//~ }
-				//~ std::cout << M[0] << std::endl;
-				
-				//~ std::cout << "\n";
-				//~ std::cout << "\nExpectation: L = " << expect << "   M[0] = " << MM;
-				//~ std::cout << "\nNumerical:   L = " << L << "   M[0] = " << M[0] << "\n";
-				
-				
-				
+
 				return output;
 			}
 			Quaternion virtual Magnus2(double duration)
@@ -271,7 +234,17 @@ namespace QDynamics
 						Name += "_Frog";
 						break;
 				}
-				Name +=  "_" + std::to_string(Order) + "_" + std::to_string(Resolution);
+				std::string res = "";
+				if (Order > 0)
+				{
+					res = std::to_string(Resolution);
+					while (res.size() < 4)
+					{
+						res = "0" + res;
+					}
+					res = "_" + res;
+				}
+				Name +=  "_" + std::to_string(Order) + res;
 			}
 	};
 	

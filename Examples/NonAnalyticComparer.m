@@ -4,17 +4,21 @@ set(groot, 'defaultLegendInterpreter','latex');
 set(0,'defaultAxesFontSize',23)
 
 %% options
-global errFloor legendtile folder width axs mode minT maxT;
-errFloor = -4;
+global errFloor legendtile legendloc folder width axs mode minT maxT;
+errFloor = -12;
 axs = 22;
-legendtile = 2;
-width = 4;
+legendtile = 1;
+legendloc = "southeast";
+width = 3;
+
 minT = 1e-1 ;
 maxT = 1e3;
-folder = "Output/Mag";
-baseLineFile = "Sym_Frog_2_N60.dat";
+folder = "Output/Frog";
+% baseLineFile = "Mag_Euler_1_1000_N50.dat";
+baseLineFile = "Sym_Frog_2_N70.dat";
 % triggerList = ["Mag_Euler_0","Sym_Euler_1","Sym_Euler_2","Mag_Euler_1","Mag_Euler_2"];
-triggerList = ["Mag","Sym_Euler"];
+% triggerList = ["Brute","Mag_Euler_0","Mag_Euler_1_0010","Mag_Euler_1_0050","Mag_Euler_1_0250"];
+triggerList = ["Brute","Sym_Euler_2","Sym_Frog_2"];
 mode = 'log';
 %% some persistent global quantities
 global labelList triggerId cols positionInterp energyInterp momentumInterp saveLines
@@ -106,8 +110,9 @@ end
 function preparePlot()  
     f=figure(1);
     f.Units = 'normalized';
-%     size = [0,0,0.23,1.5];
-    size = [0,0,0.4,1.2];
+%     size = [0,0,0.25,1];
+    size = [0,0,0.23,1.5];
+%     size = [0,0,0.4,1.2];
     f.OuterPosition = size;
     f.Position = size;
 %     f.Position =
@@ -222,7 +227,7 @@ function plotSavedLines()
 end
 
 function finalStyling()
-    global axs minT maxT mode errFloor legendtile labelList
+    global axs minT maxT mode errFloor legendtile labelList legendloc
     nexttile(1);
     ylabel("Position Proxy, $\mathrm{q}_0 = \cos(\theta/2)$","FontSize",axs);
 %     xlabel("Time (s)","FontSize",axs);
@@ -236,7 +241,7 @@ function finalStyling()
     xlim([minT,maxT]);
     set(gca,'yscale','log');
 %     xlabel("Time (s)","FontSize",axs);
-    ylim(10.^[errFloor,0.5]);
+    ylim(10.^[errFloor,0]);
     grid on;
     set(gca,'xscale',mode);
     
@@ -245,12 +250,12 @@ function finalStyling()
     ylabel("Relative Energy Error: $\left|\frac{E - E_{true}}{E_{true}}\right|$","FontSize",axs);
     xlim([minT,maxT]);
     set(gca,'yscale','log');
-    ylim([10.^errFloor,3]);
+    ylim(10.^[errFloor,0]);
     grid on;
     set(gca,'xscale',mode);
 
     nexttile(legendtile);
-    legend(labelList,"FontSize",18,"Location","southeast");
+    legend(labelList,"FontSize",18,"Location",legendloc);
 
     
 end
@@ -267,7 +272,7 @@ function name = extractName(fileName)
         name = name + n(3) + "\big(";
 		
 		if contains(name,"Mag") && n(3) ~= "0"
-			name = name + "$R = " + n(4) + "$, ";
+			name = name + "$R = " + num2str(str2num(n(4))) + "$, ";
 		end
 		name = name  + n(2) + ", $";
     else
