@@ -14,19 +14,19 @@ Quaternion QDynamics::Integrator::GradU(double t)
 	cosTheta = std::min(1.0,std::max(-1.0,cosTheta));
 	
 	Quaternion pendulum = -2 * U0* z * q * z;
-	Quaternion gradV = pendulum;
-	//~ double theta = acos(cosTheta);
-	//~ double s = sin(theta);
-	//~ double sincInv; 
-	//~ if (abs(s) < 1e-8)
-	//~ {
-		//~ sincInv = 1;
-	//~ }
-	//~ else
-	//~ {
-		//~ sincInv = theta / sin(theta);
-	//~ }
-	//~ Quaternion gradV = - 2 * sincInv * pendulum;
+	//~ Quaternion gradV = pendulum;
+	double theta = acos(cosTheta);
+	double s = sin(theta);
+	double sincInv; 
+	if (abs(s) < 1e-8)
+	{
+		sincInv = 1;
+	}
+	else
+	{
+		sincInv = theta / sin(theta);
+	}
+	Quaternion gradV = - 2 * sincInv * pendulum;
 	
 	
 	return gradV - (gradV.Dot(q)) * q;
@@ -294,12 +294,12 @@ void SphereTest(double logResolution)
 {
 
 	double T = 100;
-	double dTInit = 1e-3;
-	double omega = 30;
+	double dTInit = 5e-3;
+	double omega = 5;
 
-	double phi = 0.2;
-	U0 = 1;
-	JSL::Vector J({1100,1,1,0.2});
+	double phi = 1.1;
+	U0 = 2;
+	JSL::Vector J({1100,1,1,2});
 	
 	
 	Quaternion r = Quaternion::Random();
@@ -308,7 +308,7 @@ void SphereTest(double logResolution)
 	
 	std::string folder = "Output/Frog/";
 	
-	int N = 5;
+	int N = 1;
 	double dT = dTInit;
 	int skipResolution= 1;
 		double nSteps = log10(T/dT);
@@ -316,19 +316,21 @@ void SphereTest(double logResolution)
 		{
 			skipResolution = pow(10,nSteps - logResolution);
 		}
-	QDynamics::Symi<2, QDynamics::Leapfrog> S1(T,dT,skipResolution);
+	QDynamics::Symi<2, QDynamics::Leapfrog> S1(T,dT/100,skipResolution*100);
+	QDynamics::BruteInt B(T,dT,skipResolution);
 	for (int i = 0; i < N; ++i)
 	{
 		
 		
 		
-		omega = omega /1.3;
-		phi = phi * 1.8;
+		//~ omega = omega /1.3;
+		//~ phi = phi * 1.8;
 		Quaternion wInit(0,0,0,omega);
 		Quaternion qInit(cos(phi/2),sin(phi/2),0,0);
 		Quaternion pInit= 2 * qInit * Mult(J,wInit);
 		folder = "Output/Frog" + std::to_string(i) + "/";
 		S1.Evolve(qInit,pInit,J,folder);
+		B.Evolve(qInit,pInit,J,folder);
 	}
 	
 	

@@ -11,7 +11,7 @@ legendtile = 1;
 width = 4;
 minT = 1e-1 ;
 maxT = 1000;
-folder = "Output/Trivial";
+folder = "Output/Frog0";
 triggerList = ["Brute","Mag_Euler_0","Sym_Euler_1"];
 mode = 'log';
 %% some persistent global quantities
